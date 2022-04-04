@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>¿En qué objeto buscamos el valor del campo de transacción seleccionado?</help>
+    <label></label>
+    <name>cpm__Find_in_Object__c</name>
+</CustomFieldTranslation>

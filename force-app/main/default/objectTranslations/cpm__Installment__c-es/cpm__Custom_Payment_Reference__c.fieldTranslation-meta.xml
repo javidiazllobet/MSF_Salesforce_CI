@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Rellene este campo si desea utilizar otra Referencia de pago distinta de la que se genera en Salesforce</help>
+    <label></label>
+    <name>cpm__Custom_Payment_Reference__c</name>
+</CustomFieldTranslation>

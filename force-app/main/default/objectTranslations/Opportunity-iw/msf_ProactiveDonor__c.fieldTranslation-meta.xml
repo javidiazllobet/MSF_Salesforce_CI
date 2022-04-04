@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_ProactiveDonor__c</name>
+    <picklistValues>
+        <masterLabel>Proactivo donante</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propuesta MSF</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

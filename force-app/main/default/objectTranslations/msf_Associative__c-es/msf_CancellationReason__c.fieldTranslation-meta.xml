@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_CancellationReason__c</name>
+    <picklistValues>
+        <masterLabel>Desacuerdo con las posiciones / decisiones adoptadas por la asociación</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desconectado de la asociación</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enlace a otra asociación de MSF</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fallecido</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incumplimiento de los estatutos</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Legt Ratenlaufzeit für wiederkehrende Spenden fest. WARNUNG: Durch Ratenlaufzeitänderungen für eine vorhandene wiederkehrende Spende könnten offene Opportunities gelöscht und neu erstellt werden. Damit verbundene Daten werden womöglich nicht beibehalten.</help>
+    <label></label>
+    <name>npe03__Installment_Period__c</name>
+    <picklistValues>
+        <masterLabel>Bimensual</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation>Monatlich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarterly</masterLabel>
+        <translation>Vierteljährlich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semestral</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yearly</masterLabel>
+        <translation>Jährlich</translation>
+    </picklistValues>
+</CustomFieldTranslation>

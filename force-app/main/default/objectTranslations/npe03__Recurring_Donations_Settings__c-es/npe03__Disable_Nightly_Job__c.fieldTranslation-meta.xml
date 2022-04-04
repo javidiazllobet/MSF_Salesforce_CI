@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Previene la programación del trabajo nocturno que actualiza las donaciones recurrentes. Cualquier trabajo programado existente debe ser removido en Configuración -&gt;Trabajos -&gt; Trabajos programados</help>
+    <label></label>
+    <name>npe03__Disable_Nightly_Job__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>cpm__Payment_Processor__c</name>
+    <picklistValues>
+        <masterLabel>PaymentHub-Redsys</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PaymentHub-SEPA</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

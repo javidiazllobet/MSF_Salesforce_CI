@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>La valeur par défaut est Ouvert, qui signifie que le don récurrent n&apos;a pas de date de fin.</help>
+    <label></label>
+    <name>npsp__RecurringType__c</name>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation>Ouvert</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asociativo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asociativos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>MSF Formato Asociativo</layout>
+        <sections>
+            <label></label>
+            <section>Contacto</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle del asociado</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información general</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Obligaciones, derechos y política de protección de datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SAP</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Telefono_Asociativo</name>
+    </validationRules>
+</CustomObjectTranslation>

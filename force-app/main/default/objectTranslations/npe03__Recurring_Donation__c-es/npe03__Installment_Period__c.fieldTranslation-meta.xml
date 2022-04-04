@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Con que frecuencia se va a recibir las donaciones. Nota: Modificar la frecuencia en donaciones recurrentes sin final abierto puede resultar en la perdida o re-creación de las op. abiertas relacionadas. Información relacionada a estas op. puede perderse.</help>
+    <label>Periodicidad</label>
+    <name>npe03__Installment_Period__c</name>
+    <picklistValues>
+        <masterLabel>Bimensual</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation>Mensual</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarterly</masterLabel>
+        <translation>Trimestral</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semestral</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yearly</masterLabel>
+        <translation>Anual</translation>
+    </picklistValues>
+</CustomFieldTranslation>

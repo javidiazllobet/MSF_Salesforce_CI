@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>継続支援の夜間更新がスケジュールされないようにします。既存のスケジュール済みジョブは、[設定] -&gt; [監視] -&gt; [スケジュール済みジョブ] から削除する必要があります。</help>
+    <label></label>
+    <name>npe03__Disable_Nightly_Job__c</name>
+</CustomFieldTranslation>

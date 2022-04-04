@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mandato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mandatos</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>MSF Mandate Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Id information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Referencia</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El nombre del titular de la cuenta como se indica en el Perfil de pago</help>
+    <label></label>
+    <name>cpm__Account_Holder_Name__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__ProcessingDate_must_be_in_the_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Processing_Date_Required_For_BACS_Manual</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>paysepa__Generate_Mandates</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>proh__Send_Generation_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

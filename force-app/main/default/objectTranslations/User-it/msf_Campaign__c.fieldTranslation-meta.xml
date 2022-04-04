@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_Campaign__c</name>
+    <picklistValues>
+        <masterLabel>AF F2F EXTERNO BARCELONA</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AF F2F INTERNO MADRID</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AF F2F INTERNO MÁLAGA</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alta F2F</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

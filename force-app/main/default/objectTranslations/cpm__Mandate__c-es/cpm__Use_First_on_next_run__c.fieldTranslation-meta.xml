@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Cuando está marcada, las transacciones que utilizan este mandato se ofrecen PRIMERO al banco.</help>
+    <label></label>
+    <name>cpm__Use_First_on_next_run__c</name>
+</CustomFieldTranslation>

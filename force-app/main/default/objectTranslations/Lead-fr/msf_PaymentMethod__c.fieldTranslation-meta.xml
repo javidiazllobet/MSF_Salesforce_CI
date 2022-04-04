@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_PaymentMethod__c</name>
+    <picklistValues>
+        <masterLabel>ACMA</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domiciliación bancaria</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tarjeta de crédito o débito</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

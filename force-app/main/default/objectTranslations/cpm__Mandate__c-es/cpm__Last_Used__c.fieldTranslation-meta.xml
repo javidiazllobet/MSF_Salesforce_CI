@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>La última vez que este mandato se utilizó para hacer una orden bancaria</help>
+    <label></label>
+    <name>cpm__Last_Used__c</name>
+</CustomFieldTranslation>

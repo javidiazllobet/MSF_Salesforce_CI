@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Empêche la planification de la mise à jour de nuit pour les dons réguliers. Les tâches planifiées existantes devront être supprimées en accédant à Configuration&gt;Surveillance-&gt;Tâches planifiées</help>
+    <label></label>
+    <name>npe03__Disable_Nightly_Job__c</name>
+</CustomFieldTranslation>

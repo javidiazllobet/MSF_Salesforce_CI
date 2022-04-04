@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El usuario que realizó la acción que causo este registro de seguimiento de auditoría</help>
+    <label></label>
+    <name>cpm__User__c</name>
+    <relationshipLabel></relationshipLabel>
+</CustomFieldTranslation>

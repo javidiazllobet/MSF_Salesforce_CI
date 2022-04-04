@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El nombre del paquete de extensión que causo este log.</help>
+    <label></label>
+    <name>cpm__Package__c</name>
+</CustomFieldTranslation>

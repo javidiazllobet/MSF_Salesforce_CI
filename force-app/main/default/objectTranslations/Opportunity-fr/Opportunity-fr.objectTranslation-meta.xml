@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>npsp__BDE_Entry_FS_v2</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__BDE_List_FS_v2</name>
+    </fieldSets>
+    <layouts>
+        <layout>MSF Donation Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos One to One</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos forma de pago web</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información F2F</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal actual</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de Matching Gift</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vehículo de donación</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Grant Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos One to One</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos forma de pago web</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal actual</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de Grant</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informacón de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Historical Donation Layout</layout>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información histórica</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informacón de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF In-Kind Gift Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos One to One</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos forma de pago web</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal actual</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de In-Kind</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informacón de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Legacy Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos One to One</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos forma de pago web</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal actual</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de herencias</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informacón de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Matching Gift Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos One to One</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos forma de pago web</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal actual</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informacón de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vehículo de donación</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Membership Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos forma de pago web</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal actual</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informacón de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>MSF_NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Deliverable</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Donation</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Grant</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Historical</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>In_Kind_Gift</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Legacy</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>MajorGift</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Matching_Gift</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Membership</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_EntryDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_InKind_Market_Fair_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_MotivoDePerdida</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_NoEconomicProfile</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_OpportunitySMSDonor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_Opportunity_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_Pago_de_herencia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_PaymentAuthorisation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_PaymentMethod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_PaymentOrderId</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_PaymentProcessor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_PaymentProfile</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_PrimaryContact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_Target</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>activities__Create_Tasks_Opp</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npe01__Add_Matching_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npe01__Matching_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npe01__New_Contact_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npe01__New_Organization_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Email_Acknowledgment</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Email_Acknowledgments</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Find_Matched_Gifts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Manage_Soft_Credits</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Refresh_Name</name>
+    </webLinks>
+</CustomObjectTranslation>

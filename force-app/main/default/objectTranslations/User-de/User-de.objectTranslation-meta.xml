@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Community Member Layout</layout>
+        <layoutType>CommunityMemberLayout</layoutType>
+        <sections>
+            <label></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Chatter Settings</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Language And Locale Settings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF User Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del captador</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Cloud Connect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF User Profile Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Background</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF_CanvasserLayout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información Captador</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Cloud Connect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF_CanvasserPlusLayout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información Captador</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Cloud Connect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Cloud Connect</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

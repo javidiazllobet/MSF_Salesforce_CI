@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Destino aportación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Destino aportaciones</value>
+    </caseValues>
+    <fieldSets>
+        <label></label>
+        <name>npsp__ManageAllocationsAdditionalFields</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre destino aportación</nameFieldLabel>
+    <webLinks>
+        <label></label>
+        <name>npsp__Manage_Allocations</name>
+    </webLinks>
+</CustomObjectTranslation>

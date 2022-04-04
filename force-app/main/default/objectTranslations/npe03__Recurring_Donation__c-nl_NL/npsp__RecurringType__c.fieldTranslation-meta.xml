@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Standaardwaarde is Open, hetgeen betekent dat het een terugkerende donatie zonder einddatum is.</help>
+    <label></label>
+    <name>npsp__RecurringType__c</name>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation>Open</translation>
+    </picklistValues>
+</CustomFieldTranslation>

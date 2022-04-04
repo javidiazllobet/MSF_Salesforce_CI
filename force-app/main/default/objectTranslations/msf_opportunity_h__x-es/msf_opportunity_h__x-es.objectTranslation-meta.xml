@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Oportunidad histórica</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Oportunidades históricas</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>msf_opportunity_h Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de impago aportación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información campaña y canal de entrada</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la forma de pago</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Otros datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vehículo de donación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>MSF_ReassignOpportunity</name>
+    </quickActions>
+</CustomObjectTranslation>
