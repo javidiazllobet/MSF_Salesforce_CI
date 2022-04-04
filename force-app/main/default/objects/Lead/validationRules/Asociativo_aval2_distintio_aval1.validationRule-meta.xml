@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asociativo_aval2_distintio_aval1</fullName>
+    <active>true</active>
+    <description>No puede ser el mismo que el primer Aval.</description>
+    <errorConditionFormula>!ISBLANK(msf_EndorsedByTwo__c) &amp;&amp; 
+( ISNEW() || ISCHANGED(msf_EndorsedByTwo__c)) &amp;&amp;
+msf_EndorsedByOne__c = msf_EndorsedByTwo__c</errorConditionFormula>
+    <errorDisplayField>msf_EndorsedByTwo__c</errorDisplayField>
+    <errorMessage>No puede ser el mismo que el primer Aval.</errorMessage>
+</ValidationRule>

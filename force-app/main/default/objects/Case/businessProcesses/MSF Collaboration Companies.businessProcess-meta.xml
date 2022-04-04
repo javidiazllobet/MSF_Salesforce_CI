@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF Collaboration Companies</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Agradecimiento</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Confirmación</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Escalado - continuación de gestión</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Gestión</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>No colabora</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Petición y creación de oportunidad</fullName>
+        <default>true</default>
+    </values>
+</BusinessProcess>

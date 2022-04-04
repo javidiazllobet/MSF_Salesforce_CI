@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_caracter__c</fullName>
+    <description>Valores permitidos: C / S / blanco, en el caso excepcional de segunda o posterior presentación de declaraciones.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Valores permitidos: C / S / blanco, en el caso excepcional de segunda o posterior presentación de declaraciones.</inlineHelpText>
+    <label>caracter</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nueva</fullName>
+                <default>true</default>
+                <label>Nueva</label>
+            </value>
+            <value>
+                <fullName>Complementaria</fullName>
+                <default>false</default>
+                <label>Complementaria</label>
+            </value>
+            <value>
+                <fullName>Sustitutiva</fullName>
+                <default>false</default>
+                <label>Sustitutiva</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

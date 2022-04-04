@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_SolidarityInitiative</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Abandono</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Conseguida</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Ingreso recibido</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Iniciativa en seguimiento</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Petición IS Recibida</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Rechazada</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dupcheck__filterOn__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Filter On</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>both</fullName>
+                <default>true</default>
+                <label>both</label>
+            </value>
+            <value>
+                <fullName>selection</fullName>
+                <default>false</default>
+                <label>selection</label>
+            </value>
+            <value>
+                <fullName>match</fullName>
+                <default>false</default>
+                <label>match</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

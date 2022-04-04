@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Captación</fullName>
+        <default>false</default>
+        <label>Captación</label>
+    </customValue>
+    <customValue>
+        <fullName>Colaboraciones Estratégicas</fullName>
+        <default>false</default>
+        <label>Colaboraciones Estratégicas</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital</fullName>
+        <default>false</default>
+        <label>Digital</label>
+    </customValue>
+    <customValue>
+        <fullName>Fidelización</fullName>
+        <default>false</default>
+        <label>Fidelización</label>
+    </customValue>
+    <customValue>
+        <fullName>Fundraising</fullName>
+        <default>false</default>
+        <label>Fundraising</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión BBDD y At Socio</fullName>
+        <default>false</default>
+        <label>Gestión BBDD y At Socio</label>
+    </customValue>
+    <customValue>
+        <fullName>P.E.U.</fullName>
+        <default>false</default>
+        <label>P.E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>SAS</fullName>
+        <default>false</default>
+        <label>SAS</label>
+    </customValue>
+    <customValue>
+        <fullName>ñúñúoopp--1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ñúñúoopp--1</label>
+    </customValue>
+    <customValue>
+        <fullName>MID PLUS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MID PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>FIDE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FIDE</label>
+    </customValue>
+    <description>Interactions Master Data #27308</description>
+    <masterLabel>Propietario</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

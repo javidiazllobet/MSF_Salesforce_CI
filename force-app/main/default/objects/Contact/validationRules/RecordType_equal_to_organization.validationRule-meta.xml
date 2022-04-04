@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordType_equal_to_organization</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(msf_Organization__c) &amp;&amp;
+ msf_Organization__r.RecordType.DeveloperName  !=  &apos;Organization&apos;</errorConditionFormula>
+    <errorDisplayField>msf_Organization__c</errorDisplayField>
+    <errorMessage>Organización inválida.</errorMessage>
+</ValidationRule>

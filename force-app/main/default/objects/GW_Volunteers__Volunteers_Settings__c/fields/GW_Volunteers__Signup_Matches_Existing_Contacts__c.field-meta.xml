@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Signup_Matches_Existing_Contacts__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>En el caso de que la página de Registro de Voluntarios intente hace coincidir a la persona con un contacto existente (por Nombre, Apellido, Correo electrónico)</inlineHelpText>
+    <label>Signup Matches Existing Contacts</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

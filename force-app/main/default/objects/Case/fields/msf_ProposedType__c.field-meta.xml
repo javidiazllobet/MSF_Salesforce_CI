@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ProposedType__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de propuesta</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Donación one off</fullName>
+                <default>false</default>
+                <label>Donación one off</label>
+            </value>
+            <value>
+                <fullName>Matching gift</fullName>
+                <default>false</default>
+                <label>Matching gift</label>
+            </value>
+            <value>
+                <fullName>Marketing con causa</fullName>
+                <default>false</default>
+                <label>Marketing con causa</label>
+            </value>
+            <value>
+                <fullName>Voluntariado</fullName>
+                <default>false</default>
+                <label>Voluntariado</label>
+            </value>
+            <value>
+                <fullName>Donativo en Especies</fullName>
+                <default>false</default>
+                <label>Donativo en Especies</label>
+            </value>
+            <value>
+                <fullName>Tipo 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tipo 1</label>
+            </value>
+            <value>
+                <fullName>Tipo2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tipo2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

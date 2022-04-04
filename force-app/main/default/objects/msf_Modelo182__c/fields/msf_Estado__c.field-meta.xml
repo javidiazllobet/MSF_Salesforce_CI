@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Estado__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Iniciando proceso</fullName>
+                <default>true</default>
+                <label>Iniciando proceso</label>
+            </value>
+            <value>
+                <fullName>Recalculando 4º año</fullName>
+                <default>false</default>
+                <label>Recalculando 4º año</label>
+            </value>
+            <value>
+                <fullName>Generando fichero</fullName>
+                <default>false</default>
+                <label>Generando fichero</label>
+            </value>
+            <value>
+                <fullName>Enviando al Chatter</fullName>
+                <default>false</default>
+                <label>Enviando al Chatter</label>
+            </value>
+            <value>
+                <fullName>Finalizado OK</fullName>
+                <default>false</default>
+                <label>Finalizado OK</label>
+            </value>
+            <value>
+                <fullName>Finalizado Error</fullName>
+                <default>false</default>
+                <label>Finalizado Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

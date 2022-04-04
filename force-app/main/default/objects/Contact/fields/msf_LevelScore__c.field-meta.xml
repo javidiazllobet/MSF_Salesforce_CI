@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_LevelScore__c</fullName>
+    <description>Campo a partir del cual se calcula el level: (1-NADA; 40-MASS; 60-MID; 80-MID+; 100-BIG)</description>
+    <externalId>false</externalId>
+    <label>(Level) Economic Score</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

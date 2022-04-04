@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_NoCartasPlanRelacionCP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>These fields are the different types of the communication plan</description>
+    <externalId>false</externalId>
+    <label>P.C. No cartas del plan de relación pape</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

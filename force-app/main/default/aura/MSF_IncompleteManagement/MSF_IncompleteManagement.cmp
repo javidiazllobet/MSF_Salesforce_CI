@@ -1,0 +1,39 @@
+<aura:component controller="MSF_IncompleteManagement_CTRL" implements="force:appHostable,lightning:isUrlAddressable" description="c:MSF_FormF2F">
+
+    <!-- attributes -->
+    <aura:attribute name="pageReference" 				type="Object"/>
+    
+    <aura:attribute name="data" 				type="Object"					/>
+    <aura:attribute name="columns" 				type="List"						/>
+    <aura:attribute name="spinnerDelete" 		type="Boolean" default='FALSE'	/>
+    <aura:attribute name="sortedBy" 			type="String" 					/>
+    <aura:attribute name="sortedDirection" 		type="String" 					/>
+	
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{!c.init}"/>
+    <aura:handler name="change" value = "{! v.pageReference}" action = "{! c.init}" />
+
+    <!-- the container element determine the height of the datatable -->
+    <div style='background-color: white' class="slds-p-around_x-small">
+        <p class="slds-text-heading_medium slds-m-bottom_x-small">{!$Label.c.MSF_FORM_F2F_MANAGEMENT_OF_INCOMPLETE}</p>
+        <div class="slds-box">
+            <div class="slds-is-relative">
+                <lightning:datatable keyField="id" data="{!v.data}" columns="{!v.columns}" 
+                                     hideCheckboxColumn="true" 
+                                     resizeColumnDisabled="true"
+                                     sortedBy="{!v.sortedBy}"
+                                     sortedDirection="{!v.sortedDirection}"
+                                     defaultSortDirection="{!v.defaultSortDirection}"
+                                     onsort="{!c.updateColumnSorting}"
+                                     onrowaction="{!c.handleRowAction}" />  
+                
+                <lightning:navigation aura:id="navService"/>
+                
+                <aura:if isTrue="{!v.spinnerDelete}">
+                    <lightning:spinner alternativeText="Loading" />                   
+                </aura:if>
+        	</div>
+        </div>
+    </div>
+
+</aura:component>

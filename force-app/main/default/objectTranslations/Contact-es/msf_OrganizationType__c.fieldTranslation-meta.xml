@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_OrganizationType__c</name>
+    <picklistValues>
+        <masterLabel>Collective</masterLabel>
+        <translation>Colectivo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Company</masterLabel>
+        <translation>Empresa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foundation</masterLabel>
+        <translation>Fundación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Entity</masterLabel>
+        <translation>Entidad publica</translation>
+    </picklistValues>
+</CustomFieldTranslation>

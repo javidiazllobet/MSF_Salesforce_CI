@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_CampaignDonationReporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(msf_OwnBy__c), 
+					&apos;Captación&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;TLMK&apos;, &apos;11-Tlmk captación&apos;, 
+									 													&apos;Iniciativa Solidaria&apos;, IF(ISPICKVAL(msf_IsOnline__c, &apos;Si&apos;), &apos;13-Iniciativa Solidaria Online&apos;, &apos;12-Iniciativa Solidaria off line&apos;),
+																							&apos;Celebraciones&apos;, &apos;14-Celebraciones&apos;,
+																							&apos;Televisión&apos;, &apos;15-Televisión&apos;,
+																							&apos;16-Captación off resto&apos;) , 
+					&apos;Digital&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;Iniciativa Solidaria&apos;, &apos;21-Facebook Fundraisers&apos;,
+																							&apos;22-Digital&apos;),
+					&apos;Fidelización&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;TLMK&apos;, CASE(TEXT(msf_Segment__c),
+																																				&apos;Mid donors&apos;,&apos;35-Tlmk Mid&apos;, 
+																										          &apos;31-Tlmk fide&apos;),
+																							&apos;Mailing&apos;, &apos;32-Mailing fide&apos;,
+																							&apos;Emailings&apos;, &apos;33-Emailing fide&apos;,
+																							&apos;Officers&apos;, &apos;34-Officers Mid plus&apos;,
+																							&apos;36-Fide resto&apos;),
+					&apos;Colaboraciones Estratégicas&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;Officers&apos;, IF(ISPICKVAL(msf_Segment__c, &apos;Organizaciones&apos;), &apos;41-Officers empresas&apos;, &apos;42-Officers One to one&apos;),
+																							&apos;43-Estratégicos resto&apos;),
+				IF(RecordType.Name = &apos;Default&apos;,
+							CASE(TEXT(msf_OutboundChannel1__c), 
+									    &apos;Desconocido&apos;, Case(TEXT(msf_IsOnline__c),
+															                &apos;Si&apos;, &apos;51-Desconocido on &apos;,
+															                &apos;52-Desconocido off&apos;),	
+					        &apos;53-Resto&apos;),
+						&apos;&apos;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reporting Donativos</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

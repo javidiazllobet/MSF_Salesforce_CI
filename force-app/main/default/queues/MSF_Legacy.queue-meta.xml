@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Herencias y Legados</name>
+    <queueMembers>
+        <users>
+            <user>beatriz.villanueva@barcelona.msf.org</user>
+            <user>carlos.martinez@sitel.com</user>
+            <user>francisco.rus@sitel.com</user>
+            <user>gemma.garcia@sitel.com</user>
+            <user>jesus.campillo@sitel.com</user>
+            <user>juan-antonio.moya@barcelona.msf.org</user>
+            <user>maite.alzueta@barcelona.msf.org</user>
+            <user>marta.murillo@barcelona.msf.org</user>
+            <user>mireia.mayans@barcelona.msf.org</user>
+            <user>mireia.mayans@example.com</user>
+            <user>noelia.bobet@sitel.com</user>
+            <user>raquel.sayas@barcelona.msf.org</user>
+            <user>yiara.segura@sitel.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

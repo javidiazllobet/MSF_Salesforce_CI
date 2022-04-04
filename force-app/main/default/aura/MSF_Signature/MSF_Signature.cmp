@@ -1,0 +1,20 @@
+<aura:component controller="MSF_Signature_CTRL" implements="force:appHostable" access="global">
+    
+    <ltng:require afterScriptsLoaded="{!c.Init}"/>
+    
+    <!-- attributes -->
+    <aura:attribute name="signatureName"		type="String"					/>
+    <aura:attribute name="signatureIdMember" 	type="String"					/>
+    <aura:attribute name="signatureInformed" 	type="Boolean" default="FALSE"	/>
+    
+    <aura:method name="saveSignature" action="{!c.save}" access="PUBLIC"/>
+  
+    <div style="text-align: center; background:white;">        
+        <canvas aura:id="can" style="border:2px solid #ddd; background:transparent; "></canvas>        
+    </div>
+ 
+    <div style="text-align: center; margin: 7px;">        
+        <lightning:button variant="brand" class="slds-button slds-button_brand" onclick="{!c.erase}" label="{!$Label.c.MSF_FORM_F2F_CLEAR_BUTTON}"/>     
+    </div>
+    
+</aura:component>

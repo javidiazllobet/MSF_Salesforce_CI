@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ModelSlected__c</fullName>
+    <externalId>false</externalId>
+    <label>Modelo elegido</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marco blanco foto</fullName>
+                <default>false</default>
+                <label>Marco blanco foto</label>
+            </value>
+            <value>
+                <fullName>Caricatura</fullName>
+                <default>false</default>
+                <label>Caricatura</label>
+            </value>
+            <value>
+                <fullName>Ambulancia</fullName>
+                <default>false</default>
+                <label>Ambulancia</label>
+            </value>
+            <value>
+                <fullName>Avión</fullName>
+                <default>false</default>
+                <label>Avión</label>
+            </value>
+            <value>
+                <fullName>Letra clásica</fullName>
+                <default>false</default>
+                <label>Letra clásica</label>
+            </value>
+            <value>
+                <fullName>Coche</fullName>
+                <default>false</default>
+                <label>Coche</label>
+            </value>
+            <value>
+                <fullName>Pareja corazones</fullName>
+                <default>false</default>
+                <label>Pareja corazones</label>
+            </value>
+            <value>
+                <fullName>Corazones javiroyo</fullName>
+                <default>false</default>
+                <label>Corazones javiroyo</label>
+            </value>
+            <value>
+                <fullName>Foto</fullName>
+                <default>false</default>
+                <label>Foto</label>
+            </value>
+            <value>
+                <fullName>Cordel corazón blanco</fullName>
+                <default>false</default>
+                <label>Cordel corazón blanco</label>
+            </value>
+            <value>
+                <fullName>Cordel corazón rojo</fullName>
+                <default>false</default>
+                <label>Cordel corazón rojo</label>
+            </value>
+            <value>
+                <fullName>Marco foto flores</fullName>
+                <default>false</default>
+                <label>Marco foto flores</label>
+            </value>
+            <value>
+                <fullName>Media naranja blanco</fullName>
+                <default>false</default>
+                <label>Media naranja blanco</label>
+            </value>
+            <value>
+                <fullName>Media naranja naranja</fullName>
+                <default>false</default>
+                <label>Media naranja naranja</label>
+            </value>
+            <value>
+                <fullName>Mundo</fullName>
+                <default>false</default>
+                <label>Mundo</label>
+            </value>
+            <value>
+                <fullName>Tandem</fullName>
+                <default>false</default>
+                <label>Tandem</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

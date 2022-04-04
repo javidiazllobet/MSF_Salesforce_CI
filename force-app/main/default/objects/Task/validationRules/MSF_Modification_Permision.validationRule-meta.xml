@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Modification_Permision</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISNEW() &amp;&amp; 
+$Profile.Name = &apos;Fundraising&apos; &amp;&amp; 
+CreatedById &lt;&gt; $User.Id &amp;&amp;
+Owner:User.Id &lt;&gt; $User.Id &amp;&amp;
+CreatedBy.CommunityNickname &lt;&gt; &apos;Migration.User&apos;</errorConditionFormula>
+    <errorMessage>No tienes permisos para modificar esta tarea ya que no la creaste ni la tienes asignada.</errorMessage>
+</ValidationRule>

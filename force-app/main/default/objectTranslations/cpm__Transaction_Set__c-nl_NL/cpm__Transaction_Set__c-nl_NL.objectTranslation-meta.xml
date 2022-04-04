@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>MSF Transaction set Layout</layout>
+        <sections>
+            <label></label>
+            <section>Aangepaste koppelingen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Totals</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label></label>
+        <name>cpm__Review_Transaction</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>proh__Advanced_Manual_Review</name>
+    </webLinks>
+</CustomObjectTranslation>

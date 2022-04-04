@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_NIF__c</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles$StageName</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Interesado reactivo (prompted),Interesado proactivo (espontáneo),Muy interesado,No insistir: Elaborando testamento,Testamento a favor,Herencia a favor,No interesado (no interés o error)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_PrimaryContact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sacramento Manibardo Gómez,Raúl de la Cuesta Manibardo,Encarnación Álvarez Jalón,Manuel Barroso Sancha,Antonio Calvo Caabeiro,María Luisa Gómez Rodríguez,Patrocinio Muriel Delgado,Antonio Tullemholm,Cecilia Lopez Dominguez,Pedro Zamora Fernandez,Ernesto Utrera Augusta,Maria Dolores Gonzalez Pinzón,Juan Solis Lopez,Purificación Monroigt Olid,Juan Domingo Alvarez Sainz,Jose Luis Zapatero,Rosana Astorga Ciruelos,Jose Antonio Blasco Fernandez,Margarita Prada Arrude,Broteildo Aragón Herranz,Carmen Zarzalejo Gil,José Martinez Riera,Elena García Abián,Miguel Canto Segovia,María Lucia Montané Roses,Esther -Susana Salerno Bazán,María Borras Cendra,María de la Antigua Ergueta Alonso,Fernando Lastra Lozano,Esther Moras Saéz,Jesús Santos Oñate,María  Carmen Fátima Fernandez Alonso,Christian Haroutunian Torres,Aldo Viviani,Elisa Düringer Pedragosa,Enrique Bermell Ibañez,Felix Domínguez Taravillo,Eduardo Cuadros Cuesta,Carlota de Altolaguirre,Matilde Vicente,Margarita Crespo Amado,José María Argüelles,Concepción Sena Diaz,Joaquina Garcia Cena,Maria Josefa Barrios,Elena De Frutos Merino,María Teresa Lopez Rodriguez,Esther Susana Salerno,Joaquina Garriga Pujol,Konrad Moe,Maria  Díaz,Alfredo Rodriguez Hidalgo,Jose Manuel Muela Rios,Ana María Culiañez Mula,Mª Luisa Pardo Gorbea,Carlos López Jiménez,Teresa</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Testamento DR (nombre completo)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

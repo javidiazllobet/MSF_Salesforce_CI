@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_PermanenceRecurringDonorDesc__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(msf_PermanenceRecurringDonorCont__c &lt;= 0, $Label.MSF_F_FIELDS_CONTACT_NONE, 
+if(msf_PermanenceRecurringDonorCont__c &lt;= 1, &quot;1 &quot; + $Label.MSF_F_FIELDS_CONTACT_YEAR_SINGULAR, 
+if(msf_PermanenceRecurringDonorCont__c &lt;= 2, &quot;1 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_SINGULAR+&quot; - 2 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL, 
+if(msf_PermanenceRecurringDonorCont__c  &lt;= 3, &quot;2 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL+&quot; - 3 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL, 
+if(msf_PermanenceRecurringDonorCont__c  &lt;= 5, &quot;3 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL+&quot; - 5 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL, 
+if(msf_PermanenceRecurringDonorCont__c &lt;= 10, &quot;5 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL+&quot; - 10 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL, 
+if(msf_PermanenceRecurringDonorCont__c &gt; 10,&quot;10 &quot;+$Label.MSF_F_FIELDS_CONTACT_YEAR_PLURAL_OR_MORE,$Label.MSF_F_FIELDS_CONTACT_NONE)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Años seguidos que ha sido socio (desc)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

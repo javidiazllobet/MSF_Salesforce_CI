@@ -1,0 +1,53 @@
+<aura:component controller="MSF_ChainedTasks_CTRL" implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" access="global" >
+	<!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="String"/>
+    
+    <aura:attribute name="simpleViewMode" type="Boolean" default="false" required="true" />
+    <aura:attribute name="pageReference" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="seeAllUrl" type="String"/>
+    
+    <aura:attribute name="title" type="String" default="Tareas Encadenadas"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    
+    <aura:attribute name="enableInfiniteLoading" type="Boolean" default="true"/>
+    
+    <!-- If one of these attributes is 0, returns all rows from the start -->
+    <aura:attribute name="page" type="Integer" default="1" />
+    <aura:attribute name="nrows" type="Integer" default="50" required="true" /> 
+    
+    <aura:if isTrue="{!v.simpleViewMode}">
+        <lightning:navigation aura:id="navService"/>
+    </aura:if>
+    
+     <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="force:showToast" action="{!c.toastHandler}"/>
+    
+    <!-- Start Struncture -->
+    <div aura:id="spinner" class="{!v.isLoading == true ? '' : 'slds-hide' }">
+        <lightning:spinner alternativeText="Loading" size="medium" variant="brand"/>
+    </div>
+    
+    <lightning:card variant="Narrow" aura:id="lightingCardBody" class="slds-card_boundary" >
+        <aura:set attribute="title">
+            <lightning:icon  iconName="standard:task" size="small"/>
+            <span class="slds-p-left_small simpleViewModeTitle"><b>{! v.title }</b></span>
+        </aura:set>
+        <div class="slds-grid listDisplays safari-workaround-anchor">
+            <lightning:datatable aura:id="tableData"
+                                 class="simpleTable"
+                                 keyField="id"
+                                 data="{! v.data }"
+                                 columns="{! v.columns }"
+                                 hideCheckboxColumn="true"
+                                 resizeColumnDisabled="true"
+                                 onrowaction="{! c.handleRowAction }"
+                                 />
+                                
+        </div>
+    </lightning:card>
+</aura:component>

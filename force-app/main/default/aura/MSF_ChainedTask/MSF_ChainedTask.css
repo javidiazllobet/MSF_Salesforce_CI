@@ -1,0 +1,71 @@
+.THIS.simpleTable.slds-button_icon-bare{
+    display: none;
+}
+.THIS lightning-datatable.simpleTable{
+    width:100%;
+}
+
+.THIS thead .slds-truncate{
+    font-weight:700 !important;
+} 
+
+.THIS .simpleViewModeTitle {
+    font-size: 0.875rem;
+}
+
+.THIS .slds-page-header__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.THIS .slds-spinner_container{
+    background-color:transparent;
+}
+
+.THIS .slds-spinner__dot-a, .THIS .slds-spinner__dot-b {
+    color:blue;
+    background-color:blue;
+}
+
+lightning-datatable.THIS  > div:last-child   {
+    height: calc(100% - 72px)  !important;
+} 
+
+.THIS.slds-backdrop{
+    height: 100% !important;
+}
+
+.THIS.slds-spinner_container {
+    position:fixed;
+}
+
+.THIS.slds-card {
+    border-radius: .25rem .25rem 0 0;   
+	margin-bottom: 0px; 
+}
+ 
+.THIS.slds-card_boundary {
+    border-top: 3px solid rgb(176, 173, 171) !important; 
+    border-top-left-radius: .25rem !important;
+    border-top-right-radius: .25rem !important;
+}
+
+
+.THIS.complexStyle > header.slds-card__header {
+    background-color:rgb(243, 242, 242) !important;
+    padding-top:4px;
+    border-bottom:0px !important;
+	margin-bottom: 0px;
+    
+
+    
+    padding-bottom:5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(221, 219, 218);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    border-radius: .25rem .25rem 0 0;
+}

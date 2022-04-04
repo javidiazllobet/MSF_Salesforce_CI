@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_OpportunitySMSDonor</fullName>
+    <active>true</active>
+    <description>Las oportunidades de tipo &apos;SMS Donor&apos; solo se pueden cerrar como &apos;SMS Donor cerrada&apos;.</description>
+    <errorConditionFormula>!ISPICKVAL(StageName , &apos;SMS Donor cerrada&apos;) &amp;&amp; IsClosed &amp;&amp; ISPICKVAL(Type , &apos;SMS Donor&apos;)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Las oportunidades de tipo &apos;SMS Donor&apos; solo se pueden cerrar como &apos;SMS Donor cerrada&apos;.</errorMessage>
+</ValidationRule>

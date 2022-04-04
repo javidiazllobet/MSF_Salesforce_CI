@@ -1,0 +1,3 @@
+<design:component label="MSF_FlowComponent_ButtonNavigate">
+	<design:attribute name="recordId" label="RecordId To Navigate" />
+</design:component>

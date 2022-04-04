@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_TypeAccountingContribution__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(RecordType.DeveloperName , 
+     
+     &quot;Donation&quot;,CASE( Type ,
+           &quot;Recurrent Donation&quot;,&quot;S&quot;,
+           &quot;SMS Donor&quot;,&quot;N/A&quot;,
+           &quot;One off Donation&quot;,&quot;D&quot;,
+           &quot;SMS Operator&quot;,&quot;D&quot;,
+           &quot;Employee or client Donation&quot;,&quot;D&quot;,
+           &quot;Recovered Quota&quot;,&quot;D&quot;,
+           &quot;Solidarity initiative&quot;,&quot;D&quot;,
+           &quot;Solidarity Wedding&quot;,&quot;D&quot;,
+           &quot;Solidarity Gift&quot;,&quot;D&quot;, null),
+
+     &quot;Grant&quot;,IF(ISPICKVAL(Type, &quot;Grant&quot;), &quot;N/A&quot;, null),
+
+     &quot;In_Kind_Gift&quot;,IF(ISPICKVAL(Type, &quot;In-Kind Gift&quot;), &quot;D&quot;, null),
+
+     &quot;Matching_Gift&quot;,IF(ISPICKVAL(Type, &quot;Matching Gift&quot;), &quot;D&quot;, null),
+
+     &quot;Membership&quot;,IF(ISPICKVAL(Type, &quot;Membership&quot;), &quot;A&quot;, null),
+
+     &quot;Legacy&quot;,CASE( Type ,
+           &quot;Herencia&quot;,&quot;N/A&quot;,
+           &quot;Pago de Herencia&quot;,&quot;N/A&quot;, null),
+
+      null
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tipo aportación contable</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

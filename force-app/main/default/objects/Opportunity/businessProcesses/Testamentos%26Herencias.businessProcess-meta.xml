@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Testamentos%26Herencias</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Herencia a favor</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Interesado proactivo %28espontáneo%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Interesado reactivo %28prompted%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>MSF Rechaza Herencia</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Muy interesado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>No insistir%3A Elaborando testamento</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>No interesado %28no interés o error%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Perdida %28fallecidos%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Testamento a favor</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

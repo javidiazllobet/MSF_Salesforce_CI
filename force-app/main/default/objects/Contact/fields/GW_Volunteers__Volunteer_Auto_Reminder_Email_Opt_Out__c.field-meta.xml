@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Volunteer_Auto_Reminder_Email_Opt_Out__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Verifique si este contacto no desea recibir correos electrónicos  automáticos sobre sus próximos turnos. Se utiliza en la regla de flujo de trabajo del Email recordatorio de horas de trabajo voluntario</inlineHelpText>
+    <label>Volunteer Auto-Reminder Email Opt Out</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

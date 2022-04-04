@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Se asignará a los usuarios que puedan modificar tareas de forma masiva</description>
+    <isLicensed>false</isLicensed>
+    <label>modificaciones masiva tareas</label>
+</CustomPermission>

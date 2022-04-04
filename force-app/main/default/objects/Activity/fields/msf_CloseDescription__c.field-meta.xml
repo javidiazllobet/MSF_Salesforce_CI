@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_CloseDescription__c</fullName>
+    <externalId>false</externalId>
+    <label>Descripción de cierre</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>msf_CloseType__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Agradecimiento realizado.</fullName>
+                <default>false</default>
+                <label>Agradecimiento realizado.</label>
+            </value>
+            <value>
+                <fullName>Alta socio</fullName>
+                <default>false</default>
+                <label>Alta socio</label>
+            </value>
+            <value>
+                <fullName>Argumentada</fullName>
+                <default>false</default>
+                <label>Argumentada</label>
+            </value>
+            <value>
+                <fullName>Asistirá al evento</fullName>
+                <default>false</default>
+                <label>Asistirá al evento</label>
+            </value>
+            <value>
+                <fullName>Aumentará cuota por otro canal</fullName>
+                <default>false</default>
+                <label>Aumentará cuota por otro canal</label>
+            </value>
+            <value>
+                <fullName>Aumento de cuota</fullName>
+                <default>false</default>
+                <label>Aumento de cuota</label>
+            </value>
+            <value>
+                <fullName>Aumento de cuota/donativo reciente</fullName>
+                <default>false</default>
+                <label>Aumento de cuota/donativo reciente</label>
+            </value>
+            <value>
+                <fullName>Baja</fullName>
+                <default>false</default>
+                <label>Baja</label>
+            </value>
+            <value>
+                <fullName>Baja definitiva. Hará donativos</fullName>
+                <default>false</default>
+                <label>Baja definitiva. Hará donativos</label>
+            </value>
+            <value>
+                <fullName>Baja temporal/situación economica</fullName>
+                <default>false</default>
+                <label>Baja temporal/situación economica</label>
+            </value>
+            <value>
+                <fullName>Baja temporal/vivir fuera</fullName>
+                <default>false</default>
+                <label>Baja temporal/vivir fuera</label>
+            </value>
+            <value>
+                <fullName>Cerrada colaboración por otro canal</fullName>
+                <default>false</default>
+                <label>Cerrada colaboración por otro canal</label>
+            </value>
+            <value>
+                <fullName>Comunica no asistencia en llamada de confirmación</fullName>
+                <default>false</default>
+                <label>Comunica no asistencia en llamada de confirmación</label>
+            </value>
+            <value>
+                <fullName>Cree que ya aporta suficiente</fullName>
+                <default>false</default>
+                <label>Cree que ya aporta suficiente</label>
+            </value>
+            <value>
+                <fullName>Disgustado con MSF (en general)</fullName>
+                <default>false</default>
+                <label>Disgustado con MSF (en general)</label>
+            </value>
+            <value>
+                <fullName>Disminución de cuota</fullName>
+                <default>false</default>
+                <label>Disminución de cuota</label>
+            </value>
+            <value>
+                <fullName>Dona a través del cónyuge</fullName>
+                <default>false</default>
+                <label>Dona a través del cónyuge</label>
+            </value>
+            <value>
+                <fullName>Donativo</fullName>
+                <default>false</default>
+                <label>Donativo</label>
+            </value>
+            <value>
+                <fullName>Donativo otros canales no web</fullName>
+                <default>false</default>
+                <label>Donativo otros canales no web</label>
+            </value>
+            <value>
+                <fullName>Donativo reciente a otras ONGs</fullName>
+                <default>false</default>
+                <label>Donativo reciente a otras ONGs</label>
+            </value>
+            <value>
+                <fullName>Donativo y Aumento de cuota</fullName>
+                <default>false</default>
+                <label>Donativo y Aumento de cuota</label>
+            </value>
+            <value>
+                <fullName>Duplicado</fullName>
+                <default>false</default>
+                <label>Duplicado</label>
+            </value>
+            <value>
+                <fullName>El donativo anterior fue extraordinario</fullName>
+                <default>false</default>
+                <label>El donativo anterior fue extraordinario</label>
+            </value>
+            <value>
+                <fullName>Eliminado por petición MSF</fullName>
+                <default>false</default>
+                <label>Eliminado por petición MSF</label>
+            </value>
+            <value>
+                <fullName>Enviará cupon</fullName>
+                <default>false</default>
+                <label>Enviará cupon</label>
+            </value>
+            <value>
+                <fullName>Enviar un email con la información.</fullName>
+                <default>false</default>
+                <label>Enviar un email con la información.</label>
+            </value>
+            <value>
+                <fullName>Error en la frecuencia/importe. Sigue siendo socio</fullName>
+                <default>false</default>
+                <label>Error en la frecuencia/importe. Sigue siendo socio</label>
+            </value>
+            <value>
+                <fullName>Fallecido</fullName>
+                <default>false</default>
+                <label>Fallecido</label>
+            </value>
+            <value>
+                <fullName>Hace un donativo por la web</fullName>
+                <default>false</default>
+                <label>Hace un donativo por la web</label>
+            </value>
+            <value>
+                <fullName>Hará donativo/socio por otro canal</fullName>
+                <default>false</default>
+                <label>Hará donativo/socio por otro canal</label>
+            </value>
+            <value>
+                <fullName>Ilocalizable. Superados los intentos</fullName>
+                <default>false</default>
+                <label>Ilocalizable. Superados los intentos</label>
+            </value>
+            <value>
+                <fullName>Impago por error bancario sigue siendo socio</fullName>
+                <default>false</default>
+                <label>Impago por error bancario sigue siendo socio</label>
+            </value>
+            <value>
+                <fullName>Llamará al SAS/ email/whatsapp para confirmar asistencia a evento</fullName>
+                <default>false</default>
+                <label>Llamará al SAS/ email/whatsapp para confirmar asistencia a evento</label>
+            </value>
+            <value>
+                <fullName>llocalizable en horario campaña</fullName>
+                <default>false</default>
+                <label>llocalizable en horario campaña</label>
+            </value>
+            <value>
+                <fullName>Menor de edad</fullName>
+                <default>false</default>
+                <label>Menor de edad</label>
+            </value>
+            <value>
+                <fullName>Mensaje en buzón de voz</fullName>
+                <default>false</default>
+                <label>Mensaje en buzón de voz</label>
+            </value>
+            <value>
+                <fullName>Motivos económicos</fullName>
+                <default>false</default>
+                <label>Motivos económicos</label>
+            </value>
+            <value>
+                <fullName>No confía en las ONGs</fullName>
+                <default>false</default>
+                <label>No confía en las ONGs</label>
+            </value>
+            <value>
+                <fullName>No contactado por límite de fecha</fullName>
+                <default>false</default>
+                <label>No contactado por límite de fecha</label>
+            </value>
+            <value>
+                <fullName>No da motivo</fullName>
+                <default>false</default>
+                <label>No da motivo</label>
+            </value>
+            <value>
+                <fullName>No deja argumentar</fullName>
+                <default>false</default>
+                <label>No deja argumentar</label>
+            </value>
+            <value>
+                <fullName>No le gusta que le pidan por teléfono</fullName>
+                <default>false</default>
+                <label>No le gusta que le pidan por teléfono</label>
+            </value>
+            <value>
+                <fullName>No le interesa esta forma de colaborar</fullName>
+                <default>false</default>
+                <label>No le interesa esta forma de colaborar</label>
+            </value>
+            <value>
+                <fullName>No le interesa venir a eventos</fullName>
+                <default>false</default>
+                <label>No le interesa venir a eventos</label>
+            </value>
+            <value>
+                <fullName>No le va bien por fechas. Seguir invitando</fullName>
+                <default>false</default>
+                <label>No le va bien por fechas. Seguir invitando</label>
+            </value>
+            <value>
+                <fullName>No llamar más</fullName>
+                <default>false</default>
+                <label>No llamar más</label>
+            </value>
+            <value>
+                <fullName>No paga. No desea seguir colaborando. Negación Antes del Argumentario</fullName>
+                <default>false</default>
+                <label>No paga. No desea seguir colaborando. Negación Antes del Argumentario</label>
+            </value>
+            <value>
+                <fullName>No paga. No desea seguir colaborando. Otras Razones</fullName>
+                <default>false</default>
+                <label>No paga. No desea seguir colaborando. Otras Razones</label>
+            </value>
+            <value>
+                <fullName>No paga. No desea seguir colaborando. Razones personales</fullName>
+                <default>false</default>
+                <label>No paga. No desea seguir colaborando. Razones personales</label>
+            </value>
+            <value>
+                <fullName>No paga. No desea seguir colaborando.Ya colabora con otra ONG</fullName>
+                <default>false</default>
+                <label>No paga. No desea seguir colaborando.Ya colabora con otra ONG</label>
+            </value>
+            <value>
+                <fullName>No paga impago. Motivos económicos</fullName>
+                <default>false</default>
+                <label>No paga impago. Motivos económicos</label>
+            </value>
+            <value>
+                <fullName>No paga impago de donativo</fullName>
+                <default>false</default>
+                <label>No paga impago de donativo</label>
+            </value>
+            <value>
+                <fullName>No paga impago y modifica cuota</fullName>
+                <default>false</default>
+                <label>No paga impago y modifica cuota</label>
+            </value>
+            <value>
+                <fullName>No puede asistir a eventos</fullName>
+                <default>false</default>
+                <label>No puede asistir a eventos</label>
+            </value>
+            <value>
+                <fullName>No puede atender llamadas</fullName>
+                <default>false</default>
+                <label>No puede atender llamadas</label>
+            </value>
+            <value>
+                <fullName>Paga cuota imagada (total o parcial) y continua colaborando</fullName>
+                <default>false</default>
+                <label>Paga cuota imagada (total o parcial) y continua colaborando</label>
+            </value>
+            <value>
+                <fullName>Paga cuota impagada  (total o parcial) y modifica cuota</fullName>
+                <default>false</default>
+                <label>Paga cuota impagada  (total o parcial) y modifica cuota</label>
+            </value>
+            <value>
+                <fullName>Paga cuota impagada  (total o parcial) y se de de baja</fullName>
+                <default>false</default>
+                <label>Paga cuota impagada  (total o parcial) y se de de baja</label>
+            </value>
+            <value>
+                <fullName>Paga donativo impagado</fullName>
+                <default>false</default>
+                <label>Paga donativo impagado</label>
+            </value>
+            <value>
+                <fullName>Queja a MSF (queja específica)</fullName>
+                <default>false</default>
+                <label>Queja a MSF (queja específica)</label>
+            </value>
+            <value>
+                <fullName>Queja específica a MSF</fullName>
+                <default>false</default>
+                <label>Queja específica a MSF</label>
+            </value>
+            <value>
+                <fullName>Reconfirma asistencia al evento</fullName>
+                <default>false</default>
+                <label>Reconfirma asistencia al evento</label>
+            </value>
+            <value>
+                <fullName>Registro sin teléfono válido</fullName>
+                <default>false</default>
+                <label>Registro sin teléfono válido</label>
+            </value>
+            <value>
+                <fullName>Se hace socio por la web</fullName>
+                <default>false</default>
+                <label>Se hace socio por la web</label>
+            </value>
+            <value>
+                <fullName>Se pensará si va al evento</fullName>
+                <default>false</default>
+                <label>Se pensará si va al evento</label>
+            </value>
+            <value>
+                <fullName>Se registrará al evento por plataforma</fullName>
+                <default>false</default>
+                <label>Se registrará al evento por plataforma</label>
+            </value>
+            <value>
+                <fullName>Solicita cupón</fullName>
+                <default>false</default>
+                <label>Solicita cupón</label>
+            </value>
+            <value>
+                <fullName>Solo agradecimiento, no se hace petición</fullName>
+                <default>false</default>
+                <label>Solo agradecimiento, no se hace petición</label>
+            </value>
+            <value>
+                <fullName>Solucionado impago SMS/ email</fullName>
+                <default>false</default>
+                <label>Solucionado impago SMS/ email</label>
+            </value>
+            <value>
+                <fullName>Solucionará impago mediante SAS/Cupón/Web/Transferencia</fullName>
+                <default>false</default>
+                <label>Solucionará impago mediante SAS/Cupón/Web/Transferencia</label>
+            </value>
+            <value>
+                <fullName>Vive demasiado lejos del evento</fullName>
+                <default>false</default>
+                <label>Vive demasiado lejos del evento</label>
+            </value>
+            <value>
+                <fullName>Ya colabora con otras ONGs</fullName>
+                <default>false</default>
+                <label>Ya colabora con otras ONGs</label>
+            </value>
+            <value>
+                <fullName>Ya es socio</fullName>
+                <default>false</default>
+                <label>Ya es socio</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>Duplicado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>Fallecido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>Ilocalizable. Superados los intentos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>llocalizable en horario campaña</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>Menor de edad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>Mensaje en buzón de voz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>No contactado por límite de fecha</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>No deja argumentar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>No llamar más</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <controllingFieldValue>Descargada</controllingFieldValue>
+            <valueName>No paga impago. Motivos económicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <controllingFieldValue>Descargada</controllingFieldValue>
+            <valueName>No puede asistir a eventos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>No puede atender llamadas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No util</controllingFieldValue>
+            <valueName>Registro sin teléfono válido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Aumento de cuota/donativo reciente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Baja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Baja temporal/situación economica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Baja temporal/vivir fuera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Comunica no asistencia en llamada de confirmación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Cree que ya aporta suficiente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Disgustado con MSF (en general)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Disminución de cuota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Dona a través del cónyuge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Donativo reciente a otras ONGs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>El donativo anterior fue extraordinario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Motivos económicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No da motivo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No le gusta que le pidan por teléfono</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No le interesa esta forma de colaborar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No le interesa venir a eventos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No le va bien por fechas. Seguir invitando</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No paga. No desea seguir colaborando. Negación Antes del Argumentario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No paga. No desea seguir colaborando. Otras Razones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No paga. No desea seguir colaborando. Razones personales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No paga. No desea seguir colaborando.Ya colabora con otra ONG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>No paga impago de donativo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Queja a MSF (queja específica)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Queja específica a MSF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Solo agradecimiento, no se hace petición</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Vive demasiado lejos del evento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Ya colabora con otras ONGs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negativo</controllingFieldValue>
+            <valueName>Ya es socio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Argumentada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Aumentará cuota por otro canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Baja definitiva. Hará donativos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Enviará cupon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Enviar un email con la información.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Hará donativo/socio por otro canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Llamará al SAS/ email/whatsapp para confirmar asistencia a evento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Se pensará si va al evento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Se registrará al evento por plataforma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Solicita cupón</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Solucionado impago SMS/ email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Potencial</controllingFieldValue>
+            <valueName>Solucionará impago mediante SAS/Cupón/Web/Transferencia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Agradecimiento realizado.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Alta socio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Asistirá al evento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Aumento de cuota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Donativo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Donativo otros canales no web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Donativo y Aumento de cuota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Error en la frecuencia/importe. Sigue siendo socio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Hace un donativo por la web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Impago por error bancario sigue siendo socio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>No paga impago y modifica cuota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Paga cuota imagada (total o parcial) y continua colaborando</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Paga cuota impagada  (total o parcial) y modifica cuota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Paga cuota impagada  (total o parcial) y se de de baja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Paga donativo impagado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Reconfirma asistencia al evento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Positivo</controllingFieldValue>
+            <valueName>Se hace socio por la web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Descargada</controllingFieldValue>
+            <valueName>Cerrada colaboración por otro canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Descargada</controllingFieldValue>
+            <valueName>Eliminado por petición MSF</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

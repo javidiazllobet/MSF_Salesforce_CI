@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__Run_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date when payment schedule is run.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>¿Cuándo debe ejecutarse este pago?</inlineHelpText>
+    <label>Run Date</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

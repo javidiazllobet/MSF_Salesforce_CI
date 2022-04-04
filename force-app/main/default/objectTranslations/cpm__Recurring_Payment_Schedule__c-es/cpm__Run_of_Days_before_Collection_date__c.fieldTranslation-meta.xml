@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Se usa para calcular la fecha de ejecución. La fecha de cobro se calcula primero y luego este campo se utiliza para determinar la fecha de ejecución. Si se adjunta un registro de Horario comercial, se restarán los días hábiles.</help>
+    <label></label>
+    <name>cpm__Run_of_Days_before_Collection_date__c</name>
+</CustomFieldTranslation>

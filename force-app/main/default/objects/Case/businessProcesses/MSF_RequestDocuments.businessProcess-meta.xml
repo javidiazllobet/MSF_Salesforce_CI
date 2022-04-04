@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_RequestDocuments</fullName>
+    <description>Petición de Documentos</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Abierto</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Cancelado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cierre</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contacto no contactable %28no contesta%2C ilocalizable%2C %E2%80%A6%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Documento Enviado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>No se puede enviar este documento</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Remitido</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

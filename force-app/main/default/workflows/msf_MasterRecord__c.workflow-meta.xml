@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>msf_Primary_Key_Master_Object_control</fullName>
+        <field>msf_Control__c</field>
+        <formula>msf_FamilyId__c +  msf_RecordId__c</formula>
+        <name>MSF Primary Key Master Object control</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>MSF Primary Key Master Object</fullName>
+        <actions>
+            <name>msf_Primary_Key_Master_Object_control</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Concatena campos id familia e id registro para generar una clave única en el objeto Maestro</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

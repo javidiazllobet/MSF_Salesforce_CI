@@ -1,0 +1,6 @@
+*****2019-09-05 11:41:14.489|LOG STARTED
+*****2019-09-05 11:41:14.489|PROCESS|SecureSettingsManager
+*****2019-09-05 11:41:14.505|EXCEPTION|Failed to Post Tokens Failed to Save Tokens. Status: Unauthorized Status_Code: 401 Response: [{"message":"This session is not valid for use with the REST API","errorCode":"INVALID_SESSION_ID"}]
+*****2019-09-05 11:41:15.68|HTTP CALLOUT|FireJourneyBuilderEvent
+*****2019-09-05 11:41:15.75|HTTP REQUEST|https://mc1y-wkc1v5zz50tdvb4pknn72q4.rest.marketingcloudapis.com/interaction-experimental/v1/batchcontactevents {"EventDefinitionKey":"SalesforceObjdc0e05a978bb04ef2529bb0b34e7042d","ContactPersonType":"Contact","EventType":null,"CallerSystemName":"Salesforce","BatchId":"","RecordCount":1,"CalloutTimeStamp":"5/09/2019 11:41","BatchDetails":[{"ContactKey":"0030O00002nNvdsQAC","Data":{"Contact:Id":"0030O00002nNvdsQAC","Contact:Email":"aaguadoalmandoz@yahoo.es","Contact:MobilePhone":"654450027","Contact:HasOptedOutOfEmail":false,"MemberRecordType":"Contact"}}]}
+*****2019-09-05 11:41:15.81|HTTP RESPONSE|"394ec94d-e0b8-4044-a9ac-5f6c1871022f"

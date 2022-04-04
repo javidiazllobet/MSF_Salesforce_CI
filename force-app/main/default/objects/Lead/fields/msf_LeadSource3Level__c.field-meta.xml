@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_LeadSource3Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal de entrada 3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>MSF_LeadSource3</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__Monthly_Collection_Day_Strategy__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Estrategia utilizada para calcular el día de cobro. Estrategias disponibles: -Día del mes: se usará el día del mes especificado en el campo Día de cobro selectiva del mes. -Primer lunes: primer lunes de este mes -Último viernes: último viernes de este mes</inlineHelpText>
+    <label>Monthly Collection Day Strategy</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Day of Month</fullName>
+                <default>false</default>
+                <label>Day of Month</label>
+            </value>
+            <value>
+                <fullName>First Monday</fullName>
+                <default>false</default>
+                <label>First Monday</label>
+            </value>
+            <value>
+                <fullName>Last Friday</fullName>
+                <default>false</default>
+                <label>Last Friday</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

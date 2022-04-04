@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_FinalCampaign_IsOnline</fullName>
+    <active>true</active>
+    <description>msf_IsOnline__c : Campo obligatorio para campañas finales.</description>
+    <errorConditionFormula>IF(RecordType.DeveloperName != &quot;Associative&quot; &amp;&amp; RecordType.DeveloperName != &quot;Volunteers_Campaign&quot; &amp;&amp; msf_FinalCampaign__c = TRUE &amp;&amp; ISBLANK(TEXT(msf_IsOnline__c)), true, false)</errorConditionFormula>
+    <errorDisplayField>msf_IsOnline__c</errorDisplayField>
+    <errorMessage>Campo obligatorio para campañas finales. Es online</errorMessage>
+</ValidationRule>

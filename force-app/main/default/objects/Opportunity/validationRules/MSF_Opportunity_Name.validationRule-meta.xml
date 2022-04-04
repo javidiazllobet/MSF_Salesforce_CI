@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Opportunity_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>!REGEX(Name, &quot;[a-zA-Z0-9\\s,/?:&apos;()+.-]+&quot;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>El nombre de la oportunidad contiene caracteres no permitidos.</errorMessage>
+</ValidationRule>

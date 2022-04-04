@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modelos_182_Lanzados</fullName>
+    <columns>NAME</columns>
+    <columns>msf_Anyo_fiscal__c</columns>
+    <columns>msf_Comentarios__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>msf_Inicio_generacion__c</columns>
+    <columns>msf_Fin_generacion__c</columns>
+    <columns>msf_Justificante__c</columns>
+    <columns>msf_Registros__c</columns>
+    <columns>msf_Resultado__c</columns>
+    <columns>msf_Total__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Modelos 182 Lanzados</label>
+    <sharedTo>
+        <roleAndSubordinates>MSF</roleAndSubordinates>
+    </sharedTo>
+</ListView>

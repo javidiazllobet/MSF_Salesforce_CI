@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Estrategia utilizada para calcular el día de cobro. Estrategias disponibles: -Día del mes: se usará el día del mes especificado en el campo Día de cobro selectiva del mes. -Primer lunes: primer lunes de este mes -Último viernes: último viernes de este mes</help>
+    <label></label>
+    <name>cpm__Monthly_Collection_Day_Strategy__c</name>
+    <picklistValues>
+        <masterLabel>Day of Month</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Monday</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last Friday</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

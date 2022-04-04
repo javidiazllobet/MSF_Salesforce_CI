@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nueve_digitos_y_empieza_ocho_o_nueve_fs</fullName>
+    <active>true</active>
+    <description>Comienza por 8 o 9. Tamaño 9 dígitos. Campo Fijo Secundario (OtherPhone)</description>
+    <errorConditionFormula>AND( 
+!(ISBLANK(OtherPhone)), 
+!REGEX(OtherPhone,&quot;[8-9]{1}[0-9]{8}&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>OtherPhone</errorDisplayField>
+    <errorMessage>El campo debe tener 9 dígitos y comenzar por 8 o 9.</errorMessage>
+</ValidationRule>

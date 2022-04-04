@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__GiftBatch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This flag is set during batch creation to use the gift entry batch feature.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Este lote se utilizará con la entrada de regalos en lote. Los lotes se marcan automáticamente como lotes de regalos cuando se configuran a través de la ficha Entrada de regalo en lote. El cambio manual de este campo podría tener consecuencias inesperadas.</inlineHelpText>
+    <label>Gift Batch</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

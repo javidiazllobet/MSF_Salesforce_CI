@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_BehavioralSegmentMASSDesc__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(TEXT(msf_BehavioralSegmentMASS__c) == &quot;MASS1&quot;, $Label.MSF_F_FIELDS_CONTACT_MASS1,
+if(TEXT(msf_BehavioralSegmentMASS__c) == &quot;MASS2&quot;, $Label.MSF_F_FIELDS_CONTACT_MASS2,
+if(TEXT(msf_BehavioralSegmentMASS__c) == &quot;MASS3&quot;, $Label.MSF_F_FIELDS_CONTACT_MASS3,
+if(TEXT(msf_BehavioralSegmentMASS__c) == &quot;MASS4&quot;, $Label.MSF_F_FIELDS_CONTACT_MASS4,
+if(TEXT(msf_BehavioralSegmentMASS__c) == &quot;MASS5&quot;, $Label.MSF_F_FIELDS_CONTACT_MASS5,
+if(TEXT(msf_BehavioralSegmentMASS__c) == &quot;MASS6&quot;, $Label.MSF_F_FIELDS_CONTACT_MASS6,
+&quot;&quot;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cluster MASS desc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

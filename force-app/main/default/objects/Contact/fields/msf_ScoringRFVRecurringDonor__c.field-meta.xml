@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ScoringRFVRecurringDonor__c</fullName>
+    <externalId>false</externalId>
+    <formula>msf_RecencyRecurringDonorScore__c * 0.2 + msf_PermanenceRecurringDonorScore__c * 0.3 + msf_ValueRecurringDonorScore__c * 0.5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Scoring RFV de socio</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

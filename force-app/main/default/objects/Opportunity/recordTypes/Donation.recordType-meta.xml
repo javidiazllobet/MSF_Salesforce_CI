@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donation</fullName>
+    <active>true</active>
+    <businessProcess>Donation</businessProcess>
+    <compactLayoutAssignment>MSF_Donation_Compact_Layout</compactLayoutAssignment>
+    <description>Donation Received</description>
+    <label>Donation</label>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Cloud page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correo postal sin cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Director%2Fa General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Presidente%2Fa MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Bodas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Empresas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Iniciativas Solidarias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a One to one</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a officers Mid Donors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email herencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persona a persona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal con tablet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plataforma iniciativas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Herencias y Legados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Officers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web MSF Mi perfil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web terceros</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Employee or client Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One off Donation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Recovered Quota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS Donor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solidarity Wedding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solidarity initiative</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_CurrentLeadSource1__c</picklist>
+        <values>
+            <fullName>Cloud page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correo postal sin cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Director%2Fa General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Presidente%2Fa MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Bodas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Empresas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Iniciativas Solidarias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a One to one</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a officers Mid Donors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email herencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persona a persona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal con tablet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plataforma iniciativas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Herencias y Legados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Officers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web MSF Mi perfil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web terceros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Fa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_CurrentLeadSource2__c</picklist>
+        <values>
+            <fullName>Correo postal sin cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formulario web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persona a persona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Herencias y Legados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfonos Officers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfonos SAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_CurrentLeadSource3__c</picklist>
+        <values>
+            <fullName>Correo postal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_LeadSource2Level__c</picklist>
+        <values>
+            <fullName>Correo postal sin cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formulario web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persona a persona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Herencias y Legados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfonos Officers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfonos SAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_LeadSource3Level__c</picklist>
+        <values>
+            <fullName>Correo postal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_ProactiveDonor__c</picklist>
+        <values>
+            <fullName>Proactivo donante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propuesta MSF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Rating__c</picklist>
+        <values>
+            <fullName>Caliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Templado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_ReasonLoss__c</picklist>
+        <values>
+            <fullName>Marketing con causa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No encaja en sus tiempos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No encaja propuesta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otras causas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Por código ético</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_RecurringPeriod__c</picklist>
+        <values>
+            <fullName>Bimensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semestral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_TypeEmployeesCustomers__c</picklist>
+        <values>
+            <fullName>Clientes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empleados</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Member_Level__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Membership_Origin__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reacquire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__systemHouseholdContactRoleProcessor__c</picklist>
+        <values>
+            <fullName>All Opportunities</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No Opportunities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp4hub__Payment_Method__c</picklist>
+        <values>
+            <fullName>ACMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUENTA ABOGADO%2FCUENTA PUENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CreditCard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Debit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFECTIVO ASOCIATIVO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFECTIVO RECEPCIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFECTIVO S%2EC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EN ESPECIE-INMOVILIZADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EN ESPECIE-SERVICIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACEBOOK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIRO POSTAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIRO POSTAL RECEPCIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRANT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HERENCIAS Y LEGADOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INICIATIVA SOLIDARIA ONLINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGARÉS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAYPAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TALÓN BANCARIO ESTÁNDAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TALÓN NO ESTÁNDAR EN EUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TALÓN NO ESTÁNDAR EXTRANJERO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC ONLINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSFERENCIA BANCARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRUSTLY - TR ONLINE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp4hub__Payment_Processor__c</picklist>
+        <values>
+            <fullName>PaymentHub-Redsys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PaymentHub-SEPA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp4hub__Target__c</picklist>
+        <values>
+            <fullName>ABANCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BANC SABADELL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BANCO SANTANDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BANCO SANTANDER BIZUM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BANCO SANTANDER EMERGENCIAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BANKIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBVA BCN GENERAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAIXABANK DONATIVOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAIXABANK FUSION BANKIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAIXABANK INTERNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUENTA CUADRE-PROVISIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUENTA DOLARES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KUTXABANK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA CAIXA CCC OPERATIVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIBERBANK %28CAJASTUR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRIODOS BANK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNICAJA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp__Acknowledgment_Status__c</picklist>
+        <values>
+            <fullName>Acknowledged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Acknowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Acknowledgment Not Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Acknowledgment Now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Acknowledged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp__In_Kind_Type__c</picklist>
+        <values>
+            <fullName>Inmovilizado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp__Tribute_Type__c</picklist>
+        <values>
+            <fullName>Honor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_InstallmentPeriod__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(msf_RecurringPeriod__c),
+&quot;Yearly&quot;,$Label.MSF_F_FIELDS_PERIOD_YEARLY,
+&quot;Semestral&quot;,$Label.MSF_F_FIELDS_PERIOD_BIANNUAL,
+&quot;Bimensual&quot;,$Label.MSF_F_FIELDS_PERIOD_BIMONTHLY,
+&quot;Quarterly&quot;,$Label.MSF_F_FIELDS_PERIOD_QUARTERLY,
+&quot;Monthly&quot;,$Label.MSF_F_FIELDS_PERIOD_MONTHLY,
+&quot;&quot;,	IF(NOT ISPICKVAL((msf_CurrentQuotaModification__r.msf_NewRecurringPeriod__c),&quot;&quot;), 
+		CASE(TEXT(msf_CurrentQuotaModification__r.msf_NewRecurringPeriod__c),
+		&quot;Yearly&quot;,$Label.MSF_F_FIELDS_PERIOD_YEARLY,
+		&quot;Semestral&quot;,$Label.MSF_F_FIELDS_PERIOD_BIANNUAL,
+		&quot;Bimensual&quot;,$Label.MSF_F_FIELDS_PERIOD_BIMONTHLY,
+		&quot;Quarterly&quot;,$Label.MSF_F_FIELDS_PERIOD_QUARTERLY,
+		&quot;Monthly&quot;,$Label.MSF_F_FIELDS_PERIOD_MONTHLY,
+		&quot;&quot;,$Label.MSF_F_FIELDS_PERIOD_ONEOFF,
+		TEXT(msf_CurrentQuotaModification__r.msf_NewRecurringPeriod__c))
+		,
+		CASE(TEXT(npe03__Recurring_Donation__r.npe03__Installment_Period__c),
+		&quot;Yearly&quot;,$Label.MSF_F_FIELDS_PERIOD_YEARLY,
+		&quot;Semestral&quot;,$Label.MSF_F_FIELDS_PERIOD_BIANNUAL,
+		&quot;Bimensual&quot;,$Label.MSF_F_FIELDS_PERIOD_BIMONTHLY,
+		&quot;Quarterly&quot;,$Label.MSF_F_FIELDS_PERIOD_QUARTERLY,
+		&quot;Monthly&quot;,$Label.MSF_F_FIELDS_PERIOD_MONTHLY,
+		&quot;&quot;,$Label.MSF_F_FIELDS_PERIOD_ONEOFF,
+		TEXT(npe03__Recurring_Donation__r.npe03__Installment_Period__c))
+		)
+	,
+TEXT(msf_RecurringPeriod__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Periodicidad</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

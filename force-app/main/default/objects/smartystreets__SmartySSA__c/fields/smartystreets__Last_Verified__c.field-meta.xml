@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__Last_Verified__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Field which tracks the last time an address was verified.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field which tracks the last time an address was verified.</inlineHelpText>
+    <label>Last Verified</label>
+    <length>128</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

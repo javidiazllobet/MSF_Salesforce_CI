@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_OrganizationType</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(TEXT(msf_OrganizationType__c)) &amp;&amp;  RecordType.DeveloperName = &apos;Organization&apos;</errorConditionFormula>
+    <errorDisplayField>msf_OrganizationType__c</errorDisplayField>
+    <errorMessage>El campo es obligatorio para una organización.</errorMessage>
+</ValidationRule>

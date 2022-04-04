@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ejercicio_posible</fullName>
+    <active>true</active>
+    <description>Sólo debe permitir seleccionar el año actual o el anterior</description>
+    <errorConditionFormula>AND(msf_Anyo_fiscal__c &lt;&gt; TEXT(YEAR( TODAY())-1), msf_Anyo_fiscal__c &lt;&gt; TEXT(YEAR(TODAY())))</errorConditionFormula>
+    <errorDisplayField>msf_Anyo_fiscal__c</errorDisplayField>
+    <errorMessage>Año fiscal no válido. Sólo se admite el año actual y el anterior.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignId</fullName>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>No es posible seleccionar una campaña de Voluntarios.</errorMessage>
+        <filterItems>
+            <field>Campaign.RecordType.DeveloperName</field>
+            <operation>notEqual</operation>
+            <value>Volunteers_Campaign</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Phone__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(!ISBLANK(MobilePhone),MobilePhone,    
+    IF(!ISBLANK(msf_MobilePhone2__c),msf_MobilePhone2__c, 
+        IF(!ISBLANK(HomePhone),HomePhone, 
+              IF(!ISBLANK(OtherPhone),OtherPhone, null) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Teléfono principal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

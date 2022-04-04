@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__Large_Object_Option__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is for the functionality when there is &gt;200000 record and we can&apos;t fetch it in trigger ,so we created same thing in batch and this will run in batch if this is true</description>
+    <externalId>false</externalId>
+    <label>Large Object Option</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

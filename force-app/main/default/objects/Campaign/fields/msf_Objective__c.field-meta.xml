@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Objective__c</fullName>
+    <externalId>false</externalId>
+    <label>Objetivo principal</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Captación de leads</fullName>
+                <default>false</default>
+                <label>Captación de leads</label>
+            </value>
+            <value>
+                <fullName>Captación de socios o donantes</fullName>
+                <default>false</default>
+                <label>Captación de socios o donantes</label>
+            </value>
+            <value>
+                <fullName>Conversión (de lead o donante a asociado)</fullName>
+                <default>false</default>
+                <label>Conversión (de lead o donante a asociado)</label>
+            </value>
+            <value>
+                <fullName>Conversión (de lead o donante a socio)</fullName>
+                <default>false</default>
+                <label>Conversión (de lead o donante a socio)</label>
+            </value>
+            <value>
+                <fullName>Cultivación</fullName>
+                <default>false</default>
+                <label>Cultivación</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Informativo</fullName>
+                <default>false</default>
+                <label>Informativo</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Petición difusión</fullName>
+                <default>false</default>
+                <label>Petición difusión</label>
+            </value>
+            <value>
+                <fullName>Recuperación</fullName>
+                <default>false</default>
+                <label>Recuperación</label>
+            </value>
+            <value>
+                <fullName>Rendición de cuentas</fullName>
+                <default>false</default>
+                <label>Rendición de cuentas</label>
+            </value>
+            <value>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+                <label>Upgrade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

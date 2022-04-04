@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_CentralizeSends__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>check para que cada miembro pueda recibir una revista</description>
+    <externalId>false</externalId>
+    <label>Centralizar envíos</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

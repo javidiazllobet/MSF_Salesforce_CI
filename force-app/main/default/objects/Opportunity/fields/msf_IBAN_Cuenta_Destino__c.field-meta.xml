@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IBAN_Cuenta_Destino__c</fullName>
+    <description>Muestra el IBAN de la Cuenta de Destino seleccionada</description>
+    <externalId>false</externalId>
+    <formula>case (npsp4hub__Target__c,
+&apos;ABANCA&apos;,&apos;ES1820800769753040000478&apos;,
+&apos;BANC SABADELL&apos;,&apos;ES7200810052000004400044&apos;,
+&apos;BANCO SANTANDER&apos;,&apos;ES3100491806952811869099&apos;,
+&apos;BANCO SANTANDER BIZUM&apos;,&apos;ES4700491806912112125557&apos;,
+&apos;BANCO SANTANDER EMERGENCIAS&apos;,&apos;ES8300490001532110099996&apos;,
+&apos;BANKIA&apos;,&apos;ES2420380603296005700064&apos;,
+&apos;BBVA BCN GENERAL&apos;,&apos;ES0901826035490000748708&apos;,
+&apos;CAIXABANK DONATIVOS&apos;,&apos;ES5721003063992200110010&apos;,
+&apos;CAIXABANK FUSION BANKIA&apos;,&apos;ES3621002865591301398915&apos;,
+&apos;CAIXABANK INTERNA&apos;,&apos;ES8121003063902200242424&apos;,
+&apos;CUENTA CUADRE-PROVISIONES&apos;,&apos;ES46 1111 1111 30 1111111111&apos;,
+&apos;CUENTA DOLARES&apos;,&apos;ES75 2100 3063 94 7200302985&apos;,
+&apos;KUTXABANK&apos;,&apos;ES5620955523209105878176&apos;,
+&apos;LA CAIXA CCC OPERATIVA&apos;,&apos;ES7421003063952200440088&apos;,
+&apos;LIBERBANK (CAJASTUR)&apos;,&apos;ES8320480000273400106773&apos;,
+&apos;TRIODOS BANK&apos;,&apos;ES5314910001281008158220&apos;,
+&apos;UNICAJA&apos;,&apos;ES0921032034250030003000&apos;,&apos;No se encuentra la Cuentra Destino seleccionada(contacte con su Administrador)&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Muestra el IBAN de la Cuenta de Destino seleccionada</inlineHelpText>
+    <label>IBAN Cuenta Destino</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

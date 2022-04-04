@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_LegacyOpportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Oportunidad de la herencia</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Oportunidad de la herencia</inlineHelpText>
+    <label>Oportunidad de la herencia</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>El valor no existe o no coincide con una oportunidad de herencia</errorMessage>
+        <filterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Legacy</value>
+        </filterItems>
+        <filterItems>
+            <field>Opportunity.Type</field>
+            <operation>equals</operation>
+            <value>Herencia</value>
+        </filterItems>
+        <filterItems>
+            <field>Opportunity.Id</field>
+            <operation>notEqual</operation>
+            <valueField>$Source.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Oportunidades de pago de la herencia</relationshipLabel>
+    <relationshipName>OportunidadesHerencias</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

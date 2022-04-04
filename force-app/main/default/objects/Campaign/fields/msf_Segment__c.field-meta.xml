@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Segmento</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One to One</fullName>
+                <default>false</default>
+                <label>One to One</label>
+            </value>
+            <value>
+                <fullName>Frio individuos</fullName>
+                <default>false</default>
+                <label>Frio individuos</label>
+            </value>
+            <value>
+                <fullName>Organizaciones</fullName>
+                <default>false</default>
+                <label>Organizaciones</label>
+            </value>
+            <value>
+                <fullName>Celebraciones</fullName>
+                <default>false</default>
+                <label>Celebraciones</label>
+            </value>
+            <value>
+                <fullName>Mass donors</fullName>
+                <default>false</default>
+                <label>Mass donors</label>
+            </value>
+            <value>
+                <fullName>Mid donors</fullName>
+                <default>false</default>
+                <label>Mid donors</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Leads</fullName>
+                <default>false</default>
+                <label>Leads</label>
+            </value>
+            <value>
+                <fullName>OCBA All</fullName>
+                <default>false</default>
+                <label>OCBA All</label>
+            </value>
+            <value>
+                <fullName>Asociados</fullName>
+                <default>false</default>
+                <label>Asociados</label>
+            </value>
+            <value>
+                <fullName>Asociados España</fullName>
+                <default>false</default>
+                <label>Asociados España</label>
+            </value>
+            <value>
+                <fullName>Sanitarios</fullName>
+                <default>false</default>
+                <label>Sanitarios</label>
+            </value>
+            <value>
+                <fullName>Terreno</fullName>
+                <default>false</default>
+                <label>Terreno</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Testamentarios</fullName>
+                <default>false</default>
+                <label>Testamentarios</label>
+            </value>
+            <value>
+                <fullName>Mid+ donors</fullName>
+                <default>false</default>
+                <label>Mid+ donors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

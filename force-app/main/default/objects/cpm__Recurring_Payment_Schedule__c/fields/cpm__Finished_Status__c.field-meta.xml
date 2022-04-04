@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__Finished_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Se usa directamente, sin ningún cambio o procesamiento, en el campo Estado finalizado de los registros de Programación de cobros generados. Consulte la documentación del Programa de cobros para obtener más ayuda en este campo.</inlineHelpText>
+    <label>Finished Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-- Provided by Sys Admin --</fullName>
+                <default>false</default>
+                <label>-- Provided by Sys Admin --</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_CampaignEntryReporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(msf_OwnBy__c), 
+					&apos;Captación&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;TLMK&apos;, Case(TEXT(msf_PreviousStepChannel__c), 
+																																				&apos;SMS TV&apos;, &apos;13-DRTIV&apos;,
+																																				&apos;TLMK&apos;, &apos;15-Tlmk rellamada&apos;,
+																																				&apos;SMS Opis&apos;, &apos;16-Tlmk resto&apos;,
+																																				&apos;SMS Push&apos;, &apos;16-Tlmk resto&apos;,
+																																				&apos;&apos;, &apos;14-Tlmk frío&apos;,
+																																			&apos;41-Resto&apos;), 
+																							&apos;F2F&apos;, Case(TEXT(msf_Attribute_1__c), 
+																																			&apos;F2F interno&apos;, &apos;11-F2F interno&apos;, 
+																																			&apos;F2F externo&apos;, &apos;12-F2F externo&apos;, 
+																																			&apos;41-Resto&apos;),
+                                                                                            &apos;D2D&apos;, &apos;11-F2F interno&apos;,
+																							&apos;17-Captación off resto&apos;) , 
+					&apos;Digital&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;Desconocido&apos;, IF(AND(TEXT(msf_IsOnline__c) =&apos;Si&apos;, msf_FreeText__c =&apos;Paid&apos;), &apos;24-Desconocido on - branded&apos;, &apos;41-Resto&apos;),
+																							&apos;TLMK&apos;, &apos;21-Digital leads (email/tlmk)&apos;,
+																					  &apos;Emailings&apos;, &apos;21-Digital leads (email/tlmk)&apos;,
+																					  &apos;22-Digital publi&apos;),
+					&apos;Fidelización&apos;, CASE(TEXT(msf_OutboundChannel1__c), 
+																							&apos;TLMK&apos;, CASE(TEXT(msf_Objective__c), 
+																																				&apos;Recuperación&apos;, IF(ISPICKVAL(msf_Attribute_1__c, &apos;Impagos&apos;), &apos;36-Tlmk impagos&apos; , &apos;35-Tlmk reactivación bajas&apos;), 
+																																				 &apos;32-Tlmk conversión&apos;), 
+																							&apos;Mailing&apos;, &apos;31-Mailing revista memoria Fide&apos;,
+																							&apos;Emailings&apos;, &apos;33-Emailing fide&apos;,
+																							&apos;34-Fide resto&apos;),
+					IF(RecordType.Name = &apos;Default&apos;,
+								CASE(TEXT(msf_OutboundChannel1__c), 
+									    &apos;Desconocido&apos;, Case(TEXT(msf_IsOnline__c),
+															                &apos;Si&apos;, &apos;23-Desconocido on&apos;,
+															                &apos;18-Desconocido off&apos;),	
+													&apos;41-Resto&apos;),
+					   &apos;&apos;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reporting Alta</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

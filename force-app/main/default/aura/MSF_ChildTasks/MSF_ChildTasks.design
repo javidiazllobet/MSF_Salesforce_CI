@@ -1,0 +1,4 @@
+<design:component label="MSF_ChildTasks">
+    <design:attribute name="simpleViewMode" label="Simple view mode" description="Shows a simplified view of the table, showing limited data"/>
+    <design:attribute name="nrows" label="Number of rows" description="Define how many rows can be shown on the table" />
+</design:component>

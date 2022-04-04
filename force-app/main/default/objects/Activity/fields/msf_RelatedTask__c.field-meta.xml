@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_RelatedTask__c</fullName>
+    <description>Campo para hacer reports de Tareas Hijas;</description>
+    <externalId>false</externalId>
+    <formula>IF ( ISNULL(msf_ParentTaskId__c) || ISBLANK(msf_ParentTaskId__c) ,  LEFT(Id, 15), LEFT(msf_ParentTaskId__c, 15))</formula>
+    <label>Tarea Relacionada Report</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_OutboundChannel1__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal de salida 1</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Afiliación</fullName>
+                <default>false</default>
+                <label>Afiliación</label>
+            </value>
+            <value>
+                <fullName>Banners</fullName>
+                <default>false</default>
+                <label>Banners</label>
+            </value>
+            <value>
+                <fullName>Banners web</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Banners web</label>
+            </value>
+            <value>
+                <fullName>Celebraciones</fullName>
+                <default>false</default>
+                <label>Celebraciones</label>
+            </value>
+            <value>
+                <fullName>D2D</fullName>
+                <default>false</default>
+                <label>D2D</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Dipticos</fullName>
+                <default>false</default>
+                <label>Dipticos</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Emailings</fullName>
+                <default>false</default>
+                <label>Emailings</label>
+            </value>
+            <value>
+                <fullName>Encarte</fullName>
+                <default>false</default>
+                <label>Encarte</label>
+            </value>
+            <value>
+                <fullName>Espontaneos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Espontaneos</label>
+            </value>
+            <value>
+                <fullName>Eventos</fullName>
+                <default>false</default>
+                <label>Eventos</label>
+            </value>
+            <value>
+                <fullName>Exposiciones</fullName>
+                <default>false</default>
+                <label>Exposiciones</label>
+            </value>
+            <value>
+                <fullName>F2F</fullName>
+                <default>false</default>
+                <label>F2F</label>
+            </value>
+            <value>
+                <fullName>Impreso</fullName>
+                <default>false</default>
+                <label>Impreso</label>
+            </value>
+            <value>
+                <fullName>Iniciativa Solidaria</fullName>
+                <default>false</default>
+                <label>Iniciativa Solidaria</label>
+            </value>
+            <value>
+                <fullName>Mailing</fullName>
+                <default>false</default>
+                <label>Mailing</label>
+            </value>
+            <value>
+                <fullName>Mensajería Instantánea</fullName>
+                <default>false</default>
+                <label>Mensajería Instantánea</label>
+            </value>
+            <value>
+                <fullName>Officers</fullName>
+                <default>false</default>
+                <label>Officers</label>
+            </value>
+            <value>
+                <fullName>Orgánico</fullName>
+                <default>false</default>
+                <label>Orgánico</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+                <label>Paid Search</label>
+            </value>
+            <value>
+                <fullName>Pendiente digital</fullName>
+                <default>false</default>
+                <label>Pendiente digital</label>
+            </value>
+            <value>
+                <fullName>Prensa o cupón</fullName>
+                <default>false</default>
+                <label>Prensa o cupón</label>
+            </value>
+            <value>
+                <fullName>Publicidad digital</fullName>
+                <default>false</default>
+                <label>Publicidad digital</label>
+            </value>
+            <value>
+                <fullName>Publi Ext</fullName>
+                <default>false</default>
+                <label>Publi Ext</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Redes Sociales</fullName>
+                <default>false</default>
+                <label>Redes Sociales</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Spontaneous on (Landing) (U)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spontaneous on (Landing) (U)</label>
+            </value>
+            <value>
+                <fullName>Television</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Television</label>
+            </value>
+            <value>
+                <fullName>Televisión</fullName>
+                <default>false</default>
+                <label>Televisión</label>
+            </value>
+            <value>
+                <fullName>TLMK</fullName>
+                <default>false</default>
+                <label>TLMK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

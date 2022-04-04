@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_MotivoDePerdida</fullName>
+    <active>true</active>
+    <errorConditionFormula>IsClosed &amp;&amp; !IsWon &amp;&amp;  ISPICKVAL(StageName, &apos;Perdida o Rechazada&apos;) &amp;&amp; ISBLANK(TEXT(msf_ReasonLoss__c))</errorConditionFormula>
+    <errorDisplayField>msf_ReasonLoss__c</errorDisplayField>
+    <errorMessage>Para la etapa actual, es obligatorio indicar el motivo de la pérdida/rechazo.</errorMessage>
+</ValidationRule>

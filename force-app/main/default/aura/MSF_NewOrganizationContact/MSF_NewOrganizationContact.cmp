@@ -1,0 +1,94 @@
+<aura:component controller="MSF_NewOrganizationContact_CTRL" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="recordId" 		type="ID" 		/>
+    <aura:attribute name="spinner" 			type="Boolean"	default="FALSE"/>
+    <aura:attribute name="gender" 			type="List"		/>
+    <aura:attribute name="prfLang" 			type="List"		/>
+    <aura:attribute name="prfLanSelected" 	type="String"	/>
+    <aura:attribute name="leadSources" 		type="List"		/>
+    <aura:attribute name="selectedCampaign" type="sObject" 	default="{}" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:navigation aura:id="navService"/> 
+    
+    <div class="slds-modal slds-fade-in-open slds-modal_large slds-align_absolute-center">         
+        <div class="slds-modal__container overlapModal"> 
+            
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close" variant="bare" size="large" tabindex="-1" onclick="{!c.closeQuickAction}" disabled="{!v.spinner}" class="slds-modal__close slds-button_icon-inverse"/>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!$Label.c.MSF_NEW_ORG_CONTACT_HEADER}</h2>                
+            </header>
+            
+            <div class="slds-modal__content slds-p-around_medium slds-is-relative" >
+                <form aura:id="newOrgContact" >                    
+                    <div class="slds-grid slds-wrap slds-p-horizontal_small">                
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-bottom_xx-small">
+                            <lightning:input aura:id="name" type="text" label="{!$Label.c.MSF_NEW_ORG_CONTACT_NAME}" maxlength="40"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:input aura:id="surname1" type="text" label="{!$Label.c.MSF_NEW_ORG_CONTACT_SURNAME1}" maxlength="80" required="true" />
+                        </div>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">                    
+                            <lightning:input aura:id="surname2" type="text" label="{!$Label.c.MSF_NEW_ORG_CONTACT_SURNAME2}" maxlength="40" />                    
+                        </div>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:input aura:id="phone" type="tel" label="{!$Label.c.MSF_NEW_ORG_CONTACT_PHONE}" pattern="[8-9]{1}[0-9]{8}" maxlength="9"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">                    
+                            <lightning:input aura:id="mobile" type="tel" label="{!$Label.c.MSF_NEW_ORG_CONTACT_MOBILE}" pattern="[6-7]{1}[0-9]{8}" maxlength="9"/>                    
+                        </div> 
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:input aura:id="email" type="email" label="{!$Label.c.MSF_NEW_ORG_CONTACT_EMAIL}" maxlength="80"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:input aura:id="role" type="text" label="{!$Label.c.MSF_NEW_ORG_CONTACT_ROLE}" maxlength="128"/>
+                        </div>                       
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:select aura:id="gender" label="{!$Label.c.MSF_NEW_ORG_CONTACT_GENDER}">
+                                <option value="" >{!$Label.c.MSF_NEW_ORG_CONTACT_NONE_PICKLIST_LEADSOURCE}</option>
+                                <aura:iteration items="{!v.gender}" var="item">
+                                    <option value="{!item}" selected="{!item == v.genSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>                               
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:select aura:id="languagePrf" label="{!$Label.c.MSF_NEW_ORG_CONTACT_PRF_LANGUAGE}" value="{!v.prfLanSelected}">
+                                <aura:iteration items="{!v.prfLang}" var="item">
+                                    <option value="{!item}" selected="{!item == v.prfLanSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_xx-small">
+                            <lightning:select aura:id="leadSource" label="{!$Label.c.MSF_NEW_ORG_CONTACT_LEADSOURCE}" required="true">
+                                <option value="" >{!$Label.c.MSF_NEW_ORG_CONTACT_NONE_PICKLIST_LEADSOURCE}</option>
+                                <aura:iteration items="{!v.leadSources}" var="item">
+                                    <option value="{!item}" selected="{!item == v.lsSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>
+						<c:MSF_CustomLookUp aura:id="entryCampaign" label="{!$Label.c.MSF_NEW_ORG_CONTACT_ENTRYCAMPAIGN}" 
+                                            IconName="standard:campaign" required="true" objectAPIName="Campaign" 
+                                            Message="" filterActive="" secondFilter="msf_CRMExternalId__c"
+                                            selectedRecord="{!v.selectedCampaign}"
+                                            >
+                        
+                        </c:MSF_CustomLookUp>
+                        <div class="slds-col slds-form-element slds-size_1-of-1 slds-p-vertical_x-small">
+                            <lightning:input aura:id="maincontact" type="checkbox" label="{!$Label.c.MSF_NEW_ORG_CONTACT_PRIMARY}" />
+                        </div>
+                    </div>   
+                </form>
+                <aura:if isTrue="{!v.spinner}">
+                    <lightning:spinner alternativeText="Loading" />
+                </aura:if>  
+            </div>            
+            
+            <footer class="slds-modal__footer">      
+                <lightning:button aura:id="btnClose" variant="neutral" label="{!$Label.c.MSF_NEW_ORG_CONTACT_BUTTON_CLOSE}" onclick="{!c.closeQuickAction}" disabled="{!v.spinner}"/>  
+                <lightning:button aura:id="btnCreate" variant="brand" label="{!$Label.c.MSF_NEW_ORG_CONTACT_BUTTON_CREATE}" onclick="{!c.newOrganizationContact}" disabled="{!v.spinner}"/>
+            </footer>
+        </div>
+    </div>
+    
+</aura:component>

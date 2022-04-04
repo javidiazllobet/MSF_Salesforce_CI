@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe01_payments_made_c__c</fullName>
+    <description>npe01__payments_made__c</description>
+    <externalDeveloperName>npe01__payments_made__c</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>npe01__payments_made__c</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

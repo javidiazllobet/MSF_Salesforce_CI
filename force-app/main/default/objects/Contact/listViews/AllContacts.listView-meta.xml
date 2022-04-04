@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.LEAD_SOURCE</columns>
+    <columns>msf_EntryCampaign__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.PHONE1</field>
+        <operation>equals</operation>
+        <value>999999999</value>
+    </filters>
+    <label>Todos los Contactos</label>
+</ListView>

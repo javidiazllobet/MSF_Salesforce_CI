@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__County_FIPs_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The 5-digit number that uniquely identifies a county as described by the Office of Management and Budget of the U.S. Government.
+OPTIONAL (This is not used in verifying the address. It’s part of the returned information.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The 5-digit number that uniquely identifies a county as described by the Office of Management and Budget of the U.S. Government.
+OPTIONAL (This is not used in verifying the address. It’s part of the returned information.)</inlineHelpText>
+    <label>County FIPs Code</label>
+    <length>128</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

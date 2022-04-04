@@ -1,0 +1,153 @@
+<aura:component controller="MSF_OpportunitiesSoftCredit_CTRL" implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" access="global" >
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="simpleViewMode" type="Boolean" default="false" required="true" />
+    <aura:attribute name="pageReference" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    
+    <aura:attribute name="seeAllUrl" type="String"/>
+    <aura:attribute name="idToDelete" type="String" />
+    <aura:attribute name="recordName" type="String" />
+    <aura:attribute name="recordError" type="String" />
+    <aura:attribute name="sortedBy" type="String" />
+    
+    <aura:attribute name="totalElemCount" type="Integer" default="0"/>
+    <aura:attribute name="totalElem" type="String" default="0+"/>
+    <aura:attribute name="arrayPosToUpdate" type="Integer"/>
+    <aura:attribute name="titleWithoutTotalElem" type="String" default="{!$Label.c.MSF_OPP_S_CREDIT_TITLE}"/>
+    <aura:attribute name="title" type="String" default="{!v.titleWithoutTotalElem +' ('+v.totalElem+')'}"/>
+    <aura:attribute name="orderByName" type="String" default=""/>
+    <aura:attribute name="orderByMessage" type="String" default="{!$Label.c.MSF_OPP_S_CREDIT_NO_ORDER}"/>
+    
+    <aura:attribute name="sortedDirection" type="String" default=""/>
+    <aura:attribute name="isOpen" type="Boolean" default="false"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    <aura:attribute name="enableInfiniteLoading" type="Boolean" default="true"/>
+    
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    
+    <aura:if isTrue="{!v.simpleViewMode}">
+        <lightning:navigation aura:id="navService"/>
+    </aura:if>
+    
+    <!-- If one of these attributes is 0, returns all rows from the start -->
+    <aura:attribute name="page" type="Integer" default="1" />
+    <aura:attribute name="nrows" type="Integer" default="50" required="true" />    
+    
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <force:recordData aura:id="recordHandler"
+                      recordId="{!v.idToDelete}"
+                      targetFields="{!v.simpleRecord}"
+                      layoutType="FULL"
+                      targetError="{!v.recordError}"
+                      mode="EDIT"
+                      recordUpdated="{!c.handleRecordUpdated}" />
+    
+    <!-- Start Struncture -->
+    <div aura:id="spinner" class="{!v.isLoading == true ? '' : 'slds-hide' }">
+        <lightning:spinner alternativeText="Loading" size="medium" variant="brand"/>
+    </div>
+    
+    <aura:if isTrue="{!v.isOpen}">
+        <div class="demo-only" >
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close" onclick="{!c.closeModal}" alternativeText="close" variant="bare-inverse" class="slds-modal__close"/>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!$Label.c.MSF_OPP_S_CREDIT_DELETE_MODAL_TITLE}</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <p style="text-align:center">{!$Label.c.MSF_OPP_S_CREDIT_DELETE_MODAL_BODY}</p>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">{!$Label.c.MSF_OPP_S_CREDIT_ACTION_CANCEL}</button>
+                        <!--<button class="slds-button slds-button_brand" onclick="{!c.deleteItem}">{!$Label.c.MSF_OPP_S_CREDIT_ACTION_DELETE}</button>-->
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+    
+    <!--Start aura lightning:card -->
+    <aura:if isTrue="{!v.simpleViewMode}"> 
+        
+        <!-- Simple card -->
+        <aura:if isTrue="{!v.totalElemCount != 0}">
+            <!-- Card With Data -->
+            <lightning:card variant="Narrow" aura:id="lightingCardBody" class="slds-card_boundary" >
+                <aura:set attribute="title">
+                    <lightning:icon  iconName="standard:opportunity" size="small"/>
+                    <span class="slds-p-left_small simpleViewModeTitle"><b>{! v.title }</b></span>
+                </aura:set>
+                <div class="slds-grid listDisplays safari-workaround-anchor">
+                    <lightning:datatable aura:id="tableData"
+                                         class="simpleTable"
+                                         keyField="id"
+                                         data="{! v.data }"
+                                         columns="{! v.columns }"
+                                         hideCheckboxColumn="true"
+                                         resizeColumnDisabled="true"
+                                         sortedBy="{!v.sortedBy}"
+                                         sortedDirection="{!v.sortedDirection}"
+                                         onsort="{!c.updateColumnSorting}"
+                                         defaultSortDirection="asc"
+                                         onrowaction="{! c.handleRowAction }"/>
+                </div>
+                <aura:set attribute="footer">
+                    <a href="{!v.seeAllUrl}">Ver todos</a>
+                </aura:set>
+            </lightning:card>
+            <aura:set attribute="else">
+            	<!-- Card Without Data -->
+                <lightning:card variant="Narrow" aura:id="lightingCardBody" class="slds-card_boundary" >
+                    <aura:set attribute="title">
+                        <lightning:icon  iconName="standard:opportunity" size="small"/>
+                        <span class="slds-p-left_small simpleViewModeTitle"><b>{! v.title }</b></span>
+                    </aura:set>            
+                </lightning:card>
+            </aura:set>
+        </aura:if>
+        
+        <aura:set attribute="else">            
+            <!-- Complex card -->            
+            <lightning:card variant="Narrow" aura:id="lightingCardBody" class="complexStyle" >
+                <aura:set attribute="title">
+                    <div class="slds-grid slds-wrap ">
+                        <div class="slds-col slds-size_1-of-1">
+                            <span style="font-weight:700; font-size: 0.8125rem;" data-aura-class="uiOutputText">
+                                <a href="/lightning/o/Opportunity/list">{!$Label.c.MSF_OPP_S_CREDIT_NAME}</a> &gt; 
+                                <a href="{!'/' + v.recordId}">{!v.recordName}</a></span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                            <h1 class="slds-page-header__title slds-truncate">{!v.titleWithoutTotalElem}</h1>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                            <span style="font-size: .75rem">{!v.totalElem + ' ' + $Label.c.MSF_OPP_S_CREDIT_ELEMENTS} · {!v.orderByMessage}</span>
+                        </div>
+                    </div>
+                </aura:set>
+            </lightning:card>
+            
+            <!-- Complex table -->
+            <lightning:datatable aura:id="tableData"
+                                 keyField="id"
+                                 data="{! v.data }"
+                                 columns="{! v.columns }"
+                                 hideCheckboxColumn="true"
+                                 sortedBy="{!v.sortedBy}"
+                                 sortedDirection="{!v.sortedDirection}"
+                                 onsort="{!c.updateColumnSorting}"
+                                 defaultSortDirection="asc"
+                                 onrowaction="{! c.handleRowAction }"
+                                 showRowNumberColumn="true"
+                                 enableInfiniteLoading="{!v.enableInfiniteLoading}"
+                                 loadMoreOffset="{! v.page }"
+                                 onloadmore="{! c.loadMoreData }"/>
+            
+        </aura:set>
+    </aura:if>    
+</aura:component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsFromLastMonthsBool__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Nuevo campo para comprobar si la fecha de cierre esta dentro del ultimo año,  si es del tipo Llamada en los últimos 5 años, si es de temática &apos;Certificado fiscal&apos;, &apos;Encuestas&apos; o &apos;Herencias y Legados&apos;, o si el sujeto es: &apos;Se Queja Presión en Captación Fondos&apos;, &apos;Se Queja Por Llamadas Telemarketing&apos; o &apos;Solicita Información Regalo Solidario&apos;.</description>
+    <externalId>false</externalId>
+    <label>Últimos meses Boolean</label>
+    <type>Checkbox</type>
+</CustomField>

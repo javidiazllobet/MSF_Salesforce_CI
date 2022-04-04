@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_RelationshipMidDonorsProgram__c</fullName>
+    <externalId>false</externalId>
+    <label>Nivel relación programa Mid Donors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mantenimiento</fullName>
+                <default>false</default>
+                <label>Mantenimiento</label>
+            </value>
+            <value>
+                <fullName>Upgrade cuota</fullName>
+                <default>false</default>
+                <label>Upgrade cuota</label>
+            </value>
+            <value>
+                <fullName>Upgrade donación</fullName>
+                <default>false</default>
+                <label>Upgrade donación</label>
+            </value>
+            <value>
+                <fullName>Sin mantenimiento</fullName>
+                <default>false</default>
+                <label>Sin mantenimiento</label>
+            </value>
+            <value>
+                <fullName>IS Sin Mantenimiento</fullName>
+                <default>false</default>
+                <label>IS Sin Mantenimiento</label>
+            </value>
+            <value>
+                <fullName>Alto desarrollo</fullName>
+                <default>false</default>
+                <label>Alto desarrollo</label>
+            </value>
+            <value>
+                <fullName>Recuperación baja</fullName>
+                <default>false</default>
+                <label>Recuperación baja</label>
+            </value>
+            <value>
+                <fullName>Recuperación donante</fullName>
+                <default>false</default>
+                <label>Recuperación donante</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

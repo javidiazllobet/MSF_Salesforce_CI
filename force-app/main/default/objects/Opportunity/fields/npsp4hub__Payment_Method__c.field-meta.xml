@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp4hub__Payment_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Payment Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct Debit</fullName>
+                <default>false</default>
+                <label>Direct Debit</label>
+            </value>
+            <value>
+                <fullName>CreditCard</fullName>
+                <default>false</default>
+                <label>CreditCard</label>
+            </value>
+            <value>
+                <fullName>PAGARÉS</fullName>
+                <default>false</default>
+                <label>PAGARÉS</label>
+            </value>
+            <value>
+                <fullName>HERENCIAS Y LEGADOS</fullName>
+                <default>false</default>
+                <label>HERENCIAS Y LEGADOS</label>
+            </value>
+            <value>
+                <fullName>FACEBOOK</fullName>
+                <default>false</default>
+                <label>FACEBOOK</label>
+            </value>
+            <value>
+                <fullName>GIRO POSTAL RECEPCIÓN</fullName>
+                <default>false</default>
+                <label>GIRO POSTAL RECEPCIÓN</label>
+            </value>
+            <value>
+                <fullName>EFECTIVO ASOCIATIVO</fullName>
+                <default>false</default>
+                <label>EFECTIVO ASOCIATIVO</label>
+            </value>
+            <value>
+                <fullName>CUENTA ABOGADO/CUENTA PUENTE</fullName>
+                <default>false</default>
+                <label>CUENTA ABOGADO/CUENTA PUENTE</label>
+            </value>
+            <value>
+                <fullName>EN ESPECIE-SERVICIOS</fullName>
+                <default>false</default>
+                <label>EN ESPECIE-SERVICIOS</label>
+            </value>
+            <value>
+                <fullName>TALÓN BANCARIO ESTÁNDAR</fullName>
+                <default>false</default>
+                <label>TALÓN BANCARIO ESTÁNDAR</label>
+            </value>
+            <value>
+                <fullName>INICIATIVA SOLIDARIA ONLINE</fullName>
+                <default>false</default>
+                <label>INICIATIVA SOLIDARIA ONLINE</label>
+            </value>
+            <value>
+                <fullName>GIRO POSTAL</fullName>
+                <default>false</default>
+                <label>GIRO POSTAL</label>
+            </value>
+            <value>
+                <fullName>EFECTIVO S.C.</fullName>
+                <default>false</default>
+                <label>EFECTIVO S.C.</label>
+            </value>
+            <value>
+                <fullName>GRANT</fullName>
+                <default>false</default>
+                <label>GRANT</label>
+            </value>
+            <value>
+                <fullName>TALÓN NO ESTÁNDAR EXTRANJERO</fullName>
+                <default>false</default>
+                <label>TALÓN NO ESTÁNDAR EXTRANJERO</label>
+            </value>
+            <value>
+                <fullName>TALÓN NO ESTÁNDAR EN EUROS</fullName>
+                <default>false</default>
+                <label>TALÓN NO ESTÁNDAR EN EUROS</label>
+            </value>
+            <value>
+                <fullName>TC ONLINE</fullName>
+                <default>false</default>
+                <label>TC ONLINE</label>
+            </value>
+            <value>
+                <fullName>EFECTIVO RECEPCIÓN</fullName>
+                <default>false</default>
+                <label>EFECTIVO RECEPCIÓN</label>
+            </value>
+            <value>
+                <fullName>PAYPAL</fullName>
+                <default>false</default>
+                <label>PAYPAL</label>
+            </value>
+            <value>
+                <fullName>TRUSTLY - TR ONLINE</fullName>
+                <default>false</default>
+                <label>TRUSTLY - TR ONLINE</label>
+            </value>
+            <value>
+                <fullName>ACMA</fullName>
+                <default>false</default>
+                <label>ACMA</label>
+            </value>
+            <value>
+                <fullName>TRANSFERENCIA BANCARIA</fullName>
+                <default>false</default>
+                <label>TRANSFERENCIA BANCARIA</label>
+            </value>
+            <value>
+                <fullName>EN ESPECIE-INMOVILIZADO</fullName>
+                <default>false</default>
+                <label>EN ESPECIE-INMOVILIZADO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Recovered Quota</controllingFieldValue>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>Recurrent Donation</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>Direct Debit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recovered Quota</controllingFieldValue>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>Recurrent Donation</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>CreditCard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>FACEBOOK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>TALÓN BANCARIO ESTÁNDAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <valueName>INICIATIVA SOLIDARIA ONLINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>EFECTIVO S.C.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>TC ONLINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>PAYPAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>TRUSTLY - TR ONLINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidarity initiative</controllingFieldValue>
+            <controllingFieldValue>Solidarity Wedding</controllingFieldValue>
+            <controllingFieldValue>Solidarity Gift</controllingFieldValue>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <controllingFieldValue>SMS Operator</controllingFieldValue>
+            <controllingFieldValue>SMS Donor</controllingFieldValue>
+            <controllingFieldValue>Employee or client Donation</controllingFieldValue>
+            <valueName>TRANSFERENCIA BANCARIA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>PAGARÉS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>GIRO POSTAL RECEPCIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>GIRO POSTAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>TALÓN NO ESTÁNDAR EXTRANJERO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>TALÓN NO ESTÁNDAR EN EUROS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matching Gift</controllingFieldValue>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>EFECTIVO RECEPCIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In-Kind Gift</controllingFieldValue>
+            <valueName>EN ESPECIE-SERVICIOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In-Kind Gift</controllingFieldValue>
+            <valueName>EN ESPECIE-INMOVILIZADO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Herencia</controllingFieldValue>
+            <controllingFieldValue>Pago de Herencia</controllingFieldValue>
+            <valueName>HERENCIAS Y LEGADOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Membership</controllingFieldValue>
+            <valueName>ACMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grant</controllingFieldValue>
+            <valueName>GRANT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>One off Donation</controllingFieldValue>
+            <valueName>CUENTA ABOGADO/CUENTA PUENTE</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

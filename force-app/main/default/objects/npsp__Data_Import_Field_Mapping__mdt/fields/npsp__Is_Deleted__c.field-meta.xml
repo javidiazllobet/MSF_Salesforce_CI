@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__Is_Deleted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, indicates this record was deleted from the Data Import Advanced Mapping user interface and will be ignored during NPSP Data Import processing.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Cuando se marca, indica que este registro se eliminó de la interfaz de usuario Asignación avanzada de importación de datos y se ignorará durante el procesamiento de Importación de datos de NPSP.</inlineHelpText>
+    <label>Is Deleted</label>
+    <type>Checkbox</type>
+</CustomField>

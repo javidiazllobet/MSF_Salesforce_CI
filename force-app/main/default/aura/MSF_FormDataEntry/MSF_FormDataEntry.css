@@ -1,0 +1,11 @@
+.THIS .slds-form-element__label {
+    font-size:12pt;
+}
+.THIS .slds-form-element{
+    margin-bottom: 6px;
+}
+.THIS.spin{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+}

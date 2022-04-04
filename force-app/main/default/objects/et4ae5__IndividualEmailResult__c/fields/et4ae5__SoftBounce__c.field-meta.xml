@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>et4ae5__SoftBounce__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>El correo electrónico enviado se rechazó debido a una anomalía aparentemente temporal, por ejemplo, porque el buzón de entrada está lleno, después de que el sistema haya reintentado enviar el correo electrónico sin éxito cada 15 minutos durante 72 horas.</inlineHelpText>
+    <label>Soft Bounce</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

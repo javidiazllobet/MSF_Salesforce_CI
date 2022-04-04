@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_FinalCampaign_Objective</fullName>
+    <active>true</active>
+    <description>msf_Objective__c : Campo obligatorio para campañas finales.</description>
+    <errorConditionFormula>IF(msf_FinalCampaign__c = TRUE &amp;&amp; ISBLANK(TEXT(msf_Objective__c)), true, false)</errorConditionFormula>
+    <errorDisplayField>msf_Objective__c</errorDisplayField>
+    <errorMessage>Campo obligatorio para campañas finales (Objetivo principal)</errorMessage>
+</ValidationRule>

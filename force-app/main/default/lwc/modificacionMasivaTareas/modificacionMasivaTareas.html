@@ -1,0 +1,31 @@
+<template >
+    <template if:true={infoPadre}>
+        <!--<lightning-card title={nombreTabla} icon-name="standard:task"></lightning-card>-->
+        <lightning-card>
+            <h3 slot="title">
+            <lightning-icon icon-name="standard:task"></lightning-icon>
+                 {espacios}{nombreTabla}
+            </h3>
+        </lightning-card>
+        <template if:true={taskList}>
+            <div class="totalRecords">{totalRecords} {itemsLabel}</div>
+            <div style="height: 500px;">
+                <lightning-button onclick={handleclick} value="Mass Update Task" label={botonActualizacionMasiva}></lightning-button>
+                <lightning-datatable
+                    key-field="id"
+                    data={taskList}
+                    columns={columns}
+                    onsave={handleSave}
+                    show-row-number-column
+                    sorted-by={sortBy}
+                    sorted-direction={sortDirection}
+                    onsort={handleSortAccountData}>
+                </lightning-datatable>     
+            </div>
+            {loadMoreStatus}
+        </template>
+        <template if:true={error}>
+            {error}
+        </template>
+    </template>
+</template>

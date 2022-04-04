@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_OrgContactType__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(msf_IsActive__c,msf_IsPrimary__c), $Label.MSF_CONTACT_FORMULA_PRIMARY_CONTACT,
+    IF(AND(msf_IsActive__c,!msf_IsPrimary__c), $Label.MSF_CONTACT_FORMULA_NOT_PRIMARY_CONTACT_ACTIVE , 
+    $Label.MSF_CONTACT_FORMULA_CONTACT_INACTIVE ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tipo de contacto de organización</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

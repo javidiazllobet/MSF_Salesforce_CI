@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe4__SYSTEM_SystemCreated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>System field that indicates if this Relationship was created automatically as the reciprocal to another Relationships.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Campo del sistema que indica si esta relación a sido creada automáticamente como una relación reciproca a otra relación.</inlineHelpText>
+    <label>_SYSTEM: SystemCreated</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

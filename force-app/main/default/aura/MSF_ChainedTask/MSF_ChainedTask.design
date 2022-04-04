@@ -1,0 +1,3 @@
+<design:component label="MSF_ChainedTasks">
+	 <design:attribute name="simpleViewMode" label="Simple view mode" description="Shows a simplified view of the table, showing limited data"/>
+</design:component>

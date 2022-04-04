@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agradecimiento</fullName>
+        <default>false</default>
+        <label>Agradecimiento</label>
+    </customValue>
+    <customValue>
+        <fullName>Bienvenida</fullName>
+        <default>false</default>
+        <label>Bienvenida</label>
+    </customValue>
+    <customValue>
+        <fullName>Cultivar</fullName>
+        <default>false</default>
+        <label>Cultivar</label>
+    </customValue>
+    <customValue>
+        <fullName>Dar opinión</fullName>
+        <default>false</default>
+        <label>Dar opinión</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión administrativa</fullName>
+        <default>false</default>
+        <label>Gestión administrativa</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión económica</fullName>
+        <default>false</default>
+        <label>Gestión económica</label>
+    </customValue>
+    <customValue>
+        <fullName>Informar</fullName>
+        <default>false</default>
+        <label>Informar</label>
+    </customValue>
+    <customValue>
+        <fullName>Informar de modificaciones</fullName>
+        <default>false</default>
+        <label>Informar de modificaciones</label>
+    </customValue>
+    <customValue>
+        <fullName>Interno</fullName>
+        <default>false</default>
+        <label>Interno</label>
+    </customValue>
+    <customValue>
+        <fullName>Invitación</fullName>
+        <default>false</default>
+        <label>Invitación</label>
+    </customValue>
+    <customValue>
+        <fullName>Participa en</fullName>
+        <default>false</default>
+        <label>Participa en</label>
+    </customValue>
+    <customValue>
+        <fullName>Pedir opinión o respuesta</fullName>
+        <default>false</default>
+        <label>Pedir opinión o respuesta</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición de documentos o información</fullName>
+        <default>false</default>
+        <label>Petición de documentos o información</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición difusión</fullName>
+        <default>false</default>
+        <label>Petición difusión</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica</fullName>
+        <default>false</default>
+        <label>Petición económica</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica-Conversión Prospecto</fullName>
+        <default>false</default>
+        <label>Petición económica-Conversión Prospecto</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica-Reactivación Donante</fullName>
+        <default>false</default>
+        <label>Petición económica-Reactivación Donante</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica-Reactivación Socio</fullName>
+        <default>false</default>
+        <label>Petición económica-Reactivación Socio</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica-Resto</fullName>
+        <default>false</default>
+        <label>Petición económica-Resto</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica-Upgrade Donante</fullName>
+        <default>false</default>
+        <label>Petición económica-Upgrade Donante</label>
+    </customValue>
+    <customValue>
+        <fullName>Petición económica-Upgrade Socio</fullName>
+        <default>false</default>
+        <label>Petición económica-Upgrade Socio</label>
+    </customValue>
+    <customValue>
+        <fullName>Queja</fullName>
+        <default>false</default>
+        <label>Queja</label>
+    </customValue>
+    <customValue>
+        <fullName>Recuperación</fullName>
+        <default>false</default>
+        <label>Recuperación</label>
+    </customValue>
+    <customValue>
+        <fullName>Rendir cuentas</fullName>
+        <default>false</default>
+        <label>Rendir cuentas</label>
+    </customValue>
+    <customValue>
+        <fullName>Respuesta a</fullName>
+        <default>false</default>
+        <label>Respuesta a</label>
+    </customValue>
+    <customValue>
+        <fullName>Retención</fullName>
+        <default>false</default>
+        <label>Retención</label>
+    </customValue>
+    <customValue>
+        <fullName>Repuesta a</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Repuesta a</label>
+    </customValue>
+    <description>Interactions Master Data</description>
+    <masterLabel>Objetivo</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

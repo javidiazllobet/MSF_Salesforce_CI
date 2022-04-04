@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_fecha_nacimiento_futura</fullName>
+    <active>true</active>
+    <description>No es posible introducir una fecha superior a hoy.</description>
+    <errorConditionFormula>Birthdate &gt; TODAY()</errorConditionFormula>
+    <errorDisplayField>Birthdate</errorDisplayField>
+    <errorMessage>No es posible introducir una fecha superior a hoy.</errorMessage>
+</ValidationRule>

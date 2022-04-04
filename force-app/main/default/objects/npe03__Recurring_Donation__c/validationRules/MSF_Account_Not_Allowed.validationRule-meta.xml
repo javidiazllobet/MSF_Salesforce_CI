@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Account_Not_Allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(npe03__Organization__c)</errorConditionFormula>
+    <errorDisplayField>npe03__Organization__c</errorDisplayField>
+    <errorMessage>No es posible informar el campo debido al modelo de datos. Se debe informar con el campo Contacto</errorMessage>
+</ValidationRule>

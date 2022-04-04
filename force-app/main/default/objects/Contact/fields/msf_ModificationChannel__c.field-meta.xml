@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ModificationChannel__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Es obligatorio informar este campo cada vez que modifique el registro. Tras guardar los cambios el campo queda vacío para la próxima modificación.</inlineHelpText>
+    <label>Canal de modificación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>MSF_ModificationChannel</valueSetName>
+    </valueSet>
+</CustomField>

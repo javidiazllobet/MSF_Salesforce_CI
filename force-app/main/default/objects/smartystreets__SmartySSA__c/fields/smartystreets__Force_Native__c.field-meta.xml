@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__Force_Native__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Force the native language character set?  If so, transliterates into Cyrillic, Hellenic, Hebrew, Kanji, Simplified Chinese, Arabic, Thai, or Hangul.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Force the native language character set?  If so, transliterates into Cyrillic, Hellenic, Hebrew, Kanji, Simplified Chinese, Arabic, Thai, or Hangul.</inlineHelpText>
+    <label>Force Native?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

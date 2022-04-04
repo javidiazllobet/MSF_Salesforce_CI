@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Thematic__c</fullName>
+    <externalId>false</externalId>
+    <label>Temática</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>00</fullName>
+                <default>false</default>
+                <label>00 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>01</fullName>
+                <default>false</default>
+                <label>01 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>02</fullName>
+                <default>false</default>
+                <label>02 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>03</fullName>
+                <default>false</default>
+                <label>03 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>04</fullName>
+                <default>false</default>
+                <label>04 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>05</fullName>
+                <default>false</default>
+                <label>05 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>06</fullName>
+                <default>false</default>
+                <label>06 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>07</fullName>
+                <default>false</default>
+                <label>07 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>08</fullName>
+                <default>false</default>
+                <label>08 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>09</fullName>
+                <default>false</default>
+                <label>09 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>10 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>11 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>12 - Campaña navidad acquisiton 11/12 Nutrición</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>13 - Pastillas contra el dolor ajeno</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>14 - Desnutrición Test 2011</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>15 - Tuberculosis 2011</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>16 - 40 aniversario</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>17 - Cuerno africa 2011 (Somalia)</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>18 - Regalo solidario - permanente</label>
+            </value>
+            <value>
+                <fullName>19</fullName>
+                <default>false</default>
+                <label>19 - Tienda MSF</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>20 - Revista febrero - permanente</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>21 - Revista mayo - permanente</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>22 - Revista memoria - permanente</label>
+            </value>
+            <value>
+                <fullName>23</fullName>
+                <default>false</default>
+                <label>23 - Revista diciembre - permanente</label>
+            </value>
+            <value>
+                <fullName>24</fullName>
+                <default>false</default>
+                <label>24 - Positive generation</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>25 - Malaria 2011</label>
+            </value>
+            <value>
+                <fullName>26</fullName>
+                <default>false</default>
+                <label>26 - Violencia</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>27 - Petición de firmas</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>28 - Vacunació 2012</label>
+            </value>
+            <value>
+                <fullName>29</fullName>
+                <default>false</default>
+                <label>29 - Proyectos Sida</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30 - Mailing Navidad 2012</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>31 - Campaña navidad acquisiton 12/13</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>32 - Sahel 2012</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>33 - Fondo emergencias IS</label>
+            </value>
+            <value>
+                <fullName>34</fullName>
+                <default>false</default>
+                <label>34 - Desnutrición Genérica IS</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>35 - Tarjetas regalo</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>36 - Bodas, bautizos y comuniones</label>
+            </value>
+            <value>
+                <fullName>37</fullName>
+                <default>false</default>
+                <label>37 - Sur Sudán</label>
+            </value>
+            <value>
+                <fullName>38</fullName>
+                <default>false</default>
+                <label>38 - Test mailing 2012</label>
+            </value>
+            <value>
+                <fullName>39</fullName>
+                <default>false</default>
+                <label>39 - Emergencia Ebola</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40 - 6 historias</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>41 - Bala vs pastilla</label>
+            </value>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>42 - Siria Emergencia</label>
+            </value>
+            <value>
+                <fullName>43</fullName>
+                <default>false</default>
+                <label>43 - Campaña Malik</label>
+            </value>
+            <value>
+                <fullName>44</fullName>
+                <default>false</default>
+                <label>44 - Socio estratégico emergencias</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>45 - Mali 2013</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>46 - Herencias y Legados</label>
+            </value>
+            <value>
+                <fullName>47</fullName>
+                <default>false</default>
+                <label>47 - Marruecos 2013</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>48 - MGM</label>
+            </value>
+            <value>
+                <fullName>49</fullName>
+                <default>false</default>
+                <label>49 - Niger 2013</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>5</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>50 - RCA</label>
+            </value>
+            <value>
+                <fullName>51</fullName>
+                <default>false</default>
+                <label>51 - VIH/SIDA</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>52 - Campaña navidad acquision 13/14</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>53 - Campaña Ser Humanos nav 13</label>
+            </value>
+            <value>
+                <fullName>54</fullName>
+                <default>false</default>
+                <label>54 - Tifón Filipinas nov 2013</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>55 - Chagas</label>
+            </value>
+            <value>
+                <fullName>56</fullName>
+                <default>false</default>
+                <label>56 - Palestina Emergencia</label>
+            </value>
+            <value>
+                <fullName>57</fullName>
+                <default>false</default>
+                <label>57 - Campaña Vacunación 2015</label>
+            </value>
+            <value>
+                <fullName>58</fullName>
+                <default>false</default>
+                <label>58 - Emergencia Terremoto Nepal 2015</label>
+            </value>
+            <value>
+                <fullName>59</fullName>
+                <default>false</default>
+                <label>59 - Emergencia Crisis Mediterraneo 2015</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>6</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60 - Fondo Emergencias</label>
+            </value>
+            <value>
+                <fullName>61</fullName>
+                <default>false</default>
+                <label>61 - Terremoto Ecuador abril 2016</label>
+            </value>
+            <value>
+                <fullName>62</fullName>
+                <default>false</default>
+                <label>62 - Desplazados Diffa por Boko Haram</label>
+            </value>
+            <value>
+                <fullName>63</fullName>
+                <default>false</default>
+                <label>63 - Nigeria Emergencia Nutricional</label>
+            </value>
+            <value>
+                <fullName>64</fullName>
+                <default>false</default>
+                <label>64 - Conflictos</label>
+            </value>
+            <value>
+                <fullName>65</fullName>
+                <default>false</default>
+                <label>65 - Pediatria</label>
+            </value>
+            <value>
+                <fullName>66</fullName>
+                <default>false</default>
+                <label>66 - Yemen</label>
+            </value>
+            <value>
+                <fullName>67</fullName>
+                <default>false</default>
+                <label>67 - Volando Va</label>
+            </value>
+            <value>
+                <fullName>68</fullName>
+                <default>false</default>
+                <label>68 - Rohingyas</label>
+            </value>
+            <value>
+                <fullName>69</fullName>
+                <default>false</default>
+                <label>69 - Siria Idal</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>7</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>70 - Mujeres conflicto</label>
+            </value>
+            <value>
+                <fullName>71</fullName>
+                <default>false</default>
+                <label>71 - Desnutricion generica</label>
+            </value>
+            <value>
+                <fullName>72</fullName>
+                <default>false</default>
+                <label>72 - Etiopía</label>
+            </value>
+            <value>
+                <fullName>73</fullName>
+                <default>false</default>
+                <label>73 - Gaza</label>
+            </value>
+            <value>
+                <fullName>74</fullName>
+                <default>false</default>
+                <label>74 - Refugiados</label>
+            </value>
+            <value>
+                <fullName>75</fullName>
+                <default>false</default>
+                <label>75 - Meningitis</label>
+            </value>
+            <value>
+                <fullName>76</fullName>
+                <default>false</default>
+                <label>76 - Colera</label>
+            </value>
+            <value>
+                <fullName>77</fullName>
+                <default>false</default>
+                <label>77 - Sant Jordi</label>
+            </value>
+            <value>
+                <fullName>78</fullName>
+                <default>false</default>
+                <label>78 - Ciclón Idai</label>
+            </value>
+            <value>
+                <fullName>79</fullName>
+                <default>false</default>
+                <label>79 - TEST MAILING 2019</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>8</label>
+            </value>
+            <value>
+                <fullName>80</fullName>
+                <default>false</default>
+                <label>80 - CAME</label>
+            </value>
+            <value>
+                <fullName>81</fullName>
+                <default>false</default>
+                <label>81 - Coronavirus</label>
+            </value>
+            <value>
+                <fullName>82</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>82</label>
+            </value>
+            <value>
+                <fullName>82-Tigray</fullName>
+                <default>false</default>
+                <label>82 - Tigray</label>
+            </value>
+            <value>
+                <fullName>83 - Afganistán</fullName>
+                <default>false</default>
+                <label>83 - Afganistán</label>
+            </value>
+            <value>
+                <fullName>84</fullName>
+                <default>false</default>
+                <label>84 - Mozambique</label>
+            </value>
+            <value>
+                <fullName>85</fullName>
+                <default>false</default>
+                <label>85 - Ucrania</label>
+            </value>
+            <value>
+                <fullName>86</fullName>
+                <default>false</default>
+                <label>86</label>
+            </value>
+            <value>
+                <fullName>87</fullName>
+                <default>false</default>
+                <label>87</label>
+            </value>
+            <value>
+                <fullName>88</fullName>
+                <default>false</default>
+                <label>88</label>
+            </value>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <label>89</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>9</label>
+            </value>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <label>90 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>91</fullName>
+                <default>false</default>
+                <label>91 - Plan de Relacion</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>99 - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>Asamblea General</fullName>
+                <default>false</default>
+                <label>Asamblea General</label>
+            </value>
+            <value>
+                <fullName>Debate asociativo</fullName>
+                <default>false</default>
+                <label>Debate asociativo</label>
+            </value>
+            <value>
+                <fullName>Generica</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generica</label>
+            </value>
+            <value>
+                <fullName>Gobernanza</fullName>
+                <default>false</default>
+                <label>Gobernanza</label>
+            </value>
+            <value>
+                <fullName>Movimiento MSF</fullName>
+                <default>false</default>
+                <label>Movimiento MSF</label>
+            </value>
+            <value>
+                <fullName>MSF España</fullName>
+                <default>false</default>
+                <label>MSF España</label>
+            </value>
+            <value>
+                <fullName>MSF OCBA</fullName>
+                <default>false</default>
+                <label>MSF OCBA</label>
+            </value>
+            <value>
+                <fullName>NN</fullName>
+                <default>false</default>
+                <label>NN - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>OV</fullName>
+                <default>false</default>
+                <label>OV - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>Salud mental</fullName>
+                <default>false</default>
+                <label>Salud mental</label>
+            </value>
+            <value>
+                <fullName>ST</fullName>
+                <default>false</default>
+                <label>ST - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>UE</fullName>
+                <default>false</default>
+                <label>UE - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+            <value>
+                <fullName>Vida asociativa</fullName>
+                <default>false</default>
+                <label>Vida asociativa</label>
+            </value>
+            <value>
+                <fullName>XX</fullName>
+                <default>false</default>
+                <label>XX - Sin temática específica (ej, que es msf, f2f, telemarketing, newsletter….)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

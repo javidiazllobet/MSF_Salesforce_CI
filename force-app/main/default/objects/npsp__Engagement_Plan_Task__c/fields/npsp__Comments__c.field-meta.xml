@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this to enter additional information about the Task.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comentarios en la tarea</inlineHelpText>
+    <label>Comments</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Attribute_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Atributo 2</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>A Coruña</fullName>
+                <default>false</default>
+                <label>A Coruña</label>
+            </value>
+            <value>
+                <fullName>Alicante</fullName>
+                <default>false</default>
+                <label>Alicante</label>
+            </value>
+            <value>
+                <fullName>Almería</fullName>
+                <default>false</default>
+                <label>Almería</label>
+            </value>
+            <value>
+                <fullName>Asturias</fullName>
+                <default>false</default>
+                <label>Asturias</label>
+            </value>
+            <value>
+                <fullName>Barcelona</fullName>
+                <default>false</default>
+                <label>Barcelona</label>
+            </value>
+            <value>
+                <fullName>Benicassim</fullName>
+                <default>false</default>
+                <label>Benicassim</label>
+            </value>
+            <value>
+                <fullName>Bilbao</fullName>
+                <default>false</default>
+                <label>Bilbao</label>
+            </value>
+            <value>
+                <fullName>Bodas</fullName>
+                <default>false</default>
+                <label>Bodas</label>
+            </value>
+            <value>
+                <fullName>Cádiz</fullName>
+                <default>false</default>
+                <label>Cádiz</label>
+            </value>
+            <value>
+                <fullName>Camp trimestral</fullName>
+                <default>false</default>
+                <label>Camp trimestral</label>
+            </value>
+            <value>
+                <fullName>Camp trimestral diciembre</fullName>
+                <default>false</default>
+                <label>Camp trimestral diciembre</label>
+            </value>
+            <value>
+                <fullName>Camp trimestral fiscal</fullName>
+                <default>false</default>
+                <label>Camp trimestral fiscal</label>
+            </value>
+            <value>
+                <fullName>Camp trimestral junio</fullName>
+                <default>false</default>
+                <label>Camp trimestral junio</label>
+            </value>
+            <value>
+                <fullName>Camp trimestral navidad</fullName>
+                <default>false</default>
+                <label>Camp trimestral navidad</label>
+            </value>
+            <value>
+                <fullName>Camp trimestral octubre</fullName>
+                <default>false</default>
+                <label>Camp trimestral octubre</label>
+            </value>
+            <value>
+                <fullName>Castellon</fullName>
+                <default>false</default>
+                <label>Castellon</label>
+            </value>
+            <value>
+                <fullName>Ciudad Real</fullName>
+                <default>false</default>
+                <label>Ciudad Real</label>
+            </value>
+            <value>
+                <fullName>Colera</fullName>
+                <default>false</default>
+                <label>Colera</label>
+            </value>
+            <value>
+                <fullName>Cordoba</fullName>
+                <default>false</default>
+                <label>Cordoba</label>
+            </value>
+            <value>
+                <fullName>Corregistro (Lead)</fullName>
+                <default>false</default>
+                <label>Corregistro (Lead)</label>
+            </value>
+            <value>
+                <fullName>Desnut</fullName>
+                <default>false</default>
+                <label>Desnut</label>
+            </value>
+            <value>
+                <fullName>Display (Lead)</fullName>
+                <default>false</default>
+                <label>Display (Lead)</label>
+            </value>
+            <value>
+                <fullName>Donosti</fullName>
+                <default>false</default>
+                <label>Donosti</label>
+            </value>
+            <value>
+                <fullName>Elche</fullName>
+                <default>false</default>
+                <label>Elche</label>
+            </value>
+            <value>
+                <fullName>El Corte Inglés</fullName>
+                <default>false</default>
+                <label>El Corte Inglés</label>
+            </value>
+            <value>
+                <fullName>Email (Lead)</fullName>
+                <default>false</default>
+                <label>Email (Lead)</label>
+            </value>
+            <value>
+                <fullName>Encuesta (Lead)</fullName>
+                <default>false</default>
+                <label>Encuesta (Lead)</label>
+            </value>
+            <value>
+                <fullName>Extremadura</fullName>
+                <default>false</default>
+                <label>Extremadura</label>
+            </value>
+            <value>
+                <fullName>Facebook (Lead)</fullName>
+                <default>false</default>
+                <label>Facebook (Lead)</label>
+            </value>
+            <value>
+                <fullName>FE</fullName>
+                <default>false</default>
+                <label>FE</label>
+            </value>
+            <value>
+                <fullName>Fuerteventura</fullName>
+                <default>false</default>
+                <label>Fuerteventura</label>
+            </value>
+            <value>
+                <fullName>Genérico</fullName>
+                <default>false</default>
+                <label>Genérico</label>
+            </value>
+            <value>
+                <fullName>Girona</fullName>
+                <default>false</default>
+                <label>Girona</label>
+            </value>
+            <value>
+                <fullName>Giving Tuesday</fullName>
+                <default>false</default>
+                <label>Giving Tuesday</label>
+            </value>
+            <value>
+                <fullName>Granada</fullName>
+                <default>false</default>
+                <label>Granada</label>
+            </value>
+            <value>
+                <fullName>Gran Canaria</fullName>
+                <default>false</default>
+                <label>Gran Canaria</label>
+            </value>
+            <value>
+                <fullName>Huelva</fullName>
+                <default>false</default>
+                <label>Huelva</label>
+            </value>
+            <value>
+                <fullName>Huesca</fullName>
+                <default>false</default>
+                <label>Huesca</label>
+            </value>
+            <value>
+                <fullName>Ibiza</fullName>
+                <default>false</default>
+                <label>Ibiza</label>
+            </value>
+            <value>
+                <fullName>Jerez</fullName>
+                <default>false</default>
+                <label>Jerez</label>
+            </value>
+            <value>
+                <fullName>Lanzarote</fullName>
+                <default>false</default>
+                <label>Lanzarote</label>
+            </value>
+            <value>
+                <fullName>La Palma</fullName>
+                <default>false</default>
+                <label>La Palma</label>
+            </value>
+            <value>
+                <fullName>Leon</fullName>
+                <default>false</default>
+                <label>Leon</label>
+            </value>
+            <value>
+                <fullName>Lleida</fullName>
+                <default>false</default>
+                <label>Lleida</label>
+            </value>
+            <value>
+                <fullName>Logroño</fullName>
+                <default>false</default>
+                <label>Logroño</label>
+            </value>
+            <value>
+                <fullName>Madrid</fullName>
+                <default>false</default>
+                <label>Madrid</label>
+            </value>
+            <value>
+                <fullName>Málaga</fullName>
+                <default>false</default>
+                <label>Málaga</label>
+            </value>
+            <value>
+                <fullName>Mallorca</fullName>
+                <default>false</default>
+                <label>Mallorca</label>
+            </value>
+            <value>
+                <fullName>Menorca</fullName>
+                <default>false</default>
+                <label>Menorca</label>
+            </value>
+            <value>
+                <fullName>Murcia</fullName>
+                <default>false</default>
+                <label>Murcia</label>
+            </value>
+            <value>
+                <fullName>No Sabe</fullName>
+                <default>false</default>
+                <label>No Sabe</label>
+            </value>
+            <value>
+                <fullName>Palencia</fullName>
+                <default>false</default>
+                <label>Palencia</label>
+            </value>
+            <value>
+                <fullName>Pamplona</fullName>
+                <default>false</default>
+                <label>Pamplona</label>
+            </value>
+            <value>
+                <fullName>Redes Sociales (Lead)</fullName>
+                <default>false</default>
+                <label>Redes Sociales (Lead)</label>
+            </value>
+            <value>
+                <fullName>Refugiados</fullName>
+                <default>false</default>
+                <label>Refugiados</label>
+            </value>
+            <value>
+                <fullName>Retargeting</fullName>
+                <default>false</default>
+                <label>Retargeting</label>
+            </value>
+            <value>
+                <fullName>Salamanca</fullName>
+                <default>false</default>
+                <label>Salamanca</label>
+            </value>
+            <value>
+                <fullName>San Sebastián</fullName>
+                <default>false</default>
+                <label>San Sebastián</label>
+            </value>
+            <value>
+                <fullName>Santander</fullName>
+                <default>false</default>
+                <label>Santander</label>
+            </value>
+            <value>
+                <fullName>Santiago</fullName>
+                <default>false</default>
+                <label>Santiago</label>
+            </value>
+            <value>
+                <fullName>Segovia</fullName>
+                <default>false</default>
+                <label>Segovia</label>
+            </value>
+            <value>
+                <fullName>Sevilla</fullName>
+                <default>false</default>
+                <label>Sevilla</label>
+            </value>
+            <value>
+                <fullName>Siria</fullName>
+                <default>false</default>
+                <label>Siria</label>
+            </value>
+            <value>
+                <fullName>Tarragona</fullName>
+                <default>false</default>
+                <label>Tarragona</label>
+            </value>
+            <value>
+                <fullName>Tenerife</fullName>
+                <default>false</default>
+                <label>Tenerife</label>
+            </value>
+            <value>
+                <fullName>Tenerife Sur</fullName>
+                <default>false</default>
+                <label>Tenerife Sur</label>
+            </value>
+            <value>
+                <fullName>Tossa De Mar</fullName>
+                <default>false</default>
+                <label>Tossa De Mar</label>
+            </value>
+            <value>
+                <fullName>Vacunación</fullName>
+                <default>false</default>
+                <label>Vacunación</label>
+            </value>
+            <value>
+                <fullName>Valencia</fullName>
+                <default>false</default>
+                <label>Valencia</label>
+            </value>
+            <value>
+                <fullName>Valladolid</fullName>
+                <default>false</default>
+                <label>Valladolid</label>
+            </value>
+            <value>
+                <fullName>Vigo</fullName>
+                <default>false</default>
+                <label>Vigo</label>
+            </value>
+            <value>
+                <fullName>Vitoria</fullName>
+                <default>false</default>
+                <label>Vitoria</label>
+            </value>
+            <value>
+                <fullName>Zamora</fullName>
+                <default>false</default>
+                <label>Zamora</label>
+            </value>
+            <value>
+                <fullName>Zaragoza</fullName>
+                <default>false</default>
+                <label>Zaragoza</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

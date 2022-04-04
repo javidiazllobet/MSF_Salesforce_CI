@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_NotOrgFirstName</fullName>
+    <active>true</active>
+    <description>When it is an organization only inform the last name field.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Organization&apos; &amp;&amp;  
+!ISBLANK(FirstName)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>No informar para una organización.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_ContactId__r$msf_ChangeDate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.msf_ContactId__r$msf_ChangeAnnualizedQuota__c</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_ContactId__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Owner</field>
+    </columns>
+    <description>Todos los contactos del Programa Mid + que hayan modificado su cota en el último año</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mid+ Donors</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.msf_ContactId__r$msf_ChangeDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_MONTHS:12</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Contactos Mid+ con Modificación Cuota</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Modificacion_de_cuota__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

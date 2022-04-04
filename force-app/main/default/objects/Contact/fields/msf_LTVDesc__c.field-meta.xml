@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_LTVDesc__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(msf_LTVCont__c&lt;0.1, $Label.MSF_F_FIELDS_CONTACT_NULL, 
+if(msf_LTVCont__c&lt;50, $Label.MSF_F_FIELDS_CONTACT_VERY_LOW+&quot; 0,10 - 50&quot;, 
+if(msf_LTVCont__c&lt;100, $Label.MSF_F_FIELDS_CONTACT_VERY_LOW+&quot; 50 - 100&quot;, 
+if(msf_LTVCont__c&lt;120, $Label.MSF_F_FIELDS_CONTACT_VERY_LOW+&quot; 100 - 120&quot;, 
+if(msf_LTVCont__c&lt;180, $Label.MSF_F_FIELDS_CONTACT_LOW+&quot; 120 - 180&quot;, 
+if(msf_LTVCont__c&lt;500, $Label.MSF_F_FIELDS_CONTACT_MEDIUM+&quot; 180 - 500&quot;, 
+if(msf_LTVCont__c&lt;1000, $Label.MSF_F_FIELDS_CONTACT_HIGH+&quot; 500 - 1.000&quot;, 
+if(msf_LTVCont__c&lt;3000, $Label.MSF_F_FIELDS_CONTACT_HIGH+&quot; 1.000 - 3.000&quot;, 
+if(msf_LTVCont__c&lt;10000, $Label.MSF_F_FIELDS_CONTACT_VERY_HIGH+&quot; 3.000 - 10.000&quot;, 
+if(msf_LTVCont__c&gt;=10000, &quot;10.000+&quot;, $Label.MSF_F_FIELDS_CONTACT_NULL))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lifetime Value (desc)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

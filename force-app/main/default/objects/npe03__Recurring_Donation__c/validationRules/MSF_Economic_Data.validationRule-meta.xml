@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Economic_Data</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISPICKVAL(npe03__Open_Ended_Status__c, &apos;Closed&apos;) &amp;&amp; (ISBLANK(TEXT(  npsp4hub__Payment_Method__c )) || ISBLANK(TEXT(  npsp4hub__Payment_Processor__c  )) || ISBLANK(TEXT(  npsp4hub__Target__c  )))</errorConditionFormula>
+    <errorMessage>No es posible crear una Donación Recurrente sin datos de Forma de pago, Proceso de pago o Cuenta Destino</errorMessage>
+</ValidationRule>

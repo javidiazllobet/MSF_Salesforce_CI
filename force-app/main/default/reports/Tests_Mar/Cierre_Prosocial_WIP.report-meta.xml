@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_EntryDateCurrentRecurringDonor__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_NIF__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_DateLastRecurringDonorQuota__c</field>
+    </columns>
+    <description>Falta poder filtrar por campaña</description>
+    <format>Tabular</format>
+    <name>Cierre Prosocial - WIP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

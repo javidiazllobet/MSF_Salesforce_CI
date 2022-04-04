@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_CancelationReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo de cancelación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>1 OBS/TCS devueltas con otras aportaciones impagadas en los últimos 2 años</fullName>
+                <default>false</default>
+                <label>1 OBS/TCS devueltas con otras aportaciones impagadas en los últimos 2 años</label>
+            </value>
+            <value>
+                <fullName>2 OBS devueltas es la primera de su historia</fullName>
+                <default>false</default>
+                <label>2 OBS devueltas es la primera de su historia</label>
+            </value>
+            <value>
+                <fullName>2 TCS devueltas</fullName>
+                <default>false</default>
+                <label>2 TCS devueltas</label>
+            </value>
+            <value>
+                <fullName>3 Obs/Tcs Devueltas</fullName>
+                <default>false</default>
+                <label>3 Obs/Tcs Devueltas</label>
+            </value>
+            <value>
+                <fullName>Baja argumentada</fullName>
+                <default>false</default>
+                <label>Baja argumentada</label>
+            </value>
+            <value>
+                <fullName>Baja asociativo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Baja asociativo</label>
+            </value>
+            <value>
+                <fullName>Baja económica argumentada</fullName>
+                <default>false</default>
+                <label>Baja económica argumentada</label>
+            </value>
+            <value>
+                <fullName>Baja e llamada de Bienvenida</fullName>
+                <default>false</default>
+                <label>Baja e llamada de Bienvenida</label>
+            </value>
+            <value>
+                <fullName>Baja en llamada de aumentos</fullName>
+                <default>false</default>
+                <label>Baja en llamada de aumentos</label>
+            </value>
+            <value>
+                <fullName>Baja en llamada de gestión de devoluciones</fullName>
+                <default>false</default>
+                <label>Baja en llamada de gestión de devoluciones</label>
+            </value>
+            <value>
+                <fullName>Baja por cambio de titular</fullName>
+                <default>false</default>
+                <label>Baja por cambio de titular</label>
+            </value>
+            <value>
+                <fullName>Baja por impago orden Socio</fullName>
+                <default>false</default>
+                <label>Baja por impago orden Socio</label>
+            </value>
+            <value>
+                <fullName>Baja proactiva Coronavirus</fullName>
+                <default>false</default>
+                <label>Baja proactiva Coronavirus</label>
+            </value>
+            <value>
+                <fullName>Baja reactiva Coronavirus</fullName>
+                <default>false</default>
+                <label>Baja reactiva Coronavirus</label>
+            </value>
+            <value>
+                <fullName>Baja socio temporal</fullName>
+                <default>false</default>
+                <label>Baja socio temporal</label>
+            </value>
+            <value>
+                <fullName>Voluntary withdrawal</fullName>
+                <default>false</default>
+                <label>Baja voluntaria</label>
+            </value>
+            <value>
+                <fullName>Cambio de domicilio</fullName>
+                <default>false</default>
+                <label>Cambio de domicilio</label>
+            </value>
+            <value>
+                <fullName>Captador F2F-TLMK me informó mal</fullName>
+                <default>false</default>
+                <label>Captador F2F-TLMK me informó mal</label>
+            </value>
+            <value>
+                <fullName>Cierre/Cambio cuenta bancaria</fullName>
+                <default>false</default>
+                <label>Cierre/Cambio cuenta bancaria</label>
+            </value>
+            <value>
+                <fullName>Colabora con otra ONG</fullName>
+                <default>false</default>
+                <label>Colabora con otra ONG</label>
+            </value>
+            <value>
+                <fullName>Decepcionado</fullName>
+                <default>false</default>
+                <label>Decepcionado</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo aborto</fullName>
+                <default>false</default>
+                <label>Desacuerdo aborto</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo colaboración  con Empresas</fullName>
+                <default>false</default>
+                <label>Desacuerdo colaboración  con Empresas</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo destino ayuda</fullName>
+                <default>false</default>
+                <label>Desacuerdo destino ayuda</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo gestión financiera</fullName>
+                <default>false</default>
+                <label>Desacuerdo gestión financiera</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo operaciones mediterraneo</fullName>
+                <default>false</default>
+                <label>Desacuerdo operaciones mediterraneo</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo política captacion de fondos</fullName>
+                <default>false</default>
+                <label>Desacuerdo política captacion de fondos</label>
+            </value>
+            <value>
+                <fullName>Desacuerdo política intervención</fullName>
+                <default>false</default>
+                <label>Desacuerdo política intervención</label>
+            </value>
+            <value>
+                <fullName>Duplicado</fullName>
+                <default>false</default>
+                <label>Duplicado</label>
+            </value>
+            <value>
+                <fullName>Económico</fullName>
+                <default>false</default>
+                <label>Económico</label>
+            </value>
+            <value>
+                <fullName>Error del proveedor</fullName>
+                <default>false</default>
+                <label>Error del proveedor</label>
+            </value>
+            <value>
+                <fullName>Errores administrativos MSF</fullName>
+                <default>false</default>
+                <label>Errores administrativos MSF</label>
+            </value>
+            <value>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+                <label>Fallecido</label>
+            </value>
+            <value>
+                <fullName>Unpaid</fullName>
+                <default>false</default>
+                <label>Impago</label>
+            </value>
+            <value>
+                <fullName>Impago aportaciones</fullName>
+                <default>false</default>
+                <label>Impago aportaciones</label>
+            </value>
+            <value>
+                <fullName>Impago Coronavirus</fullName>
+                <default>false</default>
+                <label>Impago Coronavirus</label>
+            </value>
+            <value>
+                <fullName>Incidencias Web</fullName>
+                <default>false</default>
+                <label>Incidencias Web</label>
+            </value>
+            <value>
+                <fullName>LOPD</fullName>
+                <default>false</default>
+                <label>LOPD</label>
+            </value>
+            <value>
+                <fullName>LORTAD</fullName>
+                <default>false</default>
+                <label>LORTAD</label>
+            </value>
+            <value>
+                <fullName>Modificación cuota</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Modificación cuota</label>
+            </value>
+            <value>
+                <fullName>N/S</fullName>
+                <default>false</default>
+                <label>N/S</label>
+            </value>
+            <value>
+                <fullName>Otras razones</fullName>
+                <default>false</default>
+                <label>Otras razones</label>
+            </value>
+            <value>
+                <fullName>Pruebas</fullName>
+                <default>false</default>
+                <label>Pruebas</label>
+            </value>
+            <value>
+                <fullName>Razones personales</fullName>
+                <default>false</default>
+                <label>Razones personales</label>
+            </value>
+            <value>
+                <fullName>Tarjeta crédito caducada</fullName>
+                <default>false</default>
+                <label>Tarjeta crédito caducada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

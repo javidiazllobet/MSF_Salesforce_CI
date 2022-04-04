@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_CopyTaxData__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Campo que identifica si la información Fiscal del contacto debe ser copiada de los datos del contacto.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Con el campo check marcado se copiarán los datos de Nombre, Apellido 1/ Nombre de la empresa, Apellido 2, NIF/NIE/CIF al bloque de datos fiscales.</inlineHelpText>
+    <label>Copiar datos fiscales</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

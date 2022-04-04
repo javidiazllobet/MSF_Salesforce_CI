@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nueve_digitos_y_empieza_ocho_o_nueve_mrb</fullName>
+    <active>true</active>
+    <description>Comienza por 6 o 7. Tamaño 9 dígitos. Campo Móvil Restringido (msf_RestrictedMobilePhone__c)</description>
+    <errorConditionFormula>AND( 
+!(ISBLANK(msf_RestrictedMobilePhoneBackup__c)), 
+!REGEX(msf_RestrictedMobilePhoneBackup__c,&quot;[6-7]{1}[0-9]{8}&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>msf_RestrictedMobilePhoneBackup__c</errorDisplayField>
+    <errorMessage>El campo debe tener 9 dígitos y comenzar por 6 o 7.</errorMessage>
+</ValidationRule>

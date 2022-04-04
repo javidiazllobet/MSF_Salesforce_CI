@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_EndDateGreaterThanStartDate</fullName>
+    <active>true</active>
+    <description>For organization contacts, the end date must be greater than the start date.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Organization_Contact&apos; &amp;&amp;
+!msf_IsActive__c &amp;&amp; 
+!ISBLANK(msf_StartDate__c) &amp;&amp;
+!ISBLANK(msf_EndDate__c) &amp;&amp;
+msf_StartDate__c &gt; msf_EndDate__c</errorConditionFormula>
+    <errorDisplayField>msf_EndDate__c</errorDisplayField>
+    <errorMessage>La fecha final debe ser mayor o igual que la inicial.</errorMessage>
+</ValidationRule>

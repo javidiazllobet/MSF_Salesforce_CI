@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__Rollups_Limit_on_Attached_Opps_for_Skew__c</fullName>
+    <defaultValue>250</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Only used by the new Customizable Rollups engine</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Número máximo de oportunidades relacionadas en una cuenta o contacto permitidas en trabajos por lotes de totalización en modo de no desfase. Una cuenta o contacto con más de este número de oportunidades siempre se totalizará utilizando el modo Desfase.</inlineHelpText>
+    <label>Skew Mode Threshold</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

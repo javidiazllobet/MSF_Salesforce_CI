@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Nickname__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Nombre que quiere ser tratado, las cartas empezaran por Hola &lt;apodo&gt;</inlineHelpText>
+    <label>Apodo</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

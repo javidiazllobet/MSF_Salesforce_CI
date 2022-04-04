@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_EndDateEmptyWhenActive</fullName>
+    <active>true</active>
+    <description>End date must be empty when the contact is active. End date must be informed when the contact is inactive.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Organization_Contact&apos; &amp;&amp;
+(
+  msf_IsActive__c &amp;&amp; !ISBLANK(msf_EndDate__c) || 
+  !msf_IsActive__c &amp;&amp; ISBLANK(msf_EndDate__c) 
+)</errorConditionFormula>
+    <errorDisplayField>msf_EndDate__c</errorDisplayField>
+    <errorMessage>Cuando el contacto esta activo, no es posible informar una fecha de fin de relación. Si esta inactivo se debe informar una fecha de fin de relación.</errorMessage>
+</ValidationRule>

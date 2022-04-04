@@ -1,0 +1,2273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Volunteers_Campaign</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>MSF_Campaign_Compact_Layout</compactLayoutAssignment>
+    <description>A campaign specifically used to track Volunteers</description>
+    <label>Volunteer Campaign</label>
+    <picklistValues>
+        <picklist>GW_Volunteers__Volunteer_Website_Time_Zone__c</picklist>
+        <values>
+            <fullName>Africa%2FAlgiers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FCairo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FJohannesburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FNairobi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FAnchorage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FBogota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FBuenos_Aires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FCaracas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FChicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FDenver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FEl_Salvador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FHalifax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FIndianapolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FLima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FLos_Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FMexico_City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FNew_York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FPanama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FPhoenix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FPuerto_Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FSantiago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FSao_Paulo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FSt_Johns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FTijuana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FBaghdad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FBangkok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FCalcutta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FColombo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FDacca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FDubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FHong_Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FJakarta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FJerusalem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKabul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKamchatka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKarachi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKatmandu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKuala_Lumpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKuwait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FManila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FRangoon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FRiyadh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FSaigon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FSeoul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FShanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FSingapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTaipei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTashkent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTbilisi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTehran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTokyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FYekaterinburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FBermuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FCape_Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FSouth_Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FAdelaide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FBrisbane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FDarwin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FLord_Howe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FPerth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FSydney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FAmsterdam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FAthens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FBerlin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FBrussels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FBucharest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FDublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FHelsinki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FIstanbul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FLisbon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FLondon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FMinsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FMoscow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FParis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FPrague</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FRome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FAuckland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FChatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FEnderbury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FFiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FGuadalcanal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FHonolulu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FKiritimati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FNiue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FNorfolk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FPago_Pago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FTongatapu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banner Ads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conference</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Attribute_1__c</picklist>
+        <values>
+            <fullName>13TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>902 deles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>902 internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABSERT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AD735</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADSALSA NO LLAMADOS ONG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adpepper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afiliación Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aleatorio score 0-0%2C5 tel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Altair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ana rosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antena3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antevenio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arquitectura y diseño</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audi magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autonomos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ayuda humanitaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bajas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banc Sabadell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banner Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barclays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bienvenida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bodas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bromera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caja abogados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camp trimestral diciembre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camp trimestral fiscal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camp trimestral junio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camp trimestral navidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camp trimestral octubre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canal 33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canal satelite digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canarias 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car %26 driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centrocom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cinco dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citibank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clasicos exclusivos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Col ats alava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Col med la rioja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Col med valencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Col medicos alicante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colegios profesionales cantabria ju</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comer y beber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compractica movil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comunishop movil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concierto solidario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content ignition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coregistro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crecer feliz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuatro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuerpo mente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupon mundo oferta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D2D externo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D2D interno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVD invisibles el pais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De viajes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deia noticias de bizkaia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delicatessen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Descobrir Catalunya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Descobrir cuina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desnutrición</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diari de levante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario avisos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de avila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de burgos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de cadiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de ibiza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de jerez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de leon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de mallorca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de menorca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de navarra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de noticias %28navarra%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de noticias de alava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario de tarragona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario montañes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario vasco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diez minutos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donantes 1er año valor alto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mailing angola junio 02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EITB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ebola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecuador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Correo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Mundo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Pais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Periodico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El comercio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El jueves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El mueble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elogia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emprendedores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empresas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encarte atrapados 2002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encarte bancos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encuentros solidarios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espontaneos 902 250 902</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europa sur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex circulo de lectores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exposición solidaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expositor bancos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exsocios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2F externo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2F interno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook messenger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faro de vigo-pontevedra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filipinas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fotogramas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundaciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giving tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Shopping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Youtube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hea valencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historia de iberia vieja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historia y vida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoy badajoz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ideal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immfly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impagos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informacion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instagram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet cupon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invisibles en el pais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La Vanguardia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La mañana de lerida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La nueva españa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La nueva españa-oviedo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La opinion de a coruña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La opinion de malaga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La opinion de murcia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La opinion de tenerife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La opinion de zamora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La provincia-canarias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La redoute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La rioja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La sexta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La verdad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La voz de galicia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Las provincias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linkedin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamada devos econ entropia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lonely planet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEDIACOM%2FDIGITALCONTENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manga films</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marie claire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mas alla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediaset %28T5%2BCuatro%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditarraneo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mente sana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mercadillo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mercedes benz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mi bebe y yo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mundo oferta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutua scias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muy Interesante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muy interesante historia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muy interesante%2Bgeo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natexo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Geographic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Geographic historia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Geographic viajes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netsales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newsletter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No sabe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norte de castilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noticias de gipuzkoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Objetivo bienestar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palestina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pastillas - doc farmacias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pastillas contra dolor ajeno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pc actual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinterest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planet 49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powerspace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prensa iberica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profesionales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programática</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicación solidaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad gratuita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulsa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Que leer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ra cadena ser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio generico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recomendación conocidos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugiados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regala salud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regalo de gran valor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representacion artistica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reto personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revista ajuntament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revista cottet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revista lecturas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roiandco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rutas del mundo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S no rec sin ext val b</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS 2a llamada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS 3a llamada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saber vivir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sahel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sapiens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schober</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sekuenz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ser humano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ser padres hoy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sfera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slider Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soc no rec sin extra valor bajo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somalia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speak up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subasta solidaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sud sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV %28no sabe%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV delegaciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TVE-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TVE-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tele5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefono encartes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemadrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ultima hora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacuna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vemerchand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Via digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viajar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webpilots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XLSemanaL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yemen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eldiario%2Ees</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Attribute_2__c</picklist>
+        <values>
+            <fullName>A Coruña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alicante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Almería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asturias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barcelona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benicassim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bilbao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bodas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Castellon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ciudad Real</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cordoba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corregistro %28Lead%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cádiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desnut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donosti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Corte Inglés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encuesta %28Lead%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extremadura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuerteventura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genérico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Girona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giving Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gran Canaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Huelva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Huesca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ibiza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jerez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La Palma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lanzarote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lleida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logroño</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mallorca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Menorca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murcia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Málaga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Sabe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pamplona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugiados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retargeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salamanca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Sebastián</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santiago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segovia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sevilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarragona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tenerife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tenerife Sur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tossa De Mar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valladolid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zamora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zaragoza</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Attribute_3__c</picklist>
+        <values>
+            <fullName>Branded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No sabe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Branded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Andalucía Oriental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Aragón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Asturias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Baleares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Canarias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Cantabria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Castilla Y Leon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Catalunya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Centro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Extremadura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Galicia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona La Rioja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Levante Norte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Levante Sur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Navarra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona Pais Vasco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zona País Vasco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Attribute_4__c</picklist>
+        <values>
+            <fullName>Entre semana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fin de semana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpaid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Attribute_5__c</picklist>
+        <values>
+            <fullName>Itinerante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Itinerante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_CampaignPresenceType__c</picklist>
+        <values>
+            <fullName>Delegado%2Fa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expat%2FVoluntario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundrasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presidente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vídeo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_IsOnline__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_ObjectivePublic__c</picklist>
+        <values>
+            <fullName>BIG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MID MINUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MID PLUS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Objective__c</picklist>
+        <values>
+            <fullName>Conversión %28de lead o donante a asociado%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultivación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petición difusión</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendición de cuentas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_OutboundChannel1__c</picklist>
+        <values>
+            <fullName>Afiliación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impreso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orgánico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad digital</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_OutboundChannel2__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_OwnBy__c</picklist>
+        <values>
+            <fullName>Captación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colaboraciones Estratégicas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desconocido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fidelización</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_PreviousStepChannel__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One to One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS Opis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS Push</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLMK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Provider__c</picklist>
+        <values>
+            <fullName>Antevenio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betternow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bodasnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Busquets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centrocom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desconocido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entropia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FISL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundraisingco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Ads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INEK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movistar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natexo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paypal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosocial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response concepts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sitel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taskforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taskphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Testamenta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twisters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vodafone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worldcoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zankyou</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Segment__c</picklist>
+        <values>
+            <fullName>Asociados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asociados España</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid%2B donors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCBA All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanitarios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terreno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Testamentarios</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_Thematic__c</picklist>
+        <values>
+            <fullName>82-Tigray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asamblea General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debate asociativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gobernanza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSF España</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSF OCBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movimiento MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salud mental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vida asociativa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

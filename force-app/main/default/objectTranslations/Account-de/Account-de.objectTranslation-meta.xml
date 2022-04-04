@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>cpm__newAccountManualReview</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__BDE_Entry_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__BDE_List_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__Manage_Household_Custom</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>proh__SOSL_ReturnFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>proh__newAccount</name>
+    </fieldSets>
+    <layouts>
+        <layout>Household Lightning Layout</layout>
+        <sections>
+            <label>Adresse</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Spendeninformationen</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Spendenbeträge gesamt</label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label>Felder</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Mitgliedschaftsinformationen</label>
+            <section>Membership Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Anonymous Layout</layout>
+        <sections>
+            <label></label>
+            <section>Detalle de Anónimo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Canvasser Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Detalle de la cuenta</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Household Layout</layout>
+        <sections>
+            <label></label>
+            <section>Detalle Total Oportunidades</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle del Hogar</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Organization Layout</layout>
+        <sections>
+            <label></label>
+            <section>Detalles de la organización</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organization Lightning Layout</layout>
+        <sections>
+            <label>Adresse</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Spendeninformationen</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Spendenbeträge gesamt</label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label>Folder</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Unterstützungsinformationen</label>
+            <section>Grantmaking Information</section>
+        </sections>
+        <sections>
+            <label>Information zum Spenden Ausweis</label>
+            <section>Matching Gift Information</section>
+        </sections>
+        <sections>
+            <label>Mitgliedschaftsinformationen</label>
+            <section>Membership Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>MSF_NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Donation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Grant</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Matching_Donation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Membership</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Anonymous</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>HH_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Organization</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>activities__Create_Tasks_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Manage_Household</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__New_Gift</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Recalculate_Rollups</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__VerifySelectedAddressesAccount</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Addresses_Classic</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Phone</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Phones</name>
+    </webLinks>
+</CustomObjectTranslation>

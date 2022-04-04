@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>paysepa__Mandate_Id_should_have_a_value</fullName>
+    <active>false</active>
+    <description>If mandate Id is empty it means that there is no mandate or custom mandate.</description>
+    <errorConditionFormula>ISBLANK(cpm__Custom_Mandate_ID__c) &amp;&amp; ISPICKVAL(cpm__Payment_Processor__c, &apos;PaymentHub-SEPA&apos;) &amp;&amp; ISPICKVAL(cpm__Payment_Method__c, &apos;Direct Debit&apos;)</errorConditionFormula>
+    <errorMessage>A mandate or custom mandate ID is required</errorMessage>
+</ValidationRule>

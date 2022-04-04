@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_EthicalCode__c</fullName>
+    <externalId>false</externalId>
+    <label>Código ético</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sector vetado</fullName>
+                <default>false</default>
+                <label>Sector vetado</label>
+            </value>
+            <value>
+                <fullName>Sector gris</fullName>
+                <default>false</default>
+                <label>Sector gris</label>
+            </value>
+            <value>
+                <fullName>Sector OK</fullName>
+                <default>false</default>
+                <label>Sector OK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

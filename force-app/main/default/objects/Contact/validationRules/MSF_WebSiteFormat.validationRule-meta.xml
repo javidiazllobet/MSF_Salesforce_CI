@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_WebSiteFormat</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(msf_WebSite__c) &amp;&amp; 
+!REGEX(msf_WebSite__c,&quot;^((http|https)://)??(www[.])??([a-zA-Z0-9]|-)+?([.][a-zA-Z0-9(-|/|=|?)??]+?)+?$&quot;)</errorConditionFormula>
+    <errorDisplayField>msf_WebSite__c</errorDisplayField>
+    <errorMessage>La dirección web no tiene un formato valido.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe03__Add_Campaign_to_All_Opportunites__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Si seleccionado, todas las oportunidad de las donaciones recurrentes usarán la campaña en la donación recurrente. Si no se selecciona, solo la primera oportunidad tendrá la campaña.</inlineHelpText>
+    <label>Add Campaign to All Opportunities</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

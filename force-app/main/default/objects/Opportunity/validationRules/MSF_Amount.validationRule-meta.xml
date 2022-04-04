@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Amount</fullName>
+    <active>true</active>
+    <description>Amount required when opportunity is won.</description>
+    <errorConditionFormula>(ISBLANK(Amount) || Amount &lt;= 0)&amp;&amp; !ISPICKVAL(Type, &quot;In-Kind Gift&quot;) &amp;&amp;  
+(ISPICKVAL(StageName , &apos;Cobrada&apos;) || ISPICKVAL(StageName , &apos;Puesta al cobro&apos;) || ISPICKVAL(StageName , &apos;Devuelta&apos;))</errorConditionFormula>
+    <errorDisplayField>Amount</errorDisplayField>
+    <errorMessage>No es posible poner al cobro o cobrar una oportunidad sin importe.</errorMessage>
+</ValidationRule>

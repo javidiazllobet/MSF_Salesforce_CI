@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_PaymentOrderId</fullName>
+    <active>false</active>
+    <description>Payment order Id is required when opportunity is won for some cases from payment method</description>
+    <errorConditionFormula>(ISPICKVAL(npsp4hub__Payment_Method__c, &apos;TC ONLINE&apos;) || ISPICKVAL(npsp4hub__Payment_Method__c, &apos;PAYPAL&apos;)|| 
+  ISPICKVAL(npsp4hub__Payment_Method__c, &apos;TRUSTLY - TR ONLINE&apos;) 
+ )  
+ &amp;&amp;
+ (ISBLANK( msf_PaymentOrderId__c )) &amp;&amp; ISPICKVAL(StageName , &apos;Cobrada&apos;)</errorConditionFormula>
+    <errorDisplayField>msf_PaymentOrderId__c</errorDisplayField>
+    <errorMessage>No es posible cobrar una oportunidad sin id de pedido de pago.</errorMessage>
+</ValidationRule>

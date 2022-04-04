@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Atención al Socio</name>
+    <queueMembers>
+        <users>
+            <user>angels.cartesarias@sitel.com</user>
+            <user>beatriz.villanueva@barcelona.msf.org</user>
+            <user>carlos.martinez@sitel.com</user>
+            <user>cristina.ramon@sitel.com</user>
+            <user>esther.ferre@sitel.com</user>
+            <user>francisco.rus@sitel.com</user>
+            <user>mariaisabel.bernaltellez@sitel.com</user>
+            <user>mariaisabel.segui@sitel.com</user>
+            <user>javier.barrerovega@sitel.com</user>
+            <user>jesus.campillo@sitel.com</user>
+            <user>juan-antonio.moya@barcelona.msf.org</user>
+            <user>maite.ruizmarin@sitel.com</user>
+            <user>noelia.bobet@sitel.com</user>
+            <user>nuria.mayol@sitel.com</user>
+            <user>pilar.andreu@sitel.com</user>
+            <user>pilar.munoz@sitel.com</user>
+            <user>raquel.alonso@sitel.com</user>
+            <user>rosario.perez@sitel.com</user>
+            <user>susana.riveraguerrero@sitel.com</user>
+            <user>tamara.ruiz@sitel.com</user>
+            <user>yiara.segura@sitel.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

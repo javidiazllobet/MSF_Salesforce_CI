@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>La fecha en que se seleccionan los Pagos recurrentes dentro de esta ejecución del proceso de cobros</help>
+    <label></label>
+    <name>cpm__Selection_Date__c</name>
+</CustomFieldTranslation>

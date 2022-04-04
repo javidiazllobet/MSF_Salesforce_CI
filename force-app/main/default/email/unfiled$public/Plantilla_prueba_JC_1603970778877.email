@@ -1,0 +1,18 @@
+<html>
+ <head> 
+  <title></title> 
+ </head> 
+ <body style="height: auto; min-height: auto;">
+   Hola {{{Recipient.msf_ShippingName__c}}}, 
+  <br /> 
+  <br /> La semana que viene estaremos en&nbsp;{{{Recipient.MailingCity}}} y nos gustaría verte. 
+  <br /> 
+  <br /> 
+  <img alt="Imagen agregada por el usuario" src="https://www.msf.es/sites/default/files/styles/summary_image_small_desktop/public/msf312301_medium_santiago_d._risco_small.jpg?itok=lNv48om0&amp;timestamp=1588259923" style="max-width: 681.15px" title="Imagen agregada por el usuario" /> 
+  <br /> 
+  <br /> Muchas gracias por llevar&nbsp;{{{Recipient.msf_Seniority__c}}} años apoyándonos.&nbsp; 
+  <br /> 
+  <br /> 
+  <img alt="Firma_coche" src="{[devName:Firma_coche]}" style="max-width: 681.15px" title="Firma_coche" /> 
+ </body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_FinalCampaign_Segment</fullName>
+    <active>true</active>
+    <description>msf_Segment__c: Campo obligatorio para campañas finales.</description>
+    <errorConditionFormula>IF(msf_FinalCampaign__c = TRUE &amp;&amp; ISBLANK(TEXT(msf_Segment__c)), true, false)</errorConditionFormula>
+    <errorDisplayField>msf_Segment__c</errorDisplayField>
+    <errorMessage>Campo obligatorio para campañas finales (Segmento)</errorMessage>
+</ValidationRule>

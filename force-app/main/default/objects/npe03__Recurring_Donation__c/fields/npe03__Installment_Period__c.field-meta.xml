@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe03__Installment_Period__c</fullName>
+    <deprecated>false</deprecated>
+    <description>How often you’ll receive the donations. NOTE: Changing the installment period for an existing Fixed-Length Recurring Donation may result in the loss and re-creation of open opportunities. Any data associated with those opportunities may be lost.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Con que frecuencia se va a recibir las donaciones. Nota: Modificar la frecuencia en donaciones recurrentes sin final abierto puede resultar en la perdida o re-creación de las op. abiertas relacionadas. Información relacionada a estas op. puede perderse.</inlineHelpText>
+    <label>Installment Period</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+                <label>Yearly</label>
+            </value>
+            <value>
+                <fullName>Bimensual</fullName>
+                <default>false</default>
+                <label>Bimensual</label>
+            </value>
+            <value>
+                <fullName>Semestral</fullName>
+                <default>false</default>
+                <label>Semestral</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

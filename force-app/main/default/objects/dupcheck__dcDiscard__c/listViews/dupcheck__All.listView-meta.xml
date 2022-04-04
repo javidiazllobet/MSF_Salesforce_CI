@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dupcheck__All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>dupcheck__recordA__c</columns>
+    <columns>dupcheck__recordB__c</columns>
+    <columns>dupcheck__Relation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>dupcheck__recordB__c</field>
+        <operation>equals</operation>
+        <value>0033Y00002uNwcYQAS</value>
+    </filters>
+    <label>All</label>
+</ListView>

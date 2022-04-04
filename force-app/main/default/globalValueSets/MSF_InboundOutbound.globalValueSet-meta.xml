@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Entrante</fullName>
+        <default>false</default>
+        <label>Entrante</label>
+    </customValue>
+    <customValue>
+        <fullName>Saliente</fullName>
+        <default>false</default>
+        <label>Saliente</label>
+    </customValue>
+    <customValue>
+        <fullName>Interno</fullName>
+        <default>false</default>
+        <label>Interno</label>
+    </customValue>
+    <customValue>
+        <fullName>n/a</fullName>
+        <default>false</default>
+        <label>n/a</label>
+    </customValue>
+    <description>Interactions Master Data</description>
+    <masterLabel>Sentido</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

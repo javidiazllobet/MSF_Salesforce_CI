@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asociativo_incompleto_metodo_de_pago</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName == &apos;Associative&apos; &amp;&amp;
+(ISPICKVAL(msf_Status__c , &apos;Pendiente de aprobar&apos;) || ISPICKVAL(msf_Status__c , &apos;Pendiente de presentar&apos;)) &amp;&amp;
+ISBLANK(TEXT(msf_PaymentMethod__c)) &amp;&amp; !msf_ExemptOfPayment__c</errorConditionFormula>
+    <errorDisplayField>msf_PaymentMethod__c</errorDisplayField>
+    <errorMessage>Campo obligatorio para completar el formulario si no está exento de pago.</errorMessage>
+</ValidationRule>

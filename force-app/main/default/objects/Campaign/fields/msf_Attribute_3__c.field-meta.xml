@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Attribute_3__c</fullName>
+    <externalId>false</externalId>
+    <label>Atributo 3</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Branded</fullName>
+                <default>false</default>
+                <label>Branded</label>
+            </value>
+            <value>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+                <label>Inbound</label>
+            </value>
+            <value>
+                <fullName>Non-Branded</fullName>
+                <default>false</default>
+                <label>Non-Branded</label>
+            </value>
+            <value>
+                <fullName>No sabe</fullName>
+                <default>false</default>
+                <label>No sabe</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Zona Andalucía Occidental</fullName>
+                <default>false</default>
+                <label>Zona Andalucía Occidental</label>
+            </value>
+            <value>
+                <fullName>Zona Andalucía Oriental</fullName>
+                <default>false</default>
+                <label>Zona Andalucía Oriental</label>
+            </value>
+            <value>
+                <fullName>Zona Aragón</fullName>
+                <default>false</default>
+                <label>Zona Aragón</label>
+            </value>
+            <value>
+                <fullName>Zona Asturias</fullName>
+                <default>false</default>
+                <label>Zona Asturias</label>
+            </value>
+            <value>
+                <fullName>Zona Baleares</fullName>
+                <default>false</default>
+                <label>Zona Baleares</label>
+            </value>
+            <value>
+                <fullName>Zona Canarias</fullName>
+                <default>false</default>
+                <label>Zona Canarias</label>
+            </value>
+            <value>
+                <fullName>Zona Cantabria</fullName>
+                <default>false</default>
+                <label>Zona Cantabria</label>
+            </value>
+            <value>
+                <fullName>Zona Castilla Y Leon</fullName>
+                <default>false</default>
+                <label>Zona Castilla Y Leon</label>
+            </value>
+            <value>
+                <fullName>Zona Catalunya</fullName>
+                <default>false</default>
+                <label>Zona Catalunya</label>
+            </value>
+            <value>
+                <fullName>Zona Centro</fullName>
+                <default>false</default>
+                <label>Zona Centro</label>
+            </value>
+            <value>
+                <fullName>Zona Extremadura</fullName>
+                <default>false</default>
+                <label>Zona Extremadura</label>
+            </value>
+            <value>
+                <fullName>Zona Galicia</fullName>
+                <default>false</default>
+                <label>Zona Galicia</label>
+            </value>
+            <value>
+                <fullName>Zona La Rioja</fullName>
+                <default>false</default>
+                <label>Zona La Rioja</label>
+            </value>
+            <value>
+                <fullName>Zona Levante Norte</fullName>
+                <default>false</default>
+                <label>Zona Levante Norte</label>
+            </value>
+            <value>
+                <fullName>Zona Levante Sur</fullName>
+                <default>false</default>
+                <label>Zona Levante Sur</label>
+            </value>
+            <value>
+                <fullName>Zona Navarra</fullName>
+                <default>false</default>
+                <label>Zona Navarra</label>
+            </value>
+            <value>
+                <fullName>Zona Pais Vasco</fullName>
+                <default>false</default>
+                <label>Zona Pais Vasco</label>
+            </value>
+            <value>
+                <fullName>Zona País Vasco</fullName>
+                <default>false</default>
+                <label>Zona País Vasco</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

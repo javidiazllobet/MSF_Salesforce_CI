@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Area socio Web</fullName>
+        <default>false</default>
+        <label>Area socio Web</label>
+    </customValue>
+    <customValue>
+        <fullName>Cambio de datos</fullName>
+        <default>false</default>
+        <label>Cambio de datos</label>
+    </customValue>
+    <customValue>
+        <fullName>Campañas de petición</fullName>
+        <default>false</default>
+        <label>Campañas de petición</label>
+    </customValue>
+    <customValue>
+        <fullName>Campañas fundraising</fullName>
+        <default>false</default>
+        <label>Campañas fundraising</label>
+    </customValue>
+    <customValue>
+        <fullName>Certificado fiscal</fullName>
+        <default>false</default>
+        <label>Certificado fiscal</label>
+    </customValue>
+    <customValue>
+        <fullName>Colaboraciones especiales</fullName>
+        <default>false</default>
+        <label>Colaboraciones especiales</label>
+    </customValue>
+    <customValue>
+        <fullName>Devoluciones económicas</fullName>
+        <default>false</default>
+        <label>Devoluciones económicas</label>
+    </customValue>
+    <customValue>
+        <fullName>Encuestas</fullName>
+        <default>false</default>
+        <label>Encuestas</label>
+    </customValue>
+    <customValue>
+        <fullName>Eventos</fullName>
+        <default>false</default>
+        <label>Eventos</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestión administrativa</fullName>
+        <default>false</default>
+        <label>Gestión administrativa</label>
+    </customValue>
+    <customValue>
+        <fullName>Plan de relación</fullName>
+        <default>false</default>
+        <label>Plan de relación</label>
+    </customValue>
+    <customValue>
+        <fullName>Presenciales O2O</fullName>
+        <default>false</default>
+        <label>Presenciales O2O</label>
+    </customValue>
+    <customValue>
+        <fullName>Proyectos, operaciones y actividades MSF</fullName>
+        <default>false</default>
+        <label>Proyectos, operaciones y actividades MSF</label>
+    </customValue>
+    <description>Interactions Master Data</description>
+    <masterLabel>Familia</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

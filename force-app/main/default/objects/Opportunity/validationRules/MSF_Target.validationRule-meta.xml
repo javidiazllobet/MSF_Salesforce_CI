@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Target</fullName>
+    <active>true</active>
+    <description>Target is required when opportunity is won.</description>
+    <errorConditionFormula>RecordType.DeveloperName != &apos;Historical&apos; &amp;&amp;(ISBLANK( TEXT(npsp4hub__Target__c) )
+||
+(!ISBLANK( TEXT(npsp4hub__Payment_Method__c ))
+&amp;&amp;!ISPICKVAL(npsp4hub__Payment_Method__c , &apos;TRANSFERENCIA BANCARIA&apos;) &amp;&amp; !ISPICKVAL( npsp4hub__Target__c, &apos;LA CAIXA CCC OPERATIVA&apos;)))
+&amp;&amp;
+(ISPICKVAL(StageName , &apos;Cobrada&apos;) || ISPICKVAL(StageName , &apos;Puesta al cobro&apos;) || ISPICKVAL(StageName , &apos;Devuelta&apos;))
+&amp;&amp;
+NOT (IF (OR(
+$User.Email = &apos;beatriz.villanueva@barcelona.msf.org&apos; ,
+$User.Email = &apos;juan-antonio.moya@barcelona.msf.org&apos;) ,
+TRUE, FALSE))</errorConditionFormula>
+    <errorDisplayField>npsp4hub__Target__c</errorDisplayField>
+    <errorMessage>No es posible poner al cobro o cobrar una oportunidad sin cuenta de destino, o no es correcta.</errorMessage>
+</ValidationRule>

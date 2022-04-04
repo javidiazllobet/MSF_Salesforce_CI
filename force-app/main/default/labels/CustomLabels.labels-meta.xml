@@ -1,0 +1,2715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>MSF_ANONYMIZATION_ALERT_MSG</fullName>
+        <categories>ANONYMIZATION PROCESS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>MSF_ANONYMIZATION_ALERT_MSG</shortDescription>
+        <value>RECUERDA CERRAR LAS DONACIONES RECURRENTES Y OPORTUNIDADES ASOCIADAS A ESTE CONTACTO ANTES DE ELIMINARLO</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ANONYMIZATION_BUTTON_LABEL</fullName>
+        <categories>ANONYMIZATION PROCESS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the anonymization button</shortDescription>
+        <value>Anonimizar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ANONYMIZATION_CONFIRMATION_MSG</fullName>
+        <categories>ANONYMIZATION PROCESS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the anonymization component to confirm the process</shortDescription>
+        <value>¿Estás seguro de anonimizar este contacto?</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ANONYMIZATION_SUCCESS_MSG</fullName>
+        <categories>ANONYMIZATION PROCESS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the success message of the anonymization process</shortDescription>
+        <value>El proceso de anonimización ha finalizado correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATED_ICON</fullName>
+        <categories>SUMMARY SECTION ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associated icon</shortDescription>
+        <value>Asociado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_ASSOCIATED</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative convert: Associated</shortDescription>
+        <value>Es o ha sido asociado:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_BUTTON_CONVERT</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the convert button</shortDescription>
+        <value>Convertir en asociado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_BUTTON_GOTO</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the goto button</shortDescription>
+        <value>Ir al contacto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_BUTTON_MERGE</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the merge button</shortDescription>
+        <value>Fusionar y convertir en asociado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_DUPLICATES</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Message that is displayed when duplicates are detected</shortDescription>
+        <value>Hemos encontrando posibles contactos duplicados</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_EMAIL</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative convert: Email</shortDescription>
+        <value>Correo electrónico:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_MEMBER_TYPE</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative convert: MemberType</shortDescription>
+        <value>Tipo de socio:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_NIF</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative convert: NIF</shortDescription>
+        <value>NIF:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_NO_DUPLICATES</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Message that is displayed when no duplicates are detected</shortDescription>
+        <value>No hemos encontrando ningún posible duplicado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_PHONE</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative convert: Phone</shortDescription>
+        <value>Teléfono:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_CONVERT_WRONG_STATUS</fullName>
+        <categories>ASSOCIATIVE CONVERT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the wrong status message</shortDescription>
+        <value>El candidato no puede convertirse estando en el estado:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_ASSOCIATIVE_PHONE</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Phone</shortDescription>
+        <value>Teléfono</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_CANCELLATION_REASON</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Cancellation reason</shortDescription>
+        <value>Motivo de baja</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_EMAIL</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Email</shortDescription>
+        <value>Correo electrónico</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_EXEMPT_PAYMENT</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Exempt of payment</shortDescription>
+        <value>Exento de pago</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_IS_FIELD</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: IsField</shortDescription>
+        <value>Es de terreno</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_IS_SANITARY</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Is Sanitary</shortDescription>
+        <value>Es sanitario</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_LANGUAGE</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Language</shortDescription>
+        <value>Lenguaje de preferencia</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_LASTNAME</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: LastName</shortDescription>
+        <value>Apellido 1</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_LASTNAME_TWO</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: LastName 2</shortDescription>
+        <value>Apellido 2</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_NAME</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Name</shortDescription>
+        <value>Nombre</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_NATIONALITY</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Nationality</shortDescription>
+        <value>Nacionalidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_NO_INFO</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Message that is displayed when associative information is not retrieved.</shortDescription>
+        <value>No hay información de asociado.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_NUMBER</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Associative number</shortDescription>
+        <value>Número asociado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_OTHER_EMAIL</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Other email</shortDescription>
+        <value>Correo electrónico secundario</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_PAYMENTMETHOD</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Método de pago</shortDescription>
+        <value>Método de pago</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_SALARIED</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Salaried</shortDescription>
+        <value>Asalariado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_STAFFTYPE</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Tipo de personal</shortDescription>
+        <value>Tipo de personal</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_STARTDATE</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Fecha de inicio asociativo</shortDescription>
+        <value>Fecha de Inicio asociativo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_STATUS</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section field: Status</shortDescription>
+        <value>Estado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ASSOCIATIVE_SECTION_TITLE</fullName>
+        <categories>ASSOCIATIVE SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the associative section in contact</shortDescription>
+        <value>Información asociativa</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ActualizacionMasivaTareas</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Actualizacion masiva tareas</shortDescription>
+        <value>Mass Update Task</value>
+    </labels>
+    <labels>
+        <fullName>MSF_CONTACT_FORMULA_CONTACT_INACTIVE</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label the organization contact type field, contact inactive value</shortDescription>
+        <value>Inactivo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_CONTACT_FORMULA_NOT_PRIMARY_CONTACT_ACTIVE</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label the organization contact type field, not primary contact active value</shortDescription>
+        <value>No principal activo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_CONTACT_FORMULA_PRIMARY_CONTACT</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label the organization contact type field, primary contact value</shortDescription>
+        <value>Principal</value>
+    </labels>
+    <labels>
+        <fullName>MSF_CONTACT_NIF_NIE_CIF_ERROR</fullName>
+        <categories>CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>The error shown for the validation of the field NIF/NIE/ CIF</shortDescription>
+        <value>NIF/NIE/CIF inválido.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_CONTACT_NIF_NIE_ERROR</fullName>
+        <categories>CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>The error shown for the validation of the field NIF/NIE</shortDescription>
+        <value>NIF/NIE inválido.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_CUSTOM_LOOKUP_NO_RESULT_FOUND</fullName>
+        <categories>CUSTOM LOOK UP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the no result found on the custom look up component</shortDescription>
+        <value>No se han encontrado resultados.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_DueDates</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Due Dates</shortDescription>
+        <value>DUE DATES</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ENDORSED_ICON</fullName>
+        <categories>SUMMARY SECTION ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the endorsed icon.</shortDescription>
+        <value>Avalados</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ERROR</fullName>
+        <categories>GENERAL</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Error displayed when an error occurs.</shortDescription>
+        <value>Se ha producido el siguiente error:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_EXPERIENCE_IN_BOARD_ICON</fullName>
+        <categories>SUMMARY SECTION ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the experience in board icon</shortDescription>
+        <value>Exp. junta</value>
+    </labels>
+    <labels>
+        <fullName>MSF_EXPERIENCE_IN_TERRAIN_ICON</fullName>
+        <categories>SUMMARY SECTION ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the experience in terrain icon</shortDescription>
+        <value>Actualmente en terreno</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DESCRIPTION</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Descripción</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ACTIVE_PAYMENTE_PROFILES</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the active payment profiles on the form DE</shortDescription>
+        <value>Perfiles de pago activos</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_AUTHORISATION_CODE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the field authorisation code on the form DE</shortDescription>
+        <value>Código de autorización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_CAMPAIGN</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the custom look up from campaign on the form DE</shortDescription>
+        <value>Campaña</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_CHEQUE_CONTROL_NUMBER</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the cheque control number on the form DE</shortDescription>
+        <value>Número de control</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_CHEQUE_NUMBER</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the cheque number on the form DE</shortDescription>
+        <value>Numero de talón</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_DESTINATION_ACCOUNT</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the destination account on the form DE</shortDescription>
+        <value>Cuenta de destino</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_DONATION_TYPE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donation type on the form DE</shortDescription>
+        <value>Tipo de donación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_DONATION_TYPE_IN_KIND</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donation type in kind on the form DE</shortDescription>
+        <value>Tipo de donativo en especie</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ECONOMIC_SECTION</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the economic section on the form DE</shortDescription>
+        <value>Sección económica</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ERROR_DUPLICATE_ORDER_ID</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the excepcion error duplicate order id in opp insert on the form DE</shortDescription>
+        <value>ID pedido duplicado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ERROR_INVALID_CAMPAIGN</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message error invalid campaign on the form DE</shortDescription>
+        <value>Campaña obligatoria</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ERROR_INVALID_DATE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message error invalid date on the form DE</shortDescription>
+        <value>Fecha incorrecta</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ERROR_IS_NOT_ASSOCIATIVE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message error is not associative on the form DE</shortDescription>
+        <value>No puede hacer este tipo de donación, no es asociado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_FOUNDATION_TYPE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the picklist foundation type on the form DE</shortDescription>
+        <value>Tipo de fundación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_GAU</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the GAU on the form DE</shortDescription>
+        <value>Destino aportación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_HAS_NOT_CREDIT_CARD</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the hasn&apos;t credit card value picklist  pp options on the form DE</shortDescription>
+        <value>No tiene tarjeta de crédito</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_HAS_PRIMARY_CONTACT_FALSE_OPTION</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the no option has primary contact toggle on the form DE</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_HAS_PRIMARY_CONTACT_TOGGLE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the has primary contact toggle on the form DE</shortDescription>
+        <value>¿Tiene contacto principal?</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_HAS_PRIMARY_CONTACT_TRUE_OPTION</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the yes option has primary contact toggle on the form DE</shortDescription>
+        <value>Si</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_LABEL_TAB_CONSOLE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the tab name when is open in the service console</shortDescription>
+        <value>Entrada de datos</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_LEAD_SOURCE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the picklist lead source on the form DE</shortDescription>
+        <value>Canal de entrada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_MODIFICATION_CHANNEL</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the modification channel on the form DE</shortDescription>
+        <value>Canal de modificación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_NEW</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the new value picklist  pp options on the form DE</shortDescription>
+        <value>Nuevo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_NOT_RECEIVING_ANYTHING</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the not receiving anything on the form DE</shortDescription>
+        <value>No recibir nada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_NOT_SELECTABLE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the not selectable value picklist  pp options on the form DE</shortDescription>
+        <value>No seleccionable</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ORDER_ID</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the field order ID on the form DE</shortDescription>
+        <value>Id pedido</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_ORG_TYPE</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the picklist organization type on the form DE</shortDescription>
+        <value>Tipo de organización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_PRIMARY_CONTACT</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for Data of the primary contact section on the form DE</shortDescription>
+        <value>Datos del contacto principal</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_DE_RECURRENT_DONATION_MEMBERSHIP</fullName>
+        <categories>FORM DATA ENTRY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>label for the Recurrent Donation Membership value picklist on form DE</shortDescription>
+        <value>Recurrent Donation Membership</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ACCOUNT_NUMBER</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, account number field on the form F2F</shortDescription>
+        <value>Número de cuenta</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_BIRTHDATE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, birthdate field on the form F2F</shortDescription>
+        <value>Fecha de nacimiento</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CAMPAIGN</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the canvasser section, campaign field on the form F2F</shortDescription>
+        <value>Campaña</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CANCEL_BUTTON</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the cancel button on the form F2F</shortDescription>
+        <value>Cancelar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CIF</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the CIF on form F2F</shortDescription>
+        <value>CIF</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CITY</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the canvasser and donor section, city field on the form F2F</shortDescription>
+        <value>Ciudad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CLEAR_BUTTON</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the clear button on the form F2F</shortDescription>
+        <value>Limpiar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CONFIRM_PAYMENT_CHECK</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, confirm payment check on the form F2F</shortDescription>
+        <value>Entiendo que he firmado un compromiso para realizar una donación de manera periódica a MSF.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CONFIRM_SIGNATURE_TEXT</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, confirm signature text on the form F2F</shortDescription>
+        <value>SEÑORES/AS CON MI FIRMA Y MI NÚMERO DE CUENTA, HASTA NUEVO AVISO, ME HAGO SOCIO/A DE MÉDICOS SIN FRONTERAS Y AUTORIZO QUE SE ATIENDAN LOS RECIBOS QUE PRESENTARÁ MSF CON CARGO A MI CUENTA/LIBRETA.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CONTACT_ALREADY_EXISTS</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message the contact already exists</shortDescription>
+        <value>El contacto ya existe.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CONTACT_DATE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the contact date on the form F2F</shortDescription>
+        <value>Fecha de contacto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_COUNTRY</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, country field on the form F2F</shortDescription>
+        <value>País</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_CURRENT_QUOTA</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the current quota on the form F2F</shortDescription>
+        <value>Cuota actual</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_DATA_SAVED_CORRECTLY</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message the data has been saved correctly</shortDescription>
+        <value>Se han guardado correctamente los datos introducidos.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_DC</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, DC field on the form F2F</shortDescription>
+        <value>DC</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_DOOR</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, door field on the form F2F</shortDescription>
+        <value>Puerta</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_EMAIL</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, email field on the form F2F</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_EMPTY_VALUE_PICKLIST</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Valor seleccionado por defecto en los picklists del formulario.</shortDescription>
+        <value>--Ninguno--</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ENTITY</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, entity field on the form F2F</shortDescription>
+        <value>Entidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_AMOUNT_POSITIVE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error amount field must be a positive value</shortDescription>
+        <value>El importe debe ser un valor positivo.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_BASIC_INFO_INCOMPLETE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message basic information incomplete</shortDescription>
+        <value>Información básica incompleta o errónea.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_CIF_INCORRECT</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message from invalid CIF</shortDescription>
+        <value>CIF incorrecto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_COMPLETE_MIN_INFORMATION</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message complete minimun information</shortDescription>
+        <value>Indicar una fecha de contacto para poder completar la información necesaria en otro momento.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_CONTACT_DATE_GREATER_ONE_MONTH</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Fecha posterior a un mes</shortDescription>
+        <value>La fecha de contacto no puede ser mayor a un mes.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_CONTACT_DATE_LESSER_TODAY</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message the contact date it&apos;s lesser today</shortDescription>
+        <value>La fecha de contacto no puede ser menor a hoy.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_GREATER_THAN_TODAY</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>label for the error message birthdate can&apos;t greater than today</shortDescription>
+        <value>La fecha de nacimiento no puede ser mayor a hoy.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_HAS_OCURRED</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message an error has occurred</shortDescription>
+        <value>Se ha producido un error al guardar los datos introducidos.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_INCOMPLETE_FIELDS</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message from incomplete fields</shortDescription>
+        <value>Campos incorrectos.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_INCORRECT_IBAN</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message incorrect IBAN, form F2F and  DE</shortDescription>
+        <value>El IBAN introducido no es correcto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_INFORMATION_INCOMPLETE_HOLDER</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message from information incomplete holder</shortDescription>
+        <value>Información del titular incompleta.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_INFO_REP_LEGAL_INCORRECT</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message information from legal representative incorrect</shortDescription>
+        <value>Información del representante legal incorrecta.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_IS_PARTNER_COMPLETE_INFO</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message is partner complete the information</shortDescription>
+        <value>Es socio, complete los campos mínimos : (*)Obligatorios, IBAN, importe, móvil, dirección o email.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_NIF_NIE_HOLDER_INCORRECT</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message NIF/NIE incorrect  from holder</shortDescription>
+        <value>NIF/NIE del titular incorrecto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_NIF_NIE_INCORRECT</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message from invalid NIF/NIE</shortDescription>
+        <value>NIF/NIE incorrecto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_NIF_REP_LEGAL_INCORRECT</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message NIF/CIF from legal representative incorrect</shortDescription>
+        <value>NIF/NIE del representante legal incorrecto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_REPORT_AMOUNT</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the error message report the amount</shortDescription>
+        <value>Debe informar el monto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_TITLE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>label for the error message title</shortDescription>
+        <value>Error.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ERROR_TUTOR_DO_NOT_SIGN</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>label for the error message tutor don&apos;t sign if is lead</shortDescription>
+        <value>No puede actualizar fecha si indica que el donante es menor de edad, debido a que el representante legal no podrá firmar.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_FIRST_INSTALLMENT_DATE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, first installment date field on the form F2F</shortDescription>
+        <value>Fecha primera cuota</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_FLOOR</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, floor field on the form F2F</shortDescription>
+        <value>Piso</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_GENDER</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, gender field on the form F2F</shortDescription>
+        <value>Género</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_HOLDER</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, holder field on the form F2F</shortDescription>
+        <value>Titular</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_HOLDER_VALUE_OTHER_PERSON</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the holder picklist, other person value</shortDescription>
+        <value>Otra persona</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_HOLDER_VALUE_SAME_PERSON</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the holder picklist, same person value</shortDescription>
+        <value>La misma persona</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_HOLDER_VALUE_TUTOR</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the holder picklist, tutor value</shortDescription>
+        <value>Tutor</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_IBAN</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, iban field on the form F2F</shortDescription>
+        <value>IBAN</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_INCOMPLETE_CONFIRMATION_MESSAGE_REMOVE_LEAD</fullName>
+        <categories>FORM F2F INCOMPLETE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the confirm message remove lead</shortDescription>
+        <value>¿Está seguro que desea eliminar el incompleto?</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_INCOMPLETE_DELETE_INCOMPLETE</fullName>
+        <categories>FORM F2F INCOMPLETE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the apex management incompletes,  delete incomplete</shortDescription>
+        <value>Eliminar incompleto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_INCOMPLETE_DELETE_INCOMPLETE_CORRECTLY</fullName>
+        <categories>FORM F2F INCOMPLETE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the apex management incompletes, delete incomplete correctly</shortDescription>
+        <value>Incompleto eliminado correctamente</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_INCREASE_OF_QUOTA_BUTTON</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the crease of quota button on the form F2F</shortDescription>
+        <value>Aumento de cuota</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_LANGUAGE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, language field on the form F2F</shortDescription>
+        <value>Idioma de preferencia</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_LEGAL_REPRESENTATIVE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for Data of the legal representative section on the form F2F</shortDescription>
+        <value>Datos del representante legal</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_LOCATION</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the canvasser section, Location field on the form F2F</shortDescription>
+        <value>localización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_MANAGEMENT_OF_INCOMPLETE</fullName>
+        <categories>FORM F2F INCOMPLETE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title management incompletes</shortDescription>
+        <value>Gestión de incompletos</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_MESSAGE_LEAD_CONFIRM_WITHOUT_PHONE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message from lead confirm without phone</shortDescription>
+        <value>¡Atención! No se han indicado datos de contacto. Se guardarán los datos proporcionados de cara a contactar en la fecha de contacto indicada para completar la información necesaria. ¿Está seguro que desea continuar?</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_MESSAGE_LEAD_CONFIRM_WITH_PHONE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message from lead confirm with phone</shortDescription>
+        <value>Se guardarán los datos proporcionados de cara a contactar en la fecha de contacto indicada para completar la información necesaria. ¿Está seguro que desea continuar?</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_MOBILE_PHONE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, mobile phone field on the form F2F</shortDescription>
+        <value>Teléfono móvil</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_MY_CONTRIBUTION_IS</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, my contribution is on the form F2F</shortDescription>
+        <value>Mi aportación es de...</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_NAME</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, name field on the form F2F</shortDescription>
+        <value>Nombre</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_NIF_NIE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the NIF/NIE field on the form F2F</shortDescription>
+        <value>NIF/NIE</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_NUMBER</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, number field on the form F2F</shortDescription>
+        <value>Nº</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_OBSERVATIONS</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the observations on the form F2F</shortDescription>
+        <value>Observaciones</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_OFFICE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, office field on the form F2F</shortDescription>
+        <value>Oficina</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ORGANIZATION_NAME</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, organization name field on the form F2F</shortDescription>
+        <value>Nombre de la empresa</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_OTHER</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, other field from radio group on the form F2F</shortDescription>
+        <value>Otro</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PERIOD</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, Period field on the form F2F</shortDescription>
+        <value>Periodicidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PHONE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, phone field on the form F2F</shortDescription>
+        <value>Teléfono fijo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_POSTAL_CODE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section,  postal code field on the form F2F</shortDescription>
+        <value>Código postal</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PRIVACY_POLITICCS_CHECK</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, privacy politics check on the form F2F</shortDescription>
+        <value>He leído y acepto las políticas de privacidad.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PRIVACY_POLITICCS_LINK</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, privacy politics link on the form F2F</shortDescription>
+        <value>Leer políticas de privacidad.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PRIVACY_POLITICCS_TEXT</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, text from privacy politics on the form F2F</shortDescription>
+        <value>PARA AYUDARNOS A ASEGURAR QUE COMPRENDE SU COMPROMISO COMO DONANTE, DEBE MARCAR LAS CASILLAS CORRESPONDIENTES.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PROVINCE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, province field on the form F2F</shortDescription>
+        <value>Provincia</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_PUNCTUAL_DONATION_BUTTON</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the punctual donation button on the form F2F</shortDescription>
+        <value>Donación puntual</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_QUANTITY</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, quantity field on the form F2F</shortDescription>
+        <value>Cantidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_QUOTA_UPDATED</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message quota updated</shortDescription>
+        <value>Cuota actualizada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_REGISTER_TYPE_ORGANIZATION</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the register type picklist, organization value.</shortDescription>
+        <value>Organización/Empresa</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_REGISTER_TYPE_PERSON</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the register type picklist, person value.</shortDescription>
+        <value>Persona</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_REPORT_AMOUNT_LATER</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, report amount later check on the form F2F</shortDescription>
+        <value>Informar importe después.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_ROL</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for Data of the legal representative section, rol field on the form F2F</shortDescription>
+        <value>Rol</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SAVE_BUTTON</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the save button on the form F2F</shortDescription>
+        <value>Guardar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SAVE_RECORD</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message save record</shortDescription>
+        <value>Guardar registro</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SEARCH_BUTTON</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the register search button on the form F2F</shortDescription>
+        <value>Buscar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SECOND_SURNAME</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, second surname field on the form F2F</shortDescription>
+        <value>Segundo apellido</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SELECT_AMOUNT</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section, Select amount on the form F2F</shortDescription>
+        <value>Seleccione un importe</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SIGNATURE_CHECK</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the signature check on the form F2F</shortDescription>
+        <value>Firma completada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_STREET</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, street field on the form F2F</shortDescription>
+        <value>Dirección</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_SURNAME</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the donor section, surname field on the form F2F</shortDescription>
+        <value>Primer apellido</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_TALK_TO</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the canvasser section, talk to field on the form F2F</shortDescription>
+        <value>Hablé con</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_TITLE_INCREASE_QUOTA_SECTION_QUOTA_CHANGE</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title from increase quota section, quota change text</shortDescription>
+        <value>Cambio de cuota</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_TITLE_PARTNER_SECTION_CURRENT_INFO</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title from partner section, current information text</shortDescription>
+        <value>Información actual</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_TYPE</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the type of register picklist on the form F2F</shortDescription>
+        <value>Tipo de registro</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_UNIQUE_DONATION</fullName>
+        <categories>FORM F2F</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the unique donation on form F2F</shortDescription>
+        <value>Única</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_F2F_WAY_TO_PAY</fullName>
+        <categories>FORM F2F/DE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the payment section on the form F2F</shortDescription>
+        <value>Forma de pago</value>
+    </labels>
+    <labels>
+        <fullName>MSF_FORM_VIEW</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Ver</shortDescription>
+        <value>Ver</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_DONATIVE_PLURAL</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Donative in plural</shortDescription>
+        <value>donaciones</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_DONATIVE_SINGULAR</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Donative in singular</shortDescription>
+        <value>donación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_HIGH</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value High used as comparator</shortDescription>
+        <value>Alto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_LOW</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Low used as comparator</shortDescription>
+        <value>Bajo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MASS1</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MASS1</shortDescription>
+        <value>Socios antiguos fidelizados, valor top</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MASS2</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MASS2</shortDescription>
+        <value>Socio multicanal, perfil alto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MASS3</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MASS3</shortDescription>
+        <value>Sénior y Jubilados, fidelizado alto valor en incremento</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MASS4</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MASS4</shortDescription>
+        <value>Sénior y Jubilados, cuota baja y donativo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MASS5</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MASS5</shortDescription>
+        <value>Socio joven y reciente, f2f, valor medio con potencial</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MASS6</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MASS6</shortDescription>
+        <value>Nuevos socios jóvenes, f2f</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D1</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D1</shortDescription>
+        <value>Socios más extra fidelizados y BIG, Top Mailing + EM + Navidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D2</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D2</shortDescription>
+        <value>Socios más extra fidelizados mailing, cuota</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D3</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D3</shortDescription>
+        <value>Socio más extra top, multidonante</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D4</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D4</shortDescription>
+        <value>Socios más extra mailing navidad, cuota</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D5</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D5</shortDescription>
+        <value>Espontáneo off top, Emergencista / Navidad con perfil mailing</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D6</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D6</shortDescription>
+        <value>Donante Espontáneo Navidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D7</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D7</shortDescription>
+        <value>Socio más extra online espontáneo, emergencista</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D8</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D8</shortDescription>
+        <value>Donantes Espontáneos y socios más extra sin interacción</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_D9</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_D9</shortDescription>
+        <value>Online espontáneo no fidelizado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_S1</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_S1</shortDescription>
+        <value>Fidelizados, valor estable, poco interactivos</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_S2</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_S2</shortDescription>
+        <value>Fidelizado online, alta interacción</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_S3</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_S3</shortDescription>
+        <value>Fidealizado, reactivo y con valor en aumento</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MB_S4</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for MB_S4</shortDescription>
+        <value>f2f &amp; Digital, recientes</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MEDIUM</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Medium used as comparator</shortDescription>
+        <value>Medio</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MONTH_PLURAL</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains is followed by a month number in plural</shortDescription>
+        <value>meses</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_MONTH_SINGLE</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains is followed by a month number in singular</shortDescription>
+        <value>mes</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_NEVER</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Never</shortDescription>
+        <value>Nunca</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_NONE</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that defines where there&apos;s no value to work with a range</shortDescription>
+        <value>Ninguno</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_NULL</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Null</shortDescription>
+        <value>Nulo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_SD1</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for SD1</shortDescription>
+        <value>Jóvenes de rentas altas, barcelona y madrid capital</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_SD2</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for SD2</shortDescription>
+        <value>Familias estándar sénior, clase media, capitales de provincia</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_SD3</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for SD3</shortDescription>
+        <value>Familia tradicional numerosa, rural</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_SD4</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for SD4</shortDescription>
+        <value>Viudos y Jubilados, capitales de provincia, rentas bajas</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_SD5</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for SD5</shortDescription>
+        <value>Áreas metropolitanas, rentas bajas</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_SD6</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value assigned for SD6</shortDescription>
+        <value>Clases medias comarcales, sin cargas</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_VERY_HIGH</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Very High used as comparator</shortDescription>
+        <value>Muy Alto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_VERY_LOW</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the value Very Low used as comparator</shortDescription>
+        <value>Muy bajo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_YEAR_PLURAL</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains is followed by a year number in singular</shortDescription>
+        <value>años</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_YEAR_PLURAL_OR_MORE</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the min value used on a range of years where there&apos;s no maximum</shortDescription>
+        <value>años o más</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_YEAR_PLURAL_TO</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the start of a range made by years where start value is plural</shortDescription>
+        <value>años a</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_YEAR_SINGULAR</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains is followed by a year number in singular</shortDescription>
+        <value>año</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_CONTACT_YEAR_SINGULAR_TO</fullName>
+        <categories>CONTACT FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the start of a range made by years where start value is singular</shortDescription>
+        <value>año a</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_PERIOD_BIANNUAL</fullName>
+        <categories>FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the Intallment period</shortDescription>
+        <value>Semestral</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_PERIOD_BIMONTHLY</fullName>
+        <categories>FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the Intallment period</shortDescription>
+        <value>Bimensual</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_PERIOD_MONTHLY</fullName>
+        <categories>FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the Intallment period</shortDescription>
+        <value>Mensual</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_PERIOD_ONEOFF</fullName>
+        <categories>FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the Intallment period</shortDescription>
+        <value>Única</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_PERIOD_QUARTERLY</fullName>
+        <categories>FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the Intallment period</shortDescription>
+        <value>Trimestral</value>
+    </labels>
+    <labels>
+        <fullName>MSF_F_FIELDS_PERIOD_YEARLY</fullName>
+        <categories>FORMULA FIELDS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the Intallment period</shortDescription>
+        <value>Anual</value>
+    </labels>
+    <labels>
+        <fullName>MSF_GDPR_DELETED_RECORD</fullName>
+        <categories>GDPR LOGS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the deleted record in the GDPR logs</shortDescription>
+        <value>Eliminado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_GDPR_INITIAL_RECORD</fullName>
+        <categories>GDPR LOGS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the new record in the GDPR logs</shortDescription>
+        <value>Inicial</value>
+    </labels>
+    <labels>
+        <fullName>MSF_GDPR_NEW_VALUE</fullName>
+        <categories>GDPR LOGS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the text that precedes the new value of a field</shortDescription>
+        <value>Valor nuevo:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_GDPR_PREVIOUS_VALUE</fullName>
+        <categories>GDPR LOGS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the text that precedes the old value of a field</shortDescription>
+        <value>Valor anterior:</value>
+    </labels>
+    <labels>
+        <fullName>MSF_HEADQUARTERS_STAFF_ICON</fullName>
+        <categories>SUMMARY SECTION ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the headquarters staff icon</shortDescription>
+        <value>Personal de sede</value>
+    </labels>
+    <labels>
+        <fullName>MSF_INSTALLMENT_BLOCKED</fullName>
+        <categories>INSTALLMENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Installment Blocked</shortDescription>
+        <value>No es posible modificar un Installment si es una de las que se tiene en cuenta en el proceso de cobros que se está ejecutando. 
+Abra por favor un caso para registrar la modificación deseada de forma que pueda realizarse cuando haya finalizado el proceso de cobros.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_INTEGRATIONS_CONTROL_BLOCKED</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>IntegrationsControl Blocked</shortDescription>
+        <value>No es posible crear/modificar un Importaciones e integraciones si el proceso de cobros se está ejecutando.
+Abra por favor un caso para registrar la modificación deseada de forma que pueda realizarse cuando haya finalizado el proceso de cobros.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_INTERACTIONS_SUBJECT_ERROR</fullName>
+        <categories>INTERACTIONS - TASKS</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Error shown when a subject is not allowed.</shortDescription>
+        <value>Valor no permitido.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_Items</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>items</shortDescription>
+        <value>items</value>
+    </labels>
+    <labels>
+        <fullName>MSF_LEAD_IBAN_ERROR</fullName>
+        <categories>LEAD</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>The error shown for the validation of the fields IBAN</shortDescription>
+        <value>IBAN inválido</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ListView</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>List view used in LWC to update record</shortDescription>
+        <value>LIST VIEWS</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_OPP_CAMPAIGN_NOT_BE_FOUND</fullName>
+        <categories>OPPORTUNITY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label from error when the campaign could not be found</shortDescription>
+        <value>Error, no se ha podido encontrar la campaña.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_OPP_WITHOUT_CAMPAIGN</fullName>
+        <categories>OPPORTUNITY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label from error for create a opportunity that campaignId field isn&apos;t null</shortDescription>
+        <value>No se puede crear la oportunidad sin campaña.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_BUTTON_CLOSE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the close button on the create new organization contact button</shortDescription>
+        <value>Cancelar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_BUTTON_CREATE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the create button on the create new organization contact button</shortDescription>
+        <value>Crear contacto de organización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_EMAIL</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the email field on the create new organization contact button</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_ENTRYCAMPAIGN</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>MSF_NEW_ORG_CONTACT_ENTRYCAMPAIGN</shortDescription>
+        <value>Campaña de entrada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_GENDER</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the gender field on the create new organization contact button</shortDescription>
+        <value>Género</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_HEADER</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for modal header on the create new organization contact button</shortDescription>
+        <value>Nuevo contacto de organización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_LEADSOURCE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the leadsource field on the create new organization contact button</shortDescription>
+        <value>Canal de entrada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_MOBILE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the mobile field on the create new organization contact button</shortDescription>
+        <value>Teléfono móvil</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_NAME</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the name field on the create new organization contact button</shortDescription>
+        <value>Nombre</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_NONE_PICKLIST_LEADSOURCE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the none value on the create new organization contact button</shortDescription>
+        <value>--Ninguno--</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_PHONE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the homephone field on the create new organization contact button</shortDescription>
+        <value>Teléfono fijo</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_PRF_LANGUAGE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the preferred lang field on the create new organization contact button</shortDescription>
+        <value>Idioma de preferencia</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_PRIMARY</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the &apos;isPriamry&apos; field on the create new organization contact button</shortDescription>
+        <value>Contacto principal de la organización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_ROLE</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the role(Title) field on the create new organization contact button</shortDescription>
+        <value>Rol</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_SURNAME1</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the surname1 field on the create new organization contact button</shortDescription>
+        <value>Apellido 1</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NEW_ORG_CONTACT_SURNAME2</fullName>
+        <categories>ORGANIZATION CONTACT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the surname2 field on the create new organization contact button</shortDescription>
+        <value>Apellido 2</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NO</fullName>
+        <categories>GENERAL</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label: No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>MSF_NombreTabla</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nombre tabla</shortDescription>
+        <value>Modificaciones Másivas de Tareas</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPPORTUNITY_BLOCKED</fullName>
+        <categories>OPPORTUNITY</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Block Opportunity</shortDescription>
+        <value>No es posible modificar una oportunidad si es una de las que se tiene en cuenta en el proceso de cobros que se está ejecutando.
+Abra por favor un caso para registrar la modificación deseada de forma que pueda realizarse cuando haya finalizado el proceso de cobros.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AC01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AC01</shortDescription>
+        <value>Número de cuenta incorrecto (IBAN no válido)</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AC04</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AC04</shortDescription>
+        <value>Cuenta cancelada.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AC06</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AC06</shortDescription>
+        <value>Cuenta bloqueada y/o cuenta bloqueada por el deudor para adeudos directos.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AG01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AG01</shortDescription>
+        <value>Cuenta no admite adeudos directos.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AG02</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AG02</shortDescription>
+        <value>Código de operación incorrecto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AM04</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AM04</shortDescription>
+        <value>Saldo insuficiente. Este codigo es el único que no implica univocamente el Impago de la aportación.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_AM05</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text AM05</shortDescription>
+        <value>Operación duplicada.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_BE01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text BE01</shortDescription>
+        <value>Titular de la cuenta de cargo no coincide con el deudor.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_BE05</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text BE05</shortDescription>
+        <value>Identificador del acreedor incorrecto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_FF01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text FF01</shortDescription>
+        <value>Formato no válido.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_FF05</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text FF05</shortDescription>
+        <value>Tipo de adeudo incorrecto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_MD01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text MD01</shortDescription>
+        <value>Mandato no válido o inexistente.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_MD02</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text MD02</shortDescription>
+        <value>Faltan datos del mandato o son incorrectos.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_MD06</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text MD06</shortDescription>
+        <value>Operación autorizada no conforme.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_MD07</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text MD07</shortDescription>
+        <value>Deudor fallecido.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_MS02</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text MS02</shortDescription>
+        <value>Razón no especificada por el cliente (orden del deudor).</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_MS03</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text MS03</shortDescription>
+        <value>Razón no especificada por la entidad del deudor.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_RC01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text RC01</shortDescription>
+        <value>Identificador de la entidad incorrecto (BIC no válido).</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_RR01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text RR01</shortDescription>
+        <value>Falta identificación o cuenta del deudor. Razones regulatorias.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_RR02</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text RR02</shortDescription>
+        <value>Falta nombre o dirección del deudor. Razones regulatorias.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_RR03</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text RR03</shortDescription>
+        <value>Falta nombre o dirección del acreedor. Razones regulatorias.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_RR04</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text RR04</shortDescription>
+        <value>Razones regulatorias.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_LAST_REASON_LOST_TEXT_SL01</fullName>
+        <categories>Opp Last Reason Text</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opp Last Reason Text SL01</shortDescription>
+        <value>Servicios específicos ofrecidos por la entidad del deudor.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_OVERRIDE_CLOSE_BUTTON</fullName>
+        <categories>OPP OVERRIDE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the content of the close button</shortDescription>
+        <value>Cerrar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_OVERRIDE_MESSAGE_BODY</fullName>
+        <categories>OPP OVERRIDE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the body of the message when opportunity can&apos;t be created</shortDescription>
+        <value>No se puede crear la oportunidad desde este apartado.
+Por favor, cree la oportunidad desde un contacto.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_OVERRIDE_MESSAGE_TITLE</fullName>
+        <categories>OPP OVERRIDE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains the title of the message when opportunity can&apos;t be created</shortDescription>
+        <value>No se puede crear</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_ACTION_CANCEL</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that defines the action of cancelling an action.</shortDescription>
+        <value>Cancelar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_ACTION_DELETE</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the action of delete the data of a row.</shortDescription>
+        <value>Eliminar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_ACTION_EDIT</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the action of edit the data of a row.</shortDescription>
+        <value>Modificar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_COLUMN_1</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label of the first column for the table inside MSF_OpportunitySoftCredit</shortDescription>
+        <value>Nombre de la Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_COLUMN_2</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label of the second column for the table inside MSF_OpportunitySoftCredit</shortDescription>
+        <value>Etapa</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_COLUMN_3</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label of the third column for the table inside MSF_OpportunitySoftCredit</shortDescription>
+        <value>Importe</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_COLUMN_4</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label of the fourth column for the table inside MSF_OpportunitySoftCredit</shortDescription>
+        <value>Tipo de registro de la oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_COLUMN_5</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label of the fifth column for the table inside MSF_OpportunitySoftCredit</shortDescription>
+        <value>Monto de pagos recibidos</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_COLUMN_6</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label of the sixth column for the table inside MSF_OpportunitySoftCredit</shortDescription>
+        <value>Fecha de cierre</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_DELETE_ERROR</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message of a unsucessful delete</shortDescription>
+        <value>No se ha podido eliminar la donación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_DELETE_MODAL_BODY</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the body of the delete row modal window</shortDescription>
+        <value>¿Está seguro de que desea eliminar esta Donación única?</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_DELETE_MODAL_TITLE</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title of the delete row modal window</shortDescription>
+        <value>Eliminar donación única</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_DELETE_SUCCESS</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the message of a sucessful delete</shortDescription>
+        <value>Se ha eliminado la donación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_ELEMENTS</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the label that returns after the number of rows returned.</shortDescription>
+        <value>elementos</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_NAME</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the label&apos;s name of data&apos;s source.</shortDescription>
+        <value>Oportunidades</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_NO_ORDER</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the label to return when data is not sorted.</shortDescription>
+        <value>Sin ordenar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_SORTED_BY</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Defines the label that returns after the table has been sorted by a column</shortDescription>
+        <value>Ordenado por</value>
+    </labels>
+    <labels>
+        <fullName>MSF_OPP_S_CREDIT_TITLE</fullName>
+        <categories>OPP SOFT CREDIT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label that contains table&apos;s title</shortDescription>
+        <value>Oportunidades Soft Credit</value>
+    </labels>
+    <labels>
+        <fullName>MSF_ORGANIZATION_ERROR_UPDATE</fullName>
+        <categories>ORGANIZATION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Error updating the organization with a primary contact.</shortDescription>
+        <value>Si hay contacto principal en la organización, los datos de contacto deben modificarse en éste.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_PAYMENTPROFILE_BLOCKED</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>PaymentProfile Blocked</shortDescription>
+        <value>No es posible modificar un Perfil de Pagos si es uno de los que se tiene en cuenta en el proceso de cobros que se está ejecutando.
+Abra por favor un caso para registrar la modificación deseada de forma que pueda realizarse cuando haya finalizado el proceso de cobros.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_RD_ERROR_NEW_OPEN</fullName>
+        <categories>RECURRING DONATION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Error that is displayed when you try to insert a new recurring donation when a c</shortDescription>
+        <value>No es posible crear una nueva cuota porque el contacto ya tiene una activa, debe modificar la cuota activa.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_REASSIGN_CONTACT_NOT_FOUND</fullName>
+        <categories>REASSIGN OPPORTUNITY COMPONENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the reassign historical opportunity componente</shortDescription>
+        <value>No se ha encontrado al contacto</value>
+    </labels>
+    <labels>
+        <fullName>MSF_REASSIGN_MEMBER</fullName>
+        <categories>REASSIGN OPPORTUNITY COMPONENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the reassign historical opportunity componente</shortDescription>
+        <value>Nº miembro</value>
+    </labels>
+    <labels>
+        <fullName>MSF_REASSIGN_NIF</fullName>
+        <categories>REASSIGN OPPORTUNITY COMPONENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the reassign historical opportunity componente</shortDescription>
+        <value>NIF</value>
+    </labels>
+    <labels>
+        <fullName>MSF_REASSIGN_REQUIRED</fullName>
+        <categories>REASSIGN OPPORTUNITY COMPONENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the reassign historical opportunity componente</shortDescription>
+        <value>Número de miembro obligatorio</value>
+    </labels>
+    <labels>
+        <fullName>MSF_REASSIGN_SEARCH</fullName>
+        <categories>REASSIGN OPPORTUNITY COMPONENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the reassign historical opportunity componente</shortDescription>
+        <value>Buscar</value>
+    </labels>
+    <labels>
+        <fullName>MSF_REASSIGN_SUCCESS</fullName>
+        <categories>REASSIGN OPPORTUNITY COMPONENT</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the reassign historical opportunity componente</shortDescription>
+        <value>La reasignación se ha realizado correctamente</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SANITARY_ICON</fullName>
+        <categories>SUMMARY SECTION ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the sanitary icon</shortDescription>
+        <value>Sanitario</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_ANTIQUITY</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title antiquity in summary section</shortDescription>
+        <value>Antigüedad</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_ASSOCIATED</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title associated in summary section</shortDescription>
+        <value>Asociado</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_CASE</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title case in summary section</shortDescription>
+        <value>Caso</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_DATA</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title data in summary section</shortDescription>
+        <value>Data</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_DONATION_VEHICLE</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title donation vehicle in summary section</shortDescription>
+        <value>Vehículo de donación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_DUPLICATE</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title duplicate in summary section</shortDescription>
+        <value>Doble rol</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_FAILURE_CIF</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title failure CIF in summary section</shortDescription>
+        <value>Falta CIF</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_FAILURE_EMAIL</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title failure email in summary section</shortDescription>
+        <value>Falta email</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_FAILURE_NIF</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title failure NIF in summary section</shortDescription>
+        <value>Falta NIF</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_FAILURE_PRIMARY_CONTACT</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title failure primary contact in summary section</shortDescription>
+        <value>Falta Contacto Princ.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_LVL_PURE_EC</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title Lvl Pure Ec. in summary section</shortDescription>
+        <value>Lvl Pure Ec</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_MEMBER_TYPE</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title member type in summary section</shortDescription>
+        <value>Tipo miembro</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_ORGANIZATION</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title organization in summary section</shortDescription>
+        <value>Organización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_ORGANIZATION_GROUP</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title organization group in summary section</shortDescription>
+        <value>Grupo organización</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_PERCOMS</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title percoms in summary section</shortDescription>
+        <value>Percoms</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_PROGRAM</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title program in summary section</shortDescription>
+        <value>Programa</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_PROGRAM_ORG</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title program org in summary section</shortDescription>
+        <value>Programa de Org</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_PROMOTER_OF_INITIATIVES</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title promoter of initiatives in summary section</shortDescription>
+        <value>Prom. iniciativas</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_PUBLIC_PERSON</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title public person in summary section</shortDescription>
+        <value>Per. pública</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_RELATIONSHIP_LVL</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title relationship lvl in summary section</shortDescription>
+        <value>Lvl Relación</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_RELATIONSHIP_LVL_ORG</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title relationship lvl org in summary section</shortDescription>
+        <value>Lvl Relación de Org</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_TYPE_OF_CONTACT_ORG</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title type of contact company in summary section</shortDescription>
+        <value>Tipo de contacto empresa</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_UNPAID_CONTRIBUTION</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title unpaid contribution in summary section</shortDescription>
+        <value>Apor. No pagada</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_WEDDING</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title wedding in summary section</shortDescription>
+        <value>Boda</value>
+    </labels>
+    <labels>
+        <fullName>MSF_SUM_SECTION_WILL</fullName>
+        <categories>SUMMARY SECTION</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label for the title will in summary section</shortDescription>
+        <value>Testam y legat</value>
+    </labels>
+    <labels>
+        <fullName>MSF_TWO_ASSOCIATED_RECORD_ERROR</fullName>
+        <categories>ASSOCIATIVE</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>The error shown when try to create a second associative record to a contact</shortDescription>
+        <value>Este contacto ya tiene un registro de asociativo activo y no es posible tener multiples, por favor modifique el registro activo existente.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_TaskOwner</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Owner</shortDescription>
+        <value>TASK OWNER</value>
+    </labels>
+    <labels>
+        <fullName>MSF_TaskStatus</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Status</shortDescription>
+        <value>TASK STATUS</value>
+    </labels>
+    <labels>
+        <fullName>MSF_TaskSubject</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Subject</shortDescription>
+        <value>TASK SUBJECT</value>
+    </labels>
+    <labels>
+        <fullName>MSF_UNKNOWN_ERROR</fullName>
+        <categories>GENERAL</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Error displayed when an unknown error occurs.</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSF_Who</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Who</shortDescription>
+        <value>WHO</value>
+    </labels>
+    <labels>
+        <fullName>MSF_YES</fullName>
+        <categories>GENERAL</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Label: Yes</shortDescription>
+        <value>Si</value>
+    </labels>
+    <labels>
+        <fullName>msf_HelpTextListView</fullName>
+        <categories>modMasivaTareas</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpTextListView</shortDescription>
+        <value>Selecciona alguna de las siguientes ListView.</value>
+    </labels>
+</CustomLabels>

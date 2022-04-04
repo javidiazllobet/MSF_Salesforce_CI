@@ -1,0 +1,52 @@
+<aura:component controller="MSF_CustomLookUp_CTRL" implements="flexipage:availableForRecordHome,force:hasRecordId" access="GLOBAL"> 
+    
+    <aura:attribute name="selectedRecord" 			type="sObject" 			default="{}" 			description="Use,for store SELECTED sObject Record"/>
+    <aura:attribute name="listOfSearchRecords" 		type="List" 									description="Use,for store the list of search records which returns from apex class"/>
+    <aura:attribute name="SearchKeyWord" 			type="string"/>
+    <aura:attribute name="secondFilter" 			type="string"/>
+    <aura:attribute name="filterActive" 			type="string"/>
+    <aura:attribute name="objectAPIName" 			type="string" 			default=""/>
+    <aura:attribute name="IconName" 				type="string" 			default=""/>
+    <aura:attribute name="label" 					type="string" 			default=""/>
+    <aura:attribute name="Message" 					type="String" 			default=""/>
+    <aura:attribute name="required" 				type="Boolean"/>
+    <aura:attribute name="error" 					type="Boolean"/>
+    
+    <!-- Events -->
+    <aura:handler 	name="oSelectedRecordEvent" 	event="c:MSF_SelectedRecordCustomLookUp_EVT" 	action="{!c.handleComponentEvent}"/>
+	<aura:handler 	name="change"					value="{!v.error}" 								action="{!c.errorChange}" />
+    
+    <div onmouseleave="{!c.onblur}" aura:id="searchRes" class="slds-form-element slds-lookup slds-is-close" data-select="single">
+        <aura:if isTrue="{!v.required}">
+            <abbr class="slds-required slds-text-heading_small">*</abbr>
+        </aura:if>
+        <label class="slds-form-element__label" for="lookup-348">{!v.label}</label> 
+        <div class="slds-form-element__control">
+            <div class="slds-input-has-icon slds-input-has-icon--right">
+                <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
+                     <lightning:pill class="pillSize" label="{!v.selectedRecord.Name}" name="{!v.selectedRecord.Name}" onremove="{!c.clear}">
+                          <aura:set attribute="media">
+                             <lightning:icon iconName="{!v.IconName}" size="x-small" alternativeText="{!v.IconName}"/>
+                          </aura:set>
+                      </lightning:pill>
+                </div>
+                <div aura:id="lookupField" class="slds-show">
+                    <lightning:icon class="slds-input__icon slds-show" iconName="utility:search" size="x-small" alternativeText="search"/>
+                    <span class="slds-icon_container  slds-combobox__input-entity-icon" title="record">
+                        <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="{!v.IconName}" size="x-small" alternativeText="icon"/>
+                        <span class="slds-assistive-text"></span>
+                    </span>
+                    <ui:inputText click="{!c.onfocus}" updateOn="keyup" keyup="{!c.keyPressController}" class="slds-lookup__search-input slds-input leftPaddingClass" value="{!v.SearchKeyWord}"/>
+                    <!--<div aura:id="errorMsg" class="slds-hide slds-form-element__help" >### Cumplimente este campo</div>-->
+                </div>   
+            </div>
+        </div>
+        <ul style="min-height:40px;margin-top:0px !important" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-lookup__menu slds" role="listbox">
+            <lightning:spinner class="slds-hide" variant="brand" size="small" aura:id="mySpinner"/>
+            <center> {!v.Message}</center>
+            <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                <c:MSF_CustomLookUpResult oRecord="{!singleRec}" IconName="{!v.IconName}"/>
+            </aura:iteration>
+        </ul>
+    </div>
+</aura:component>

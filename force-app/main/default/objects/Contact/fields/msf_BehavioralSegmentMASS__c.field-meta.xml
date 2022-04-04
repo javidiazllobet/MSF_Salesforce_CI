@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_BehavioralSegmentMASS__c</fullName>
+    <externalId>false</externalId>
+    <label>Cluster Mass</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MASS1</fullName>
+                <default>false</default>
+                <label>MASS1</label>
+            </value>
+            <value>
+                <fullName>MASS2</fullName>
+                <default>false</default>
+                <label>MASS2</label>
+            </value>
+            <value>
+                <fullName>MASS3</fullName>
+                <default>false</default>
+                <label>MASS3</label>
+            </value>
+            <value>
+                <fullName>MASS4</fullName>
+                <default>false</default>
+                <label>MASS4</label>
+            </value>
+            <value>
+                <fullName>MASS5</fullName>
+                <default>false</default>
+                <label>MASS5</label>
+            </value>
+            <value>
+                <fullName>MASS6</fullName>
+                <default>false</default>
+                <label>MASS6</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

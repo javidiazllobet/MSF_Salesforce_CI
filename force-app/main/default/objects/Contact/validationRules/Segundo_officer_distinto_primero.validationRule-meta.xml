@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segundo_officer_distinto_primero</fullName>
+    <active>true</active>
+    <description>El campo Segundo MSF Officer no puede ser igual al campo MSF Officer.</description>
+    <errorConditionFormula>!ISBLANK(OwnerId) &amp;&amp; OwnerId = msf_OtherMSFOfficer__c</errorConditionFormula>
+    <errorDisplayField>msf_OtherMSFOfficer__c</errorDisplayField>
+    <errorMessage>El campo Segundo MSF Officer no puede ser igual al campo MSF Officer.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__Rollups_IncrementalLastNDays_ValOverride__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Solo para sustitución de totalizaciones incrementales. Sustituye el número de días utilizados para filtrar oportunidades relacionadas para determinar qué cuentas, contactos, CCG o DR se vuelven a calcular durante el trabajo programado por la noche.</inlineHelpText>
+    <label>Incremental: Last N Days Value Override</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

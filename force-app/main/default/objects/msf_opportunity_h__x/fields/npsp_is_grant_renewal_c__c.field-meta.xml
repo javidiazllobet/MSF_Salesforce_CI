@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp_is_grant_renewal_c__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>npsp__is_grant_renewal__c</description>
+    <externalDeveloperName>npsp__is_grant_renewal__c</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>npsp__is_grant_renewal__c</label>
+    <type>Checkbox</type>
+</CustomField>

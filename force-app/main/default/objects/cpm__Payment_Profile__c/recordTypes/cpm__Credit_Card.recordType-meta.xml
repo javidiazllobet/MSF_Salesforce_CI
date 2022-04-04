@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__Credit_Card</fullName>
+    <active>true</active>
+    <description>Stores Credit Card information</description>
+    <label>Credit Card</label>
+    <picklistValues>
+        <picklist>cpm__Expiration_Date__c</picklist>
+        <values>
+            <fullName>01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cpm__Expiration_Year__c</picklist>
+        <values>
+            <fullName>2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2027</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2028</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2029</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2030</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cpm__Funding_Type__c</picklist>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cpm__Wallet_Type__c</picklist>
+        <values>
+            <fullName>Apple Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Pay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_LastModificationChannel__c</picklist>
+        <values>
+            <fullName>Centro de Preferencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correo Postal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail Asociativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mails At%2E Socio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mails One-to-One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fichero Bancario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formularios Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación Aplicación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mi Perfil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRHH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single entry file</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Asociativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono One-to-One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfonos At%2E Socio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Fa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>msf_ModificationChannel__c</picklist>
+        <values>
+            <fullName>Centro de Preferencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correo Postal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail Asociativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mails At%2E Socio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mails One-to-One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fichero Bancario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formularios Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación Aplicación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mi Perfil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRHH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single entry file</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Asociativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono One-to-One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfonos At%2E Socio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Fa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsFromLastMonths__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR((CloseDate &gt;= (TODAY() - 365*2)),
+		(msf_TypeFundraisingContribution__c = &apos;D&apos; &amp;&amp; CloseDate &gt;= (TODAY() - 365*5)),
+		(CloseDate &lt;= (TODAY() - 365*2) &amp;&amp; CloseDate &gt;= (TODAY() - 365*5) &amp;&amp; NOT(ISPICKVAL(Type, &apos;Recurrent Donation&apos;)) &amp;&amp; NOT(ISPICKVAL(Type, &apos;Historical&apos;)) &amp;&amp; NOT(ISPICKVAL(Type, &apos;Membership&apos;)))
+      ),
+true,
+false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Últimos meses</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

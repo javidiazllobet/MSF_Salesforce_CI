@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_CaseLegacyWithNoOpportunity</fullName>
+    <active>true</active>
+    <description>Validate if a legacy case has a legacy opportunity added</description>
+    <errorConditionFormula>( RecordType.DeveloperName = &apos;MSF_CE_HereditaryRecords&apos; || RecordType.DeveloperName = &apos;MSF_CE_CompletedTestament&apos; || RecordType.DeveloperName = &apos;MSF_CE_RequestTestamentaryInfo&apos;) &amp;&amp;
+(ISBLANK(Oportunidad__c) || (NOT(ISBLANK(Oportunidad__c)) &amp;&amp;   Oportunidad__r.RecordType.DeveloperName != &apos;Legacy&apos;))</errorConditionFormula>
+    <errorDisplayField>Oportunidad__c</errorDisplayField>
+    <errorMessage>Para crear un caso de herencia se debe seleccionar una oportunidad de tipo herencia</errorMessage>
+</ValidationRule>

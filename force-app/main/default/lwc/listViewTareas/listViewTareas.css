@@ -1,0 +1,13 @@
+.label{
+  padding:25%;
+}
+.lookup{
+  padding:25%;
+}
+.helpText{
+  text-align: left;
+}
+.slds-list_horizontal{
+  padding-inline-start: 50em;
+  margin: 0 0 1em 0;
+}

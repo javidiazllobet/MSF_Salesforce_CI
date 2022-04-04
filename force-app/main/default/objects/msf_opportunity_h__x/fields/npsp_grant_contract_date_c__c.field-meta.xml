@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp_grant_contract_date_c__c</fullName>
+    <description>npsp__grant_contract_date__c</description>
+    <externalDeveloperName>npsp__grant_contract_date__c</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>npsp__grant_contract_date__c</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__IBAN_ISO_Country_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The ISO Country Code taken from the IBAN.</description>
+    <externalId>false</externalId>
+    <formula>LEFT(cpm__IBAN__c, 2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The ISO Country Code taken from the IBAN.</inlineHelpText>
+    <label>IBAN ISO Country Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

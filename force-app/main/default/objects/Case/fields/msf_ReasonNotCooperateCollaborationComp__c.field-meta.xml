@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ReasonNotCooperateCollaborationComp__c</fullName>
+    <externalId>false</externalId>
+    <label>Razón no colabora con MSF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing con causa</fullName>
+                <default>false</default>
+                <label>Marketing con causa</label>
+            </value>
+            <value>
+                <fullName>Código Ético</fullName>
+                <default>false</default>
+                <label>Código Ético</label>
+            </value>
+            <value>
+                <fullName>No encaja Propuesta</fullName>
+                <default>false</default>
+                <label>No encaja Propuesta</label>
+            </value>
+            <value>
+                <fullName>No encaja en tiempos</fullName>
+                <default>false</default>
+                <label>No encaja en tiempos</label>
+            </value>
+            <value>
+                <fullName>No responde</fullName>
+                <default>false</default>
+                <label>No responde</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

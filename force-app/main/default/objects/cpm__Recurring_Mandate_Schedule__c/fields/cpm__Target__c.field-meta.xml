@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__Target__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Target</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LIBERBANK (CAJASTUR)</fullName>
+                <default>false</default>
+                <label>LIBERBANK (CAJASTUR)</label>
+            </value>
+            <value>
+                <fullName>TRIODOS BANK</fullName>
+                <default>false</default>
+                <label>TRIODOS BANK</label>
+            </value>
+            <value>
+                <fullName>CAIXABANK DONATIVOS</fullName>
+                <default>false</default>
+                <label>CAIXABANK DONATIVOS</label>
+            </value>
+            <value>
+                <fullName>BANKIA</fullName>
+                <default>false</default>
+                <label>BANKIA</label>
+            </value>
+            <value>
+                <fullName>CAIXABANK INTERNA</fullName>
+                <default>false</default>
+                <label>CAIXABANK INTERNA</label>
+            </value>
+            <value>
+                <fullName>BANC SABADELL</fullName>
+                <default>false</default>
+                <label>BANC SABADELL</label>
+            </value>
+            <value>
+                <fullName>BANCO SANTANDER BIZUM</fullName>
+                <default>false</default>
+                <label>BANCO SANTANDER BIZUM</label>
+            </value>
+            <value>
+                <fullName>CUENTA DOLARES</fullName>
+                <default>false</default>
+                <label>CUENTA DOLARES</label>
+            </value>
+            <value>
+                <fullName>CUENTA CUADRE-PROVISIONES</fullName>
+                <default>false</default>
+                <label>CUENTA CUADRE-PROVISIONES</label>
+            </value>
+            <value>
+                <fullName>LA CAIXA CCC OPERATIVA</fullName>
+                <default>false</default>
+                <label>LA CAIXA CCC OPERATIVA</label>
+            </value>
+            <value>
+                <fullName>KUTXABANK</fullName>
+                <default>false</default>
+                <label>KUTXABANK</label>
+            </value>
+            <value>
+                <fullName>ABANCA</fullName>
+                <default>false</default>
+                <label>ABANCA</label>
+            </value>
+            <value>
+                <fullName>CAIXABANK FUSION BANKIA</fullName>
+                <default>false</default>
+                <label>CAIXABANK FUSION BANKIA</label>
+            </value>
+            <value>
+                <fullName>UNICAJA</fullName>
+                <default>false</default>
+                <label>UNICAJA</label>
+            </value>
+            <value>
+                <fullName>BBVA BCN GENERAL</fullName>
+                <default>false</default>
+                <label>BBVA BCN GENERAL</label>
+            </value>
+            <value>
+                <fullName>BANCO SANTANDER EMERGENCIAS</fullName>
+                <default>false</default>
+                <label>BANCO SANTANDER EMERGENCIAS</label>
+            </value>
+            <value>
+                <fullName>BANCO SANTANDER</fullName>
+                <default>false</default>
+                <label>BANCO SANTANDER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

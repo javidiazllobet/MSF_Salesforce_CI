@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe01__SystemIsIndividual__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Deprecated field.  Do not use.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Este campo ya no se usa. Debe reemplazarse con Tipo de cuenta.</inlineHelpText>
+    <label>_SYSTEM: IsIndividual - DEPRECATED</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

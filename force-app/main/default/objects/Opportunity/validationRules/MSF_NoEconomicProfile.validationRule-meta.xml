@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_NoEconomicProfile</fullName>
+    <active>true</active>
+    <description>Validación de la etapa de la oportunidad para perfil económico y no económico.</description>
+    <errorConditionFormula>OR(
+AND($Profile.Name == &apos;Fundraising&apos;,
+$UserRole.Name != &apos;Fundraising MID&apos;),
+AND($Profile.Name == &apos;Fundraising&apos;,
+$UserRole.Name == &apos;Fundraising MID&apos;,
+!ISPICKVAL(Type , &apos;Recurrent Donation&apos;))
+)
+
+&amp;&amp;
+
+OR(ISCHANGED(npsp__Primary_Contact__c),
+ISCHANGED(Amount),
+ISCHANGED(npsp4hub__Payment_Method__c),
+ISCHANGED(CloseDate),
+ISCHANGED(npsp4hub__Target__c),
+ISCHANGED(npe03__Recurring_Donation__c),
+ISCHANGED(RecordTypeId),
+ISCHANGED(Type),
+ISCHANGED(npsp4hub__Payment_Profile__c),
+ISCHANGED(npsp4hub__Mandate__c),
+ISCHANGED(npsp4hub__Payment_Processor__c),
+ISCHANGED(msf_PaymentOrderId__c),
+ISCHANGED(msf_PaymentAuthorisationCode__c),
+ISCHANGED(msf_BetterNowExternalId__c),
+ISCHANGED(msf_SMSExternalId__c),
+ISCHANGED(msf_DonationVehicleContact__c),
+ISCHANGED(StageName)
+)
+
+&amp;&amp;
+
+(
+ISPICKVAL(StageName,&apos;COBRADA&apos;) ||
+ISPICKVAL(StageName,&apos;PUESTA AL COBRO&apos;) ||
+ISPICKVAL(StageName,&apos;DEVUELTA &apos;) ||
+ISPICKVAL(StageName,&apos;IMPAGADA&apos;) ||
+ISPICKVAL(StageName,&apos;DEVUELTA MANUAL&apos;)||
+ISPICKVAL(StageName,&apos;CANCELADA&apos;) ||
+ISPICKVAL(StageName,&apos;SMS Donor cerrada&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Sin permisos suficientes para esta etapa.</errorMessage>
+</ValidationRule>

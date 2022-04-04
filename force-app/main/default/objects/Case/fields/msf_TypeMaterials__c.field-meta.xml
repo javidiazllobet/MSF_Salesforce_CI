@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_TypeMaterials__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de materiales</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vídeo</fullName>
+                <default>false</default>
+                <label>Vídeo</label>
+            </value>
+            <value>
+                <fullName>Tarjeta_digital</fullName>
+                <default>false</default>
+                <label>Tarjeta digital</label>
+            </value>
+            <value>
+                <fullName>Tarjeta_postal</fullName>
+                <default>false</default>
+                <label>Tarjeta postal</label>
+            </value>
+            <value>
+                <fullName>Vídeo_tarjeta_digital</fullName>
+                <default>false</default>
+                <label>Vídeo + tarjeta digital</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

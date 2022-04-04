@@ -1,0 +1,110 @@
+<aura:component controller="MSF_ReassignOpportunity_CTRL" implements="force:lightningQuickAction,force:hasRecordId">
+    
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" 				type="String" 				/>    
+    <aura:attribute name="currentRecord" 			type="msf_opportunity_h__x"	/>   
+    
+    <aura:attribute name="currentContact"			type="Contact" 				/>
+    <aura:attribute name="currentOppHistorical" 	type="Opportunity" 			/>
+    
+    <aura:attribute name="searchId" 				type="String" 				/>
+    <aura:attribute name="message" 					type="String" 				/>
+    
+    <aura:attribute name="targetContact"			type="Contact" 				/>
+    <aura:attribute name="targetOppHistorical" 		type="Opportunity" 			/>
+    
+    <aura:attribute name="loadingCurrent"			type="Boolean" 				default="TRUE"/>
+    <aura:attribute name="loadingTarget" 			type="Boolean" 				default="FALSE"/>
+    <aura:attribute name="reassignProcess" 			type="Boolean" 				default="FALSE"/>
+    
+    
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    
+    <!-- COMPONENT BODY -->
+    <div class="slds-is-relative">
+        
+        <div class="slds-box slds-m-vertical_small  slds-is-relative">
+            <lightning:card  title="{!v.currentContact.Name}" iconName="standard:contact">                        
+                
+                <p class="slds-p-horizontal_small">
+                    <dl class="slds-dl_horizontal">
+                        <!-- NIF -->
+                        <dt class="{!((empty(v.currentContact.msf_NIF__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}" >
+                            <p class="" title="{!$Label.c.MSF_REASSIGN_NIF}">{!$Label.c.MSF_REASSIGN_NIF}</p>
+                        </dt>
+                        <dd class="{!((empty(v.currentContact.msf_NIF__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail '}">
+                            <p class="" title="{!v.currentContact.msf_NIF__c}">{!v.currentContact.msf_NIF__c}</p>
+                        </dd>
+                        
+                        <!-- Email -->
+                        <dt class="{!((empty(v.currentContact.msf_CRMExternalId__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}">
+                            <p class="" title="{!$Label.c.MSF_REASSIGN_MEMBER}">{!$Label.c.MSF_REASSIGN_MEMBER}</p>
+                        </dt>
+                        <dd class="{!((empty(v.currentContact.msf_CRMExternalId__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail '}">
+                            <p class="" title="{!v.currentContact.msf_CRMExternalId__c}">{!v.currentContact.msf_CRMExternalId__c}</p>
+                        </dd>    
+                    </dl>
+                </p>
+                
+                <aura:if isTrue="{!v.loadingCurrent}">
+                    <lightning:spinner alternativeText="Loading" />
+                </aura:if>
+                
+            </lightning:card> 
+        </div>        
+        
+        <div hidden="{!v.loadingCurrent}" class="slds-box slds-m-vertical_small slds-is-relative">
+            <div>
+            	<lightning:input type="text" label="{!$Label.c.MSF_REASSIGN_MEMBER}" name="getMember" value="{!v.searchId}"/>
+                <lightning:button label="{!$Label.c.MSF_REASSIGN_SEARCH}" iconName="utility:search" class="slds-m-top_x-small" onclick="{!c.getTarget}"/><span class="slds-m-left_small">{!v.message}</span>
+            </div>
+            
+            <div hidden="{!empty(v.targetContact)}" class="slds-box slds-m-top_medium">                
+                
+                <lightning:card  title="{!v.targetContact.Name}" iconName="standard:contact">                        
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-large-size_11-of-12 slds-medium-size_11-of-12 slds-small-size_11-of-12 slds-size_1-of-1">
+                            
+                            <p class="slds-p-horizontal_small">
+                                <dl class="slds-dl_horizontal">
+                                    
+                                    <!-- NIF -->
+                                    <dt class="{!((empty(v.targetContact.msf_NIF__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}" >
+                                        <p class="" title="{!$Label.c.MSF_REASSIGN_NIF}">{!$Label.c.MSF_REASSIGN_NIF}</p>
+                                    </dt>
+                                    <dd class="{!((empty(v.targetContact.msf_NIF__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail slds-tile__meta'}">
+                                        <p class="" title="{!v.targetContact.msf_NIF__c}">{!v.targetContact.msf_NIF__c}</p>
+                                    </dd>
+                                    
+                                    <!-- Email -->
+                                    <dt class="{!((empty(v.targetContact.msf_CRMExternalId__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}">
+                                        <p class="" title="{!$Label.c.MSF_REASSIGN_MEMBER}">{!$Label.c.MSF_REASSIGN_MEMBER}</p>
+                                    </dt>
+                                    <dd class="{!((empty(v.targetContact.msf_CRMExternalId__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail slds-tile__meta'}">
+                                        <p class="" title="{!v.targetContact.msf_CRMExternalId__c}">{!v.targetContact.msf_CRMExternalId__c}</p>
+                                    </dd>                                
+                                    
+                                </dl>
+                            </p>                            
+                        </div>
+                        
+                        <div class="slds-col slds-large-size_1-of-12 slds-medium-size_1-of-12 slds-small-size_1-of-12 slds-size_1-of-1">
+                            <lightning:buttonIcon size="large" iconName="utility:reassign" class="slds-m-top_x-small" onclick="{!c.reassignOpp}"/>   
+                        </div>
+                    </div>
+                </lightning:card>
+                
+            </div>
+            
+            <aura:if isTrue="{!v.loadingTarget}">
+                <lightning:spinner alternativeText="Loading" />
+            </aura:if>
+        </div>
+        
+        <aura:if isTrue="{!v.reassignProcess}">
+            <lightning:spinner alternativeText="Loading" />
+        </aura:if>
+    </div>
+</aura:component>

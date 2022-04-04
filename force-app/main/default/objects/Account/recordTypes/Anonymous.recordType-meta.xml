@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anonymous</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>MSF_Anonymous_Compact_Layout</compactLayoutAssignment>
+    <label>Anonymous</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Cloud page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correo postal sin cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Director%2Fa General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Presidente%2Fa MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Bodas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Empresas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a Iniciativas Solidarias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a One to one</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email a officers Mid Donors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email herencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entidad financiera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensajería Instantánea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persona a persona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal con tablet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plataforma iniciativas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Herencias y Legados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono Officers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono SAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teléfono web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web MSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web MSF Mi perfil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web terceros</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__SYSTEM_CUSTOM_NAMING__c</picklist>
+        <values>
+            <fullName>Formal_Greeting%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informal_Greeting%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp__Funding_Focus__c</picklist>
+        <values>
+            <fullName>Animal Welfare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts and Culture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capacity Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>smartystreets__BillingVerificationUsed__c</picklist>
+        <values>
+            <fullName>Google Maps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartyStreets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>smartystreets__ShippingVerificationUsed__c</picklist>
+        <values>
+            <fullName>Google Maps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartyStreets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

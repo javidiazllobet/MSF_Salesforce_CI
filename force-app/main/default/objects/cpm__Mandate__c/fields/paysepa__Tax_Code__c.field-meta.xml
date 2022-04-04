@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>paysepa__Tax_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF ( NOT ( ISBLANK ( cpm__Payment_Profile__r.paysepa__Custom_Tax_Code__c ) ) , cpm__Payment_Profile__r.paysepa__Custom_Tax_Code__c , cpm__Payment_Profile__r.cpm__Contact__r.paysepa__Tax_Code__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tax Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

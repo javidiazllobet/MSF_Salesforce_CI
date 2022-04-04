@@ -1,0 +1,66 @@
+<aura:component controller="MSF_SummarySectionAssociative_CTRL" implements="force:hasRecordId,flexipage:availableForRecordHome" >
+    
+    <!--ATTRIBUTES-->
+    <aura:attribute name="recordId" 				type="String" 				/>
+    <aura:attribute name="record" 					type="Object" 				/>
+    
+    <aura:attribute name="endorsedNumber" 			type="String"				/>
+    
+    <!--<aura:attribute name="display"					type="Boolean"				default="false"/> -->
+    <aura:attribute name="isContact"				type="Boolean"				/>
+    <aura:attribute name="isAssociative"			type="Boolean"				default="false"/> 
+    <aura:attribute name="isSanitary"				type="Boolean"				default="false"/>
+    <aura:attribute name="isHeadquartersStaff"		type="Boolean"				default="false"/>
+    <aura:attribute name="hasFieldExperience"		type="Boolean"				default="false"/>
+    <aura:attribute name="hasAssemblyExperience"	type="Boolean"				default="false"/>
+    <aura:attribute name="hasEndorses"				type="Boolean"				default="false"/>    
+    <aura:attribute name="spinnerLoadInfoOne" 		type="Boolean" 				default="false"/>
+    <aura:attribute name="spinnerLoadInfoTwo" 		type="Boolean" 				default="false"/>
+    
+    <!--HANDLERS-->
+    <aura:handler name="change" value="{!v.record}" action="{!c.doInit}"/>    
+    <force:recordData aura:id="record" layoutType="FULL" recordId="{!v.recordId}" targetRecord="{!v.record}" mode="VIEW"/>
+
+    <!--<aura:if isTrue="{!v.display}">-->
+        <div class="slds-is-relative">
+            <aura:if isTrue="{!and(v.spinnerLoadInfoOne, v.spinnerLoadInfoTwo)}">
+                <lightning:spinner alternativeText="Loading" />
+            </aura:if>         
+            
+            <div class="slds-grid slds-wrap slds-p-around_xx-small" style="background-color: white; margin:0.1rem"> 
+                
+                <aura:if isTrue="{!v.isContact}"> 
+                    <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                        <c:MSF_Icon_UTILITY iconName="utility:groups" title="{!$Label.c.MSF_ASSOCIATED_ICON}" size="Large" class="{!(v.isAssociative) ? 'iconColorGreen' : 'iconColorRed'}" /> 
+                    </div>
+                </aura:if>            
+                
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:adduser" title="{!$Label.c.MSF_SANITARY_ICON}" size="Large" class="{!(v.isSanitary) ? 'iconColorGreen' : 'iconColorRed'}" /> 
+                </div>
+                
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:trail" title="{!$Label.c.MSF_EXPERIENCE_IN_TERRAIN_ICON}" size="Large" class="{!(v.hasFieldExperience) ? 'iconColorGreen' : 'iconColorRed'}" /> 
+                </div>
+                
+                <aura:if isTrue="{!v.isContact}">
+                    <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                        <c:MSF_Icon_UTILITY iconName="utility:announcement" title="{!$Label.c.MSF_EXPERIENCE_IN_BOARD_ICON}" size="Large" class="{!(v.hasAssemblyExperience) ? 'iconColorGreen' : 'iconColorRed'}" /> 
+                    </div>
+                </aura:if>
+                
+                <aura:if isTrue="{!v.isContact}">
+                    <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                        <c:MSF_Icon_UTILITY iconName="utility:multi_select_checkbox" title="{!$Label.c.MSF_ENDORSED_ICON}" size="Large" name="{!v.endorsedNumber}" class="{!(v.hasEndorses) ? 'iconColorGreen' : 'iconColorRed'}" /> 
+                    </div>
+                </aura:if>            
+                
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:home" title="{!$Label.c.MSF_HEADQUARTERS_STAFF_ICON}" size="Large" class="{!(v.isHeadquartersStaff) ? 'iconColorGreen' : 'iconColorRed'}" /> 
+                </div>          
+                
+            </div>
+        </div>
+    <!--</aura:if>-->
+    
+</aura:component>

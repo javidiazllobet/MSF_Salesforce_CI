@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ValueLastYear__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(msf_LevelHCCurrentFiscalYear__c &gt;=  msf_LevelHCOneFiscalYearAgo__c, 
+			 IF(msf_LevelHCCurrentFiscalYear__c &lt; 1100, 1,
+    IF(msf_LevelHCCurrentFiscalYear__c &lt; 1200, 2,
+				IF(msf_LevelHCCurrentFiscalYear__c &lt; 1500, 3,
+    IF(msf_LevelHCCurrentFiscalYear__c &lt; 2250, 4,
+    IF(msf_LevelHCCurrentFiscalYear__c &lt; 4000, 5, 6))))),
+			 IF(msf_LevelHCOneFiscalYearAgo__c &lt; 1100, 1,
+    IF(msf_LevelHCOneFiscalYearAgo__c &lt; 1200, 2,
+				IF(msf_LevelHCOneFiscalYearAgo__c &lt; 1500, 3,
+    IF(msf_LevelHCOneFiscalYearAgo__c &lt; 2250, 4,
+    IF(msf_LevelHCOneFiscalYearAgo__c &lt; 4000, 5, 6))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>6 si es &gt;= 4.000€
+5 si es &gt;= 2.250€ y &lt; 4.000€
+4 si es &gt;= 1.500€ y &lt; 2.250€
+3 si es &gt;= 1.200€ y &lt; 1.500€
+2 si es &gt;= 1.100€ y &lt; 1.200€
+1 si es &lt; 1.100€</inlineHelpText>
+    <label>Status franja alta</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsFutureDonation__c</fullName>
+    <description>Indica si una oportunidad esta con fecha cierre a futuro.</description>
+    <externalId>false</externalId>
+    <formula>YEAR(CloseDate) = (YEAR(TODAY())+1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Es futura (próximo año)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

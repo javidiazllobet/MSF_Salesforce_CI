@@ -1,0 +1,177 @@
+<aura:component controller="MSF_AssociativeSectionInContact_CTRL" implements="force:hasRecordId,flexipage:availableForRecordHome">
+    
+    <!--ATTRIBUTES-->
+    <aura:attribute name="recordId" 				type="String" 				/>
+    
+    <aura:attribute name="associativeInfo" 			type="msf_Associative__c"	default="{ 'sobjectType': 'msf_Associative__c' }"/>    
+    <aura:attribute name="expand"					type="Boolean"				default="false"/>    
+    <aura:attribute name="haveAssociaitiveRecord"	type="Boolean"				default="false"/>
+    <aura:attribute name="loadInfo"					type="Boolean"				default="true"/>   
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div aura:Id="seccionAsociativo" class="slds-card slds-section slds-is-open slds-is-relative" >
+        <h3 class="slds-section__title" onclick="{!c.expandSection}">
+            <button aria-controls="expando-unique-id" aria-expanded="false" class="slds-button slds-section__title-action">
+                <lightning:icon iconName="{!v.expand ? 'utility:chevronright' : 'utility:chevrondown'}" size="xx-small" />
+                <span class="slds-truncate slds-m-left_x-small" title="Section Title" > {!$Label.c.MSF_ASSOCIATIVE_SECTION_TITLE} </span>
+            </button>
+        </h3>
+        
+        <div aria-hidden="true" class="slds-section__content slds-grid slds-wrap slds-card" style="background-color: #E6E6E6;">
+            <aura:if isTrue="{!v.loadInfo}">
+                <lightning:spinner alternativeText="Loading" />
+            </aura:if> 
+            
+            <aura:if isTrue="{!!v.loadInfo}">
+                <aura:if isTrue="{!v.haveAssociaitiveRecord}">
+                    
+                    <aura:set attribute="else">
+                        <div class="slds-form-element slds-size_1-of-1 slds-p-horizontal_medium slds-p-vertical_x-small">                    	
+                            <lightning:icon iconName="utility:info_alt" size="x-small" />
+                            <span class="slds-p-horizontal_small"> {!$Label.c.MSF_ASSOCIATIVE_SECTION_NO_INFO} </span>
+                        </div>
+                    </aura:set>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label"> {!$Label.c.MSF_ASSOCIATIVE_SECTION_NUMBER} </label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.Name}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_STATUS}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_Status__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_EMAIL}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_FirstAssociativeEmail__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_CANCELLATION_REASON}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_CancellationReason__c}</div>
+                        </div>                                 
+                    </div>
+                    
+                     <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_LANGUAGE}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_LanguagePreferer__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_STARTDATE}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_StartDateAssociativeSAP__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_STAFFTYPE}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_StaffType__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_PAYMENTMETHOD}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_PaymentMethod__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <!--<div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 "></div>-->
+                    
+                    <!-- <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <span class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_EXEMPT_PAYMENT}</span>
+                        <lightning:input class="slds-form-element__control slds-border_bottom slds-p-bottom_xxx-small" readonly="true" disabled="true"
+                                         type="checkbox"
+                                         checked="{!v.associativeInfo.msf_ExemptOfPayment__c}" />
+                    </div>
+                    
+                   
+                    
+                    
+                                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_NAME}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_FirstNameSAP__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_LASTNAME}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_LastNameSAP__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_LASTNAME_TWO}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_SecondNameSAP__c}</div>
+                        </div>   
+                    </div>   
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_ASSOCIATIVE_PHONE}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_AssociativePhone__c}</div>
+                        </div>   
+                    </div>   
+                    
+                    
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_OTHER_EMAIL}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_SecondAssociativeEmail__c}</div>
+                        </div>   
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <label class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_NATIONALITY}</label> 
+                        <div class="slds-form-element__control slds-border_bottom">
+                            <div class="slds-form-element__static">{!v.associativeInfo.msf_NationalitySAP__c}</div>
+                        </div>                
+                    </div>
+                    
+                   
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <span class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_IS_SANITARY}</span>
+                        <lightning:input class="slds-form-element__control slds-border_bottom slds-p-bottom_xxx-small" readonly="true" disabled="true"
+                                         type="checkbox"
+                                         checked="{!v.associativeInfo.msf_IsSanitary__c}" />
+                    </div>
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <span class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_SALARIED}</span>
+                        <lightning:input class="slds-form-element__control slds-border_bottom slds-p-bottom_xxx-small" readonly="true" disabled="true"
+                                         type="checkbox"
+                                         checked="{!v.associativeInfo.msf_SalariedSAP__c}" />
+                    </div> 
+                    
+                    <div class="slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-size_1-of-1 slds-p-horizontal_medium ">
+                        <span class="slds-form-element__label">{!$Label.c.MSF_ASSOCIATIVE_SECTION_IS_FIELD}</span>
+                        <lightning:input class="slds-form-element__control slds-border_bottom slds-p-bottom_xxx-small" readonly="true" disabled="true"
+                                         type="checkbox"
+                                         checked="{!v.associativeInfo.msf_IsFieldSAP__c}" />
+                    </div> -->
+                    
+                </aura:if>
+            </aura:if>
+        </div>   
+        
+    </div>
+</aura:component>

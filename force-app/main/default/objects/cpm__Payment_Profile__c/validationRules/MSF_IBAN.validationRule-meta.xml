@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_IBAN</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISCHANGED(cpm__IBAN__c) || ISCHANGED(cpm__BIC_Code__c)) &amp;&amp;
+$Profile.Name != &apos;System Administrator&apos; &amp;&amp;
+$Profile.Name != &apos;Administrador del sistema&apos; &amp;&amp;
+$Profile.Name != &apos;Integration profile&apos; &amp;&amp;
+$Profile.Name != &apos;Economic&apos; &amp;&amp;
+$Profile.Name != &apos;Service Center&apos;</errorConditionFormula>
+    <errorMessage>No tienes permisos para modificar el campo IBAN o BIC.</errorMessage>
+</ValidationRule>

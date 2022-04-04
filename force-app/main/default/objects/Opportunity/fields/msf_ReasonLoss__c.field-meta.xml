@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ReasonLoss__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo pérdida/rechazo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No encaja propuesta</fullName>
+                <default>false</default>
+                <label>No encaja propuesta</label>
+            </value>
+            <value>
+                <fullName>No encaja en sus tiempos</fullName>
+                <default>false</default>
+                <label>No encaja en sus tiempos</label>
+            </value>
+            <value>
+                <fullName>Por código ético</fullName>
+                <default>false</default>
+                <label>Por código ético</label>
+            </value>
+            <value>
+                <fullName>Otras causas</fullName>
+                <default>false</default>
+                <label>Otras causas</label>
+            </value>
+            <value>
+                <fullName>Marketing con causa</fullName>
+                <default>false</default>
+                <label>Marketing con causa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

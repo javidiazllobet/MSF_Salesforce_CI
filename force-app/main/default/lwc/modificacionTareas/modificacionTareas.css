@@ -1,0 +1,15 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em auto 2em;
+}
+td {
+  padding: 20px;
+}
+div{
+  margin: 1em auto 2em;
+}
+.label{
+  padding:25%;
+}

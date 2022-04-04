@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acción Activismo</fullName>
+        <default>false</default>
+        <label>Acción Activismo</label>
+    </customValue>
+    <customValue>
+        <fullName>Celebraciones</fullName>
+        <default>false</default>
+        <label>Celebraciones</label>
+    </customValue>
+    <customValue>
+        <fullName>Empresas ESF (MID)</fullName>
+        <default>false</default>
+        <label>Empresas ESF (MID)</label>
+    </customValue>
+    <customValue>
+        <fullName>EnfocAH</fullName>
+        <default>false</default>
+        <label>EnfocAH</label>
+    </customValue>
+    <customValue>
+        <fullName>Escape Room</fullName>
+        <default>false</default>
+        <label>Escape Room</label>
+    </customValue>
+    <customValue>
+        <fullName>Herencias y legados</fullName>
+        <default>false</default>
+        <label>Herencias y legados</label>
+    </customValue>
+    <customValue>
+        <fullName>Humanidad Inconformista</fullName>
+        <default>false</default>
+        <label>Humanidad Inconformista</label>
+    </customValue>
+    <customValue>
+        <fullName>Iniciativas solidarias</fullName>
+        <default>false</default>
+        <label>Iniciativas solidarias</label>
+    </customValue>
+    <customValue>
+        <fullName>Mapatón</fullName>
+        <default>false</default>
+        <label>Mapatón</label>
+    </customValue>
+    <customValue>
+        <fullName>Mass</fullName>
+        <default>false</default>
+        <label>Mass</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid donors</fullName>
+        <default>false</default>
+        <label>Mid donors</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid donors plus</fullName>
+        <default>false</default>
+        <label>Mid donors plus</label>
+    </customValue>
+    <customValue>
+        <fullName>One to one</fullName>
+        <default>false</default>
+        <label>One to one</label>
+    </customValue>
+    <customValue>
+        <fullName>P.E.U.</fullName>
+        <default>false</default>
+        <label>P.E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>Regalo solidario</fullName>
+        <default>false</default>
+        <label>Regalo solidario</label>
+    </customValue>
+    <masterLabel>Producto / Programa</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

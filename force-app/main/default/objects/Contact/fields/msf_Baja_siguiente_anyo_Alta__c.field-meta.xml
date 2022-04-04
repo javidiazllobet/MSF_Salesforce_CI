@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Baja_siguiente_anyo_Alta__c</fullName>
+    <description>Campo que calcula si el contacto se ha dado de Baja de su Recurring Donation en los siguientes 12  meses al Alta</description>
+    <externalId>false</externalId>
+    <formula>IF((msf_LastRecurringDonationDate__c &lt; ADDMONTHS(msf_EntryDateCurrentRecurringDonor__c,12)), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Baja en siguiente año de Alta</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<aura:component  implements="force:hasRecordId">
+    
+    <aura:attribute name="iconName" type="String" />
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="size" type="String" />
+    <aura:attribute name="variant" type="String" />
+    <aura:attribute name="name" type="String" />
+    <aura:attribute name="class" type="String" />
+    
+
+    <div class="row slds-align_absolute-center">
+        <lightning:icon iconName="{!v.iconName}"  size="{!v.size}" variant="{!v.variant}" class="{!v.class}"/>
+    </div>
+    <div class="row slds-align_absolute-center slds-text-align_center ">
+        <lightning:formattedText class="slds-text-body_small" value="{!v.title}"/>
+    </div>
+    <div class="row slds-align_absolute-center slds-text-align_center ">
+        <lightning:formattedText class="slds-text-title_bold" value="{!v.name}"/>
+    </div>
+    
+    
+</aura:component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__DisableRecordDataHealthChecks__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates whether record data related health checks are disabled</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Si se selecciona, Comprobación de estado solo comprueba los parámetros de su configuración de NPSP buscando problemas. Seleccione esta opción si su organización tiene un gran número de registros y Comprobación de estado está teniendo dificultades para completarse.</inlineHelpText>
+    <label>Disable Record Data Health Checks</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsPrimaryContactOrg__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(npe01__One2OneContact__c ),
+  FALSE,
+  IF( npe01__One2OneContact__r.RecordType.DeveloperName = &apos;Organization&apos;, TRUE, FALSE)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Es organización el contacto principal</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_City__c</fullName>
+    <externalId>false</externalId>
+    <label>Ciudad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Barcelona</fullName>
+                <default>false</default>
+                <label>Barcelona</label>
+            </value>
+            <value>
+                <fullName>Madrid</fullName>
+                <default>false</default>
+                <label>Madrid</label>
+            </value>
+            <value>
+                <fullName>Málaga</fullName>
+                <default>false</default>
+                <label>Málaga</label>
+            </value>
+            <value>
+                <fullName>Cordoba</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cordoba</label>
+            </value>
+            <value>
+                <fullName>Las Palmas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Las Palmas</label>
+            </value>
+            <value>
+                <fullName>Sevilla</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sevilla</label>
+            </value>
+            <value>
+                <fullName>Valencia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Valencia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

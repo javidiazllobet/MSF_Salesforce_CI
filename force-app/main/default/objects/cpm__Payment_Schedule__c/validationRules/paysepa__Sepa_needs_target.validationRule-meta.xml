@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>paysepa__Sepa_needs_target</fullName>
+    <active>true</active>
+    <description>Selecting SEPA as processor you also need to select a target</description>
+    <errorConditionFormula>IF( AND( ISPICKVAL( cpm__Payment_Processor__c , &apos;PaymentHub-Sepa&apos;) ,  ISBLANK(TEXT( cpm__Target__c ) ) ) , true, false)</errorConditionFormula>
+    <errorMessage>Target is mandatory for SEPA Payment Schedules</errorMessage>
+</ValidationRule>

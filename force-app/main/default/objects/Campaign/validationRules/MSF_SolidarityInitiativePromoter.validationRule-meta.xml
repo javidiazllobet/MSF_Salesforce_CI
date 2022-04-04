@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_SolidarityInitiativePromoter</fullName>
+    <active>false</active>
+    <description>Al crear una campaña Iniciativa Solidaria, debe ser obligatorio poner un promotor.</description>
+    <errorConditionFormula>ISPICKVAL(msf_OutboundChannel1__c, &apos;Iniciativa Solidaria&apos;) &amp;&amp;   ISBLANK(msf_PromoterIndividual__c)</errorConditionFormula>
+    <errorDisplayField>msf_PromoterIndividual__c</errorDisplayField>
+    <errorMessage>Al crear una campaña Iniciativa Solidaria, debe ser obligatorio poner un promotor.</errorMessage>
+</ValidationRule>

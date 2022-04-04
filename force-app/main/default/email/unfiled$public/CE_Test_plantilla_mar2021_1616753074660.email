@@ -1,0 +1,26 @@
+<html>
+ <head> 
+  <title></title> 
+ </head> 
+ <body style="height: auto; min-height: auto;">
+   Hola&nbsp;{{{Recipient.FirstName}}}, 
+  <br /> 
+  <br /> Gracias por ayudarnos. 
+  <br /> 
+  <br /> 
+  <br /> 
+  <img alt="50998118805_f41fabe542_k" src="{[devName:X50998118805_f41fabe542_k]}" style="max-width: 681.15px" title="50998118805_f41fabe542_k" /> 
+  <br /> 
+  <br /> 
+  <br /> 
+  <br /> &nbsp;<span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-family:&quot;Arial&quot;,sans-serif">José Antonio Cortés Saavedra</span></b></span></span> 
+  <br /> <span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Arial&quot;,sans-serif">Colaboraciones Estratégicas</span></span></span> 
+  <br /> <span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Arial&quot;,sans-serif">Médicos Sin Fronteras España</span></span></span> 
+  <br /> <span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Arial&quot;,sans-serif">Cavanilles, 33 bajo</span></span></span> 
+  <br /> <span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Arial&quot;,sans-serif">28007 Madrid</span></span></span> 
+  <br /> <span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-family:&quot;Arial&quot;,sans-serif">Tel: (+34) 91 550 38 42</span></span></span> 
+  <br /> 
+  <img alt="Firma_coche" src="{[devName:Firma_coche]}" style="max-width: 681.15px" title="Firma_coche" /> 
+  <br /> &nbsp; 
+ </body>
+</html>

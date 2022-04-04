@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__Payment_Possible_Matches__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A comma-separated list of Ids for the first 10 possible Payment matches for a Donation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Una lista separada por comas de los identificadores de las 10 primeras coincidencias de posibles pagos para una donación.</inlineHelpText>
+    <label>Payment Possible Matches</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

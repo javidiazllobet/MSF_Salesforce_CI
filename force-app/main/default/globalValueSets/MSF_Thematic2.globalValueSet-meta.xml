@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Aborto</fullName>
+        <default>false</default>
+        <label>Aborto</label>
+    </customValue>
+    <customValue>
+        <fullName>Abusos</fullName>
+        <default>false</default>
+        <label>Abusos</label>
+    </customValue>
+    <customValue>
+        <fullName>Devoluciones Económicas</fullName>
+        <default>false</default>
+        <label>Devoluciones Económicas</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergencias</fullName>
+        <default>false</default>
+        <label>Emergencias</label>
+    </customValue>
+    <customValue>
+        <fullName>Encuestas</fullName>
+        <default>false</default>
+        <label>Encuestas</label>
+    </customValue>
+    <customValue>
+        <fullName>Fotoperiodismo</fullName>
+        <default>false</default>
+        <label>Fotoperiodismo</label>
+    </customValue>
+    <customValue>
+        <fullName>Kunduz</fullName>
+        <default>false</default>
+        <label>Kunduz</label>
+    </customValue>
+    <customValue>
+        <fullName>Operaciones Mediterráneo</fullName>
+        <default>false</default>
+        <label>Operaciones Mediterráneo</label>
+    </customValue>
+    <customValue>
+        <fullName>Plan Relación Automatizado</fullName>
+        <default>false</default>
+        <label>Plan Relación Automatizado</label>
+    </customValue>
+    <customValue>
+        <fullName>RGPD</fullName>
+        <default>false</default>
+        <label>RGPD</label>
+    </customValue>
+    <masterLabel>Temática 2</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_HowYouKnownUs__c</fullName>
+    <externalId>false</externalId>
+    <label>Como nos ha conocido</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amigo/a</fullName>
+                <default>false</default>
+                <label>Amigo/a</label>
+            </value>
+            <value>
+                <fullName>Bodas.net</fullName>
+                <default>false</default>
+                <label>Bodas.net</label>
+            </value>
+            <value>
+                <fullName>Web MSF</fullName>
+                <default>false</default>
+                <label>Web MSF</label>
+            </value>
+            <value>
+                <fullName>Email MSF</fullName>
+                <default>false</default>
+                <label>Email MSF</label>
+            </value>
+            <value>
+                <fullName>Zankyou</fullName>
+                <default>false</default>
+                <label>Zankyou</label>
+            </value>
+            <value>
+                <fullName>Revista MSF</fullName>
+                <default>false</default>
+                <label>Revista MSF</label>
+            </value>
+            <value>
+                <fullName>Redes Sociales</fullName>
+                <default>false</default>
+                <label>Redes Sociales</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+.THIS .slds-form-element__label {
+    font-size:12pt;
+}
+.THIS .slds-form-element{
+    margin-bottom: 6px;
+}
+
+.THIS.scrollerSize {
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.THIS.mainContainer {
+    background-color: transparent;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    right: 0;
+    bottom: 45px; 
+}
+.THIS .childContainer {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    overflow-y: auto;
+    background-color: white; 
+}

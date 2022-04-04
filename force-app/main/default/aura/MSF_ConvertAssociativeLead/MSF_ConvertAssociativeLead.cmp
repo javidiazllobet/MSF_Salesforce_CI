@@ -1,0 +1,153 @@
+<aura:component controller="MSF_ConvertAssociativeLead_CTRL" implements="force:lightningQuickAction,force:hasRecordId">
+    
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" 			type="String" 		/>
+    <aura:attribute name="currentLead" 			type="Lead" 		/>
+    
+    <aura:attribute name="duplicateContacts" 	type="List" 		/>
+    
+    <aura:attribute name="hasContacts"			type="Boolean" 		default="TRUE"/>
+    <aura:attribute name="spinnerContacts" 		type="Boolean" 		default="TRUE"/>
+    <aura:attribute name="spinnerConvert" 		type="Boolean" 		default="TRUE"/>
+    
+    
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    
+    <!-- COMPONENT BODY -->
+    <div class="slds-is-relative">
+        <aura:if isTrue="{!v.currentLead != null}">
+            <aura:if isTrue="{!v.currentLead.msf_Status__c == 'Pendiente de aprobar'}"> 
+                <aura:set attribute="else">                
+                    <p class="slds-text-heading_medium slds-text-align_center">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_WRONG_STATUS}</p> 
+                    <p class="slds-text-heading_medium slds-text-align_center"><b>'{!v.currentLead.msf_Status__c}'</b></p>    
+                </aura:set>
+                
+                
+                <div class="slds-box slds-m-vertical_small">
+                    <lightning:card  title="{!v.currentLead.Name}" iconName="standard:lead">                        
+                        <aura:set attribute="footer">
+                            <aura:if isTrue="{!!v.hasContacts}">
+                                <lightning:button iconPosition="left" iconName="utility:reassign" label="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_BUTTON_CONVERT}" variant="neutral" onclick="{!c.newContact}"/>
+                            </aura:if>
+                        </aura:set>
+                        
+                        <p class="slds-p-horizontal_small">
+                            <dl class="slds-dl_horizontal">
+                                
+                                <!-- NIF -->
+                                <dt class="{!((empty(v.currentLead.msf_NIF__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}" >
+                                    <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_NIF}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_NIF}</p>
+                                </dt>
+                                <dd class="{!((empty(v.currentLead.msf_NIF__c)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail slds-tile__meta'}">
+                                    <p class="slds-truncate" title="{!v.currentLead.msf_NIF__c}">{!v.currentLead.msf_NIF__c}</p>
+                                </dd>
+                                
+                                <!-- Email -->
+                                <dt class="{!((empty(v.currentLead.Email)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}">
+                                    <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_EMAIL}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_EMAIL}</p>
+                                </dt>
+                                <dd class="{!((empty(v.currentLead.Email)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail slds-tile__meta'}">
+                                    <p class="slds-truncate" title="{!v.currentLead.Email}">{!v.currentLead.Email}</p>
+                                </dd>
+                                
+                                <!-- Phone -->
+                                <dt class="{!((empty(v.currentLead.Phone)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__label'}">
+                                    <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_PHONE}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_PHONE}</p>
+                                </dt>
+                                <dd class="{!((empty(v.currentLead.Phone)) ? 'slds-hide ' : '') + 'slds-dl_horizontal__detail slds-tile__meta'}">
+                                    <p class="slds-truncate" title="{!v.currentLead.Phone}">{!v.currentLead.Phone}</p>
+                                </dd>
+                                
+                            </dl>
+                        </p>
+                    </lightning:card>   
+                </div>
+                
+                <div class="slds-box slds-m-vertical_small">
+                    <aura:if isTrue="{!v.hasContacts}">
+                        <aura:set attribute="else">                
+                            <lightning:badge label="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_NO_DUPLICATES}" class="slds-badge_lightest" /> 
+                            <lightning:icon iconName="utility:check" size="x-small" class="slds-m-horizontal_small"/> 
+                        </aura:set>
+                        
+                        <div class="slds-m-bottom_small">
+                            <lightning:badge label="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_DUPLICATES}" />
+                            <lightning:icon iconName="utility:warning" size="x-small" class="slds-m-horizontal_small"/> 
+                        </div>            
+                        
+                        <aura:iteration items='{!v.duplicateContacts}' var='contact'>
+                            <div class="slds-box slds-m-vertical_xx-small">
+                                
+                                <lightning:tile label="{!contact.Name}">
+                                    <aura:set attribute="media">
+                                        <lightning:icon iconName="standard:contact"/>
+                                    </aura:set>
+                                    <dl class="slds-dl_horizontal">
+                                        
+                                        <!-- NIF -->
+                                        <dt class="{!((empty(contact.msf_NIF__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__label'}" >
+                                            <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_NIF}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_NIF}</p>
+                                        </dt>
+                                        <dd class="{!((empty(contact.msf_NIF__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__detail slds-tile__meta'}">
+                                            <p class="slds-truncate" title="{!contact.msf_NIF__c}">{!contact.msf_NIF__c}</p>
+                                        </dd>
+                                        
+                                        <!-- Email -->
+                                        <dt class="{!((empty(contact.msf_MainEmail__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__label'}">
+                                            <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_EMAIL}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_EMAIL}</p>
+                                        </dt>
+                                        <dd class="{!((empty(contact.msf_MainEmail__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__detail slds-tile__meta'}">
+                                            <p class="slds-truncate" title="{!contact.msf_MainEmail__c}">{!contact.msf_MainEmail__c}</p>
+                                        </dd>
+                                        
+                                        <!-- Phone -->
+                                        <dt class="{!((empty(contact.msf_Phone__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__label'}">
+                                            <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_PHONE}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_PHONE}</p>
+                                        </dt>
+                                        <dd class="{!((empty(contact.msf_Phone__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__detail slds-tile__meta'}">
+                                            <p class="slds-truncate" title="{!contact.msf_Phone__c}">{!contact.msf_Phone__c}</p>
+                                        </dd>                                      
+                                        
+                                        <!-- MemberType -->
+                                        <dt class="{!((empty(contact.msf_IsActiveRecurringDonor__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__label'}">
+                                            <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_MEMBER_TYPE}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_MEMBER_TYPE}</p>
+                                        </dt>
+                                        <dd class="{!((empty(contact.msf_IsActiveRecurringDonor__c)) ? 'slds-hide ' : '')+'slds-dl_horizontal__detail slds-tile__meta'}">
+                                            <p class="slds-truncate" title="{!contact.msf_IsActiveRecurringDonor__c}">{!contact.msf_IsActiveRecurringDonor__c}</p>
+                                        </dd>
+                                        
+                                        <!-- Associated -->
+                                        <dt class="slds-dl_horizontal__label">
+                                            <p class="slds-truncate" title="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_ASSOCIATED}">{!$Label.c.MSF_ASSOCIATIVE_CONVERT_ASSOCIATED}</p>
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                                            <p class="slds-truncate" title="{!(contact.Asociativos__r != null ? $Label.c.MSF_YES : $Label.c.MSF_NO)}">{!(contact.Asociativos__r != null ? $Label.c.MSF_YES : $Label.c.MSF_NO)}</p>
+                                        </dd>                                        
+                                    </dl>
+                                </lightning:tile>
+                                
+                                <aura:if isTrue="{!contact.Asociativos__r != null}">
+                                    <aura:set attribute="else">                
+                                        <lightning:button iconPosition="left" iconName="utility:reassign" label="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_BUTTON_MERGE}" variant="neutral" class="slds-m-top_x-small" onclick="{!c.existingContact}" value="{!contact}"/>
+                                    </aura:set>	
+                                    <lightning:button iconPosition="left" iconName="utility:reassign" label="{!$Label.c.MSF_ASSOCIATIVE_CONVERT_BUTTON_GOTO}" variant="neutral" class="slds-m-top_x-small" onclick="{!c.existingAssociativeContact}" value="{!contact}"/>
+                                </aura:if>                                
+                            </div>
+                        </aura:iteration>
+                        
+                    </aura:if>
+                    <aura:if isTrue="{!v.spinnerContacts}">
+                        <lightning:spinner alternativeText="Loading" />
+                    </aura:if>        
+                </div>
+                
+            </aura:if>
+        </aura:if>  
+        
+        <aura:if isTrue="{!v.spinnerConvert}">
+            <lightning:spinner alternativeText="Loading" />
+        </aura:if>           
+    </div>
+</aura:component>

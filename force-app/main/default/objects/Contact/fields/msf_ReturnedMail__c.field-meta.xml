@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ReturnedMail__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(msf_DateReturnedMail1__c)) &amp;&amp; NOT(ISBLANK(msf_DateReturnedMail2__c)) &amp;&amp; NOT(ISBLANK(msf_DateReturnedMail3__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Correo devuelto Dirección Principal</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

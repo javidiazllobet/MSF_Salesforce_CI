@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__Return_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>After verification, will contain: Confirmed, Not Confirmed, Confirmed - By Dropping Secondary Info, Confirmed - Missing Secondary Info, or Not Submitted
+OPTIONAL (This is not used in verifying the address. It’s part of the returned information.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>After verification, will contain: Confirmed, Not Confirmed, Confirmed - By Dropping Secondary Info, Confirmed - Missing Secondary Info, or Not Submitted
+OPTIONAL (This is not used in verifying the address. It’s part of the returned information.)</inlineHelpText>
+    <label>Return Code</label>
+    <length>128</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

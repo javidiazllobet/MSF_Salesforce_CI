@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ProactiveDonor__c</fullName>
+    <externalId>false</externalId>
+    <label>Proactivo donante/Propuesta MSF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Proactivo donante</fullName>
+                <default>false</default>
+                <label>Proactivo donante</label>
+            </value>
+            <value>
+                <fullName>Propuesta MSF</fullName>
+                <default>false</default>
+                <label>Propuesta MSF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

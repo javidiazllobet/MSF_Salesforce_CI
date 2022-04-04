@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Correo postal sin cupón</fullName>
+        <default>false</default>
+        <label>Correo postal sin cupón</label>
+    </customValue>
+    <customValue>
+        <fullName>Cupón</fullName>
+        <default>false</default>
+        <label>Cupón</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Entidad financiera</fullName>
+        <default>false</default>
+        <label>Entidad financiera</label>
+    </customValue>
+    <customValue>
+        <fullName>Formulario web</fullName>
+        <default>false</default>
+        <label>Formulario web</label>
+    </customValue>
+    <customValue>
+        <fullName>Mensajería Instantánea</fullName>
+        <default>false</default>
+        <label>Mensajería Instantánea</label>
+    </customValue>
+    <customValue>
+        <fullName>Otro</fullName>
+        <default>false</default>
+        <label>Otro</label>
+    </customValue>
+    <customValue>
+        <fullName>Persona a persona</fullName>
+        <default>false</default>
+        <label>Persona a persona</label>
+    </customValue>
+    <customValue>
+        <fullName>Redes Sociales</fullName>
+        <default>false</default>
+        <label>Redes Sociales</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono campaña</fullName>
+        <default>false</default>
+        <label>Teléfono campaña</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono Herencias y Legados</fullName>
+        <default>false</default>
+        <label>Teléfono Herencias y Legados</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfonos Officers</fullName>
+        <default>false</default>
+        <label>Teléfonos Officers</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfonos SAS</fullName>
+        <default>false</default>
+        <label>Teléfonos SAS</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono web</fullName>
+        <default>false</default>
+        <label>Teléfono web</label>
+    </customValue>
+    <customValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <label>Telemarketing</label>
+    </customValue>
+    <description>LeadSource Master Data</description>
+    <masterLabel>LeadSource2</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

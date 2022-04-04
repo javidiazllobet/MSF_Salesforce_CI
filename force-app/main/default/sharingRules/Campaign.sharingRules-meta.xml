@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Associative_Campaigns</fullName>
+        <accessLevel>All</accessLevel>
+        <label>Associative Campaigns</label>
+        <sharedTo>
+            <roleAndSubordinates>Asociativo</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Asociativo,Campaña de Voluntarios</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Campa_as_con_Service_Center</fullName>
+        <accessLevel>All</accessLevel>
+        <label>Compartir Campañas con Service Center</label>
+        <sharedTo>
+            <role>Service_Center</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Default</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Fundraising_Campaigns</fullName>
+        <accessLevel>All</accessLevel>
+        <label>Fundraising Campaigns</label>
+        <sharedTo>
+            <roleAndSubordinates>Fundraising</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Default</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Lectura_Campanas_Asociativo</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Lectura Campañas Asociativo</label>
+        <sharedTo>
+            <role>Asociativo</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

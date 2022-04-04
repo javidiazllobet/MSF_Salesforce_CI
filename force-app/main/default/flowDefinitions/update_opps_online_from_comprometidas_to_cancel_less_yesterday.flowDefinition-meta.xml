@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>4</activeVersionNumber>
+    <description>Actualiza las opps (trustly, paypal y tc-online) de comprometidas a cancel (&lt; yesterday)
+El usuario que queda como last_modify_user es integration_marketing_cloud</description>
+    <masterLabel>update_opps_online_from_comprometidas_to_cancel_less_yesterday</masterLabel>
+</FlowDefinition>

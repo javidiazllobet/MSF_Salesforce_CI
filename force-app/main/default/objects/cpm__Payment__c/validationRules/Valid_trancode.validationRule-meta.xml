@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_trancode</fullName>
+    <active>false</active>
+    <description>Validation Trancode</description>
+    <errorConditionFormula>IF(ISBLANK(msf_Trancode__c), 
+FALSE, 
+NOT(REGEX(msf_Trancode__c, &quot;\\d{4}&quot;)) 
+)</errorConditionFormula>
+    <errorDisplayField>msf_Trancode__c</errorDisplayField>
+    <errorMessage>Trancode ide cheques nválido, ha de ser 4 números</errorMessage>
+</ValidationRule>

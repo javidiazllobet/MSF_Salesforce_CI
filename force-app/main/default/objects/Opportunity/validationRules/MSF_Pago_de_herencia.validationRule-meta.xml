@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Pago_de_herencia</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Legacy&apos; &amp;&amp;  !ISPICKVAL(Type, &apos;Pago de Herencia&apos;) &amp;&amp; !ISBLANK(msf_LegacyOpportunity__c)</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Esta oportunidad esta relacionada con una Herencia, de modo que solo puede ser de tipo &apos;Pago de Herencia&apos;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asociativo_incompleto_obligaciones</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+  RecordType.DeveloperName == &apos;Associative&apos;,
+  (ISPICKVAL(msf_Status__c , &apos;Pendiente de aprobar&apos;) || ISPICKVAL(msf_Status__c , &apos;Pendiente de presentar&apos;)), 
+  !msf_AcceptStatutes__c 
+)</errorConditionFormula>
+    <errorDisplayField>msf_AcceptStatutes__c</errorDisplayField>
+    <errorMessage>Campo obligatorio para completar el formulario.</errorMessage>
+</ValidationRule>

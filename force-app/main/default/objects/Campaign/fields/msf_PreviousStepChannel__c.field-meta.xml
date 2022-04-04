@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_PreviousStepChannel__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal paso previo</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Corregistro (lead)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corregistro (lead)</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Lead online</fullName>
+                <default>false</default>
+                <label>Lead online</label>
+            </value>
+            <value>
+                <fullName>One to One</fullName>
+                <default>false</default>
+                <label>One to One</label>
+            </value>
+            <value>
+                <fullName>SMS Opis</fullName>
+                <default>false</default>
+                <label>SMS Opis</label>
+            </value>
+            <value>
+                <fullName>SMS otros</fullName>
+                <default>false</default>
+                <label>SMS otros</label>
+            </value>
+            <value>
+                <fullName>SMS Push</fullName>
+                <default>false</default>
+                <label>SMS Push</label>
+            </value>
+            <value>
+                <fullName>SMS TV</fullName>
+                <default>false</default>
+                <label>SMS TV</label>
+            </value>
+            <value>
+                <fullName>TLMK</fullName>
+                <default>false</default>
+                <label>TLMK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

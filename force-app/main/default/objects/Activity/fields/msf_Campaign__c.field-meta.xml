@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Campaña de la acción que generó la tarea, por ejemplo si es el envío de un Kit de Bienvenida de socio, la campaña por la que entró este socio. Se rellenará automáticamente si aplica</inlineHelpText>
+    <label>Campaña</label>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Interacciones</relationshipLabel>
+    <relationshipName>Actividades</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

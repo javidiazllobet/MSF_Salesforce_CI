@@ -1,0 +1,211 @@
+<aura:component controller="MSF_SummarySection_CONTROLLER" implements="force:hasRecordId,flexipage:availableForRecordHome">
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object" description="The record object to be displayed"/>
+    
+    <aura:attribute name="icons" type="Boolean" Default="false" />
+    <aura:attribute name="iconName" type="String" />
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="size" type="String" Default="large"/>
+    
+    <aura:attribute name="iconLvl" type="Boolean" Default="true" />
+    <aura:attribute name="iconLPur" type="Boolean" Default="true" />
+    <aura:attribute name="iconProg" type="Boolean" Default="true" />
+    <aura:attribute name="iconAnt" type="Boolean" Default="true" />
+    <aura:attribute name="iconProm" type="Boolean" Default="False" />
+    <aura:attribute name="iconApor" type="Boolean" Default="False" />
+    <aura:attribute name="iconVD" type="Boolean" Default="False" />
+    <aura:attribute name="iconTest" type="Boolean" Default="false" />
+    <aura:attribute name="iconDuplicate" type="Boolean" Default="false" />
+    <aura:attribute name="iconBoda" type="Boolean" Default="false" />
+    <aura:attribute name="contact" type="Contact"/>
+    <aura:attribute name="account" type="Account"/>
+    <aura:attribute name="case" type="Integer"/>
+    <aura:attribute name="ant" type="String"/>
+    <aura:attribute name="lvl" type="String"/>
+    <aura:attribute name="program" type="String"/>
+    <aura:attribute name="OrgTypeColor" type="String"/>
+    <aura:attribute name="legacyStage" type="String"/> 
+    <aura:attribute name="LastModifiedDate" type="String"/>
+    <aura:attribute name="iconCasoName" type="String" />    
+
+    <force:recordData aura:id="record" layoutType="FULL" recordId="{!v.recordId}" targetRecord="{!v.record}" mode="VIEW"/>
+    
+    <aura:handler name="change" value="{!v.record}" action="{!c.inicializacion}"/>
+    
+    <aura:if isTrue="{!v.icons}">
+        <div class="slds-grid slds-wrap slds-p-around_xx-small" style="background-color: white; margin:0.1rem">
+            
+            <aura:if isTrue="{!v.contact.RecordType.DeveloperName == 'Organization'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="standard:account" size="Large" title="{!v.contact.RecordType.Name}" name="{!v.contact.msf_OrganizationType__c}"  class="iconColorGrey" /> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.RecordType.DeveloperName == 'Organization_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="standard:person_account" size="Large" name="{!v.contact.RecordType.Name}" class="iconColorGrey" /> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.RecordType.DeveloperName == 'Individual_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="standard:individual" size="Large" name="{!v.contact.RecordType.Name}" class="iconColorGrey" /> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.RecordType.DeveloperName == 'Anonymous'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="standard:question_feed" size="Large" name="{!v.contact.RecordType.Name}" class="iconColorGrey" /> 
+                </div>
+            </aura:if> 
+             
+            <aura:if isTrue="{!v.account.msf_IsOrganizationGroup__c &amp;&amp; v.contact.RecordType.DeveloperName == 'Organization'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:strategy" title="{!$Label.c.MSF_SUM_SECTION_ORGANIZATION_GROUP}" size="Large" name="{!v.account.Name}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_Organization__r.Name != null &amp;&amp; v.contact.RecordType.DeveloperName == 'Organization_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:company" title="{!$Label.c.MSF_SUM_SECTION_ORGANIZATION}" size="Large" name="{!v.contact.msf_Organization__r.Name}"/> 
+                </div>
+            </aura:if>
+
+            <aura:if isTrue="{!v.iconLvl &amp;&amp; v.contact.RecordType.DeveloperName != 'Anonymous'}">
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                	<c:MSF_Icon_UTILITY iconName="utility:metrics" title="{!(v.contact.RecordType.DeveloperName == 'Organization_Contact') ? $Label.c.MSF_SUM_SECTION_RELATIONSHIP_LVL_ORG : $Label.c.MSF_SUM_SECTION_RELATIONSHIP_LVL}" size="Large" name="{!v.lvl}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconLPur &amp;&amp; v.contact.RecordType.DeveloperName == 'Organization'}">
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                	<c:MSF_Icon_UTILITY iconName="utility:macros" title="{!$Label.c.MSF_SUM_SECTION_LVL_PURE_EC}" size="Large" name="{!v.contact.msf_Level__r.Name}"/> 
+                </div>
+            </aura:if>
+             
+            <aura:if isTrue="{!v.contact.msf_MemberType__c != null &amp;&amp; (v.contact.RecordType.DeveloperName == 'Organization' || v.contact.RecordType.DeveloperName == 'Individual_Contact')}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:money" title="{!$Label.c.MSF_SUM_SECTION_MEMBER_TYPE}" size="Large" name="{!v.contact.msf_MemberType__c}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconProg &amp;&amp; v.contact.RecordType.DeveloperName != 'Anonymous'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:standard_objects" title="{!(v.contact.RecordType.DeveloperName == 'Organization_Contact') ? $Label.c.MSF_SUM_SECTION_PROGRAM_ORG : $Label.c.MSF_SUM_SECTION_PROGRAM}"  size="Large" name="{!v.program}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.RecordType.DeveloperName == 'Organization_Contact'}">  
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <aura:if isTrue="{!v.contact.msf_OrgContactType__c == $Label.c.MSF_CONTACT_FORMULA_PRIMARY_CONTACT}">
+                    	<c:MSF_Icon_UTILITY iconName="utility:change_owner" title="{!$Label.c.MSF_SUM_SECTION_TYPE_OF_CONTACT_ORG}" size="Large" name="{!v.contact.msf_OrgContactType__c}" class="iconColorGreen"/> 
+                    </aura:if>
+                    <aura:if isTrue="{!v.contact.msf_OrgContactType__c == $Label.c.MSF_CONTACT_FORMULA_NOT_PRIMARY_CONTACT_ACTIVE}">
+                        <c:MSF_Icon_UTILITY iconName="utility:change_owner" title="{!$Label.c.MSF_SUM_SECTION_TYPE_OF_CONTACT_ORG}" size="Large" name="{!v.contact.msf_OrgContactType__c}" class=""/>
+                    </aura:if>
+                    <aura:if isTrue="{!v.contact.msf_OrgContactType__c == $Label.c.MSF_CONTACT_FORMULA_CONTACT_INACTIVE}">
+                        <c:MSF_Icon_UTILITY iconName="utility:change_owner" title="{!$Label.c.MSF_SUM_SECTION_TYPE_OF_CONTACT_ORG}" size="Large" name="{!v.contact.msf_OrgContactType__c}" class="iconColorRed"/>
+                    </aura:if>
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconAnt &amp;&amp; (v.contact.RecordType.DeveloperName == 'Organization' || v.contact.RecordType.DeveloperName == 'Individual_Contact')}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:date_time" title="{!$Label.c.MSF_SUM_SECTION_ANTIQUITY}" size="Large" name="{!v.ant}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_IsAssosiative__c &amp;&amp; v.contact.RecordType.DeveloperName == 'Individual_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:groups" title="{!$Label.c.MSF_SUM_SECTION_ASSOCIATED}" size="Large"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconTest &amp;&amp; v.contact.RecordType.DeveloperName == 'Individual_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:feed" title="{!$Label.c.MSF_SUM_SECTION_WILL}" size="Large" name="{!v.legacyStage}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_IsPublicPerson__c &amp;&amp; v.contact.RecordType.DeveloperName == 'Individual_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:advertising" title="{!$Label.c.MSF_SUM_SECTION_PUBLIC_PERSON}" size="Large" class="iconColorGreen"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconVD &amp;&amp; v.contact.RecordType.DeveloperName == 'Organization'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:travel_and_places" title="{!$Label.c.MSF_SUM_SECTION_DONATION_VEHICLE}" size="Large"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconProm &amp;&amp; (v.contact.RecordType.DeveloperName == 'Organization' || v.contact.RecordType.DeveloperName == 'Individual_Contact')}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:touch_action" title="{!$Label.c.MSF_SUM_SECTION_PROMOTER_OF_INITIATIVES}" size="Large"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconBoda &amp;&amp; v.contact.RecordType.DeveloperName == 'Individual_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:people" title="{!$Label.c.MSF_SUM_SECTION_WEDDING}" size="Large"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.case > 0 &amp;&amp; (v.contact.RecordType.DeveloperName == 'Organization' || v.contact.RecordType.DeveloperName == 'Individual_Contact')}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:case" title="{!v.iconCasoName}" size="Large" variant="error"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconApor &amp;&amp; (v.contact.RecordType.DeveloperName == 'Organization' || v.contact.RecordType.DeveloperName == 'Individual_Contact')}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:currency" title="{!$Label.c.MSF_SUM_SECTION_UNPAID_CONTRIBUTION}" size="Large" variant="error"/> 
+                </div>
+            </aura:if> 
+            
+            <aura:if isTrue="{!v.contact.msf_MainEmail__c == null &amp;&amp; v.contact.RecordType.DeveloperName != 'Anonymous'  }"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:email" title="{!$Label.c.MSF_SUM_SECTION_FAILURE_EMAIL}" size="Large" variant="error"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_NIF__c == null &amp;&amp; v.contact.RecordType.DeveloperName == 'Organization'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:identity" title="{!$Label.c.MSF_SUM_SECTION_FAILURE_CIF}" size="Large" variant="error"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_NIF__c == null &amp;&amp; v.contact.RecordType.DeveloperName == 'Individual_Contact'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:identity" title="{!$Label.c.MSF_SUM_SECTION_FAILURE_NIF}" size="Large" variant="error"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_PrimaryContact__c == null &amp;&amp; v.contact.RecordType.DeveloperName == 'Organization'}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:user" title="{!$Label.c.MSF_SUM_SECTION_FAILURE_PRIMARY_CONTACT}" size="Large" variant="error"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_ContactInformationSummary__c != null &amp;&amp; v.contact.RecordType.DeveloperName != 'Anonymous' }"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:database" title="{!$Label.c.MSF_SUM_SECTION_DATA}" size="Large" name="{!v.contact.msf_ContactInformationSummary__c}"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.contact.msf_PercomsSummary__c != null &amp;&amp; v.contact.RecordType.DeveloperName != 'Anonymous' }"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:custom_apps" title="{!$Label.c.MSF_SUM_SECTION_PERCOMS}" name="{!v.contact.msf_PercomsSummary__c}" size="Large"/> 
+                </div>
+            </aura:if>
+            
+            <aura:if isTrue="{!v.iconDuplicate &amp;&amp; (v.contact.RecordType.DeveloperName == 'Organization_Contact' || v.contact.RecordType.DeveloperName == 'Individual_Contact')}"> 
+                <div class="slds-col slds-p-around_xx-small slds-large-size_1-of-12 slds-medium-size_1-of-8 slds-small-size_1-of-6 " style="padding:0.5rem ">
+                    <c:MSF_Icon_UTILITY iconName="utility:link" title="{!$Label.c.MSF_SUM_SECTION_DUPLICATE}"  size="Large"/> 
+                </div>
+            </aura:if>
+            
+        </div>
+    </aura:if>  
+</aura:component>

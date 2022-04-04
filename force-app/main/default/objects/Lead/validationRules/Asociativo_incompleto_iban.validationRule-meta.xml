@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asociativo_incompleto_iban</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName == &apos;Associative&apos; &amp;&amp;
+(ISPICKVAL(msf_Status__c , &apos;Pendiente de aprobar&apos;) || ISPICKVAL(msf_Status__c , &apos;Pendiente de presentar&apos;)) &amp;&amp;
+ISPICKVAL(msf_PaymentMethod__c, &apos;Domiciliación bancaria&apos;) &amp;&amp;
+!msf_ExemptOfPayment__c &amp;&amp;
+(
+    ISBLANK( msf_IBANCode__c ) ||
+    ISBLANK( msf_IBANEntity__c ) ||
+    ISBLANK( msf_IBANOffice__c ) ||
+    ISBLANK( msf_IBANDC__c ) ||
+    ISBLANK( msf_IBANAccountNumber__c )
+)</errorConditionFormula>
+    <errorDisplayField>msf_PaymentMethod__c</errorDisplayField>
+    <errorMessage>Para método de pago de domiciliación bancaria es necesario informar los datos bancarios.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_InKind_Market_Fair_Value</fullName>
+    <active>true</active>
+    <description>No deja que se cierre como ganada sin valor de mercado o sin importe. Uno de los dos tiene que estar completado.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;In_Kind_Gift&apos; &amp;&amp;  ISBLANK(Amount) &amp;&amp; ISBLANK(npsp__Fair_Market_Value__c) &amp;&amp;  ISPICKVAL(StageName , &apos;Cobrada&apos;)</errorConditionFormula>
+    <errorMessage>No es posible cerrar la oportunidad como Cobrada sin tener informado el importe o el valor de mercado.</errorMessage>
+</ValidationRule>

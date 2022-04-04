@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tel_Fijo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+!(ISBLANK(Phone)), 
+!REGEX(Phone,&quot;[8-9]{1}[0-9]{8}&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>El campo debe tener 9 dígitos y comenzar por 8 o 9.</errorMessage>
+</ValidationRule>

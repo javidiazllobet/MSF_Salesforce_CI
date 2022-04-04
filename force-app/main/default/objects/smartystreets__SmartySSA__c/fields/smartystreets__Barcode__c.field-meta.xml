@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__Barcode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Contains the 12-digit PostNet barcode for the submitted address. 
+OPTIONAL (This is not used in verifying the address. It’s part of the returned information.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contains the 12-digit PostNet barcode for the submitted address. 
+OPTIONAL (This is not used in verifying the address. It’s part of the returned information.)</inlineHelpText>
+    <label>Barcode</label>
+    <length>128</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

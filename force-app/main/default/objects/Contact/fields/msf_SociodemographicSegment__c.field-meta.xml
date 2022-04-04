@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_SociodemographicSegment__c</fullName>
+    <externalId>false</externalId>
+    <label>Cluster sociodemografico</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SD1</fullName>
+                <default>false</default>
+                <label>SD1</label>
+            </value>
+            <value>
+                <fullName>SD2</fullName>
+                <default>false</default>
+                <label>SD2</label>
+            </value>
+            <value>
+                <fullName>SD3</fullName>
+                <default>false</default>
+                <label>SD3</label>
+            </value>
+            <value>
+                <fullName>SD4</fullName>
+                <default>false</default>
+                <label>SD4</label>
+            </value>
+            <value>
+                <fullName>SD5</fullName>
+                <default>false</default>
+                <label>SD5</label>
+            </value>
+            <value>
+                <fullName>SD6</fullName>
+                <default>false</default>
+                <label>SD6</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

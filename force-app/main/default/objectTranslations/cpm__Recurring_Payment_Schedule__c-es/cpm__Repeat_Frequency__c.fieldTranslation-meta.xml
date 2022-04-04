@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Mejor explicado con un ejemplo. Si el valor es 3: -Semanalmente: los registros de la Programación de cobros se generarán una vez cada 3 semanas. -Mensualmente: los registros de la programación de cobros se generarán cada trimestre.</help>
+    <label></label>
+    <name>cpm__Repeat_Frequency__c</name>
+</CustomFieldTranslation>

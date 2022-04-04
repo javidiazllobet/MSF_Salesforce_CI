@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__AllowStreetOnlyVerifications__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If this is checked, then addresses without City and State will be verified</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this is checked, then addresses without City and State will be verified</inlineHelpText>
+    <label>Allow Street Only Verifications</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__Force_Latin__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Request that the language returned by SmartyStreets be transliterated into Latin characters</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Request that the language returned by SmartyStreets be transliterated into Latin characters</inlineHelpText>
+    <label>Force Latin?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

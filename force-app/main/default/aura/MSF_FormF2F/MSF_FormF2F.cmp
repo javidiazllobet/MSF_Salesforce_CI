@@ -1,0 +1,414 @@
+<aura:component controller="MSF_FormF2F_CTRL" implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:isUrlAddressable" description="c:MSF_IncompleteManagement" access="GLOBAL">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.inicializacion}" />
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.refresh}" />
+    
+    
+    <!-- Attributes : conversations -->
+    <aura:attribute name="NumConversation" 				type="Integer" 			Default='0' />
+    
+    <!-- Attributes :  info canvasser-->
+    <aura:attribute name="pageReference" 				type="Object"	/>  
+    <aura:attribute name="recordId" 			type="String" />
+    <aura:attribute name="canvasser" 			type="User" />
+    <aura:attribute name="socio" 				type="Object" />
+    <aura:attribute name="idRD" 				type="String" />
+    <aura:attribute name="type" 				type="String"   						Default="P"/>
+    <aura:attribute name="isMinor" 				type="Boolean"/>
+    <aura:attribute name="isLeadMinor" 			type="Boolean"/>
+    <aura:attribute name="isSocio" 				type="Boolean"   						Default = "false"/>
+    <aura:attribute name="isDonante" 			type="Boolean"   						Default = "false"/>
+    <aura:attribute name="birthdate" 			type="Date" />
+    <aura:attribute name="gender" 				type="List"/>
+    <aura:attribute name="nif" 					type="String" />
+    <aura:attribute name="cif" 					type="String" />
+    <aura:attribute name="language" 			type="List"/>
+    <aura:attribute name="lanSelected" 			type="String"/>
+    <aura:attribute name="genSelected" 			type="String"/>
+    <aura:attribute name="perSelected" 			type="String"/>
+    <aura:attribute name="dateSelected" 		type="String"/>
+    <aura:attribute name="holderValue" 			type="String"   						Default="socio"/>
+    <aura:attribute name="opDate" 				type="List"/>
+    
+    <aura:attribute name="ibanComplete" 		type="String" />
+    <aura:attribute name="iban1" 				type="String" />
+    <aura:attribute name="iban2" 				type="String" />
+    <aura:attribute name="iban3" 				type="String" />
+    <aura:attribute name="iban4" 				type="String" />
+    <aura:attribute name="iban5" 				type="String" />
+    <aura:attribute name="aportacionRad" 		type="List" 							default="[{'label': '60€', 'value': '60'},
+                                                                                                 {'label': '25€', 'value': '25'},
+                                                                                                 {'label': '15€', 'value': '15'},
+                                                                                                 {'label': 'Otro', 'value': '0'}]"/>
+    <aura:attribute name="ValorAportacionRad" 	type="String" 							default="60"/>
+    <aura:attribute name="ValorOtherAmount" 	type="Decimal"   						/>
+    <aura:attribute name="opPeriod" 			type="List" />
+    <aura:attribute name="checkPolitics" 		type="Boolean" 							default="false"/>
+    <aura:attribute name="checkPayment" 		type="Boolean" 							default="false" />
+    <aura:attribute name="checkAmount"	 		type="Boolean" 							default="false"/>
+    <aura:attribute name="frequencyChanged" 	type="Boolean" 							default="false" />
+    
+    <!-- Attributes :  increase quota-->
+    <aura:attribute name="nameS" 				type="String" />
+    <aura:attribute name="secondSNameS" 		type="String" />
+    <aura:attribute name='isOrganization' 		type='Boolean' 							default='FALSE' />
+    <aura:attribute name='recurringDonation' 	type='npe03__Recurring_Donation__c' 					/>
+    <aura:attribute name='spinnerRecurring'		type='Boolean' 							default='FALSE'	/>
+    <aura:attribute name='oldFrequency' 		type='String' 							default=''		/>
+    <aura:attribute name='newFrequency' 		type='String' 							default=''		/>
+    <aura:attribute name='newNextQuotaDate' 	type='String' 							default=''		/>
+    
+    <!-- Attributes : Signatures -->
+    <aura:attribute name='memberId' 			type='String' />
+    <aura:attribute name='signatureDonorIncQuoOk' 	type='Boolean' 							default='FALSE' />
+    <aura:attribute name='signatureDonorOk' 	type='Boolean' 							default='FALSE' />
+    <aura:attribute name='signatureTutorOk' 	type='Boolean' 							default='FALSE' />
+    <aura:attribute name='signatureHolderOk' 	type='Boolean' 							default='FALSE' />    
+    
+    <!-- Attributes : incompletes-->
+    <aura:attribute name='incomplete' 				type='Lead' />
+    
+    
+    
+   	<div aura:id="mainContainer" id="mainContainer" class="mainContainer">
+        <div style="background-color: white" id="bodyElement">
+          
+            <form aura:id="formF2F" class="slds-form--stacked childContainer" >
+                <lightning:navigation aura:id="navService"/>
+                <div class="slds-grid slds-grid_align-center slds-wrap">
+                    <div aura:id="conversationSection" class="slds-col slds-large-size_2-of-2 slds-medium-size_2-of-2 slds-small-size_2-of-2 slds-p-top_small slds-p-right_small slds-text-align_right" >
+                        <lightning:button aura:id="addConversation" variant="brand" label="+1" onclick="{!c.addConversation}" />
+                        <lightning:badge aura:id="conversations" label="{!v.NumConversation}" /> 
+                    </div>
+                    
+                    <div aura:id="searchSection" class="slds-col slds-large-size_2-of-2 slds-medium-size_2-of-2 slds-small-size_2-of-2 slds-p-left_medium slds-p-bottom_medium slds-p-right_medium" >
+                        <div class="slds-form-element">
+                            <lightning:select aura:id="option" name="option" label="{!$Label.c.MSF_FORM_F2F_TYPE}" onchange="{!c.tipoRegistro}" value="{!v.type}">
+                                <option value="P">{!$Label.c.MSF_FORM_F2F_REGISTER_TYPE_PERSON}</option>
+                                <option value="O">{!$Label.c.MSF_FORM_F2F_REGISTER_TYPE_ORGANIZATION}</option>
+                            </lightning:select>
+                            <div class="slds-form-element">
+                                <lightning:input aura:id="nifS" label="{!$Label.c.MSF_FORM_F2F_NIF_NIE}" name="nifS" value="{!v.nif}" pattern="[0-9]{8}[A-Za-z]{1}|[XYZ]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}" />
+                            </div>
+                            <div class="slds-form-element">
+                                <lightning:input class="slds-hide" aura:id="cifS" label="{!$Label.c.MSF_FORM_F2F_CIF}" name="cif" value="{!v.cif}" pattern="[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}[0-9]{8}|[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}"/>
+                            </div>
+                            <lightning:button class="" aura:id="btnSearch" variant="brand" label="{!$Label.c.MSF_FORM_F2F_SEARCH_BUTTON}" onclick="{!c.search}" />
+                        </div>
+                    </div>
+                    
+                    <!--///////Información si es socio///////// -->
+                    <div aura:id="socioSection" class="slds-hide slds-col slds-large-size_2-of-2 slds-medium-size_2-of-2 slds-small-size_2-of-2 slds-p-around_large" style="background-color: white">
+                        <form aura:id='form' class='slds-form--stacked slds-p-around_medium' >
+                            
+                            <!-- CURRENT INFORMATION -->
+                            <p>{!$Label.c.MSF_FORM_F2F_TITLE_PARTNER_SECTION_CURRENT_INFO}</p>
+                            <div class='slds-box slds-m-bottom_small'>
+                                <div aura:id='memberinfo' class='slds-grid slds-wrap' >
+                                    <div class='slds-form-element slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium'>
+                                        <lightning:input aura:id='nameS' name='name' label='{!$Label.c.MSF_FORM_F2F_NAME}' value='{!v.nameS}' disabled='true'/>
+                                    </div>
+                                    <aura:if isTrue='{!!v.isOrganization}'>
+                                        <div class='slds-form-element slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium'>
+                                            <lightning:input aura:id='secondSNameS' name='secondSNameS' label='{!$Label.c.MSF_FORM_F2F_SURNAME}' value='{!v.secondSNameS}' disabled='true'/>
+                                        </div>
+                                    </aura:if>
+                                </div>
+                                
+                                <div aura:id='quotainfo' class='slds-grid slds-wrap' >
+                                    <div class='slds-form-element slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_2-of-2 slds-size_2-of-2 slds-p-horizontal_medium'>
+                                        <lightning:input aura:id='currentAmount' name='currentAmount' label='{!$Label.c.MSF_FORM_F2F_CURRENT_QUOTA}' value='{!v.recurringDonation.npe03__Amount__c}' disabled='true' type='number' formatter='currency'/>
+                                    </div>
+                                    <div class='slds-form-element slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_2-of-2 slds-size_2-of-2 slds-p-horizontal_medium'>
+                                        <lightning:input aura:id='currentFrequency' name='currentFrequency' label='{!$Label.c.MSF_FORM_F2F_PERIOD}' value='{!v.oldFrequency}' disabled='true'/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div aura:id="donationButton" class='slds-form-element slds-text-align_center slds-m-top_medium'>
+                                <lightning:button variant='brand' label='{!$Label.c.MSF_FORM_F2F_INCREASE_OF_QUOTA_BUTTON}' onclick='{!c.increaseQuota}'/>
+                                <lightning:button variant='brand' label='{!$Label.c.MSF_FORM_F2F_PUNCTUAL_DONATION_BUTTON}' onclick='{!c.loadForm}'/>
+                                <lightning:button variant='neutral' label='{!$Label.c.MSF_FORM_F2F_CANCEL_BUTTON}' onclick='{!c.toBack}'/>
+                            </div>
+                            
+                            <!-- NEW QUOTA -->
+                            <div aura:id="increaseQuota" class="slds-hide" >
+                                <aura:if isTrue='{!v.recurringDonation != null}'>
+                                    <p>{!$Label.c.MSF_FORM_F2F_TITLE_INCREASE_QUOTA_SECTION_QUOTA_CHANGE}</p>
+                                    <div aura:id='quotainfo' class='slds-grid slds-wrap slds-box' >
+                                        <div class='slds-form-element slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_2-of-2 slds-size_2-of-2 slds-p-horizontal_medium'>
+                                            <div class='slds-size_2-of-3 '>
+                                                <lightning:radioGroup aura:id='AmountS' name='AmountS'
+                                                                      label='{!$Label.c.MSF_FORM_F2F_SELECT_AMOUNT}'
+                                                                      options='{! v.aportacionRad }'
+                                                                      value='{! v.ValorAportacionRad }'
+                                                                      type='button'
+                                                                      onchange='{!c.amountChanged}'/>
+                                            </div>
+                                            <div class='slds-size_1-of-3' >
+                                                <lightning:input aura:id="otherApor2" class="slds-hide" name='otherApor2' label='{!$Label.c.MSF_FORM_F2F_QUANTITY}' placeholder='€' type='number' formatter='currency' step = "0.01" value='{!v.ValorOtherAmount}' min='1' messageWhenRangeUnderflow="{!$Label.c.MSF_FORM_F2F_ERROR_AMOUNT_POSITIVE}" />
+                                            </div>
+                                        </div>
+                                        
+                                        <div class='slds-form-element slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_2-of-2 slds-size_2-of-2 slds-p-horizontal_medium'>
+                                            <lightning:select aura:id='periodSocio' name='period' label='{!$Label.c.MSF_FORM_F2F_PERIOD}' onchange='{!c.frequencyChanged}' >
+                                                <aura:iteration items='{!v.opPeriod}' var='item'>
+                                                    <option value='{!item}' selected="{!item == v.oldFrequency}">{!item}</option>
+                                                </aura:iteration>
+                                            </lightning:select>
+                                            <aura:if isTrue='{!v.oldFrequency != v.newFrequency}'>
+                                                <lightning:select aura:id='firstDonationSocio' name='firstDonationSocio' label='{!$Label.c.MSF_FORM_F2F_FIRST_INSTALLMENT_DATE}' value='{!v.newNextQuotaDate}'>
+                                                    <aura:iteration items='{!v.opDate}' var='item'>
+                                                        <option value='{!item}'>{!item}</option>
+                                                    </aura:iteration>
+                                                </lightning:select>
+                                            </aura:if>
+                                            <div aura:id="sign" class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium ">
+                                                <lightning:input aura:id="firma" type="checkbox" required="true" disabled="true" value="{!v.signatureDonorIncQuoOk}" checked="{!v.signatureDonorIncQuoOk}" label="{!$Label.c.MSF_FORM_F2F_SIGNATURE_CHECK}" />
+                                                <span aura:id="sigDonorIncQuo" ><c:MSF_Signature aura:id="sigDonorIncQuoCmp" signatureInformed="{!v.signatureDonorIncQuoOk}" signatureName="Firma_donante" signatureIdMember="{!v.memberId}"/></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class='slds-form-element slds-text-align_center slds-m-top_medium'> 
+                                        <lightning:button variant='brand' label='{!$Label.c.MSF_FORM_F2F_SAVE_BUTTON}' onclick='{!c.saveNewQuota}'/>
+                                        <lightning:button variant='neutral' label='{!$Label.c.MSF_FORM_F2F_CANCEL_BUTTON}' onclick='{!c.refresh}'/>
+                                    </div>
+                                </aura:if>
+                            </div>
+                        </form>
+                    </div>
+                    <!--///////Fin si es socio///////// -->
+                    
+                    <div aura:id="generalSection" class=" slds-hide slds-grid slds-wrap slds-p-around_medium">
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input name="nombreCan" label="{!$Label.c.MSF_FORM_F2F_TALK_TO}" value="{!v.canvasser.Name}" disabled="true"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="campañaCan" name="campañaCan" label="{!$Label.c.MSF_FORM_F2F_CAMPAIGN}" value="{!v.canvasser.msf_Campaign__c}" disabled="true"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input name="ciudadCan" label="{!$Label.c.MSF_FORM_F2F_CITY}" value="{!v.canvasser.msf_City__c}" disabled="true"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input name="localizacionCan" label="{!$Label.c.MSF_FORM_F2F_LOCATION}" value="{!v.canvasser.msf_Place__c}" disabled="true"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="name" name="name" label="{!$Label.c.MSF_FORM_F2F_NAME}" required="true"  />
+                        </div>
+                        <div aura:id="contactInputs" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="firstSName" name="firstSName" label="{!$Label.c.MSF_FORM_F2F_SURNAME}" required="true" />
+                        </div>
+                        <div aura:id="contactInputs" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="secondSName" name="secondSName"  label="{!$Label.c.MSF_FORM_F2F_SECOND_SURNAME}" />
+                        </div>
+                        <div aura:id="contactInputs" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="nif" label="{!$Label.c.MSF_FORM_F2F_NIF_NIE}" name="nif" value="{!v.nif}" pattern="[0-9]{8}[A-Za-z]{1}|[XYZ]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}" disabled="true"/>
+                        </div>
+                        <div aura:id="cifImput" class="slds-hide slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="cif" label="{!$Label.c.MSF_FORM_F2F_CIF}" name="cif" value="{!v.cif}" pattern="[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}[0-9]{8}|[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}" disabled="true"/>
+                        </div>
+                        <div aura:id="contactInputs" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="birthdate" type="date" name="birthdate" label="{!$Label.c.MSF_FORM_F2F_BIRTHDATE}" value="{!v.birthdate}" onchange="{!c.birthdateChange}" />
+                        </div>
+                        <div aura:id="contactInputs" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:select aura:id="genderCmp" name="genderCmp" label="{!$Label.c.MSF_FORM_F2F_GENDER}" value="{!v.genSelected}">
+                                <aura:iteration items="{!v.gender}" var="item">
+                                    <option value="{!item}" selected="{!item == v.genSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="street" name="street"  label="{!$Label.c.MSF_FORM_F2F_STREET}" />
+                        </div>
+                        <div class="slds-grid slds-wrap slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-horizontal_medium">
+                            <div class="slds-col slds-size_1-of-3  slds-container_large" >
+                                <lightning:input aura:id="num" label="{!$Label.c.MSF_FORM_F2F_NUMBER}" name="num" />
+                            </div>
+                            <div class="slds-col slds-size_1-of-3 slds-container_large " >
+                                <lightning:input aura:id="floor" label="{!$Label.c.MSF_FORM_F2F_FLOOR}" name="piso"  />
+                            </div>
+                            <div class="slds-col slds-size_1-of-3  slds-container_large " >
+                                <lightning:input aura:id="door" label="{!$Label.c.MSF_FORM_F2F_DOOR}" name="puerta" />
+                            </div>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="zipCode" type="tel" name="zipCode"  label="{!$Label.c.MSF_FORM_F2F_POSTAL_CODE}" pattern="[0-9]{5}" maxlength="5"/>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-horizontal_medium">
+                            <div class="slds-col slds-size_1-of-2  slds-container_large " >
+                                <lightning:input aura:id="city" name="city"  label="{!$Label.c.MSF_FORM_F2F_CITY}" />
+                            </div>
+                            <div class="slds-col slds-size_1-of-2  slds-container_large" >
+                                <lightning:input aura:id="province" name="province"  label="{!$Label.c.MSF_FORM_F2F_PROVINCE}" />
+                            </div>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="country" name="country"  label="{!$Label.c.MSF_FORM_F2F_COUNTRY}" value="España" />
+                        </div>
+                        
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="email" type="email" name="email" label="{!$Label.c.MSF_FORM_F2F_EMAIL}"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="phone" type="tel" label="{!$Label.c.MSF_FORM_F2F_PHONE}" name="phone" pattern="[8-9]{1}[0-9]{8}" maxlength="9"/>
+                        </div>
+                        <div aura:id="contactInputs" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="mobile" type="tel" label="{!$Label.c.MSF_FORM_F2F_MOBILE_PHONE}" name="telMovil" pattern="[6-7]{1}[0-9]{8}" maxlength="9"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:select aura:id="language" name="language" label="{!$Label.c.MSF_FORM_F2F_LANGUAGE}" value="{!v.lanSelected}">
+                                <aura:iteration items="{!v.language}" var="item">
+                                    <option value="{!item}" selected="{!item == v.lanSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>
+                        <!-- ////// Información de representante ///////-->
+                        <div aura:id="auxSection" class="slds-grid slds-wrap" >
+                            <div class="slds-col slds-form-element slds-large-size_2-of-2 slds-medium-size_2-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:badge label="{!$Label.c.MSF_FORM_F2F_LEGAL_REPRESENTATIVE}" style="background-color: #dddbda"/>                       
+                            </div>
+                            <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:input aura:id="nameAux" name="nameAux" label="{!$Label.c.MSF_FORM_F2F_NAME}" required="true" />
+                            </div>
+                            <div  class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:input aura:id="firstSNameAux" name="firstSNameAux" label="{!$Label.c.MSF_FORM_F2F_SURNAME}" required="true" />
+                            </div>                                
+                            <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:input aura:id="secondSNameAux" name="secondSNameAux"  label="{!$Label.c.MSF_FORM_F2F_SECOND_SURNAME}"/>
+                            </div>
+                            <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:input aura:id="nifAux" label="{!$Label.c.MSF_FORM_F2F_NIF_NIE}" name="nifAux" pattern="[0-9]{8}[A-Za-z]{1}|[XYZ]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}" required="true"/>
+                            </div>                                
+                            <div aura:id="mobileAuxInput" class=" slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:input aura:id="mobileAux" type="tel" label="{!$Label.c.MSF_FORM_F2F_MOBILE_PHONE}" name="telMovilPC" pattern="[6-7]{1}[0-9]{8}" maxlength="9"/>
+                            </div>
+                            <div aura:id="rolAuxInput" class=" slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:input aura:id="rolAux" name="rolPC" label="{!$Label.c.MSF_FORM_F2F_ROL}"/>
+                            </div> 
+                            <div aura:id="firmaAux" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium"  >
+                                <lightning:input  type="checkbox" required="true" disabled="true" value="{!v.signatureTutorOk}" checked="{!v.signatureTutorOk}" label="{!$Label.c.MSF_FORM_F2F_SIGNATURE_CHECK}" />
+                                <span aura:id="sigRep" ><c:MSF_Signature aura:id="sigRepCmp" signatureInformed="{!v.signatureTutorOk}" signatureName="Firma_representante" signatureIdMember="{!v.memberId}"/></span>
+                            </div>                                
+                            
+                        </div>
+                        <!-- ////// fin de representante  ///////-->
+                        <div class="slds-box slds-grid slds-wrap slds-p-around_medium" style="background-color: #f2f2f2">
+                            <div class="slds-col slds-form-element slds-large-size_2-of-2 slds-medium-size_2-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:badge label="{!$Label.c.MSF_FORM_F2F_WAY_TO_PAY}" style="background-color: #dddbda"/>                    
+                            </div>
+                            <div class="slds-grid slds-wrap slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-horizontal_medium">
+                                <div class="slds-col slds-size_1-of-6  slds-container_large" >
+                                    <lightning:input aura:id="iban1" label="{!$Label.c.MSF_FORM_F2F_IBAN}" name="iban" maxlength="4" pattern="['ESes']{2}[0-9]{2}" value="{!v.iban1}" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-6  slds-container_large" >
+                                    <lightning:input aura:id="iban2" type="tel" name="entidad" label="{!$Label.c.MSF_FORM_F2F_ENTITY}" maxlength="4" pattern="[0-9]{4}" value="{!v.iban2}" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-6  slds-container_large" >
+                                    <lightning:input aura:id="iban3" type="tel" name="oficina" label="{!$Label.c.MSF_FORM_F2F_OFFICE}" maxlength="4" pattern="[0-9]{4}" value="{!v.iban3}"/>
+                                </div>
+                                <div class="slds-col slds-size_1-of-6  slds-container_large" >
+                                    <lightning:input aura:id="iban4" type="tel" name="dc" label="{!$Label.c.MSF_FORM_F2F_DC}" maxlength="2" pattern="[0-9]{2}" value="{!v.iban4}" />
+                                </div>
+                                <div class="slds-col slds-size_2-of-6  slds-container_large">
+                                    <lightning:input aura:id="iban5" type="tel" name="cuenta" label="{!$Label.c.MSF_FORM_F2F_ACCOUNT_NUMBER}" maxlength="10" pattern="[0-9]{10}" value="{!v.iban5}" />
+                                </div>
+                            </div>
+                            <!-- ////// Información de holder ///////--> 
+                            <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium">
+                                <lightning:select aura:id="holder" name="holder" label="{!$Label.c.MSF_FORM_F2F_HOLDER}" onchange="{!c.holderChange}" value="{!v.holderValue}" >
+                                    <option value="socio" selected="{!value == v.holderValue}">{!$Label.c.MSF_FORM_F2F_HOLDER_VALUE_SAME_PERSON}</option>
+                                    <aura:if isTrue="{!v.isMinor}"> <option value="tutor" selected="{!value == v.holderValue}">{!$Label.c.MSF_FORM_F2F_HOLDER_VALUE_TUTOR}</option></aura:if>
+                                    <option value="other" selected="{!value == v.holderValue}">{!$Label.c.MSF_FORM_F2F_HOLDER_VALUE_OTHER_PERSON}</option>
+                                </lightning:select>
+                            </div>
+                            <div aura:id="otherHolder"  class=" slds-hide slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium">
+                                <lightning:input aura:id="nameH" label="{!$Label.c.MSF_FORM_F2F_NAME}" name="nameH" required="true" />
+                            </div>
+                            <div aura:id="otherHolder" class=" slds-hide slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium">
+                                <lightning:input aura:id="firstSNameH" label="{!$Label.c.MSF_FORM_F2F_SURNAME}" name="firstSNameH" required="true" />
+                            </div>
+                            <div aura:id="otherHolder" class="slds-hide slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium">
+                                <lightning:input aura:id="secondSNameH" label="{!$Label.c.MSF_FORM_F2F_SECOND_SURNAME}" name="SecondSNameH" />
+                            </div>
+                            <div aura:id="otherHolder" class="slds-hide slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium">
+                                <lightning:input aura:id="firmaH" type="checkbox" required="true" disabled="true" value="{!v.signatureHolderOk}" checked="{!v.signatureHolderOk}" label="{!$Label.c.MSF_FORM_F2F_SIGNATURE_CHECK}" />
+                                <span aura:id="sigHolder"><c:MSF_Signature aura:id="sigHolderCmp" signatureInformed="{!v.signatureHolderOk}" signatureName="Firma_titular_cuenta" signatureIdMember="{!v.memberId}"/></span>
+                            </div>
+                            <div aura:id="otherHolder" class="slds-hide slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-top_small slds-p-horizontal_medium">
+                                <lightning:input aura:id="nifH" label="{!$Label.c.MSF_FORM_F2F_NIF_NIE}" name="nifH" pattern="[0-9]{8}[A-Za-z]{1}|[XYZxyz]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKETtrwagmyfpdxbnjzsqvhlcket]{1}" required="true"/>
+                            </div>
+                            <!-- ////// fin de holder ///////-->
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium slds-p-top_medium">
+                            <lightning:badge label="{!$Label.c.MSF_FORM_F2F_MY_CONTRIBUTION_IS}" style="background-color: #dddbda"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1  slds-p-horizontal_medium ">
+                            <lightning:input aura:id="checkAmount" type="checkbox" name="checkAmount" value="{!v.checkAmount}" label="{!$Label.c.MSF_FORM_F2F_REPORT_AMOUNT_LATER}" onchange="{!c.notInformedAmount}"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:radioGroup aura:id="Amount" name="Amount" label="{!$Label.c.MSF_FORM_F2F_SELECT_AMOUNT}" options="{!v.aportacionRad}" value="{!v.ValorAportacionRad}" type="button" onchange="{!c.amountChanged}"/>
+                        </div>
+                        <div aura:id="rbnOtro" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:input aura:id="otherApor" class="slds-hide" name="otherApor" label="{!$Label.c.MSF_FORM_F2F_QUANTITY}" placeholder="€" type="number" formatter="currency" step = "0.01" value="{!v.ValorOtherAmount}" min='1' messageWhenRangeUnderflow="{!$Label.c.MSF_FORM_F2F_ERROR_AMOUNT_POSITIVE}"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                            <lightning:select aura:id="period" name="period" label="{!$Label.c.MSF_FORM_F2F_PERIOD}" value="{!v.perSelected}">
+                                <aura:iteration items="{!v.opPeriod}" var="item">
+                                    <option value="{!item}" selected="{!item == v.perSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">                                
+                            <lightning:select aura:id="firstDonation" name="firstDonation" label="{!$Label.c.MSF_FORM_F2F_FIRST_INSTALLMENT_DATE}" value="{!v.dateSelected}">
+                                <aura:iteration items="{!v.opDate}" var="item">
+                                    <option value="{!item}" selected="{!item == v.dateSelected}">{!item}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>                    
+                        <div class="slds-grid slds-wrap slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                            <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium">
+                                <lightning:formattedText class="slds-text-heading_large slds-text-title_caps" value="{!$Label.c.MSF_FORM_F2F_PRIVACY_POLITICCS_TEXT}" />
+                                <lightning:formattedUrl value="http://www.msf.es/politica-de-privacidad" label="{!$Label.c.MSF_FORM_F2F_PRIVACY_POLITICCS_LINK}" target="_blank" />
+                                
+                            </div>
+                            <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1  slds-p-horizontal_medium ">
+                                <lightning:input aura:id="checkPolitics" type="checkbox" name="checkPolitics" value="{!v.checkPolitics}" label="{!$Label.c.MSF_FORM_F2F_PRIVACY_POLITICCS_CHECK}" required="true"/>
+                            </div>
+                            <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium ">
+                                <lightning:input aura:id="checkPayment" type="checkbox" name="checkPayment" value="{!v.checkPayment}" label="{!$Label.c.MSF_FORM_F2F_CONFIRM_PAYMENT_CHECK}" required="true"/>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                            <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium ">
+                                <lightning:formattedText class="slds-text-heading_large slds-text-title_caps " value="{!$Label.c.MSF_FORM_F2F_CONFIRM_SIGNATURE_TEXT}" />
+                            </div>
+                            <div aura:id="sign" class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium ">
+                                <lightning:input aura:id="firma" type="checkbox" required="true" disabled="true" value="{!v.signatureDonorOk}" checked="{!v.signatureDonorOk}" label="{!$Label.c.MSF_FORM_F2F_SIGNATURE_CHECK}" />
+                                <span aura:id="sigDonor" >
+                                    <c:MSF_Signature aura:id="sigDonorCmp" signatureInformed="{!v.signatureDonorOk}" signatureName="Firma_donante" signatureIdMember="{!v.memberId}"/>
+                                </span>
+                            </div>
+                        </div>
+                        <div aura:id="contactDateSection" class="slds-col slds-form-element slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-horizontal_medium ">
+                            <lightning:input aura:id="contactDate" type="datetime" name="contactDate" label="{!$Label.c.MSF_FORM_F2F_CONTACT_DATE}" onchange="{!c.contactDateChange}"/>
+                        </div>
+                        <div class="slds-col slds-form-element slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-size_1-of-1 slds-p-around_medium slds-grid_align-center" >
+                            <lightning:textarea aura:id="obs" name="observaciones" label="{!$Label.c.MSF_FORM_F2F_OBSERVATIONS}" />
+                        </div>
+                        <div class='slds-form-element slds-size_1-of-1 slds-text-align_center slds-m-top_medium'>
+                            
+                            <lightning:button variant="brand" label="{!$Label.c.MSF_FORM_F2F_SAVE_BUTTON}" onclick="{!c.save}"/>
+                            <lightning:button variant='neutral' label='{!$Label.c.MSF_FORM_F2F_CANCEL_BUTTON}' onclick='{!c.toBack}'/>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
+            <aura:if isTrue="{!v.spinnerRecurring}">
+                <div>
+                    <lightning:spinner alternativeText="Loading" />
+                </div>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

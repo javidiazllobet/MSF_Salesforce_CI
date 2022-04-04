@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Correo Postal</fullName>
+        <default>false</default>
+        <label>Correo Postal</label>
+    </customValue>
+    <customValue>
+        <fullName>E-mail</fullName>
+        <default>false</default>
+        <label>E-mail</label>
+    </customValue>
+    <customValue>
+        <fullName>Fax</fullName>
+        <default>false</default>
+        <label>Fax</label>
+    </customValue>
+    <customValue>
+        <fullName>Fichero Informático</fullName>
+        <default>false</default>
+        <label>Fichero Informático</label>
+    </customValue>
+    <customValue>
+        <fullName>Formularios Web</fullName>
+        <default>false</default>
+        <label>Formularios Web</label>
+    </customValue>
+    <customValue>
+        <fullName>Generación Aplicación</fullName>
+        <default>false</default>
+        <label>Generación Aplicación</label>
+    </customValue>
+    <customValue>
+        <fullName>Interno</fullName>
+        <default>false</default>
+        <label>Interno</label>
+    </customValue>
+    <customValue>
+        <fullName>Llamada</fullName>
+        <default>false</default>
+        <label>Llamada</label>
+    </customValue>
+    <customValue>
+        <fullName>Mensajería Instantánea</fullName>
+        <default>false</default>
+        <label>Mensajería Instantánea</label>
+    </customValue>
+    <customValue>
+        <fullName>Mi Perfil</fullName>
+        <default>false</default>
+        <label>Mi Perfil</label>
+    </customValue>
+    <customValue>
+        <fullName>Online</fullName>
+        <default>false</default>
+        <label>Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Presencial</fullName>
+        <default>false</default>
+        <label>Presencial</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>n/a</fullName>
+        <default>false</default>
+        <label>n/a</label>
+    </customValue>
+    <customValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Telemarketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Buzón Móvil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Buzón Móvil</label>
+    </customValue>
+    <customValue>
+        <fullName>Skype</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Skype</label>
+    </customValue>
+    <customValue>
+        <fullName>Whatsapp</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Whatsapp</label>
+    </customValue>
+    <description>Interactions Master Data</description>
+    <masterLabel>Canal</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

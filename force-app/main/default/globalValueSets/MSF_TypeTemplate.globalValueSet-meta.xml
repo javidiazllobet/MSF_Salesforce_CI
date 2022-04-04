@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acreditación de Socio</fullName>
+        <default>false</default>
+        <label>Acreditación de Socio</label>
+    </customValue>
+    <customValue>
+        <fullName>Calendario</fullName>
+        <default>false</default>
+        <label>Calendario</label>
+    </customValue>
+    <customValue>
+        <fullName>Carnet de socio</fullName>
+        <default>false</default>
+        <label>Carnet de socio</label>
+    </customValue>
+    <customValue>
+        <fullName>Cesión de aportaciones</fullName>
+        <default>false</default>
+        <label>Cesión de aportaciones</label>
+    </customValue>
+    <customValue>
+        <fullName>Charla Temática</fullName>
+        <default>false</default>
+        <label>Charla Temática</label>
+    </customValue>
+    <customValue>
+        <fullName>Cupón de Alta</fullName>
+        <default>false</default>
+        <label>Cupón de Alta</label>
+    </customValue>
+    <customValue>
+        <fullName>Documento de Baja</fullName>
+        <default>false</default>
+        <label>Documento de Baja</label>
+    </customValue>
+    <customValue>
+        <fullName>Dossier Herencias y Legados</fullName>
+        <default>false</default>
+        <label>Dossier Herencias y Legados</label>
+    </customValue>
+    <customValue>
+        <fullName>Evento Genérico Masivo</fullName>
+        <default>false</default>
+        <label>Evento Genérico Masivo</label>
+    </customValue>
+    <customValue>
+        <fullName>Evento Grandes Colaboradores</fullName>
+        <default>false</default>
+        <label>Evento Grandes Colaboradores</label>
+    </customValue>
+    <customValue>
+        <fullName>Evento Legal Herencias</fullName>
+        <default>false</default>
+        <label>Evento Legal Herencias</label>
+    </customValue>
+    <customValue>
+        <fullName>Evento OneToFew+</fullName>
+        <default>false</default>
+        <label>Evento OneToFew+</label>
+    </customValue>
+    <customValue>
+        <fullName>Evento PEU</fullName>
+        <default>false</default>
+        <label>Evento PEU</label>
+    </customValue>
+    <customValue>
+        <fullName>Exposición</fullName>
+        <default>false</default>
+        <label>Exposición</label>
+    </customValue>
+    <customValue>
+        <fullName>Mandato</fullName>
+        <default>false</default>
+        <label>Mandato</label>
+    </customValue>
+    <customValue>
+        <fullName>Memoria</fullName>
+        <default>false</default>
+        <label>Memoria</label>
+    </customValue>
+    <customValue>
+        <fullName>Recibo donativo Persona Física</fullName>
+        <default>false</default>
+        <label>Recibo donativo Persona Física</label>
+    </customValue>
+    <customValue>
+        <fullName>Recibo donativo Persona Jurídica</fullName>
+        <default>false</default>
+        <label>Recibo donativo Persona Jurídica</label>
+    </customValue>
+    <customValue>
+        <fullName>Revista</fullName>
+        <default>false</default>
+        <label>Revista</label>
+    </customValue>
+    <customValue>
+        <fullName>Visita Base Logística</fullName>
+        <default>false</default>
+        <label>Visita Base Logística</label>
+    </customValue>
+    <customValue>
+        <fullName>Visita Sede/Oficina delegada</fullName>
+        <default>false</default>
+        <label>Visita Sede/Oficina delegada</label>
+    </customValue>
+    <customValue>
+        <fullName>Visita Terreno</fullName>
+        <default>false</default>
+        <label>Visita Terreno</label>
+    </customValue>
+    <customValue>
+        <fullName>Pieza 12Few (libros, fotos, otros)</fullName>
+        <default>false</default>
+        <label>Pieza 12Few (libros, fotos, otros)</label>
+    </customValue>
+    <customValue>
+        <fullName>Pieza 121 (libros, fotos, otros)</fullName>
+        <default>false</default>
+        <label>Pieza 121 (libros, fotos, otros)</label>
+    </customValue>
+    <masterLabel>Tipo / Pieza</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

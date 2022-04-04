@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_OwnBy__c</fullName>
+    <externalId>false</externalId>
+    <label>Propiedad de</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Colaboraciones Estratégicas</fullName>
+                <default>false</default>
+                <label>Colaboraciones Estratégicas</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Fidelización</fullName>
+                <default>false</default>
+                <label>Fidelización</label>
+            </value>
+            <value>
+                <fullName>Captación</fullName>
+                <default>false</default>
+                <label>Captación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cpm__Payment_Processor__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Payment Processor</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>cpm__Payment_Method__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PaymentHub-SEPA</fullName>
+                <default>false</default>
+                <label>PaymentHub-SEPA</label>
+            </value>
+            <value>
+                <fullName>PaymentHub-Redsys</fullName>
+                <default>false</default>
+                <label>PaymentHub-Redsys</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>TRANSFERENCIA BANCARIA</controllingFieldValue>
+            <controllingFieldValue>EN ESPECIE-INMOVILIZADO</controllingFieldValue>
+            <controllingFieldValue>FACEBOOK</controllingFieldValue>
+            <controllingFieldValue>INICIATIVA SOLIDARIA ONLINE</controllingFieldValue>
+            <controllingFieldValue>GIRO POSTAL</controllingFieldValue>
+            <controllingFieldValue>EFECTIVO S.C.</controllingFieldValue>
+            <controllingFieldValue>GRANT</controllingFieldValue>
+            <controllingFieldValue>TALÓN NO ESTÁNDAR EXTRANJERO</controllingFieldValue>
+            <controllingFieldValue>TALÓN NO ESTÁNDAR EN EUROS</controllingFieldValue>
+            <controllingFieldValue>TC ONLINE</controllingFieldValue>
+            <controllingFieldValue>EFECTIVO DELEGACIÓN</controllingFieldValue>
+            <controllingFieldValue>EFECTIVO RECEPCIÓN</controllingFieldValue>
+            <controllingFieldValue>PAYPAL</controllingFieldValue>
+            <controllingFieldValue>Direct Debit</controllingFieldValue>
+            <controllingFieldValue>PAGARÉS</controllingFieldValue>
+            <controllingFieldValue>TALÓN BANCARIO ESTÁNDAR</controllingFieldValue>
+            <controllingFieldValue>HERENCIAS Y LEGADOS</controllingFieldValue>
+            <controllingFieldValue>GIRO POSTAL RECEPCIÓN</controllingFieldValue>
+            <controllingFieldValue>EFECTIVO ASOCIATIVO</controllingFieldValue>
+            <controllingFieldValue>CUENTA ABOGADO/CUENTA PUENTE</controllingFieldValue>
+            <controllingFieldValue>EN ESPECIE-SERVICIOS</controllingFieldValue>
+            <controllingFieldValue>TRUSTLY - TR ONLINE</controllingFieldValue>
+            <controllingFieldValue>ACMA</controllingFieldValue>
+            <valueName>PaymentHub-SEPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CreditCard</controllingFieldValue>
+            <valueName>PaymentHub-Redsys</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

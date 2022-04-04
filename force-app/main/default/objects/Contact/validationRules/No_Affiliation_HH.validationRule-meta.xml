@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Affiliation_HH</fullName>
+    <active>true</active>
+    <description>Solo se puede seleccionar una organización como afiliación principal.</description>
+    <errorConditionFormula>npsp__Primary_Affiliation__r.RecordType.DeveloperName = &apos;HH_Account&apos;</errorConditionFormula>
+    <errorDisplayField>npsp__Primary_Affiliation__c</errorDisplayField>
+    <errorMessage>Solo se puede seleccionar una organización como afiliación principal.</errorMessage>
+</ValidationRule>

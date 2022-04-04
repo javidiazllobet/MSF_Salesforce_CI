@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_BehavioralSegmentMBDesc__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_S1&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_S1,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_S2&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_S2,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_S3&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_S3,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_S4&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_S4,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D1&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D1,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D2&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D2,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D3&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D3,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D4&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D4,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D5&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D5,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D6&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D6,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D7&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D7,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D8&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D8,
+if(TEXT(msf_BehavioralSegmentMB__c) == &quot;MB_D9&quot;, $Label.MSF_F_FIELDS_CONTACT_MB_D9,
+&quot;&quot;)))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cluster MIDBIG desc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npo02__Enable_Soft_Credit_Rollups__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Rolls up Closed/Won Opportunity totals to Contact records based on assigned Opportunity Contact Roles. Soft credit rollups only happen in nightly batches, but you can run them manually from the Rollup Donations Batch settings.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permite calcular totales de op. cerradas basados en la fun. del contacto en la op. Se calculan solamente en el trabajo programado de la noche, y no en triggers. Pueden ser calculados manualmente usando la pestaña de Lote de totales de donaciones.</inlineHelpText>
+    <label>Enable Soft Credit Rollups</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

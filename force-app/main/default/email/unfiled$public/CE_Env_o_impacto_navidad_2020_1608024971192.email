@@ -1,0 +1,20 @@
+<html>
+ <head> 
+  <title></title> 
+ </head> 
+ <body style="height: auto; min-height: auto;">
+   Hola, {{{Sender.Alias}}}: 
+  <br /> 
+  <br /> Esto es un GIF. 
+  <br /> 
+  <br /> 
+  <img alt="MSF_REFERENCE-LABORATORY-GENETICS_POSTAL_GIF_CAST" src="{[devName:MSF_REFERENCELABORATORYGENETICS_POS]}" style="max-width: 681.15px" title="MSF_REFERENCE-LABORATORY-GENETICS_POSTAL_GIF_CAST" /> 
+  <br /> 
+  <br /> Esto es un vídeo: 
+  <br /> 
+  <br /> <a href="https://vimeo.com/491088843/c14488e184"><img alt="STILL NAVIDAD 2020" src="{[devName:STILL_NAVIDAD_2020]}" style="max-width: 681.15px" title="STILL NAVIDAD 2020" /></a> 
+  <br /> 
+  <br /> 
+  <img alt="Firma_Colab_CarlaLópez_Zamora" src="{[devName:Firma_Colab_CarlaLpez_Zamora]}" style="max-width: 681.15px" title="Firma_Colab_CarlaLópez_Zamora" /> 
+ </body>
+</html>

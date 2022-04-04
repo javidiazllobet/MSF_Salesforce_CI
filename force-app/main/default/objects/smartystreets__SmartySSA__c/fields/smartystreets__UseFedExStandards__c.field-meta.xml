@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__UseFedExStandards__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Address 1 - 35 chars
+Address 2 - 35 chars
+City - 20 chars
+State - 2 chars
+ZipCode - 5 chars</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Address 1 - 35 chars
+Address 2 - 35 chars
+City - 20 chars
+State - 2 chars
+ZipCode - 5 chars</inlineHelpText>
+    <label>Use FedEx Standards</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

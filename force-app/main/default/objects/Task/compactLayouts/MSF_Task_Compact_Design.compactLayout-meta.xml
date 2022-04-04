@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_Task_Compact_Design</fullName>
+    <fields>Subject</fields>
+    <fields>msf_Channel__c</fields>
+    <fields>Status</fields>
+    <fields>msf_TypeTemplate__c</fields>
+    <label>MSF Task Compact Design</label>
+</CompactLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Volunteer_Skills__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Seleciona la(s) habilidad(es) que tiene esta persona para encontrar un trabajo voluntario</inlineHelpText>
+    <label>Volunteer Skills</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Computer usage</fullName>
+                <default>false</default>
+                <label>Computer usage</label>
+            </value>
+            <value>
+                <fullName>Manual labor</fullName>
+                <default>false</default>
+                <label>Manual labor</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+                <label>Fundraising</label>
+            </value>
+            <value>
+                <fullName>Event Planning</fullName>
+                <default>false</default>
+                <label>Event Planning</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Control de acceso</fullName>
+                <default>false</default>
+                <label>Control de acceso</label>
+            </value>
+            <value>
+                <fullName>Voto electrónico</fullName>
+                <default>false</default>
+                <label>Voto electrónico</label>
+            </value>
+            <value>
+                <fullName>Fotografía/Multimedia</fullName>
+                <default>false</default>
+                <label>Fotografía/Multimedia</label>
+            </value>
+            <value>
+                <fullName>Logística (montaje, micros, etc)</fullName>
+                <default>false</default>
+                <label>Logística (montaje, micros, etc)</label>
+            </value>
+            <value>
+                <fullName>NS workshop</fullName>
+                <default>false</default>
+                <label>NS workshop</label>
+            </value>
+            <value>
+                <fullName>Otros (finanzas, documentación, etc)</fullName>
+                <default>false</default>
+                <label>Otros (finanzas, documentación, etc)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

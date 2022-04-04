@@ -1,0 +1,26 @@
+<aura:component controller="MSF_AnonymizationProcess_CTRL" implements="force:lightningQuickAction,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="recordId" 	type="ID" />
+    <aura:attribute name="spinner" 		type="Boolean" 		default="false"/>
+    
+    <div class="slds-is-relative">    	
+        <div class="slds-grid slds-wrap ">
+           
+            <div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+                <p class="text-center">
+                    {!$Label.c.MSF_ANONYMIZATION_ALERT_MSG}
+                    <br></br>
+                    {!$Label.c.MSF_ANONYMIZATION_CONFIRMATION_MSG}
+                </p>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+                <lightning:button iconPosition="left" iconName="utility:hide" label="{!$Label.c.MSF_ANONYMIZATION_BUTTON_LABEL}" variant="neutral" class="slds-m-top_x-small" onclick="{!c.doInit}"/>
+            </div>
+        </div>        
+
+        <aura:if isTrue="{!v.spinner}">
+            <lightning:spinner alternativeText="Loading" />
+        </aura:if> 
+    </div>
+	
+</aura:component>

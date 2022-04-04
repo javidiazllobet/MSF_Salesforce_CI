@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ValueTotalDesc__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(msf_ValueTotalCont__c&lt;0.1, $Label.MSF_F_FIELDS_CONTACT_NULL, 
+if(msf_ValueTotalCont__c&lt;50, $Label.MSF_F_FIELDS_CONTACT_VERY_LOW, 
+if(msf_ValueTotalCont__c&lt;100, $Label.MSF_F_FIELDS_CONTACT_VERY_LOW, 
+if(msf_ValueTotalCont__c&lt;120, $Label.MSF_F_FIELDS_CONTACT_VERY_LOW, 
+if(msf_ValueTotalCont__c&lt;180, $Label.MSF_F_FIELDS_CONTACT_LOW, 
+if(msf_ValueTotalCont__c&lt;500, $Label.MSF_F_FIELDS_CONTACT_MEDIUM, 
+if(msf_ValueTotalCont__c&lt;1000, $Label.MSF_F_FIELDS_CONTACT_HIGH, 
+if(msf_ValueTotalCont__c&lt;3000, $Label.MSF_F_FIELDS_CONTACT_HIGH, 
+if(msf_ValueTotalCont__c&lt;10000, $Label.MSF_F_FIELDS_CONTACT_VERY_HIGH, 
+if(msf_ValueTotalCont__c&gt;=10000, $Label.MSF_F_FIELDS_CONTACT_VERY_HIGH, $Label.MSF_F_FIELDS_CONTACT_NULL))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Valor colaborador (desc)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_NIF__c</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles$StageName</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$msf_NIF__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>582787J,1910064Y,484433F,42607B,32318615G,1904965J,29684030T,2165299X,5256902,2197403,14552937D,25547747Z,23591869X,40952298,46308631V,1055581L,2531386Y,40952646L,14130130 N,05745381G,04058773D,73754434N,37629902Q,38045873D,38695942Y,50743584H,37446520J,1245557S,329578B,12347379J,01095657Y,07225772T,52577895X,X 3326928-R,5340751366,19565260B,2177296R,844498F,711.416 A,2.179.656 S,33246215Z,10535710P,25840613K,38766184Y,42053979C,2231224V,13645692E,40393505P,NADKU89,08AX63222,70329544Y,13688236Q,21988631X,16915977Y,00391452S,7488550A,14608654C,30640140T,811416E,2947981W,31208592F,14522153E,51702314Q,26416248N,42503284C,75015984N,07032524K,02523832L,43014236G,16229483Q,00110365B,26188238R,30083382A,09300097R,02152016K,37743857Y,36106117G,3379923G,3396634V,00027823Q,50756006C,34946654V,78494166L,07512265M,452556118J,52759446E,2952827H,77078289E,14963712G,37643138G,14847557E,21439609K,34991092L,28884326Y,00257998F,51370864L,05376458R,36969182V,15924201J,14914170G,19885333Q,51610396Y,44970262H,37258867V,7525.211H,50716538C,37061484C,11224933J,72244376L</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Interesado reactivo (prompted),Interesado proactivo (espontáneo),Muy interesado,No insistir: Elaborando testamento,Testamento a favor,Herencia a favor,No interesado (no interés o error)</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Testamento DR(dni)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_LastReasonTextReceived__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(msf_LastReasonCodeReceived__c, 
+    &apos;AC01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AC01, 
+    &apos;AC04&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AC04, 
+				&apos;AC06&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AC06, 
+				&apos;AG01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AG01, 
+				&apos;AG02&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AG02, 
+				&apos;AM04&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AM04,
+				&apos;AM05&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_AM05, 
+				&apos;BE01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_BE01, 
+				&apos;BE05&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_BE05, 
+				&apos;FF01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_FF01, 
+				&apos;FF05&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_FF05,
+				&apos;MD01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_MD01, 
+				&apos;MD02&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_MD02,
+				&apos;MD06&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_MD06,
+				&apos;MD07&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_MD07,
+				&apos;MS02&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_MS02,
+				&apos;MS03&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_MS03,
+				&apos;RC01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_RC01,
+				&apos;RR01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_RR01,
+				&apos;RR02&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_RR02,
+				&apos;RR03&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_RR03,
+				&apos;RR04&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_RR04,
+				&apos;SL01&apos;,  $Label.MSF_OPP_LAST_REASON_LOST_TEXT_SL01,
+					&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Último motivo devolución</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

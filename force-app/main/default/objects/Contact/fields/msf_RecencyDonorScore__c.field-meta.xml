@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_RecencyDonorScore__c</fullName>
+    <description>Recencia de donante (punt)</description>
+    <externalId>false</externalId>
+    <formula>if(msf_RecencyDonorCont__c == 0, 0, 
+if(msf_RecencyDonorCont__c &lt; 365, 5,
+if(msf_RecencyDonorCont__c &lt; 730, 4,
+if(msf_RecencyDonorCont__c &lt; 1825, 3,
+if(msf_RecencyDonorCont__c &lt; 3650, 2,
+if(msf_RecencyDonorCont__c &gt;= 3650, 1,0
+))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Recencia de donante (punt)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

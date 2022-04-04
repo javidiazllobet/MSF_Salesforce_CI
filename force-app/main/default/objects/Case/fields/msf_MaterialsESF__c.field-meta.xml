@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_MaterialsESF__c</fullName>
+    <externalId>false</externalId>
+    <label>Materiales ESF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Empresa</fullName>
+                <default>false</default>
+                <label>Empresa</label>
+            </value>
+            <value>
+                <fullName>Comercio</fullName>
+                <default>false</default>
+                <label>Comercio</label>
+            </value>
+            <value>
+                <fullName>Entidad</fullName>
+                <default>false</default>
+                <label>Entidad</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

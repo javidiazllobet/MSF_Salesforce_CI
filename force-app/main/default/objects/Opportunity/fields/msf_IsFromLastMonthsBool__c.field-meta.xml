@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsFromLastMonthsBool__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Nuevo campo para comprobar si la fecha de cierre esta dentro de los últimos 2 años, o si es del tipo D en los últimos 5 años.</description>
+    <externalId>false</externalId>
+    <label>Últimos meses Boolean</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

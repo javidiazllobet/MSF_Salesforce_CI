@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npsp__In_Kind_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of In-Kind Gift, for example, Goods or Services.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>El tipo de regalo en especie, como por ejemplo bienes o servicios.</inlineHelpText>
+    <label>In-Kind Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Servicios</fullName>
+                <default>false</default>
+                <label>Servicios</label>
+            </value>
+            <value>
+                <fullName>Publicidad</fullName>
+                <default>false</default>
+                <label>Publicidad</label>
+            </value>
+            <value>
+                <fullName>Cesión de imagen</fullName>
+                <default>false</default>
+                <label>Cesión de imagen</label>
+            </value>
+            <value>
+                <fullName>Inmovilizado</fullName>
+                <default>false</default>
+                <label>Inmovilizado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

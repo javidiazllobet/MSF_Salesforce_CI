@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_EsRunningUser__c</fullName>
+    <description>Campo que calcula si el campo &apos;Captado por&apos; está asignado al usuario que está ejecutando la sesión</description>
+    <externalId>false</externalId>
+    <formula>IF(msf_Canvasser__c = $User.msf_FullName__c , true , false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Es Running User</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

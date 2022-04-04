@@ -1,0 +1,14 @@
+<template>
+  <template if:true={infoPadre}>
+    <div class="slds-list_horizontal" >     
+          <lightning-combobox style="width: 25%;" name="ListView" label={listViewLabel} value={value} 
+            placeholder="Select ListView" options={optionListView} onchange={handleChange} data-field="listView"></lightning-combobox>
+            <lightning-helptext content={helpText}></lightning-helptext>
+            <template if:true={spinner}>
+              <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+              </div>
+            </template>
+      </div>
+  </template>
+</template>

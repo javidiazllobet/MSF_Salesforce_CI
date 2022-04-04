@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smartystreets__No_Overwrite_City__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Does the process overwrite the city upon return?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does the process overwrite the city upon return?</inlineHelpText>
+    <label>No Overwrite City?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

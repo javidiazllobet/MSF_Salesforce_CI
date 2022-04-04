@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSF_EntryDate</fullName>
+    <active>true</active>
+    <description>Entry Date is required when opportunity is won.</description>
+    <errorConditionFormula>ISBLANK( msf_EntryDate__c ) &amp;&amp; 
+(ISPICKVAL(StageName , &apos;Cobrada&apos;) || ISPICKVAL(StageName , &apos;Puesta al cobro&apos;) || ISPICKVAL(StageName , &apos;Devuelta&apos;))</errorConditionFormula>
+    <errorDisplayField>msf_EntryDate__c</errorDisplayField>
+    <errorMessage>No es posible poner al cobro o cobrar una oportunidad sin fecha de entrada.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Teléfonos At. Socio</fullName>
+        <default>false</default>
+        <label>Teléfonos At. Socio</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono Asociativo</fullName>
+        <default>false</default>
+        <label>Teléfono Asociativo</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono One-to-One</fullName>
+        <default>false</default>
+        <label>Teléfono One-to-One</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono Telemarketing</fullName>
+        <default>false</default>
+        <label>Teléfono Telemarketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Centro de Preferencias</fullName>
+        <default>false</default>
+        <label>Centro de Preferencias</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud Page</fullName>
+        <default>false</default>
+        <label>Cloud Page</label>
+    </customValue>
+    <customValue>
+        <fullName>Correo Postal</fullName>
+        <default>false</default>
+        <label>Correo Postal</label>
+    </customValue>
+    <customValue>
+        <fullName>E-mail Asociativo</fullName>
+        <default>false</default>
+        <label>E-mail Asociativo</label>
+    </customValue>
+    <customValue>
+        <fullName>E-mails At. Socio</fullName>
+        <default>false</default>
+        <label>E-mails At. Socio</label>
+    </customValue>
+    <customValue>
+        <fullName>E-mails One-to-One</fullName>
+        <default>false</default>
+        <label>E-mails One-to-One</label>
+    </customValue>
+    <customValue>
+        <fullName>F2F</fullName>
+        <default>false</default>
+        <label>F2F Tablet</label>
+    </customValue>
+    <customValue>
+        <fullName>Fax</fullName>
+        <default>false</default>
+        <label>Fax</label>
+    </customValue>
+    <customValue>
+        <fullName>Fichero Bancario</fullName>
+        <default>false</default>
+        <label>Fichero Bancario</label>
+    </customValue>
+    <customValue>
+        <fullName>Single entry file</fullName>
+        <default>false</default>
+        <label>Fichero de importación</label>
+    </customValue>
+    <customValue>
+        <fullName>Formularios Web</fullName>
+        <default>false</default>
+        <label>Formularios Web</label>
+    </customValue>
+    <customValue>
+        <fullName>Generación Aplicación</fullName>
+        <default>false</default>
+        <label>Generación Aplicación</label>
+    </customValue>
+    <customValue>
+        <fullName>Mensajería Instantánea</fullName>
+        <default>false</default>
+        <label>Mensajería Instantánea</label>
+    </customValue>
+    <customValue>
+        <fullName>Mi Perfil</fullName>
+        <default>false</default>
+        <label>Mi Perfil</label>
+    </customValue>
+    <customValue>
+        <fullName>n/a</fullName>
+        <default>false</default>
+        <label>n/a</label>
+    </customValue>
+    <customValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>Nuevo</label>
+    </customValue>
+    <customValue>
+        <fullName>Presencial</fullName>
+        <default>false</default>
+        <label>Presencial</label>
+    </customValue>
+    <customValue>
+        <fullName>RRHH</fullName>
+        <default>false</default>
+        <label>RRHH</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Teléfono SAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Teléfono SAS</label>
+    </customValue>
+    <masterLabel>Canal de modificación</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
