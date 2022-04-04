@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Referencia interna CAMT.053 para un nodo de entrada en el archivo (NtryRef)</help>
+    <label></label>
+    <name>cpm__Entry_Reference__c</name>
+</CustomFieldTranslation>

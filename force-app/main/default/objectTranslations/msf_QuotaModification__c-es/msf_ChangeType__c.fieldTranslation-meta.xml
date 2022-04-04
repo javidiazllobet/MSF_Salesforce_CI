@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_ChangeType__c</name>
+    <picklistValues>
+        <masterLabel>Aumento</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decremento</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inicial</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

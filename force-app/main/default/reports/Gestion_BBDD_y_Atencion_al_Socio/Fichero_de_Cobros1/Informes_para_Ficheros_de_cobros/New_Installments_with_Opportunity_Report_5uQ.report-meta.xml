@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cpm__Installment__c.cpm__Amount__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Installment__c.cpm__Payment_Method__c</field>
+    </columns>
+    <description>Este report muestra las oportunidades a partir de un PS (hay que indicar el id en el filtro)
+Este report, se ejecutará una vez el proceso findock haya finalizado la selección de installments
+(Verificar que no hay filtros tipo myXXX)</description>
+    <filter>
+        <criteriaItems>
+            <column>cpm__Installment__c.cpm__Payment_Schedule__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PS-000000408</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Opportunity.msf_TypeAccountingContribution__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Opportunity.msf_InstallmentPeriod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Opportunity.msf_NTimesReversed__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pre_Disco_by_PaymentSchedule</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$cpm__Installment__c@cpm__Installment__c.npsp4hub__Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cpm__Installment__c.cpm__Custom_Mandate_Date_Signed__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

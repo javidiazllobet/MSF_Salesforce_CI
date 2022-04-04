@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>IntentToDonate</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;Cerrar oportunidad con &amp;quot;conseguida&amp;quot;. &lt;/li&gt;&lt;li&gt;Hacer llamada de agradecimiento confirmando recepción de donativo y comprobar datos fiscales. &lt;/li&gt;&lt;li&gt;Confirmar ESF y envío de materiales si fuera el caso. Crear actividad de &amp;quot;llamada de agradecimiento&amp;quot;. &lt;/li&gt;&lt;li&gt;Crear actividad de &amp;quot;ESF&amp;quot; si envío de materiales.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Agradecimiento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_MaterialsESF__c</fieldNames>
+        <info>&lt;p&gt;Enviar información sobre Empresas Sin Fronteras si empresa no lo es ya.&lt;/p&gt;</info>
+        <picklistValueName>Confirmación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Caso cerrado por pasada gestión a equipo de CE.&lt;/p&gt;</info>
+        <picklistValueName>Escalado - continuación de gestión</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_DonationType__c</fieldNames>
+        <fieldNames>msf_CodeOfEthics__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Si la empresa no pasa código ético: rechazar propuesta y cerrar el caso. &lt;/li&gt;&lt;li&gt;Si la empresa solicita tipo de colaboración diferente a donación económica: escalar a CE y esperar respuesta. &lt;/li&gt;&lt;li&gt;Si empresa solicita tipo de colaboración económica por debajo de 5.000 euros: gestionar. Si por encima de 5.000 euros: escalar a CE.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Gestión</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_RejectionReason__c</fieldNames>
+        <info>&lt;p&gt;Cerrar el caso si MKT con causa, no código ético, etc. Cerrar oportunidad con &amp;quot;no conseguida&amp;quot; indicando razón de no colabora.&lt;/p&gt;</info>
+        <picklistValueName>No colabora</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_CE_Intent_To_Donate</recordTypeName>
+</PathAssistant>

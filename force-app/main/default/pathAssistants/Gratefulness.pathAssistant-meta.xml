@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Gratefulness</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;Si no se puede contactar por teléfono, mandar un correo electrónico. &lt;/li&gt;&lt;li&gt;Añadir actividad envío de correo electrónico. &lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Conseguida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_ContactMode__c</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Llamar por teléfono para agradecer el donativo. &lt;/li&gt;&lt;li&gt;Confirmar con la empresa los datos fiscales. Añadir llamada de agradecimiento en actividades.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Enviar agradecimiento</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_CE_Gratefulness</recordTypeName>
+</PathAssistant>

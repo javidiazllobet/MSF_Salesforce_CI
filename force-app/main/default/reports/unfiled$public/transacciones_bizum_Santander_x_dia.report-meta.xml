@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cpm__Transaction__c.cpm__Amount__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>cpm__Transaction_Set__c.cpm__IBAN__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2112125557</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>cpm__Transaction__c.cpm__Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>transacciones bizum Santander x dia</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$cpm__Transaction_Set__c$cpm__Transaction__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cpm__Transaction_Set__c.cpm__Opening_Balance_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-02-27</startDate>
+    </timeFrameFilter>
+</Report>

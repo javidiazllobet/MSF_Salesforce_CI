@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Fundraising_Opportunities</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Fundraising Opportunities</label>
+        <sharedTo>
+            <roleAndSubordinates>Fundraising</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Pago asociado</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>msf_servicioParticipaVisibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>https://zenitocba.zendesk.com/agent/tickets/25719</description>
+        <label>Servicio de Participación</label>
+        <sharedTo>
+            <group>msf_Gestores_de_Asociados</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pago asociado</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Economic</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Economic</label>
+        <sharedTo>
+            <role>Service_Center</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Economic_visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Economic visibility</label>
+        <sharedTo>
+            <role>MSF</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

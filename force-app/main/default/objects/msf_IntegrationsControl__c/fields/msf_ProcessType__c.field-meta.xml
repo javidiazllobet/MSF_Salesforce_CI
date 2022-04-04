@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ProcessType__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de proceso</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SAP Finance</fullName>
+                <default>false</default>
+                <label>SAP Finance</label>
+            </value>
+            <value>
+                <fullName>SAP HR</fullName>
+                <default>false</default>
+                <label>SAP HR</label>
+            </value>
+            <value>
+                <fullName>Altiria</fullName>
+                <default>false</default>
+                <label>Altiria</label>
+            </value>
+            <value>
+                <fullName>Talones</fullName>
+                <default>false</default>
+                <label>Talones</label>
+            </value>
+            <value>
+                <fullName>Fichero entrada único</fullName>
+                <default>false</default>
+                <label>Fichero entrada único</label>
+            </value>
+            <value>
+                <fullName>SAP ITR</fullName>
+                <default>false</default>
+                <label>SAP ITR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

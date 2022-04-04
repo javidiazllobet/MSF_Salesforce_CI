@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ProfessionSubAreas__c</fullName>
+    <externalId>false</externalId>
+    <label>SubAreas de profesiones</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>msf_ProfessionAreas__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administración y dirección de empresas</fullName>
+                <default>false</default>
+                <label>Administración y dirección de empresas</label>
+            </value>
+            <value>
+                <fullName>Derecho</fullName>
+                <default>false</default>
+                <label>Derecho</label>
+            </value>
+            <value>
+                <fullName>Psicología</fullName>
+                <default>false</default>
+                <label>Psicología</label>
+            </value>
+            <value>
+                <fullName>Ciencias de la Comunicación-Periodismo</fullName>
+                <default>false</default>
+                <label>Ciencias de la Comunicación-Periodismo</label>
+            </value>
+            <value>
+                <fullName>Economía</fullName>
+                <default>false</default>
+                <label>Economía</label>
+            </value>
+            <value>
+                <fullName>Ciencias Sociales</fullName>
+                <default>false</default>
+                <label>Ciencias Sociales</label>
+            </value>
+            <value>
+                <fullName>Marketing y Publicidad</fullName>
+                <default>false</default>
+                <label>Marketing y Publicidad</label>
+            </value>
+            <value>
+                <fullName>Comercio, Administración y Trabajo</fullName>
+                <default>false</default>
+                <label>Comercio, Administración y Trabajo</label>
+            </value>
+            <value>
+                <fullName>Contabilidad y Gestión de Impuestos</fullName>
+                <default>false</default>
+                <label>Contabilidad y Gestión de Impuestos</label>
+            </value>
+            <value>
+                <fullName>Antropología y Etnología</fullName>
+                <default>false</default>
+                <label>Antropología y Etnología</label>
+            </value>
+            <value>
+                <fullName>Finanzas, Banca y Seguros</fullName>
+                <default>false</default>
+                <label>Finanzas, Banca y Seguros</label>
+            </value>
+            <value>
+                <fullName>Geografía</fullName>
+                <default>false</default>
+                <label>Geografía</label>
+            </value>
+            <value>
+                <fullName>Biblioteconomía y Documentación</fullName>
+                <default>false</default>
+                <label>Biblioteconomía y Documentación</label>
+            </value>
+            <value>
+                <fullName>Ciencias Políticas</fullName>
+                <default>false</default>
+                <label>Ciencias Políticas</label>
+            </value>
+            <value>
+                <fullName>Ciencias del Trabajo</fullName>
+                <default>false</default>
+                <label>Ciencias del Trabajo</label>
+            </value>
+            <value>
+                <fullName>Sociología</fullName>
+                <default>false</default>
+                <label>Sociología</label>
+            </value>
+            <value>
+                <fullName>Secretariado y Trabajo Administrativo</fullName>
+                <default>false</default>
+                <label>Secretariado y Trabajo Administrativo</label>
+            </value>
+            <value>
+                <fullName>Ingeniería y Tecnología</fullName>
+                <default>false</default>
+                <label>Ingeniería y Tecnología</label>
+            </value>
+            <value>
+                <fullName>Informática</fullName>
+                <default>false</default>
+                <label>Informática</label>
+            </value>
+            <value>
+                <fullName>Industria</fullName>
+                <default>false</default>
+                <label>Industria</label>
+            </value>
+            <value>
+                <fullName>Arquitectura y Construcción</fullName>
+                <default>false</default>
+                <label>Arquitectura y Construcción</label>
+            </value>
+            <value>
+                <fullName>Delineación y Dibujo técnico</fullName>
+                <default>false</default>
+                <label>Delineación y Dibujo técnico</label>
+            </value>
+            <value>
+                <fullName>Medicina</fullName>
+                <default>false</default>
+                <label>Medicina</label>
+            </value>
+            <value>
+                <fullName>Farmacia</fullName>
+                <default>false</default>
+                <label>Farmacia</label>
+            </value>
+            <value>
+                <fullName>Enfermería</fullName>
+                <default>false</default>
+                <label>Enfermería</label>
+            </value>
+            <value>
+                <fullName>Matronas</fullName>
+                <default>false</default>
+                <label>Matronas</label>
+            </value>
+            <value>
+                <fullName>Odontología</fullName>
+                <default>false</default>
+                <label>Odontología</label>
+            </value>
+            <value>
+                <fullName>Fisioterapia</fullName>
+                <default>false</default>
+                <label>Fisioterapia</label>
+            </value>
+            <value>
+                <fullName>Nutrición</fullName>
+                <default>false</default>
+                <label>Nutrición</label>
+            </value>
+            <value>
+                <fullName>Técnicos Superiores en Laboratorio de diagnóstico Clínico</fullName>
+                <default>false</default>
+                <label>Técnicos Superiores en Laboratorio de diagnóstico Clínico</label>
+            </value>
+            <value>
+                <fullName>Servicios Sociales</fullName>
+                <default>false</default>
+                <label>Servicios Sociales</label>
+            </value>
+            <value>
+                <fullName>Óptica</fullName>
+                <default>false</default>
+                <label>Óptica</label>
+            </value>
+            <value>
+                <fullName>Lengua y Literatura</fullName>
+                <default>false</default>
+                <label>Lengua y Literatura</label>
+            </value>
+            <value>
+                <fullName>Filisofía</fullName>
+                <default>false</default>
+                <label>Filisofía</label>
+            </value>
+            <value>
+                <fullName>Historia</fullName>
+                <default>false</default>
+                <label>Historia</label>
+            </value>
+            <value>
+                <fullName>Tecnicas Artísticas, Audiovisuales y digitales</fullName>
+                <default>false</default>
+                <label>Tecnicas Artísticas, Audiovisuales y digitales</label>
+            </value>
+            <value>
+                <fullName>Traducción e Interpretación</fullName>
+                <default>false</default>
+                <label>Traducción e Interpretación</label>
+            </value>
+            <value>
+                <fullName>Diseño</fullName>
+                <default>false</default>
+                <label>Diseño</label>
+            </value>
+            <value>
+                <fullName>Música y Danza</fullName>
+                <default>false</default>
+                <label>Música y Danza</label>
+            </value>
+            <value>
+                <fullName>Arqueología</fullName>
+                <default>false</default>
+                <label>Arqueología</label>
+            </value>
+            <value>
+                <fullName>Lingüística</fullName>
+                <default>false</default>
+                <label>Lingüística</label>
+            </value>
+            <value>
+                <fullName>Teología y Religión</fullName>
+                <default>false</default>
+                <label>Teología y Religión</label>
+            </value>
+            <value>
+                <fullName>Moda</fullName>
+                <default>false</default>
+                <label>Moda</label>
+            </value>
+            <value>
+                <fullName>Bellas artes</fullName>
+                <default>false</default>
+                <label>Bellas artes</label>
+            </value>
+            <value>
+                <fullName>Teatro y Cinematografía</fullName>
+                <default>false</default>
+                <label>Teatro y Cinematografía</label>
+            </value>
+            <value>
+                <fullName>Artesanía</fullName>
+                <default>false</default>
+                <label>Artesanía</label>
+            </value>
+            <value>
+                <fullName>Biología</fullName>
+                <default>false</default>
+                <label>Biología</label>
+            </value>
+            <value>
+                <fullName>Química</fullName>
+                <default>false</default>
+                <label>Química</label>
+            </value>
+            <value>
+                <fullName>Medio Ambiente</fullName>
+                <default>false</default>
+                <label>Medio Ambiente</label>
+            </value>
+            <value>
+                <fullName>Físicas</fullName>
+                <default>false</default>
+                <label>Físicas</label>
+            </value>
+            <value>
+                <fullName>Ciencias del Mar</fullName>
+                <default>false</default>
+                <label>Ciencias del Mar</label>
+            </value>
+            <value>
+                <fullName>Estadística</fullName>
+                <default>false</default>
+                <label>Estadística</label>
+            </value>
+            <value>
+                <fullName>Matemáticas</fullName>
+                <default>false</default>
+                <label>Matemáticas</label>
+            </value>
+            <value>
+                <fullName>Astronomía</fullName>
+                <default>false</default>
+                <label>Astronomía</label>
+            </value>
+            <value>
+                <fullName>Ecología</fullName>
+                <default>false</default>
+                <label>Ecología</label>
+            </value>
+            <value>
+                <fullName>Geología</fullName>
+                <default>false</default>
+                <label>Geología</label>
+            </value>
+            <value>
+                <fullName>Meteorología</fullName>
+                <default>false</default>
+                <label>Meteorología</label>
+            </value>
+            <value>
+                <fullName>Turismo</fullName>
+                <default>false</default>
+                <label>Turismo</label>
+            </value>
+            <value>
+                <fullName>Criminología</fullName>
+                <default>false</default>
+                <label>Criminología</label>
+            </value>
+            <value>
+                <fullName>Salud y Seguridad en el Trabajo</fullName>
+                <default>false</default>
+                <label>Salud y Seguridad en el Trabajo</label>
+            </value>
+            <value>
+                <fullName>Tecnología Medioambiental</fullName>
+                <default>false</default>
+                <label>Tecnología Medioambiental</label>
+            </value>
+            <value>
+                <fullName>Deportes</fullName>
+                <default>false</default>
+                <label>Deportes</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+            <value>
+                <fullName>Gastronomía</fullName>
+                <default>false</default>
+                <label>Gastronomía</label>
+            </value>
+            <value>
+                <fullName>Belleza</fullName>
+                <default>false</default>
+                <label>Belleza</label>
+            </value>
+            <value>
+                <fullName>Reciclaje</fullName>
+                <default>false</default>
+                <label>Reciclaje</label>
+            </value>
+            <value>
+                <fullName>Enseñanza Militar</fullName>
+                <default>false</default>
+                <label>Enseñanza Militar</label>
+            </value>
+            <value>
+                <fullName>Pedagogía</fullName>
+                <default>false</default>
+                <label>Pedagogía</label>
+            </value>
+            <value>
+                <fullName>Educación Infantil</fullName>
+                <default>false</default>
+                <label>Educación Infantil</label>
+            </value>
+            <value>
+                <fullName>Psicopedagogía</fullName>
+                <default>false</default>
+                <label>Psicopedagogía</label>
+            </value>
+            <value>
+                <fullName>Agronomía</fullName>
+                <default>false</default>
+                <label>Agronomía</label>
+            </value>
+            <value>
+                <fullName>Agricultura</fullName>
+                <default>false</default>
+                <label>Agricultura</label>
+            </value>
+            <value>
+                <fullName>Veterinaria</fullName>
+                <default>false</default>
+                <label>Veterinaria</label>
+            </value>
+            <value>
+                <fullName>Pesca</fullName>
+                <default>false</default>
+                <label>Pesca</label>
+            </value>
+            <value>
+                <fullName>Ganadería</fullName>
+                <default>false</default>
+                <label>Ganadería</label>
+            </value>
+            <value>
+                <fullName>Filosofía</fullName>
+                <default>false</default>
+                <label>Filosofía</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Administración y dirección de empresas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Derecho</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Psicología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Ciencias de la Comunicación-Periodismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Economía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Ciencias Sociales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Marketing y Publicidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Comercio, Administración y Trabajo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Contabilidad y Gestión de Impuestos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Antropología y Etnología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Finanzas, Banca y Seguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Geografía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Biblioteconomía y Documentación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Ciencias Políticas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Ciencias del Trabajo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Sociología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</controllingFieldValue>
+            <valueName>Secretariado y Trabajo Administrativo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</controllingFieldValue>
+            <valueName>Ingeniería y Tecnología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</controllingFieldValue>
+            <valueName>Informática</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</controllingFieldValue>
+            <valueName>Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</controllingFieldValue>
+            <valueName>Arquitectura y Construcción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</controllingFieldValue>
+            <valueName>Delineación y Dibujo técnico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Medicina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Farmacia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Enfermería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Matronas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Odontología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Fisioterapia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Nutrición</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Técnicos Superiores en Laboratorio de diagnóstico Clínico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Servicios Sociales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Salud y Servicios Sociales</controllingFieldValue>
+            <valueName>Óptica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Lengua y Literatura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Filisofía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Historia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Tecnicas Artísticas, Audiovisuales y digitales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Traducción e Interpretación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Diseño</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Música y Danza</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Arqueología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Lingüística</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Teología y Religión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Moda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Bellas artes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Teatro y Cinematografía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Artesanía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artes y Humanidades</controllingFieldValue>
+            <valueName>Filosofía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Biología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Química</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Medio Ambiente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Físicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Ciencias del Mar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Estadística</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Matemáticas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Astronomía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Ecología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Geología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</controllingFieldValue>
+            <valueName>Meteorología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Turismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Criminología</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Salud y Seguridad en el Trabajo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Tecnología Medioambiental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Deportes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Gastronomía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Belleza</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Reciclaje</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</controllingFieldValue>
+            <valueName>Enseñanza Militar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pedagogía</controllingFieldValue>
+            <valueName>Pedagogía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pedagogía</controllingFieldValue>
+            <valueName>Educación Infantil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pedagogía</controllingFieldValue>
+            <valueName>Psicopedagogía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</controllingFieldValue>
+            <valueName>Agronomía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</controllingFieldValue>
+            <valueName>Agricultura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</controllingFieldValue>
+            <valueName>Veterinaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</controllingFieldValue>
+            <valueName>Pesca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</controllingFieldValue>
+            <valueName>Ganadería</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Importaciones e integraciones</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Importaciones e integraciones</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>MSF Files Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mensaje</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Parámetros de ejecución</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Pay Checks Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mensaje</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Parámetros de ejecución</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF SAP Finance Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mensaje</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Parámetros de ejecución</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AutomaticFiles</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>PayChecks</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SAPFinance</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SingleEntryFile</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FechaFinPeriodSuperiorInicio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Fecha_FinPeriodo_no_vacia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Fecha_InicioPeriodo_no_vacia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Typologia_no_vacia</name>
+    </validationRules>
+</CustomObjectTranslation>

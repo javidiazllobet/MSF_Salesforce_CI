@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Employee or client Donation</masterLabel>
+        <translation>Donación de empleado o cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Grant</masterLabel>
+        <translation><!-- Grant --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Herencia</masterLabel>
+        <translation><!-- Herencia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In-Kind Gift</masterLabel>
+        <translation>Donativo en especie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Matching Gift</masterLabel>
+        <translation><!-- Matching Gift --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Membership</masterLabel>
+        <translation>Pago asociado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>One off Donation</masterLabel>
+        <translation>Donativo puntual</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pago de Herencia</masterLabel>
+        <translation>Pago de herencia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Recovered Quota</masterLabel>
+        <translation>Cuota de socio recuperada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Recurrent Donation</masterLabel>
+        <translation>Cuota de socio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMS Donor</masterLabel>
+        <translation>SMS Donante</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMS Operator</masterLabel>
+        <translation>SMS Operador</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solidarity Gift</masterLabel>
+        <translation>Regalo solidario</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solidarity Wedding</masterLabel>
+        <translation>Boda solidaria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solidarity initiative</masterLabel>
+        <translation>Iniciativa solidaria</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FechaFinPeriodSuperiorInicio</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK( msf_EndDatePeriod__c ) &amp;&amp; !ISBLANK( msf_StartDatePeriod__c ) &amp;&amp; msf_EndDatePeriod__c &lt; msf_StartDatePeriod__c</errorConditionFormula>
+    <errorMessage>La fecha de fin de periodo ha de ser mayor o igual a la fecha de inicio</errorMessage>
+</ValidationRule>

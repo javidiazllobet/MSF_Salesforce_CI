@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Donation</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO - SOLO PARA OBS-TCS PCI&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>npsp4hub__Payment_Method__c</fieldNames>
+        <info>&lt;p&gt;Equipo GEST BBDD Y AT SOCIO Pasar aquí según forma de pago (todas menos OB-TC PCI)&lt;/p&gt;</info>
+        <picklistValueName>Cobrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO - SOLO PARA OBS-TCS PCI&lt;/p&gt;</info>
+        <picklistValueName>Devuelta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO&lt;/p&gt;</info>
+        <picklistValueName>Devuelta manual</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO - SOLO PARA OBS-TCS PCI&lt;/p&gt;</info>
+        <picklistValueName>Impagada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_ReasonLoss__c</fieldNames>
+        <picklistValueName>Perdida o Rechazada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>msf_Context__c</fieldNames>
+        <fieldNames>msf_ProactiveDonor__c</fieldNames>
+        <picklistValueName>Propuesta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>npsp4hub__Payment_Method__c</fieldNames>
+        <info>&lt;p&gt;Equipo GEST BBDD Y AT SOCIO Pendiente solo para OBS - TCS PCI - PASAR A ESTA ETAPA SI NO HA EXISTIDO CULTIVACION&lt;/p&gt;</info>
+        <picklistValueName>Puesta al cobro</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Donation</recordTypeName>
+</PathAssistant>

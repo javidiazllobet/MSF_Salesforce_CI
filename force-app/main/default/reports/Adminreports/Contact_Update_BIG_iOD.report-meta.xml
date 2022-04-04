@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Account</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$msf_CRMExternalId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>26798779,11664824,26798776,11628769,26789275,11403179,26789270,10149918,26789258,11559760,26789263,11740640,26798781,11665010,10547734,26789278,43237,26789282,11293039,26798780,11664827,26789268,10682730,26789280,11254143,26789256,10337209,10411366,26798774,11628766,26798777,11628772,26789250,11012489,26798785,11679672,26789273,11167887,26798768,10861903,23424,26798778,11628779,26789272,11149553,26798770,11254087,10698804,26798775,11628768,26789264,11379052,26789253,9972678,9990120,26798771,11254092,11442049,26789259,11565778,10224742,108369,26798788,26798773,11628760,26797306,10145991,26789238,11069639,26789266,11543234,26798783,11679670,26798786,11679673,26789267,10679489,26789274,11252979,26789284,11300867,26789269,10017505,26798772,11254145,10470790,26789249,10867892,26789281,11274165,26789244,10177222,10765449,26789283,10008803,26798769,11254073,26789245,11353787,11355465,10397599,26789271,26798784,26789237,26789277,10715700,26798782,26789257,10313371,26798787,26789251,11144674,26789254,8907,136296</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Contact Update BIG</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

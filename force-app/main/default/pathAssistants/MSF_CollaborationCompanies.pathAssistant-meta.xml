@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CE - Colaboración Empresas</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;• Asignar la oportunidad a la emprea/organización y confirmar la Creación de la tarea 12 - MSF Agradecimiento Empresa Sin Fronteras ESF&lt;/p&gt;&lt;p&gt;• En la llamada de agradecimiento, confirmar la recepción de donativo y comprobar los datos fiscales.&lt;/p&gt;&lt;p&gt;• Confirmar ESF y envío de materiales si fuera el caso. &lt;/p&gt;</info>
+        <picklistValueName>Agradecimiento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_MaterialsESF__c</fieldNames>
+        <fieldNames>msf_LanguageCollaborationCompanies__c</fieldNames>
+        <fieldNames>msf_TypeMaterials__c</fieldNames>
+        <info>&lt;p&gt;Enviar información sobre Empresas Sin Fronteras si empresa no lo es ya.&lt;/p&gt;</info>
+        <picklistValueName>Confirmación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;p&gt;Caso cerrado por pasada gestión a equipo de CE (selecciona un officer en el campo Equipo de CE).&lt;/p&gt;</info>
+        <picklistValueName>Escalado - continuación de gestión</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_DonationType__c</fieldNames>
+        <fieldNames>msf_CodeOfEthics__c</fieldNames>
+        <info>&lt;p&gt;• Si la empresa no pasa el código ético: rechazar propuesta y cerrar el caso. &lt;/p&gt;&lt;p&gt;• Si la empresa solicita tipo de colaboración diferente a donación económica: escalar a CE y esperar respuesta. &lt;/p&gt;&lt;p&gt;• Si empresa solicita tipo de colaboración económica por debajo de 5.000 euros: gestionar. &lt;/p&gt;&lt;p&gt;• Si por encima de 5.000 euros: escalar a CE.&lt;/p&gt;</info>
+        <picklistValueName>Gestión</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_ReasonNotCooperateCollaborationComp__c</fieldNames>
+        <info>&lt;p&gt;• Cerrar el caso (y la oportunidad si se creó) cuando no haya donación.&lt;/p&gt;&lt;p&gt;• Indicar razón de cierre del caso. &lt;/p&gt;&lt;p&gt;• Cerrar oportunidad con &amp;quot;no conseguida&amp;quot; indicando razón de no colabora.&lt;/p&gt;</info>
+        <picklistValueName>No colabora</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Ranking__c</fieldNames>
+        <fieldNames>msf_ProposedType__c</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <info>&lt;p&gt;• Si es donante frío: hacer screening simple (mirar en web actividad / sector) y dar de alta el contacto. Si no es concluyente, solicitar a CE un screening más en profundidad.&lt;/p&gt;&lt;p&gt;• Solicitar más información sobre el tipo de colaboración (marketing con causa, voluntariado, donación). &lt;/p&gt;&lt;p&gt;• Crear una opotunidad del tipo que corresponda (one off, inkind, matching gift) en un estado no económico&lt;/p&gt;</info>
+        <picklistValueName>Petición y creación de oportunidad</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>msf_CollaborationCompanies</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>msf_ProfessionAreas__c</name>
+    <picklistValues>
+        <masterLabel>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Artes y Humanidades</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciencias de la Salud y Servicios Sociales</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedagogía</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

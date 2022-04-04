@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Owner</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_Program__c</field>
+    </columns>
+    <columns>
+        <field>Contact$MailingCity</field>
+    </columns>
+    <columns>
+        <field>Contact$MailingState</field>
+    </columns>
+    <description>Individuos y organizaciones con MSF Officer Patricia García en la provincia de Madrid (código postal 28XXX).</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Individual_Contact,Contact.Organization</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Patricia Garcia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$MailingPostalCode</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>28</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Indiv y Org Officer PG Provincia Madrid</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

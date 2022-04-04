@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_PaymentMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>Método de pago</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Domiciliación bancaria</fullName>
+                <default>false</default>
+                <label>Domiciliación bancaria</label>
+            </value>
+            <value>
+                <fullName>Tarjeta de crédito o débito</fullName>
+                <default>false</default>
+                <label>Tarjeta de crédito o débito</label>
+            </value>
+            <value>
+                <fullName>ACMA</fullName>
+                <default>false</default>
+                <label>ACMA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

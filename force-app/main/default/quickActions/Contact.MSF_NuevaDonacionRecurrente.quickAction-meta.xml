@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&apos;Cuota_&apos; &amp; TEXT(DAY(TODAY())) &amp; &quot;-&quot; &amp; TEXT(MONTH(TODAY())) &amp; &quot;-&quot; &amp; TEXT(YEAR(TODAY()))</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>npe03__Contact__c</field>
+        <formula>Contact.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>npe03__Date_Established__c</field>
+        <formula>TODAY()</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>npe03__Next_Payment_Date__c</field>
+        <formula>if( DAY(TODAY()) &gt; 1,
+  DATE(YEAR(ADDMONTHS(TODAY(),1)),(MONTH(ADDMONTHS(TODAY(),1))),1),
+  TODAY()
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>npe03__Open_Ended_Status__c</field>
+        <literalValue>Open</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>npsp4hub__Target__c</field>
+        <literalValue>LA CAIXA CCC OPERATIVA</literalValue>
+    </fieldOverrides>
+    <label>Nueva donación recurrente</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npe03__Next_Payment_Date__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npe03__Amount__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npe03__Installment_Period__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npe03__Recurring_Donation_Campaign__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>msf_LeadSource1__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npsp4hub__Payment_Method__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npsp4hub__Payment_Processor__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>npsp4hub__Payment_Profile__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>npe03__Recurring_Donation__c</targetObject>
+    <targetParentField>npe03__Contact__c</targetParentField>
+    <targetRecordType>npe03__Recurring_Donation__c.Recurring_donation</targetRecordType>
+    <type>Create</type>
+</QuickAction>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_RelationshipLevel__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_Program__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Organization__r$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Organization__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Organization__r$msf_RelationshipLevel__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Organization__r$msf_Program__c</field>
+    </columns>
+    <description>Contactos de organización con level de relación y programa de su organización.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Laura Calonge,Patricia Garcia,Patricia Trigales,Carla Lopez</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Cont de Org con Lvl Rel y Programa</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contact_with_Related_Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$smartystreets__Mailing_Last_Verified__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pago</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pagos</value>
+    </caseValues>
+    <fieldSets>
+        <label></label>
+        <name>cpm__General_Payment_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>cpm__Manual_Review_Batch_Process_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>cpm__Split_Payment_Details</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>MSF Payment Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Processing Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Pago Referencia</nameFieldLabel>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Valid_trancode</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Collection_date_not_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Lock_Fiscal_Period</name>
+    </validationRules>
+</CustomObjectTranslation>

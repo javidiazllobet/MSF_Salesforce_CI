@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maestros_BetterNow</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>msf_BetterNowProjectId__c</columns>
+    <columns>msf_Thematic__c</columns>
+    <columns>msf_GAUExternalId__c</columns>
+    <columns>IsProtected</columns>
+    <columns>msf_Attribute_2__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Maestros BetterNow</label>
+    <language>es</language>
+</ListView>

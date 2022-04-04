@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Associative_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Associative Leads</label>
+        <sharedTo>
+            <role>Asociativo</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Associative</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartir_Leads_con_Service_Center</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir Leads con Service Center</label>
+        <sharedTo>
+            <role>Service_Center</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Individual</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Fundraising_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Fundraising Leads</label>
+        <sharedTo>
+            <roleAndSubordinates>Fundraising</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Associative</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles$Role</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.OpportunityContactRoles$Amount</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_RelationshipLevel__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Grant,One off Donation,Donativo puntual,Employee or client Donation,In-Kind Gift</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$Campaign</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>BO Officers One to One,BO Officers Sitel Empresas,BO Officers One To One Empresas,BO Especies,BO Nóminas,BO Puntos,OM CE Regalo Solidario,ET Regalo Solidario 2020 Email,ET Regalo Solidario 2020 Frías,ET Regalo Solidario 2020 S1 RS,ET Regalo Solidario 2020 S2 Activas,ET Regalo Solidario 2020 S3 Inactivas,Eu Prospects Regalo Solidario,EU Regalo Solidario 2020 Desconocido</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Puesta al cobro,Cobrada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Major Donors,Potenciales a Major Donors,Públicos Especiales,Vehículo donación de Gran Donante = YES,Empresas y Colectivos Mass,&quot;Fundaciones Mid, Mid +&quot;,&quot;Empresas y Colectivos Mid, Mid +&quot;,Fundaciones Estratégicas,Empresas y Colectivos Estratégicas</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Contact.OpportunityContactRoles$CloseDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$msf_Program__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Ingresos Campañas Programas (x campaña)</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Contactos_con_Oportunidad_y_Destino_Aportaci_n__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.OpportunityContactRoles$CloseDate</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

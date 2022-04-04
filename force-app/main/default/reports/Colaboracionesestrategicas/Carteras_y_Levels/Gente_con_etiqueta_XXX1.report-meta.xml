@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Contact.msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>msf_TagRelationship__c.msf_RelatedTag__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_ADDR2_LINE1</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_ADDR2_LINE2</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_ADDR2_LINE3</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.msf_LanguagePreferer__c</field>
+    </columns>
+    <description>Etiquetas</description>
+    <filter>
+        <criteriaItems>
+            <column>msf_TagRelationship__c.msf_RelatedTag__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Out 121</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CNTC_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Patricia Trigales,Laura Calonge,Patricia Garcia,Carolina Pau</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Gente con etiqueta XXX</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$msf_TagRelationship__c@msf_TagRelationship__c.msf_RelatedContact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

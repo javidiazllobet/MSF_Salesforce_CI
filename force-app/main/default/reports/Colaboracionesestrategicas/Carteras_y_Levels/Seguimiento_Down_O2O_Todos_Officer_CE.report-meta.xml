@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>SUFFIX</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_PreviousRelationshipLevel__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_FechaCambioLevelRelacion__c</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_Program__c</field>
+    </columns>
+    <description>Individuos y organizaciones cuyo &quot;Level de relación anterior&quot; es igual a &quot;One to one&quot; y MSF Officer de CE.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.msf_PreviousRelationshipLevel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>One to one</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Patricia Trigales,Patricia Garcia,Laura Calonge,Carla Lopez,Olatz Ecenarro</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTACT_OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTACT_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Seguimiento Down O2O (Todos Officer CE)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList@Contact.msf_RelationshipLevel__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Contact.msf_FechaCambioLevelRelacion__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

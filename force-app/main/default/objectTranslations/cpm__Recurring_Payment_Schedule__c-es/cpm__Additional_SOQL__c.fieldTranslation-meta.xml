@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Se usa directamente, sin ningún cambio o procesamiento, en el campo SOQL adicional de los registros de programación de cobros generados. Consulte la documentación del Programa de cobros para obtener más ayuda en este campo.</help>
+    <label></label>
+    <name>cpm__Additional_SOQL__c</name>
+</CustomFieldTranslation>

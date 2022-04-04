@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Owner</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$msf_NoInvitacionesEventosEmailEx__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Mid+ Donors,Otros 12Few+,Major Donors,Potenciales a Major Donors,Públicos Especiales,Otros 121</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$MailingCity</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MADRID,ALCOBENDAS,GETAFE,COSLADA,HUMERA-SOMOSAGUAS-PRADO DEL REY,LEGANES,POZUELO DE ALARCON,EL BERCIAL GETAFE,VALDEMORO,MAJADAHONDA,LAS ROZAS,COLMENAR VIEJO,BOADILLA DEL MONTE,SAN SEBASTIAN DE LOS REYES,RIVAS-VACIAMADRID,SOTO DEL REAL,ALCORCON</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Email</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Interesado reactivo (prompted),Interesado proactivo (espontáneo),Muy interesado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_NoInvitacionesEventosEmail__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_MemberType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Nada (Donante SMS),Nada,Exdonante,Baja + Exdonante,Baja</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$msf_MemberType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Interesado Madrid MChef</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

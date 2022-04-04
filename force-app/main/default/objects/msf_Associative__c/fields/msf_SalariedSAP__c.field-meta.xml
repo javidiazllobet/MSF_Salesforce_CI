@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_SalariedSAP__c</fullName>
+    <externalId>false</externalId>
+    <formula>!ISBLANK(msf_CostCenterSAP__c) &amp;&amp; !BEGINS(msf_CostCenterSAP__c , &apos;ES&apos;) &amp;&amp; !BEGINS(msf_CostCenterSAP__c , &apos;90&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Asalariado</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

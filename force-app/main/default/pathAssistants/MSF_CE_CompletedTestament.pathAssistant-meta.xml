@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CE - Informar del testamento realizado</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Cuando llega la copia del testamento, envío de la misma al responsable de Herencias y Legados. Poner tarea / aviso al responsable para que realice seguimiento.&lt;/p&gt;</info>
+        <picklistValueName>Recepción copia testamento OK</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Si no se ha recibido copia de testamento, a los 15 días realizar llamada de seguimiento para verificar que no se ha extraviado el envío. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;En el caso de confirmar envío pero no recepción, abrir tarea &amp;quot;seguimiento recepción testamento&amp;quot;. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;En el caso de que informen de que no quieren enviarla, cerrar caso.&lt;/p&gt;</info>
+        <picklistValueName>Seguimiento recepción testamento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Si confirman que testamento a favor pero no copia, cerrar caso y dejar oportunidad abierta. &lt;/p&gt;</info>
+        <picklistValueName>Testamento a favor sin copia</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_CE_CompletedTestament</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CE - Solicitud información testamento</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;*Si el interesado no tiene dudas o no manifiesta interés, se cierra el caso marcando el caso como Cierre, pero se mantiene abierta la oportunidad en el stage 1.&lt;/p&gt;&lt;p&gt;*Si el interesado tiene dudas que requieran el seguimiento de la asesoría, se trasladan al responsable de Herencias y Legados. Se pasa del stage 1 al stage 2 en la oportunidad. Informar en el campo de notas con las dudas solicitadas. &lt;/p&gt;</info>
+        <picklistValueName>Cierre</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_DocumentSendingChannel__c</fieldNames>
+        <info>&lt;p&gt;• Envío del Dossier de Herencias y Legados a los que piden información genérica por e-mail o correo postal según preferencia del donante. &lt;/p&gt;&lt;p&gt;• Incluir tarea de 89 - MSF Envío Folleto Herencias. &lt;/p&gt;&lt;p&gt;• Hacer seguimiento al interesado en 15 días o según a las preferencias del contacto, creando la tarea 312 -MSF llama para confirmar recepción Folleto Herencias .&lt;/p&gt;</info>
+        <picklistValueName>Envío del dossier</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Llamada de seguimiento para confirmar la recepción del dossier a los 15 días de su envío. Resolución de dudas posibles. Según conversación, poder completar campos pendientes.&lt;/p&gt;&lt;p&gt;Recordar actualizar el estado de la tarea 312.&lt;/p&gt;</info>
+        <picklistValueName>Llamada seguimiento</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_CE_RequestTestamentaryInfo</recordTypeName>
+</PathAssistant>

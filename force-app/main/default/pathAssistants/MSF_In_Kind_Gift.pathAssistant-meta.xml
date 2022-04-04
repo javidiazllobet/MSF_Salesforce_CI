@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>In-Kind Gift</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO.&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>npsp__In_Kind_Type__c</fieldNames>
+        <info>&lt;p&gt;Equipo GEST BBDD Y AT SOCIO.&lt;/p&gt;</info>
+        <picklistValueName>Cobrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Fair_Market_Value__c</fieldNames>
+        <fieldNames>npsp__In_Kind_Type__c</fieldNames>
+        <picklistValueName>Comprometida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_ReasonLoss__c</fieldNames>
+        <picklistValueName>Perdida o Rechazada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__In_Kind_Type__c</fieldNames>
+        <fieldNames>msf_ProactiveDonor__c</fieldNames>
+        <fieldNames>npsp__Fair_Market_Value__c</fieldNames>
+        <picklistValueName>Propuesta</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>In_Kind_Gift</recordTypeName>
+</PathAssistant>

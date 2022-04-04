@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.CampaignMembers$Name</field>
+    </columns>
+    <description>Individuos en programa Potenciales a major donors y organizaciones no Big y potencial según 121 officer igual a 121 que NO están en la campaña G_BO Estrategia de Prospección 2021 (Segundo intento).</description>
+    <filter>
+        <booleanFilter>((1 AND 2) OR (3 AND 4 AND 5)) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Individual_Contact</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Potenciales a Major Donors</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Organization</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_PotentialAccordingOfficer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>121</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_Level__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>BIG</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>G_BO Estrategia de Prospección 2021</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Prospectos fuera de campaña 2021 II</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Campaign_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$msf_BeginDateMSF__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

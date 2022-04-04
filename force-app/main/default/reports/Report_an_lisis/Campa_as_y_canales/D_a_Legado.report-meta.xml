@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles*Opportunity$msf_EntryDate__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Herencia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Interesado reactivo (prompted),Interesado proactivo (espontáneo),Muy interesado,No insistir: Elaborando testamento,Testamento a favor,Herencia a favor,No interesado (no interés o error)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles*Opportunity$msf_CurrentCampaign__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>FM Mailing Junio 2021_Tigray,AS Herencias y Legados Desconocido offline,MO Cultivación a prospectos Testamentarios (Herencias y Legados),MI Encuesta Herencias y Legados Mids 2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Interesado reactivo (prompted),Interesado proactivo (espontáneo),Muy interesado,No insistir: Elaborando testamento,Testamento a favor</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.OpportunityContactRoles*Opportunity$msf_CurrentCampaign__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.OpportunityContactRoles$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Resultados impactos Día Legado</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.OpportunityContactRoles$CloseDate</dateColumn>
+        <endDate>2021-09-26</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-09-13</startDate>
+    </timeFrameFilter>
+</Report>

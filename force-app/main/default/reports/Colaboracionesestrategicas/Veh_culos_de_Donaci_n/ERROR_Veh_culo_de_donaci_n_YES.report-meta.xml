@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>SUFFIX</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_Level__c</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_Program__c</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <description>Contactos con programa Vehículo de donación = YES que no deberían tenerlo.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Vehículo donación de Gran Donante = YES</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.msf_CRMExternalId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>11112965,11672048,11353789,11020941,10346587,10813396,11410172,10498271,11578205,10868907,11671540,11416773,11004051,10336804,10678878,11277811,11397098,10412997,11190346,10029966,11631913,10543115,10533728,11219869,10412983,10176917,11765691,11737954,28016095,11769014</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>ERROR Vehículo de donación = YES</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>LAST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

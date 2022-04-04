@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>msf_Modelo182__c</entityName>
+    <fieldName>msf_Estado__c</fieldName>
+    <masterLabel>Modelo182</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>msf_Registros__c</fieldNames>
+        <fieldNames>msf_Total__c</fieldNames>
+        <picklistValueName>Finalizado OK</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

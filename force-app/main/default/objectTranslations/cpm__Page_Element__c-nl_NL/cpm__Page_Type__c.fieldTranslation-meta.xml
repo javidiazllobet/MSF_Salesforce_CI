@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>cpm__Page_Type__c</name>
+    <picklistValues>
+        <masterLabel>checkout</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>givingpage</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

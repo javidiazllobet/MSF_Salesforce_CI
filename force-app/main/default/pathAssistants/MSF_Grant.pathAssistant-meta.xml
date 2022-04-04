@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Grant</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;p&gt;La fecha de cobro será la firma de convenio. Equipo GEST BBDD Y AT SOCIO.&lt;/p&gt;</info>
+        <picklistValueName>Cobrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_ReasonLoss__c</fieldNames>
+        <picklistValueName>Perdida o Rechazada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <picklistValueName>Propuesta final presentada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Primary_Contact__c</fieldNames>
+        <picklistValueName>Trabajando propuesta</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Grant</recordTypeName>
+</PathAssistant>

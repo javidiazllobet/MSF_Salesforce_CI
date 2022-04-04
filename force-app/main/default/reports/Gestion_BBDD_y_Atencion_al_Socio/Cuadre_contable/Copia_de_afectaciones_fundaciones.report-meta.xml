@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.OpportunityContactRoles$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.OpportunityContactRoles$Amount</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles.npsp__Allocations__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.OpportunityContactRoles.npsp__Allocations__r$Id</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.OpportunityContactRoles.npsp__Allocations__r$npsp__Amount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.OpportunityContactRoles.npsp__Allocations__r$npsp__Percent__c</field>
+    </columns>
+    <description>donativos afectados de funcaciones x destino</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles.npsp__Allocations__r$npsp__General_Accounting_Unit__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.OpportunityContactRoles*Opportunity$npsp4hub__Payment_Method__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Direct Debit</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.OpportunityContactRoles.npsp__Allocations__r$npsp__General_Accounting_Unit__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Afectaction donativos</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contactos_con_Oportunidad_y_Destino_Aportaci_n__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.OpportunityContactRoles$CloseDate</dateColumn>
+        <endDate>2021-05-05</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-05-01</startDate>
+    </timeFrameFilter>
+</Report>

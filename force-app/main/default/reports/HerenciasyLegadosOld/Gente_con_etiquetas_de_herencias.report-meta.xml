@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>msf_Tag__c.Relaciones_etiquetas__r$Name</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$Name</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c.Relaciones_etiquetas__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c.Relaciones_etiquetas__r$msf_RelatedContact__c</field>
+    </columns>
+    <description>Información sobre contactos con etiquetas relacionadas</description>
+    <filter>
+        <criteriaItems>
+            <column>msf_Tag__c$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Posible testimonio herencias</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Gente con etiquetas de herencias</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Etiquetas_relacionadas_Maestro_de__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>msf_Tag__c.Relaciones_etiquetas__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>IniciativaSolidaria</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>msf_AbandonmentReason__c</fieldNames>
+        <picklistValueName>Abandono</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Observations__c</fieldNames>
+        <picklistValueName>Conseguida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Observations__c</fieldNames>
+        <info>&lt;p&gt;Buscar oportunidad y:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Asignar campaña y origen correspondiente, y asignarla al contacto o cuenta correspondiente. &lt;/li&gt;&lt;li&gt;Canelar envío agradecimiento programado.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Ingreso recibido</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Observations__c</fieldNames>
+        <info>&lt;p&gt;Abrir tarea de todas las acciones de seguimiento.&lt;/p&gt;</info>
+        <picklistValueName>Iniciativa en seguimiento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>RecordTypeId</fieldNames>
+        <fieldNames>msf_Campaign__c</fieldNames>
+        <fieldNames>msf_Observations__c</fieldNames>
+        <info>&lt;p&gt;Abrir tarea entrante &amp;quot;Propuesta de Iniciativa&amp;quot;.&lt;/p&gt;&lt;p&gt;Al responder la propuesta, cambiar el owner del caso y pasar a estado &amp;quot;Iniciativa en Seguimiento&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Petición IS Recibida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_RejectionReason__c</fieldNames>
+        <picklistValueName>Rechazada</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_IS_Solidarity_Initiative</recordTypeName>
+</PathAssistant>

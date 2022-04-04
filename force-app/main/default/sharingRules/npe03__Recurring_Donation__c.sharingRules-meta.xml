@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Associative_Quota</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Associative Quota</label>
+        <sharedTo>
+            <role>Asociativo</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Associate</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Canvasser_access_2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Canvasser access 2</label>
+        <sharedTo>
+            <roleAndSubordinates>Fundraising</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Recurring donation</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Economic_Quota</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Economic_Quota</label>
+        <sharedTo>
+            <role>Service_Center</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Recurring donation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>HISTORICA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Lectura_Recurring_Donations_Asociativo</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Lectura Recurring Donations Asociativo</label>
+        <sharedTo>
+            <role>Asociativo</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Recurring donation</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

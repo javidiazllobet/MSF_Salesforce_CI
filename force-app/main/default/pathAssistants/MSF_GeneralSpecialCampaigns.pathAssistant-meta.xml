@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Campañas especiales General</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>CreatedDate</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <info>&lt;p&gt;Recuerda crear las tareas correspondientes y añadir en Asunto y en Descripción toda la información que creas oportuna para ayudar a gestionar esta petición de colaboración (sin añadir más datos personales de los que se pueden rellenar en los campos existentes)&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Abierto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>CreatedDate</fieldNames>
+        <fieldNames>ClosedDate</fieldNames>
+        <fieldNames>Status</fieldNames>
+        <info>&lt;p&gt;Tu caso se remitirá al equipo especializado de la campaña. Recuerda crear las tareas correspodientes si aún no lo has hecho.&lt;/p&gt;</info>
+        <picklistValueName>Remitido Equipo Campaña y Cerrado</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_GeneralSpecialCampaigns</recordTypeName>
+</PathAssistant>

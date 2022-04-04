@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_FiscalFirstName__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_FiscalLastName1__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_FiscalLastName2__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_fiscalNif__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact$msf_OppFiscalAmountLastYear__c</field>
+    </columns>
+    <description>Datos fiscales de colaboradores 2020 para envío de certificado fiscal.</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Contact$msf_CRMExternalId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>10067595,10059607,10390454,10026943,10240312,10240315,10399113,10399120,10029966,10240318,10342247,10342695,10397599,10014124,10310602,10381147,10232408,10178009,10163480,10225387,10055278,10679489,10346587,10256907,10412997,10017505,10225107,10337209,10470790,10494545,10486096,10498271,10867892,10778189,10533728,510267,11320379,11543234,11059690,11385537,11144674,11212952,11565778,116008,11175863,9980908,207811,570283,1488,25519,136296,8907,30946,9718,21587,9990120,9990233,9989326,10313371,10907216,8640513,10893837,10751586,29522,10760755,9971747,37831,11703035,10416446,10765449,11574013,10198723,11722657,11723470,29470,11218860,10907359,11648615,11112965,11571159,10197586,11004051,10499005,11631913,10957229,11252979,11564320,9987484,10395644,11740640,11582585,11671540,11030189,10503832,11708215,11425524,10039811,11115313,10205323,10856191,11020941,7796969,10547207,10054578,10868907,11669140,10248583,11169964,11353787,11355465,10710167,11110311,11111878,11416773,94399,10362164,11672761,10284369,10386,10336804,11663247,11190346,11353789,10552680,10728303,11691979,10884837,100544,10284433,10484914,11684694,10494713,11353783,11754378,10463251,11754383,11679674,11776473,11765692,11765556,28000478,11766209,11766167,11768563,11769010,11772521,28000554,11782480,28016095,10042532,10553451,10470579,28023980,10725219</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_CRMExternalId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>11764256,11234683,34602,10253960,11786197,11786196,28015871,10334164,28019062,11236782,108369,33332,11082105,11664417,10008803,11659256,11766486,11554861,11062289,11788100,10012851,15104,10877878,11775830,10261052,11776451,9981010,10274396,9606979,27273,10549713</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Certis enviar a SAS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

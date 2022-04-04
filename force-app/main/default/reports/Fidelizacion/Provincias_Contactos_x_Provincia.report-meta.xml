@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <description>Listado del número de contactos agrupados por los diferentes valores del campo Provincia Dirección Principal</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$MailingState</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Provincias - Contactos x Provincia</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

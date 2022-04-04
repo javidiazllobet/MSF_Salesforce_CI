@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>npe03__Recurring_Donation__c.msf_MemberId__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>npe03__Recurring_Donation__c.npe03__Date_Established__c</field>
+    </columns>
+    <columns>
+        <field>npe03__Recurring_Donation__c.msf_CancelationDate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>npe03__Recurring_Donation__c.npe03__Paid_Amount__c</field>
+    </columns>
+    <description>Para calcular % bajas, ingresos reales vs. proyectados</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Prosocial</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Campaign.msf_CampaignDonationReporting__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>digital</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Bajas e Ingresos por campaña PROSOCIAL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$npe03__Recurring_Donation__c@npe03__Recurring_Donation__c.npe03__Recurring_Donation_Campaign__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>npe03__Recurring_Donation__c.npe03__Date_Established__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-04-01</startDate>
+    </timeFrameFilter>
+</Report>

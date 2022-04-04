@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Una identificación proporcionada por la parte iniciadora para esta transacción para identificar la transacción durante todo el proceso.</help>
+    <label></label>
+    <name>cpm__End_To_End_ID__c</name>
+</CustomFieldTranslation>

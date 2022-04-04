@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importaci_n_Socios_Colaboradores</fullName>
+    <columns>NAME</columns>
+    <columns>msf_ExecutionName__c</columns>
+    <columns>msf_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>msf_StartDateProcess__c</columns>
+    <columns>msf_EndDateProcess__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>msf_Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>msf_IntegrationsControl__c.SingleEntryFile</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>6/10/2021 12:00 AM</value>
+    </filters>
+    <label>Importación Socios-Colaboradores</label>
+    <sharedTo>
+        <role>MSF</role>
+        <role>Service_Center</role>
+    </sharedTo>
+</ListView>

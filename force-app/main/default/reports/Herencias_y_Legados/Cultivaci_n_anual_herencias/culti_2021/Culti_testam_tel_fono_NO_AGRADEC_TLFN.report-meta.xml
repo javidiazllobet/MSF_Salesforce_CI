@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Relaciones_etiquetas__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Type</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Herencia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>StageName</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Testamento a favor</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Contact$Id</primaryTableColumn>
+        <relatedTable>OCR-Opportunity</relatedTable>
+        <relatedTableJoinColumn>Contact</relatedTableJoinColumn>
+    </crossFilters>
+    <crossFilters>
+        <criteriaItems>
+            <column>Subject</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>MSF Agradecimiento Testamento a Favor,Actúa Como Portavoz Herencias,MSF Solicita Portavoz Testimonio Colaborador/Herencias,Comunica Testamento a Favor MSF,Comunica Intención Testamento a Favor MSF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ActivityTimeOnly</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <operation>without</operation>
+        <primaryTableColumn>Contact$Id</primaryTableColumn>
+        <relatedTable>Activity</relatedTable>
+        <relatedTableJoinColumn>Who</relatedTableJoinColumn>
+    </crossFilters>
+    <description>personas que tienen marcado NO AGRADECIMIENTOS TELÉFONO</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Contact$msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Retención 1r año MID,Cultivación socios MID,Cultivación/conversión Donantes MID,Reactivación/conversión EXDonantes MID,Reactivación bajas MID,Mid+ Donors,Otros 12Few+,Major Donors,Potenciales a Major Donors,Públicos Especiales,Otros 121</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_Phone__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$msf_NoAgradecimientosTelefono__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$msf_MemberType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Culti testam teléfono NO AGRADEC TLFN</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contactos_con_sin_etiquetas__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact$Name</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

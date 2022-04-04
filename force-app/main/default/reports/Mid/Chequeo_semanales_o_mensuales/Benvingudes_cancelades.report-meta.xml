@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_Program__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Activities$LastModifiedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MSF Bienvenida Nuevo Donante,MSF Bienvenida Nuevo Socio,MSF Bienvenida Relación O2F+</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Activities$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cancelada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>9/6/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Marta Murillo,Raquel Sayas,Mireia Mayans</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>Contact$msf_LastDonationUnique__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Benvingudes cancelades</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Tasks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

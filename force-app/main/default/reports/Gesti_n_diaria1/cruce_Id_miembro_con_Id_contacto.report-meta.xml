@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.msf_CRMExternalId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9977876,10201967,10377868,10237394,10209702,11073291,10241074,10175950,10373652,10166058,10330381,17863,10558428,10141673,118508,11316523,11639754,10325458,1000398,10906947,10453110,10081347,75656,10226411,23134,77428,10140043,10239786,10681066,10081405,10145272,326046,40063,11167938,10926266,10046764,10366932,13192,11568777,10829772,10235751,1000063,10056614,110728,10343981,10288748,10983688</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>cruce Id miembro con Id contacto</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

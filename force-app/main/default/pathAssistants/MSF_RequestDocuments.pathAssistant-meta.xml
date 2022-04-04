@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Petición de Documentos</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>CreatedDate</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <info>&lt;p&gt;Recuerda crear las tareas correspondientes y añadir en Asunto y en Descripción toda la información que creas oportuna para ayudar a gestionar esta petición, en especial en el caso de &amp;#39;Otros&amp;#39; (sin añadir más datos personales de los que se pueden rellenar en los campos existentes)&lt;/p&gt;</info>
+        <picklistValueName>Abierto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>CreatedDate</fieldNames>
+        <fieldNames>ClosedDate</fieldNames>
+        <fieldNames>Status</fieldNames>
+        <info>&lt;p&gt;Recuerda crear las tareas correspondientes. Si tienes que añadir más información en la Descripción, indica tu usuario y la fecha en el texto de la descripción.&lt;/p&gt;</info>
+        <picklistValueName>Cierre</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>CreatedDate</fieldNames>
+        <fieldNames>LastModifiedById</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <info>&lt;p&gt;Puedes remitirlo a la cola o persona responsable de hacer esta gestión o de darte la información necesaria. Si puedes responder o hacer la gestión en este momento, puedes cerrar el caso. Recuerda crear las tareas correspondientes. Si tienes que añadir más información en la Descripción, indica tu usuario y la fecha en el texto de la descripción.&lt;/p&gt;</info>
+        <picklistValueName>Remitido</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_RequestDocuments</recordTypeName>
+</PathAssistant>

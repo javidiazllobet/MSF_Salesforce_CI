@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <description>Report pre-disco basado en las oportunidades, no en Installments
+Este report es para una primera validación justo antes de iniciar el fichero de Cobro a través de findock
+(Verificar que no hay filtros tipo myXXX)</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Puesta al cobro,Devuelta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.npsp4hub__Payment_Method__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CreditCard</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.msf_InstallmentPeriod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.msf_TypeFundraisingContribution__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.msf_NTimesReversed__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pre_DiscoCreditCard_v1_conOpportunities</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity@Opportunity.npsp4hub__Mandate__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2020-12-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-11-01</startDate>
+    </timeFrameFilter>
+</Report>

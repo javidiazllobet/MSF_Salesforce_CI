@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CE - Expedientes hereditarios</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>msf_Ranking__c</fieldNames>
+        <fieldNames>msf_DeceaseDate__c</fieldNames>
+        <fieldNames>msf_Decendents__c</fieldNames>
+        <fieldNames>msf_HeritageLegacy__c</fieldNames>
+        <info>&lt;p&gt;Búsqueda del fallecido en la base. &lt;/p&gt;&lt;ol&gt;&lt;li&gt;Si es frío, se abre contacto. &lt;/li&gt;&lt;li&gt;En el caso de que sea caliente, comprobar si tiene oportunidad &amp;quot;Legacies&amp;quot; abierta. &lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Si la tiene abierta, pasar a stage 4 &amp;quot;herencia a favor a MSF&amp;quot;. &lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Informar sobre la fecha de fallecimiento. &lt;/p&gt;&lt;p&gt;En el caso de fríos o calientes sin oportunidad &amp;quot;Legacies&amp;quot;, se abre oportunidad &amp;quot;Legacies&amp;quot; en stage 4 &amp;quot;herencia a favor de MSF&amp;quot; y se completan los datos específicos de este tipo de oportunidad. &lt;/p&gt;&lt;p&gt;Explicar motivo de notificación en notas. &lt;/p&gt;&lt;p&gt;Envío de notificación a asesoría jurídica con copia a responsable de Herencias y Legados. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Si vuelven a llamar abrir otro caso.&lt;/p&gt;</info>
+        <picklistValueName>Notificación sobre expediente hereditario</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_CE_HereditaryRecords</recordTypeName>
+</PathAssistant>

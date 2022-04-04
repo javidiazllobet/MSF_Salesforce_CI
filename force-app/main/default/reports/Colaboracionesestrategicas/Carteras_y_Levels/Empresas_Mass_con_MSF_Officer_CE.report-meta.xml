@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT_OWNER</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_ShippingName__c</field>
+    </columns>
+    <columns>
+        <field>Contact.msf_MemberType__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.msf_LevelAmountOneFiscalYearAgo__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Nombre_comercial__c</field>
+    </columns>
+    <description>Organizaciones con MSF Officer (en el contacto o en la cuenta) igual a LC, PG, PT, CP, CL y con programa distinto a Fund/Emp/Col Mid Mid+, Fund/Emp/Col Estratégicas o Vehículo de Donación = YES.</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Contact.msf_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Vehículo donación de Gran Donante = YES,&quot;Fundaciones Mid, Mid +&quot;,&quot;Empresas y Colectivos Mid, Mid +&quot;,Instituciones Públicas Mid y Mid +,Fundaciones Estratégicas,Instituciones Públicas Estratégicas,Empresas y Colectivos Estratégicas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Laura Calonge,Patricia Garcia,Patricia Trigales,Carolina Pau,Carla Lopez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Laura Calonge,Patricia Garcia,Patricia Trigales,Carolina Pau,Carla Lopez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Organization</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.msf_Program__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Empresas Mass con MSF Officer CE</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>OWNER_FULL_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

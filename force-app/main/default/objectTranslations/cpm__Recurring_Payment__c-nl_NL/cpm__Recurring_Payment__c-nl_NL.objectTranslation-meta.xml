@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Account_or_Contact_should_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Default_Bank_Statement_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Frequency_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__IBAN_with_direct_debit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Payment_Method_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Payment_Processor_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Status_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>paysepa__Mandate_Id_should_have_a_value</name>
+    </validationRules>
+</CustomObjectTranslation>

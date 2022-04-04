@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Fundraising_altiria</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Fundraising_altiria</label>
+        <sharedTo>
+            <roleAndSubordinates>Fundraising</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>msf_ProcessType__c</field>
+            <operation>equals</operation>
+            <value>Altiria</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>asociativo_sap</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>asociativo_sap</label>
+        <sharedTo>
+            <role>Asociativo</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>msf_ProcessType__c</field>
+            <operation>equals</operation>
+            <value>SAP HR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Economic</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Economic</label>
+        <sharedTo>
+            <role>Service_Center</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

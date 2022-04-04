@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__PersonalSiteContactInfoExtraFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__PersonalSiteContactInfoPanel1FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__PersonalSiteContactInfoPanel2FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__VolunteersFindCriteriaFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__VolunteersFindFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__VolunteersJobListingFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__VolunteersReportHoursFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__VolunteersSignupFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>cpm__newContactManualReview</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__BDE_Entry_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__BDE_List_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>npsp__ContactMergeFoundFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>proh__SOSL_ReturnFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>proh__newContact</name>
+    </fieldSets>
+    <layouts>
+        <layout>Contact Lightning Layout</layout>
+        <sections>
+            <label>Kontaktdetails</label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label>Spendeninformationen</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Spendenbeträge gesamt</label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label>Adresse des Haushalts</label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label>Informationen zur Spende des Haushalts</label>
+            <section>Household Donation Info</section>
+        </sections>
+        <sections>
+            <label>Mitgliedschaftsinformationen</label>
+            <section>Membership Information</section>
+        </sections>
+        <sections>
+            <label>Sonstiges</label>
+            <section>Misc</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Credit Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Anonymous Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle del contacto</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Anonymous Economic Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de Oportunidades</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Associative Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de contacto</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalles de colaboración con MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información sobre membresía</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Canvasser Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle del contacto</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Economic Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de socio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle total oportunidades (cuotas + donativos)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hogar</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resumen de información de últimos contactos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sección a eliminar - Validación de LVL</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segmentos y modelos comportamentales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Economic Individual Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Creación y Modificación de Datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hogar</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Identificadores Externos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF (RESUMEN HISTÓRICO)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>TOTALES OPORTUNIDADES (CUOTAS+DONATIVOS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Economic Organization Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Creación y Modificación de Datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Grupo Empresarial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Relación con la organización</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Economic Organization Layout</layout>
+        <sections>
+            <label></label>
+            <section>Creación y Modificación de Datos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de Backup</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle total oportunidades (cuotas + donativos)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hogar</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Identificadores Externos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Individual Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Cálculos Levels</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de socio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle total oportunidades (cuotas + donativos)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Exclusión comunicaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hogar</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resumen de información de últimos contactos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segmentos y modelos comportamentales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF MID+ Individual Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Cálculos Levels</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de socio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle total oportunidades (cuotas + donativos)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Exclusión comunicaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hogar</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resumen de información de últimos contactos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segmentos y modelos comportamentales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF MID+ Organization Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de Backup</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de socio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle total oportunidades (cuotas + donativos)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Exclusión comunicaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Grupo empresarial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sección a eliminar - Validación de LVL</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segmentos y modelos comportamentales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Organization Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Exclusión comunicaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Grupo Empresarial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Relación con la organización</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Organization Layout</layout>
+        <sections>
+            <label></label>
+            <section>Datos de Backup</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos estratégicos</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos generales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción excoms</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de donante</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de socio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle total oportunidades (cuotas + donativos)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dirección postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Exclusión comunicaciones</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Grupo empresarial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información entrada a MSF</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información fiscal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oportunidades indirectas</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Correo postal</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Email</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Mensajería instantánea</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - SMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permisos de comunicación - Teléfono</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sección a eliminar - Validación de LVL</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segmentos y modelos comportamentales</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Teléfonos</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>MSF_Anonymization</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_ContactOrg_NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_FormDataEntryButtonRedirect</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NewOrganizationContact</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NewRelationship</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaCuotaAsociativo</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacion</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacionGrant</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacionInKind</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacionLegacy</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacionMatchingGift</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacionMembership</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>MSF_NuevaDonacionRecurrente</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewDonation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewInKind</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewMembership</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Open_Recurring_Donation</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Anonymous</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Individual_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Organization_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Birthyear_lesser_than_today</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Change_organization_in_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Contact_Preferred_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Contact_Preferred_Phone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_EndDateEmptyWhenActive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_EndDateGreaterThanStartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_NotOrgFirstName</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_NotOrgSuffix</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_OrganizationType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_WebSiteFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>No_Affiliation_HH</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>No_fecha_nacimiento_futura</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_fp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_fpb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_fr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_frb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_fs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_fsb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_mr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_ocho_o_nueve_mrb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_seis_o_siete_mp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_seis_o_siete_mpb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_seis_o_siete_ms</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Nueve_digitos_y_empieza_seis_o_siete_msb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>RecordType_equal_to_organization</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Segundo_officer_distinto_primero</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>activities__Create_Tasks_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npe4__Relationships_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npo02__Copy_Address_to_Household</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npo02__Household</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Merge_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__New_Gift</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npsp__Recalculate_Rollups</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__VerifySelectedAddressesContact</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__VerifySelectedEmailsContacts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Addresses_Classic</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Emails_Classic</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Phone</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smartystreets__Verify_Phones</name>
+    </webLinks>
+    <workflowTasks>
+        <description>Eine automatische Danke-E-Mail wird für die Anmeldung als Freiwilliger an den Kontakt gesendet.</description>
+        <name>GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Contact</name>
+    </workflowTasks>
+</CustomObjectTranslation>

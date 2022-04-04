@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsFieldSAP__c</fullName>
+    <externalId>false</externalId>
+    <formula>BEGINS(msf_JobSAP__c , &apos;F -&apos;) 
+||
+BEGINS(msf_CostCenterSAP__c , &apos;ES&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actualmente en terreno</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

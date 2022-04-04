@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Celebraciones</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>msf_AbandonmentReason__c</fieldNames>
+        <picklistValueName>Abandono</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_AutoPrint__c</fieldNames>
+        <fieldNames>msf_Address__c</fieldNames>
+        <fieldNames>msf_UseImage__c</fieldNames>
+        <info>&lt;p&gt;Una vez enviado a imprenta, cambiar el estado a &amp;quot;Pendiente Envío a domicilio&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Enviar a Imprenta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_LanguagePreferer__c</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <fieldNames>msf_AutoPrint__c</fieldNames>
+        <info>&lt;p&gt;Una vez enviado los datos de Pago, cambiar el estado a &amp;quot;Pendiente justificante&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Enviar datos de pago</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_LanguagePreferer__c</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <info>&lt;p&gt;Una vez enviado el diseño, cambiar el estado a &amp;quot;Pendiente aprobación diseño&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Enviar diseño</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_AutoPrint__c</fieldNames>
+        <fieldNames>msf_DateDelivery__c</fieldNames>
+        <info>&lt;p&gt;Una vez enviado a email agradecimiento, cambiar el estado a &amp;quot;Conseguida&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Enviar email agradecimiento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>msf_SendBudget__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <info>&lt;p&gt;Una vez enviada la info extra, cambiar estado a &amp;quot;Pendiente respuesta&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Enviar info extra</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <info>&lt;p&gt;Una vez enviado el presupuesto, cambiar el estado a &amp;quot;Pendiente OK presupuesto&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Enviar prespuesto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <info>&lt;p&gt;Cuando contesten, abrir tarea entrante&amp;quot;RESPONDE A INFORMACION DE CELEBRACIONES&amp;quot;&lt;/p&gt;&lt;p&gt;Recuerda llamar en dos días si no te contestan!&lt;/p&gt;&lt;p&gt;Según la respuesta, cambiar el estado a:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pendiente info para diseño.&lt;/li&gt;&lt;li&gt;Enviar diseño.&lt;/li&gt;&lt;li&gt;Abandono &lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pendiente OK presupuesto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_LanguagePreferer__c</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <fieldNames>msf_AutoPrint__c</fieldNames>
+        <info>&lt;p&gt;Cuando contesten, abrir tarea entrante&amp;quot;RESPONDE A INFORMACION DE CELEBRACIONES&amp;quot;&lt;/p&gt;&lt;p&gt;Recuerda llamar en dos días si no te contestan!&lt;/p&gt;&lt;p&gt;Según la respuesta, cambiar el estado a:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Si piden cambios: Enviar diseño.&lt;/li&gt;&lt;li&gt;Si están OK: Enviar datos de pago.&lt;/li&gt;&lt;li&gt;Abandono.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pendiente aprobacion diseño</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>RecordTypeId</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>msf_Campaign__c</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <info>&lt;p&gt;Completar Campaña y lead source &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Para tarjetas e invitaciones: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Enviar email info. &lt;/li&gt;&lt;li&gt;Abrir tarea &amp;quot;SOLICITA INFORMACION DE CELEBRACIONES&amp;quot;&lt;/li&gt;&lt;li&gt;Al enviar el email info, cambiar el owner del caso y pasar a estado &amp;quot;Pendiente respuesta&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Para cajitas:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Abrir tarea &amp;quot;ENVIO PRESUPUESTO CELEBRACIONES&amp;quot;, marcar como realizada&lt;/li&gt;&lt;li&gt;Pasar a estado &amp;quot;Pendiente respuesta&amp;quot;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pendiente envio Info</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_AutoPrint__c</fieldNames>
+        <fieldNames>msf_Address__c</fieldNames>
+        <fieldNames>msf_UseImage__c</fieldNames>
+        <info>&lt;p&gt;Cuando la imprenta nos confirme la entrega, cambiar el estado a &amp;quot;Pendiente Envio Email agradecimiento&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Pendiente envio a domicilio</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_LanguagePreferer__c</fieldNames>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <fieldNames>msf_NameForPrinting__c</fieldNames>
+        <info>&lt;p&gt;Cuando contesten, abrir tarea entrante&amp;quot;RESPONDE A INFORMACION DE CELEBRACIONES&amp;quot;.&lt;/p&gt;&lt;p&gt;Recuerda llamar en dos días si no te contestan!&lt;/p&gt;&lt;p&gt;Según la respuesta, cambiar el estado a:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Enviar diseño.&lt;/li&gt;&lt;li&gt;Abandono.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pendiente info para diseño</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_Quantity__c</fieldNames>
+        <fieldNames>msf_AutoPrint__c</fieldNames>
+        <fieldNames>msf_Address__c</fieldNames>
+        <fieldNames>msf_UseImage__c</fieldNames>
+        <info>&lt;p&gt;Cuando envíen justificante, asignar oportunidad al contacto con la campaña pertinente. Abrir tarea entrante &amp;quot;RESPONDE A INFORMACION DE CELEBRACIONES&amp;quot; &lt;/p&gt;&lt;p&gt;Según forma de impresión cambiar el estado a:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Enviar a imprenta&lt;/li&gt;&lt;li&gt;Email de agradecimiento enviado (si es autoimpresión)&lt;/li&gt;&lt;li&gt;Abandono&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pendiente justificante</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>msf_SendBudget__c</fieldNames>
+        <fieldNames>msf_CelebrationDate__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <info>&lt;p&gt;Cuando contesten, abrir tarea entrante &amp;quot;RESPUESTA MSF A: SOLICITUD DE INFORMACION DE CELEBRACIONES&amp;quot;.&lt;/p&gt;&lt;p&gt;Si no contestan, llamar al cabo de dos días:&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;Según la respuesta, cambiar el estado a:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Llamada programada -&amp;gt; Crear Nueva tarea de &amp;quot;CAMPAÑA SEGUIMIENTO CELEBRACIONES&amp;quot; (llamada) para la fecha que nos indiquen, si nos dicen que llamemos en unos meses.&lt;/li&gt;&lt;li&gt;Enviar Presupuesto.&lt;/li&gt;&lt;li&gt;Enviar info extra.&lt;/li&gt;&lt;li&gt;Pendiente Justificante.&lt;/li&gt;&lt;li&gt;Abandono.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pendiente respuesta</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_IS_Celebrations</recordTypeName>
+</PathAssistant>

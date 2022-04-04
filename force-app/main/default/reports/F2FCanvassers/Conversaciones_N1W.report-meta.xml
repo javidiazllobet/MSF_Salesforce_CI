@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>msf_Conversation__c$msf_IdCanvasser__c</field>
+    </columns>
+    <columns>
+        <field>msf_Conversation__c$msf_DayWorked__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>msf_Conversation__c$msf_NumConversation__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Conversaciones</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Conversaciones__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>msf_Conversation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

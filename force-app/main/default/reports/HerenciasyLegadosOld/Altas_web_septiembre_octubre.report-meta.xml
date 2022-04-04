@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_EntryCampaign__c</field>
+    </columns>
+    <columns>
+        <field>Contact$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Contact$npo02__LastCloseDate__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$msf_EntryCampaign__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FI (Altas Web Msf)</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Altas web septiembre-octubre</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <endDate>2020-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-09-01</startDate>
+    </timeFrameFilter>
+</Report>

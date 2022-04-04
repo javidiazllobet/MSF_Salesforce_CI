@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_ProfessionAreas__c</fullName>
+    <externalId>false</externalId>
+    <label>Areas de profesiones</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</fullName>
+                <default>false</default>
+                <label>Ciencias Sociales, del comportamiento, de la comunicación, Administración, Trabajo y Derecho</label>
+            </value>
+            <value>
+                <fullName>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</fullName>
+                <default>false</default>
+                <label>Ingeniería, Tecnología, Industria, Arquitectura y Construcción</label>
+            </value>
+            <value>
+                <fullName>Ciencias de la Salud y Servicios Sociales</fullName>
+                <default>false</default>
+                <label>Ciencias de la Salud y Servicios Sociales</label>
+            </value>
+            <value>
+                <fullName>Artes y Humanidades</fullName>
+                <default>false</default>
+                <label>Artes y Humanidades</label>
+            </value>
+            <value>
+                <fullName>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</fullName>
+                <default>false</default>
+                <label>Ciencias de la Vida, de la Tierra, del Espacio, Química, Física y Exactas</label>
+            </value>
+            <value>
+                <fullName>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</fullName>
+                <default>false</default>
+                <label>Servicios: Turismo, Hostelería, Deportes, Belleza, Transporte, Medio Ambiente y Seguridad</label>
+            </value>
+            <value>
+                <fullName>Pedagogía</fullName>
+                <default>false</default>
+                <label>Pedagogía</label>
+            </value>
+            <value>
+                <fullName>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</fullName>
+                <default>false</default>
+                <label>Agronomía, Agricultura, Ganadería, Pesca y Veterinaria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

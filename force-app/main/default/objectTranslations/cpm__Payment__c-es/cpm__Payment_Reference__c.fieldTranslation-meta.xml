@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>La referencia de pago dada por el deudor</help>
+    <label></label>
+    <name>cpm__Payment_Reference__c</name>
+</CustomFieldTranslation>

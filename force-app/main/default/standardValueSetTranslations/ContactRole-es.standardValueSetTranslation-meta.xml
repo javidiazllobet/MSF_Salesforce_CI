@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Decision Maker</masterLabel>
+        <translation><!-- Decision Maker --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Donor</masterLabel>
+        <translation><!-- Donor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Donor by donation vehicle</masterLabel>
+        <translation>Donante por vehículo de donación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Household Member</masterLabel>
+        <translation><!-- Household Member --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Influencer</masterLabel>
+        <translation><!-- Influencer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Matched Donor</masterLabel>
+        <translation><!-- Matched Donor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prescriptor</masterLabel>
+        <translation><!-- Prescriptor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Promotor</masterLabel>
+        <translation><!-- Promotor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Soft Credit</masterLabel>
+        <translation><!-- Soft Credit --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

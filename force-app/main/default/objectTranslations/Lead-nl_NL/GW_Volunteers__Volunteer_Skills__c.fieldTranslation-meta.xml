@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Selecteer de vaardigheden van deze persoon die gebruikt zouden moeten worden met het zoeken naar vrijwilligersbanen</help>
+    <label></label>
+    <name>GW_Volunteers__Volunteer_Skills__c</name>
+    <picklistValues>
+        <masterLabel>Computer usage</masterLabel>
+        <translation>Computer gebruik</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control de acceso</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event Planning</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fotografía/Multimedia</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundraising</masterLabel>
+        <translation>Fondsenwerving</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landscaping</masterLabel>
+        <translation>Tuinieren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logística (montaje, micros, etc)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual labor</masterLabel>
+        <translation>Handenarbeid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS workshop</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otros (finanzas, documentación, etc)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voto electrónico</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

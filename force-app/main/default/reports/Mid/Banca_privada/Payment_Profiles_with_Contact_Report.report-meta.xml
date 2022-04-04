@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>cpm__Payment_Profile__c.cpm__IBAN__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>ES0036,ES0058,ES0061,ES0083,ES0094,ES0108,ES0122,ES0144,ES0149,ES0151,ES0156,ES0162,ES0167,ES0188,ES0190,ES0200,ES0211,ES0220,ES0226,ES0232,ES0233,ES0241,ES1532,ES1460,ES1470,ES1473,ES1474,ES1485,ES1492,ES1493,ES1500,ES1516,ES1531,ES1534,ES1542,ES1544,ES1545,ES1547,ES1556,ES1558</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cpm__Payment_Profile__c.cpm__Active__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Banca privada ACTIVO- pte arreglaractivo</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$cpm__Payment_Profile__c@cpm__Payment_Profile__c.cpm__Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

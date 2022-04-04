@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>npe03__Recurring_Donation__c.npe03__Next_Payment_Date__c</field>
+    </columns>
+    <columns>
+        <field>npe03__Recurring_Donation__c.npe03__Last_Payment_Date__c</field>
+    </columns>
+    <columns>
+        <field>npe03__Recurring_Donation__c.npe03__Installment_Period__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>npe03__Recurring_Donation__c.npe03__Amount__c</field>
+    </columns>
+    <columns>
+        <field>npe03__Recurring_Donation__c.npe03__Contact__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <description>Copia de donaciones recur fecha cob del</description>
+    <filter>
+        <criteriaItems>
+            <column>npe03__Recurring_Donation__c.npe03__Open_Ended_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Open</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Donaciones recur fecha cob del 2 al 31</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$npe03__Recurring_Donation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>npe03__Recurring_Donation__c.npe03__Next_Payment_Date__c</dateColumn>
+        <endDate>2022-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-04-02</startDate>
+    </timeFrameFilter>
+</Report>

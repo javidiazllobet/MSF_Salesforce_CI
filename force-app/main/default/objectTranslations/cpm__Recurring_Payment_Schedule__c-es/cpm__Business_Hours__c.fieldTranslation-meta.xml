@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Registro de horario comercial que se utiliza para verificar si las fechas calculadas de ejecución y cobro son en un día hábil.</help>
+    <label></label>
+    <name>cpm__Business_Hours__c</name>
+    <relationshipLabel></relationshipLabel>
+</CustomFieldTranslation>

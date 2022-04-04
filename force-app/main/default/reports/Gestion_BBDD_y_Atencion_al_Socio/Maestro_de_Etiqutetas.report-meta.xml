@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>msf_Tag__c.Relaciones_etiquetas__r$Name</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$msf_Description__c</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$msf_CustomExternalId__c</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$Id</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$Name</field>
+    </columns>
+    <columns>
+        <field>msf_Tag__c$Owner</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Maestro de Etiqutetas</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Etiquetas_relacionadas_Maestro_de__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>msf_Tag__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

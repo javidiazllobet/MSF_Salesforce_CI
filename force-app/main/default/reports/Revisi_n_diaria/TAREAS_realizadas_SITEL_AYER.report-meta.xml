@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Noelia Bobet nbobe,Maite Marin mmari</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Activities$msf_StartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YESTERDAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Solicita Donativo en Vida,Solicita Información Herencias,MSF Envío Folleto Herencias,MSF Responde a: Solicitud Información Herencias,MSF llama para confirmar recepción Folleto Herencias,MSF Cumpleaños Colaborador</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Activities$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>En curso,Realizada</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Activities$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TAREAS realizadas SITEL_AYER</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Tasks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

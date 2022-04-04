@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>Contact$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$Suffix</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_FiscalFirstName__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_FiscalLastName1__c</field>
+    </columns>
+    <columns>
+        <field>Contact$msf_FiscalLastName2__c</field>
+    </columns>
+    <description>Contactos de cualquier tipo con apodo de civi migrado (listado CE).</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Contact$msf_CRMExternalId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>11144674,8907,10386,97331,570283,9981010,10055278,10178009,10187125,10287382,10342247,10391591,11030189,11111878,11115313,11169964,11648615,11659253,11663247,11664413,10216369,10313371,9980908,10059607,10177222,10470790,10547207,10769724,10809948,11069639,11300867,11679674,11738774,11740983,62631,13252,19481,8640513,9972678,3116,3642,15104,20823,23424,24071,24331,27308,30946,37831,43984,9990120,9991666,10026943,10039811,10067595,10081611,10149918,10171922,10182085,10234960,10274396,10310602,10314928,10328979,10390454,10399113,10402576,10402578,10411366,10682730,10725219,10840099,10886282,10893837,10957229,11022550,11055244,11131253,11167887,11175863,11183336,11218860,11254082,11254124,11254144,11287298,11293039,11403179,11415588,11442049,11603380,11628766,11628772,11664417,11664421,11664427</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Id</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0033Y000031R4X0,0033Y000031R4X3</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Apodo de Civi migrado</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>msf_Contactos__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

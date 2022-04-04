@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Membership</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO.&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BBDD Y AT SOCIO Pasar aquí según forma de pago (todas menos OB-TC PCI).&lt;/p&gt;</info>
+        <picklistValueName>Cobrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO - SOLO PARA OBS-TCS PCI.&lt;/p&gt;</info>
+        <picklistValueName>Devuelta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO.&lt;/p&gt;</info>
+        <picklistValueName>Devuelta manual</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BDD Y AT SOCIO - SOLO PARA OBS-TCS PCI.&lt;/p&gt;</info>
+        <picklistValueName>Impagada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Equipo GEST BBDD Y AT SOCIO Pendiente solo para OBS - TCS PCI - PASAR A ESTA ETAPA SI NO HA EXISTIDO CULTIVACION.&lt;/p&gt;</info>
+        <picklistValueName>Puesta al cobro</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Membership</recordTypeName>
+</PathAssistant>

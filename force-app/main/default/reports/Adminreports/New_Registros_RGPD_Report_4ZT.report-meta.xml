@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>msf_GDPRLog__c.msf_ModificationDate__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>msf_GDPRLog__c.msf_Contact__c</field>
+    </columns>
+    <columns>
+        <field>msf_GDPRLog__c.msf_RecordId__c</field>
+    </columns>
+    <columns>
+        <field>msf_GDPRLog__c.msf_ModificationChannel__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Javier Llorente</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>RGPD Report #40980</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$msf_GDPRLog__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>msf_GDPRLog__c.msf_ModificationDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2022-02-18</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-02-18</startDate>
+    </timeFrameFilter>
+</Report>

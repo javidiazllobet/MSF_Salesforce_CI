@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>msf_Tag__c$Name</field>
+    </columns>
+    <description>Todos los contactos de PT con etiqueta in 121.</description>
+    <format>Tabular</format>
+    <name>In 121 Officer PT</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Etiquetas_relacionadas_Maestro_de__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>msf_Tag__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>msf_Tag__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

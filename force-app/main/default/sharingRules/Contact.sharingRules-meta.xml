@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Associative_visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Associative visibility</label>
+        <sharedTo>
+            <role>Asociativo</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Economic_visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Economic visibility</label>
+        <sharedTo>
+            <roleAndSubordinates>MSF</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

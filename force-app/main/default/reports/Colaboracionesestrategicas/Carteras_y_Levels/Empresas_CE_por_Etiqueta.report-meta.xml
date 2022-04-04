@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Contact.msf_CRMExternalId__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.msf_PrimaryContact__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.msf_MemberType__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.msf_Program__c</field>
+    </columns>
+    <description>Empresas de programas CE clasificadas por etiquetas.</description>
+    <filter>
+        <criteriaItems>
+            <column>msf_TagRelationship__c.msf_RelatedTag__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Potencial Clientes,Potencial Empleados,Petencial Redondeo,Potencial Especies/material,Poetncial Probono/servicios,Potencial Emergencista,Potencial Proveedor,Potencial donación directa,Clientes,Empleados,Redondeo,Especies/material,Probono/servicios,Emergencista,Proveedor,Donación directa,Organización vinculada,Organización vehiculo</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>msf_TagRelationship__c.msf_RelatedTag__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Empresas CE por Etiqueta II</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$msf_TagRelationship__c@msf_TagRelationship__c.msf_RelatedContact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>FK_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

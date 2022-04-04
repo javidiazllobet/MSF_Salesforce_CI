@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>MSF_PaymentScheduleLayout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Processing Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Schedule</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Collection_Date_must_be_in_the_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Collection_cant_be_in_the_past_for_SEPA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Lock_Fiscal_Period</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cpm__Mandatory_Field_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>paysepa__Sepa_needs_target</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>cpm__Start_Generation</name>
+    </webLinks>
+</CustomObjectTranslation>

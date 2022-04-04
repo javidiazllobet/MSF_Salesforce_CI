@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__VolunteersWizardFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>proh__SOSL_ReturnFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>proh__newCampaign</name>
+    </fieldSets>
+    <layouts>
+        <layout>Campaign Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Hierarchy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Campaign Members</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Associative Campaign Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Hierarchy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Campaign Members</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción Iniciativa</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción de la campaña</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de la campaña</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Campaign Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Hierarchy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Campaign Members</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción Iniciativa</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción de la campaña</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de la campaña</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalles de iniciativas</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSF Volunteer Campaign Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Hierarchy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Campaign Members</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción Iniciativa</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción de la campaña</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detalle de la campaña</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Volunteers Campaign Layout</layout>
+        <sections>
+            <label></label>
+            <section>Volunteers</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>MSF_NewTask</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Associative</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Default</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>GW_Volunteers__Volunteers_Campaign</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_FinalCampaign_IsOnline</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_FinalCampaign_Objective</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_FinalCampaign_OutboundChannel1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_FinalCampaign_OwnBy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_FinalCampaign_Segment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_FinalCampaign_Thematic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MSF_SolidarityInitiativePromoter</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__CampaignRoster</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Campaign_Shift_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Find_Volunteers</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Mass_Email_Volunteers</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__New_Volunteer_Campaign</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>MSF_CreateTasks</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>create_follow_up_task</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>et4ae5__ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>npo02__Household_Mailing_List</name>
+    </webLinks>
+</CustomObjectTranslation>

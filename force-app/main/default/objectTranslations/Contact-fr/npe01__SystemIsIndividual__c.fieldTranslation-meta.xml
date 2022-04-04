@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ce champ n&apos;est plus utilisé et ne doit pas être référencé. Le champ &quot;Type du compte&quot; (Type_of_Account__c) le remplace.</help>
+    <label></label>
+    <name>npe01__SystemIsIndividual__c</name>
+</CustomFieldTranslation>

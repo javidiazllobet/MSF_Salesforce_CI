@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>SolidaryGift</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>msf_Materials__c</fieldNames>
+        <fieldNames>msf_TypeMaterials__c</fieldNames>
+        <fieldNames>msf_ModelSlected__c</fieldNames>
+        <fieldNames>msf_NumberCardsRequested__c</fieldNames>
+        <fieldNames>msf_LanguagePreferer__c</fieldNames>
+        <info>&lt;p&gt;• Si envía justificante de pago, completar la tarea 77 - Envía a MSF Justificante Pago Regalo Solidario&lt;/p&gt;&lt;p&gt;• Asignar la oportunidad cuando entre el donativo con la campaña REGALO SOLIDARIO y la afectación FONDO EMERGENCIAS.&lt;/p&gt;&lt;p&gt;• Confirmar con la empresa los datos de envío, cantidad de tarjetas solicitadas y modelos.&lt;/p&gt;&lt;p&gt;• Solicitar a la empresa el logotipo de la empresa en alta calidad y color.&lt;/p&gt;&lt;p&gt;• Si el importe es de más de 10.000 euros informar a CE.&lt;/p&gt;</info>
+        <picklistValueName>Confirmación de colaboración y crear oportunidad</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Cierre de caso por no colaboración / código ético (con percomms / plan de relación NO ENVIAR NADA)&lt;/p&gt;</info>
+        <picklistValueName>Confirmación de colaboración y no crear oportunidad</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;• Abrir tarea 17 - MSF Agradecimiento Regalo Solidario&lt;/p&gt;&lt;p&gt;• Realizar llamada a empresa para confirmar recepción de materiales de forma correcta y agradecimiento de colaboración.&lt;/p&gt;</info>
+        <picklistValueName>Confirmación recepción y agradecimiento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Confirmación de envío de materiales por los proveedores.&lt;/p&gt;</info>
+        <picklistValueName>Envío de materiales por parte de los proveedores</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;• Abrir tarea 83 - MSF Envío a Imprenta Regalo Solidario &lt;/p&gt;&lt;p&gt;• Envío de petición de materiales a proveedor cuando se haya recibido el logotipo. &lt;/p&gt;&lt;p&gt;• Si hubiera petición diferente al modelo estándar, pasar consulta a CE y esperar confirmación por su parte.&lt;/p&gt;&lt;p&gt;• Cuando se reciba la propuesta de diseño por parte de la imprenta, enviársela a la empresa y completar tarea 85 - MSF Envío Confirmación Diseño Regalo Solidario&lt;/p&gt;</info>
+        <picklistValueName>Hacer petición materiales al proveedor</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>msf_LeadSource__c</fieldNames>
+        <fieldNames>msf_Ranking__c</fieldNames>
+        <fieldNames>msf_Segment__c</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <info>&lt;p&gt;• Envío de información sobre RS a empresa. &lt;/p&gt;&lt;p&gt;• Dar de alta empresa si es frío. &lt;/p&gt;&lt;p&gt;• Comprobar código ético. &lt;/p&gt;&lt;p&gt;• Si es caliente, verificar si hay 121 para informar.&lt;/p&gt;&lt;p&gt;• Abrir tarea 194 - Solicita Información Regalo Solidario&lt;/p&gt;&lt;p&gt;• Abrir tarea 62 - MSF Seguimiento Regalo Solidario con fecha a 7 días para llamar si no hemos recibido el donativo.&lt;/p&gt;</info>
+        <picklistValueName>Solicitud de información</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MSF_CE_Solidary_Gift</recordTypeName>
+</PathAssistant>

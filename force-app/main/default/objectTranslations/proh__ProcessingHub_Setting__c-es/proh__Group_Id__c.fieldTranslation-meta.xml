@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El ID del grupo del grupo chatter utilizado en la comunicación con ProcessingHub</help>
+    <label></label>
+    <name>proh__Group_Id__c</name>
+</CustomFieldTranslation>

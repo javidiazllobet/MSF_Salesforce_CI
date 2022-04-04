@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>cpm__Payment_Profile__c.cpm__Holder_Name__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Payment_Profile__c.msf_MemberIdName__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Payment_Profile__c.cpm__Contact__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>cpm__Payment_Profile__c.cpm__Contact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>?</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Caracteres ? en Perfil de Pagos</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$cpm__Payment_Profile__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

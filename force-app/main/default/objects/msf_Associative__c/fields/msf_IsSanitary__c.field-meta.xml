@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msf_IsSanitary__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL(msf_ProfessionAreas__c, &apos;Ciencias de la Salud y Servicios Sociales&apos;) &amp;&amp;
+(
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Medicina&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Farmacia&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Psicología&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Enfermería&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Matronas&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Odontología&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Fisioterapia&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Nutrición&apos;) ||
+  ISPICKVAL(msf_ProfessionSubAreas__c, &apos;Técnicos Superiores en Laboratorio de diagnóstico Clínico&apos;)    
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Es sanitario</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

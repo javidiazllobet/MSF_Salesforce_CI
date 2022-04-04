@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Descripción de destino aportación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Descripción de destinos aportaciones</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>MSF General Accounting Unit Layout</layout>
+        <sections>
+            <label>Información de asignación</label>
+            <section>Allocation Information</section>
+        </sections>
+        <sections>
+            <label>Totales de asignación</label>
+            <section>Allocation Totals</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Descripción de destino aportación</nameFieldLabel>
+    <webLinks>
+        <label></label>
+        <name>npsp__Recalculate_Rollups</name>
+    </webLinks>
+</CustomObjectTranslation>
