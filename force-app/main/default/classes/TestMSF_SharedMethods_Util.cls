@@ -1,5 +1,12 @@
+/**
+ * @description       : 
+ * @author            : arubio@omegacrmconsulting.com
+ * @group             : 
+ * @last modified on  : 06-04-2022
+ * @last modified by  : arubio@omegacrmconsulting.com
+**/
 @isTest
-private class TestMSF_SharedMethods_Util{
+private class TestMSF_SharedMethods_UTIL{
 
 	@testSetup static void setup(){
 

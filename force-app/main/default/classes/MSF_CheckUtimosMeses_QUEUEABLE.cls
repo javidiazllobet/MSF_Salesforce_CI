@@ -6,6 +6,12 @@
 */
 public class MSF_CheckUtimosMeses_QUEUEABLE implements Queueable {
     
+    Boolean process;
+
+    public MSF_CheckUtimosMeses_QUEUEABLE(){
+        this.process = true;
+    }
+    
     public void execute(QueueableContext context) {
 		date lastTwoYears = date.today()-365*2;      
         date lastFiveYears = date.today()-365*5;   

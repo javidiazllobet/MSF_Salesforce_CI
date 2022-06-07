@@ -1,3 +1,10 @@
+/**
+ * @description       : 
+ * @author            : sheredia@omegacrmconsulting.com
+ * @group             : 
+ * @last modified on  : 03-24-2022
+ * @last modified by  : sheredia@omegacrmconsulting.com
+**/
 @isTest
 public class MSF_UncheckUtimosMesesTask_TEST {
 
@@ -28,7 +35,7 @@ public class MSF_UncheckUtimosMesesTask_TEST {
     
     @isTest static void Test_UncheckUltimosMeses_QUEUEABLE(){
         
-        String CRON_EXP = '0 0 0 15 3 ? 2022';
+        String CRON_EXP = '0 0 0 15 3 ? *';
         Test.startTest();
         String jobId = System.schedule('ScheduledApexTest',
             CRON_EXP,
