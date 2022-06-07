@@ -27,6 +27,7 @@
 		<members>MSF_UncheckUtimosMeses_BATCH</members>
 		<members>MSF_UncheckUtimosMeses_02_BATCH</members>
 		<members>MSF_UncheckUtimosMeses_SCHED</members>
+		<members>MSF_MemberType_TEST</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
