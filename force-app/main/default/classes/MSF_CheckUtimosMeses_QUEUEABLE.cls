@@ -5,19 +5,29 @@
 * @description	Job to check and update the field msf_IsFromLastMonthsBool__c ZenIT#25762
 */
 public class MSF_CheckUtimosMeses_QUEUEABLE implements Queueable {
-    
-    Boolean process;
+
+    private Boolean process;
 
     public MSF_CheckUtimosMeses_QUEUEABLE(){
         this.process = true;
     }
     
+    public MSF_CheckUtimosMeses_QUEUEABLE(Boolean process){
+        this.process = process;
+    }
+    
     public void execute(QueueableContext context) {
-		date lastTwoYears = date.today()-365*2;      
-        date lastFiveYears = date.today()-365*5;   
-        List<Opportunity> listOppToCheck = [ SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = false and (
-                                            (msf_TypeFundraisingContribution__c = 'D' AND CloseDate >=:lastFiveYears) OR
-                                            (CloseDate >=:lastFiveYears AND CloseDate <= :lastTwoYears AND Type != 'Recurrent Donation' AND Type != 'Historical' AND Type != 'Membership'))Limit 100];      
+        date lastTwoYears = date.today()-365*2;      
+        date lastFiveYears = date.today()-365*5;  
+        List<Opportunity> listOppToCheck = new List<Opportunity>();
+        if(process){//Si es True entrar el proceso se ejecutará con el primer SOQL
+            listOppToCheck = [ SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = false and 
+                                            (msf_TypeFundraisingContribution__c = 'D' AND CloseDate >=:lastFiveYears) limit 100];
+        } else {
+            listOppToCheck = [ SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = false and 
+            (CloseDate >=:lastFiveYears AND CloseDate <= :lastTwoYears AND Type != 'Recurrent Donation' AND Type != 'Historical' AND Type != 'Membership') limit 100];
+        }
+        //List<Opportunity> listOppToCheck = [ SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = false and msf_IsFromLastMonths__c = true Limit 100];      
         
         integer limite = 0;
         integer errors = 0;
@@ -46,11 +56,9 @@ public class MSF_CheckUtimosMeses_QUEUEABLE implements Queueable {
         }//END FOR     
         
         if(errors < 10){//si aún hay opp que no originen error
-            List<Opportunity> listCheckIfThereIsMoreOpp = [ SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = false and (
-                                            (msf_TypeFundraisingContribution__c = 'D' AND CloseDate >=:lastFiveYears) OR
-                                            (CloseDate >=:lastFiveYears AND CloseDate <= :lastTwoYears AND Type != 'Recurrent Donation' AND Type != 'Historical' AND Type != 'Membership'))Limit 100];   
+            List<Opportunity> listCheckIfThereIsMoreOpp = [ SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = false and msf_IsFromLastMonths__c = true Limit 100];   
             if(listCheckIfThereIsMoreOpp.size() >= 100){//si aún quedan opp que comprobar
-                System.enqueueJob(new MSF_CheckUtimosMeses_QUEUEABLE());
+                System.enqueueJob(new MSF_CheckUtimosMeses_QUEUEABLE(process));
             }
         }
     }
