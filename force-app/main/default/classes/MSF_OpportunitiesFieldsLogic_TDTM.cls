@@ -7,10 +7,16 @@
 
 global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM_Runnable {
     
+    private static final String PERIODICIDAD_UNICA = 'Única';
+    private static final String PUESTA_AL_COBRO = 'Puesta al cobro';
+    private static final String COBRADA = 'Cobrada';
+    private static final String DEVUELTA = 'Devuelta';
+    private static final String CANCELADA = 'Cancelada';
+
     global override npsp.TDTM_Runnable.DmlWrapper run(List<SObject> newlist, List<SObject> oldlist, npsp.TDTM_Runnable.Action triggerAction, Schema.DescribeSObjectResult objResult){
         
         //Current User
-        Boolean bEcoUser = [SELECT Id, msf_EconomicProcessUser__c FROM User WHERE Id =: UserInfo.getUserId()].msf_EconomicProcessUser__c;
+        Boolean bEcoUser = Globals.bEcoUser;
         
         //Attributes
         List<Opportunity> lNewOpp = (List<Opportunity>) newlist;        
@@ -47,12 +53,16 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
         if (canUpdate == false) {
             return null;
         }
+        if (triggerAction == npsp.TDTM_Runnable.Action.BeforeUpdate || triggerAction == npsp.TDTM_Runnable.Action.BeforeInsert){
+            system.debug('beforeUpdate or beforeInsert');
+            updateFieldUncheckUtimosMeses(lNewOpp, mOldOpp);
+        }
         
         
         
         //BeforeInsert
-        if(triggerAction == npsp.TDTM_Runnable.Action.BeforeInsert) {            
-            
+        if(triggerAction == npsp.TDTM_Runnable.Action.BeforeInsert) {       
+                        
             for(Opportunity o :lNewOpp){                                
                 if(o.npe03__Recurring_Donation__c != null){
                     sRD.add(o.npe03__Recurring_Donation__c);    
@@ -79,6 +89,8 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
         //BEFORE INSERT && BEFORE UPDATE
         if(triggerAction == npsp.TDTM_Runnable.Action.BeforeInsert || triggerAction == npsp.TDTM_Runnable.Action.BeforeUpdate){ 
             
+            changeOpportunityStage(lNewOpp);
+
             Boolean isInsert = triggerAction == npsp.TDTM_Runnable.Action.BeforeInsert;
             Id rtAnonymous = Schema.SObjectType.Contact.getRecordTypeInfosByDeveloperName().get('Anonymous').getRecordTypeId();
             
@@ -228,6 +240,7 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
             
             //Lógica de contacto; 
             if(!sCont.isEmpty()){
+                System.debug('CPC_2: ' + JSON.serialize(sCont));
                 mCont.putAll([SELECT Id, msf_BeginDateMSF__c, msf_FirstCampaingColaboration__c, msf_DateFirstDonation__c, msf_DateLastDonation__c, msf_EntryCampaign__c, 
                               msf_MemberType__c, msf_IsActiveDonor__c, msf_IsActiveRecurringDonor__c, msf_FirstCampaignColaborationChannel__c,
                               npsp__Deceased__c, msf_ContactDeleteReason__c
@@ -239,6 +252,7 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
                 Map<Id,Contact> tempMap = new Map<Id,Contact>(tempContacts);
                 			 
                 for(Opportunity o :lNewOpp){                 
+                    System.debug('CPC_Oportunidad: ' + JSON.serialize(o));
                     if(o.npsp__Primary_Contact__c != null && mCont.containsKey(o.npsp__Primary_Contact__c)){
                         Opportunity oldOpp = mOldOpp.get(o.Id);
                         Contact cToUpdate = setContactFields(o, mCont.get(o.npsp__Primary_Contact__c), tempMap);
@@ -280,7 +294,7 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
         //Mirar si el usuario que ejecuta el trigger es Admin
         Id profileId = UserInfo.getProfileId();
         Boolean isAdmin = [SELECT PermissionsModifyAllData FROM Profile WHERE Id =: profileId].PermissionsModifyAllData;
-        Boolean bEcoUser = [SELECT Id, msf_EconomicProcessUser__c FROM User WHERE Id =: UserInfo.getUserId()].msf_EconomicProcessUser__c;
+        Boolean bEcoUser = Globals.bEcoUser;
         
         if (isAdmin == false && bEcoUser == false) {
             //PaymentSchedules;
@@ -398,7 +412,8 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
         
         if(memberTypeContacts.containsKey(c.Id)){
             Contact mC = memberTypeContacts.get(c.Id);
-            
+            System.debug('mc: ' + mC);
+            System.debug('c: ' + c);
             if (c.msf_MemberType__c != mC.msf_MemberType__c) 		{ c.msf_MemberType__c = mC.msf_MemberType__c; updateContact = true; }
             if (c.msf_IsActiveDonor__c != mC.msf_IsActiveDonor__c)  { c.msf_IsActiveDonor__c = mC.msf_IsActiveDonor__c; updateContact = true; }
             if (c.msf_IsActiveRecurringDonor__c != mC.msf_IsActiveRecurringDonor__c) { c.msf_IsActiveRecurringDonor__c = mC.msf_IsActiveRecurringDonor__c; updateContact = true; }
@@ -475,6 +490,31 @@ global without sharing class MSF_OpportunitiesFieldsLogic_TDTM extends npsp.TDTM
                 o.msf_CurrentLeadSource3__c = o.msf_LeadSource3Level__c;
             }
         } 
+    }
+
+    private static void changeOpportunityStage(List<Opportunity> opps){
+        for (Opportunity opp : opps) {
+            if (opp.msf_InstallmentPeriod__c == PERIODICIDAD_UNICA && opp.Amount > 0 && String.isNotBlank(opp.npsp4hub__Payment_Method__c) && opp.StageName != COBRADA && opp.StageName != DEVUELTA && opp.StageName != CANCELADA && opp.msf_EntryDate__c != null && String.isNotBlank(opp.npsp4hub__Payment_Processor__c) && String.isNotBlank(opp.npsp4hub__Payment_Profile__c)){
+                opp.StageName = PUESTA_AL_COBRO;
+            }
+        }
+    }
+
+    private static void updateFieldUncheckUtimosMeses(List<Opportunity> opps, Map<Id, Opportunity> oldMapOpp){
+        for (Opportunity opp : opps) {
+            Opportunity oppTemp = oldMapOpp.get(opp.Id);
+            if (oppTemp != null){
+                if ((opp.msf_IsFromLastMonthsBool__c != oppTemp.msf_IsFromLastMonthsBool__c || opp.msf_TypeFundraisingContribution__c != oppTemp.msf_TypeFundraisingContribution__c) && opp.msf_IsFromLastMonthsBool__c == true && opp.msf_TypeFundraisingContribution__c == 'D'){
+                    opp.msf_UncheckUtimosMeses__c = 'true';
+                } else if (((opp.msf_IsFromLastMonthsBool__c != oppTemp.msf_IsFromLastMonthsBool__c || opp.msf_TypeFundraisingContribution__c != oppTemp.msf_TypeFundraisingContribution__c) && (opp.msf_IsFromLastMonthsBool__c != true || opp.msf_TypeFundraisingContribution__c != 'D'))){
+                    opp.msf_UncheckUtimosMeses__c = '';
+                }
+            }else {
+                if (opp.msf_IsFromLastMonthsBool__c == true && opp.msf_TypeFundraisingContribution__c == 'D'){
+                    opp.msf_UncheckUtimosMeses__c = 'true';
+                }
+            }
+        }
     }
 	
 	/*******************************************************************************************************

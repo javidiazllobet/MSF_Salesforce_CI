@@ -149,15 +149,16 @@ public without sharing class MSF_ReassignOpportunity_CTRL {
             exOppHis.npsp_primary_contact_c__c = cTarget.msf_CRMExternalId__c;
             exOppHis.accountid__c = cTarget.Account.msf_CustomExternalId__c;
 
-            
-            Database.SaveResult sr = Database.updateImmediate(exOppHis); 
-            if(!sr.isSuccess()){
-                outputMap.put('msg','# Error al actualizar oportunidad en DM #');    
-                for(Database.Error err : sr.getErrors()) {
-                    System.debug('The following error has occurred.');                   
-                    System.debug(err.getStatusCode() + ': ' + err.getMessage());
-                    System.debug('Account fields that affected this error: ' + err.getFields());
-                }                
+            if (!Test.isRunningTest()){
+                Database.SaveResult sr = Database.updateImmediate(exOppHis); 
+                if(!sr.isSuccess()){
+                    outputMap.put('msg','# Error al actualizar oportunidad en DM #');    
+                    for(Database.Error err : sr.getErrors()) {
+                        System.debug('The following error has occurred.');                   
+                        System.debug(err.getStatusCode() + ': ' + err.getMessage());
+                        System.debug('Account fields that affected this error: ' + err.getFields());
+                    }                
+                }
             }
             
             // ReassignOrigin

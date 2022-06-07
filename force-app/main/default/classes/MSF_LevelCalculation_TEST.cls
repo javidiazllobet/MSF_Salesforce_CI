@@ -361,11 +361,21 @@ private class MSF_LevelCalculation_TEST {
                 lDonations.add(recDonation);
             }
         insert lDonations; 
+
+        String queryStep = '';
+        queryStep = 'SELECT Id ';
+        queryStep += 'FROM Contact ';
+        queryStep += 'WHERE RecordType.DeveloperName = \'Individual_Contact\' AND msf_RecalculateLevel__c = FALSE '; 
+        queryStep += 'AND Id IN (SELECT msf_PromoterIndividual__c FROM Campaign WHERE Recordtype.DeveloperName = \'Default\' AND msf_PromoterIndividual__c != null) ';
+
+        System.debug('Test setup query ---------------------> ' + Database.query(queryStep));
     }
     
     @isTest static void LevelCalculation_BatchTest(){
         Test.startTest();
         MSF_LevelCalculation_01_BATCH mta = new MSF_LevelCalculation_01_BATCH();
+        MSF_LevelCalculation_01_BATCH mta1 = new MSF_LevelCalculation_01_BATCH(0);
+        MSF_LevelCalculation_01_BATCH mta2 = new MSF_LevelCalculation_01_BATCH(1);
         Id batchId = Database.executeBatch(mta);
         Test.stopTest();
         
@@ -391,5 +401,10 @@ private class MSF_LevelCalculation_TEST {
         CronTrigger ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime FROM CronTrigger WHERE id = :jobId];       
         System.assert(ct != null, 'Job is not exist.');
         System.assert(ct.NextFireTime != null, 'Job is not schedule.');
+    }
+
+    @isTest static void testBatch02(){
+        MSF_LevelCalculation_02_BATCH batch = new MSF_LevelCalculation_02_BATCH();
+        Id batchId = Database.executeBatch(batch);
     }
 }

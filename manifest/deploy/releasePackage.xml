@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-	<version>53.0</version>
+<types>
+<members>CampaignMemberFollowUpTest</members>
+<members>DataFactory</members>
+<members>Globals</members>
+<members>GlobalsTest</members>
+<members>MSF_AnonymizationProcess_TEST</members>
+<members>MSF_CloseRecurringDonations_Batches_Test</members>
+<members>MSF_DonationVehicleManagement_TDTM</members>
+<members>MSF_DonationVehicleManagement_TEST</members>
+<members>MSF_FormDataEntry_TEST</members>
+<members>MSF_LevelCalculation_TEST</members>
+<members>MSF_OpportunitiesFieldsLogic_TDTM</members>
+<members>MSF_OpportunitiesFieldsLogic_TEST</members>
+<members>MSF_ReassignOpportunity_CTRL</members>
+<members>MSF_ReassignOpportunity_CTRL_TEST</members>
+<members>MSF_UncheckUtimosMeses_QUEUEABLE_TEST</members>
+<members>MSF_UserLogic_TEST</members>
+<members>TestMSF_SharedMethods_Util</members>
+<name>ApexClass</name>
+</types>
+<version>53.0</version>
 </Package>
