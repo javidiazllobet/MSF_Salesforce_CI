@@ -24,6 +24,7 @@
 		<members>RecordTypes</members>
 		<members>MSF_UncheckUtimosMeses_BATCH_TEST</members>
 		<members>MSF_SharedMethods_UTIL</members>
+		<members>MSF_UncheckUtimosMeses_BATCH</members>
 		<name>ApexClass</name>
 	</types>
 	<types>

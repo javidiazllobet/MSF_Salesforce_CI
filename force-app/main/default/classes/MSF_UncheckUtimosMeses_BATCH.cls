@@ -1,30 +1,19 @@
+/**
+ * @description       : 
+ * @author            : arubio@omegacrmconsulting.com
+ * @group             : 
+ * @last modified on  : 11-04-2022
+ * @last modified by  : arubio@omegacrmconsulting.com
+**/
 public with sharing class MSF_UncheckUtimosMeses_BATCH implements
 Database.Batchable<sObject>, Database.Stateful{
     public Integer recordsProcessed = 0;
     public Integer numberErros = 0;
     
-    private Integer lim;
-
-    public MSF_UncheckUtimosMeses_BATCH(Integer lim){
-        this.lim = lim;
-    }
-
     public Database.QueryLocator  start(Database.BatchableContext bc) {
-        /*
-        SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity 
-        where msf_IsFromLastMonthsBool__c = true and msf_IsFromLastMonths__c = false Limit
-        */
-        date lastTwoYears = date.today()-365*2;      
-        date lastFiveYears = date.today()-365*5; 
-        /*Id donationId =
-  Schema.SObjectType.Opportunity.getRecordTypeInfosByName()
-    .get('Donation').getRecordTypeId();
-        Id matching_GiftId =
-  Schema.SObjectType.Opportunity.getRecordTypeInfosByName()
-    .get('Matching Gift').getRecordTypeId();*/
-		return Database.getQueryLocator([SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_IsFromLastMonthsBool__c = true and (
-            (msf_TypeFundraisingContribution__c = 'D' AND CloseDate <:lastFiveYears) OR
-            (CloseDate <:lastFiveYears AND CloseDate > :lastTwoYears AND Type != 'Recurrent Donation' AND Type != 'Historical' AND Type != 'Membership')) Limit :lim]);
+        
+        date lastFiveYears = date.today().addyears(-5);  
+		return Database.getQueryLocator([SELECT Id, msf_IsFromLastMonthsBool__c, msf_IsFromLastMonths__c From Opportunity where msf_UncheckUtimosMeses__c = 'true' AND CloseDate <:lastFiveYears]);
     }
 
 
@@ -60,6 +49,7 @@ Database.Batchable<sObject>, Database.Stateful{
 
 
     public void finish(Database.BatchableContext bc){
+
         AsyncApexJob job = [SELECT Id, Status, NumberOfErrors,
             JobItemsProcessed,
             TotalJobItems, CreatedBy.Email
@@ -69,11 +59,13 @@ Database.Batchable<sObject>, Database.Stateful{
         System.debug('Errores: '+numberErros);
         System.debug(numberErros == recordsProcessed);
         if(job.TotalJobItems==0 || numberErros == recordsProcessed){
-            System.debug('No llamar al batch: ');
+            System.debug('Llamamos al segundo batch: ');
+            MSF_UncheckUtimosMeses_02_BATCH myBatchObject = new MSF_UncheckUtimosMeses_02_BATCH();
+		    Id batchId = Database.executeBatch(myBatchObject, 10);
         }else {
             System.debug('llamarlo otra vez');
-            MSF_UncheckUtimosMeses_BATCH myBatchObject = new MSF_UncheckUtimosMeses_BATCH(lim);
-			Id batchId = Database.executeBatch(myBatchObject,10);
+            MSF_UncheckUtimosMeses_BATCH myBatchObject = new MSF_UncheckUtimosMeses_BATCH();
+			Id batchId = Database.executeBatch(myBatchObject);
         }
     }
 }
