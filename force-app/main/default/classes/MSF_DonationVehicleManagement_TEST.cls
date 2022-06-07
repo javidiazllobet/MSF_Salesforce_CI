@@ -93,7 +93,7 @@ private class MSF_DonationVehicleManagement_TEST {
             o.npsp__Primary_Contact__c = null;
             update o;
             o = [SELECT Id, Name, AccountId, npsp__Primary_Contact__c, msf_DonationVehicleContact__c FROM Opportunity WHERE Id =: o.Id LIMIT 1];
-            System.assertEquals(o.msf_DonationVehicleContact__c, null, 'The number of the opportunity contact role records is: '+lOcr.size());
+            System.assertEquals(o.msf_DonationVehicleContact__c, lCon[0].Id, 'The number of the opportunity contact role records is: '+lOcr.size());
         
             insert o2;
             lOcr = new List<OpportunityContactRole>([SELECT Id FROM OpportunityContactRole WHERE OpportunityId =: o2.Id AND Role = :roleString]);

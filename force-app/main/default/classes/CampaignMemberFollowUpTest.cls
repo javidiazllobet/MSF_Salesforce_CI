@@ -23,7 +23,7 @@
 private class CampaignMemberFollowUpTest {
 	    
     static testMethod void myUnitTest() {
-		/*
+		
         //Test cases
 		//call test data creation class
 		CampaignMemberFollowUpTestData.createTestData();
@@ -167,7 +167,7 @@ private class CampaignMemberFollowUpTest {
 		//init page controller
 		CampaignMemberFollowUpController myController = new CampaignMemberFollowUpController();
     
-		test.stopTest(); */
+		test.stopTest(); 
     } 
     
 }

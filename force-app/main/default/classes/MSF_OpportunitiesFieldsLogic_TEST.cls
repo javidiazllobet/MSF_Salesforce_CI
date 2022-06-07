@@ -183,9 +183,11 @@ private class MSF_OpportunitiesFieldsLogic_TEST {
     }
     
     @isTest static void testImpagada(){
-        Contact ct = [SELECT id FROM Contact WHERE Name ='contact1'];
-        Opportunity o = [SELECT Id, Name, StageName, msf_Rating__c FROM Opportunity WHERE npsp__Primary_Contact__c =:ct.Id AND Amount = 10 AND StageName='Cobrada' LIMIT 1];
+        Contact ct = [SELECT id FROM Contact WHERE Name ='contact1'];        
+        Opportunity o = [SELECT Id, Name, RecordTypeId, StageName, msf_Rating__c, npsp4hub__Payment_Profile__c FROM Opportunity WHERE npsp__Primary_Contact__c =:ct.Id AND Amount = 10 AND StageName='Cobrada' LIMIT 1];
 		
+        System.debug(o);
+
         o.StageName='Devuelta';
         o.msf_LastReasonCodeReceived__c='xx';
         o.npsp4hub__Payment_Method__c ='Direct Debit';

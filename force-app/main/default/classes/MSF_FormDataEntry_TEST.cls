@@ -197,13 +197,13 @@ private class MSF_FormDataEntry_TEST {
         	MSF_FormDataEntry_CTRL.saveProcess(true, true, false, false, tc1, null, tp1, 'member', 15.00, '', '', '', '', 'One off Donation', '', 
                                                date.Today(), '', null, 'Direct Debit', 'LA CAIXA CCC OPERATIVA', 'Cupón', camp1, 'Teléfonos At. Socio',null);
 			
-        //EXIST CONTACT, EN ESPECIE-SERVICIOS, IN-KIND,SERVICIOS, EXIST PAYMENTE PROFILE MEMBER.
+/*         //EXIST CONTACT, EN ESPECIE-SERVICIOS, IN-KIND,SERVICIOS, EXIST PAYMENTE PROFILE MEMBER.
 			MSF_FormDataEntry_CTRL.saveProcess(false, true, false, false, tc1, null, tp1, 'member', 15.00, '', '', '', '', 'In-Kind Gift', 'Servicios', 
                                                date.Today(), '', null, 'EN ESPECIE-SERVICIOS', 'LA CAIXA CCC OPERATIVA', 'Cupón', camp1, 'Teléfonos At. Socio',null);
         
         //EXIST CONTACT, TALÓN BANCARIO ESTÁNDAR, Matching Gift, EXIST PAYMENTE PROFILE OTHER.
         	MSF_FormDataEntry_CTRL.saveProcess(false, true, false, false, c1, null, p1, 'member', 15.00, '1111111', '1111', '', '', 'Matching Gift', '', 
-                                               date.Today(), '', null, 'TALÓN BANCARIO ESTÁNDAR', 'LA CAIXA CCC OPERATIVA', 'Cupón', camp1, 'Teléfonos At. Socio',null);
+                                               date.Today(), '', null, 'TALÓN BANCARIO ESTÁNDAR', 'LA CAIXA CCC OPERATIVA', 'Cupón', camp1, 'Teléfonos At. Socio',null); */
 
         //************* ASSERTS ************************
             List<Contact> assCont = new List<Contact>();
@@ -213,8 +213,42 @@ private class MSF_FormDataEntry_TEST {
             system.assertEquals(1, assCont.size(),'No contact inserted');
         
         	assOpp = [SELECT id FROM Opportunity WHERE npsp__Primary_Contact__c =:assCont[0].Id];
-        	system.assertEquals(3, assOpp.size(),'No opportunity inserted');
+        	system.assertEquals(2, assOpp.size(),'No opportunity inserted'); 
         //*********************************************
+        
+        test.stopTest();
+    }
+
+    @isTest static void testWithRecordIdIndividualContact1_2(){
+        
+        Contact c1 = [SELECT Id, msf_LanguagePreferer__c FROM Contact WHERE msf_NIF__c = '18956402D' LIMIT 1];
+        Campaign camp1 = [SELECT Id FROM Campaign WHERE Name = 'MSFFormF2FTESTName1' LIMIT 1];
+        cpm__Payment_Profile__c p1 = [SELECT Id FROM cpm__Payment_Profile__c WHERE msf_NIF__c = '12707968P' LIMIT 1];
+        npsp__General_Accounting_Unit__c gau = [SELECT Id FROM npsp__General_Accounting_Unit__c WHERE Name = 'Terremoto' LIMIT 1];
+		
+        Contact tc1 = new Contact();
+        tc1.FirstName='Rosa';
+        tc1.LastName= 'Medina';
+		tc1.npe01__HomeEmail__c = 'mmmmm@m.com';
+        tc1.msf_NIF__c='87726451N';
+        tc1.Gender__c='H';
+
+        
+        cpm__Payment_Profile__c tp1 = new cpm__Payment_Profile__c(
+            cpm__IBAN__c ='ES8920631786117012691524',
+            msf_NIF__c = '87726451N'
+        );
+        
+        test.startTest();
+
+			
+        //EXIST CONTACT, EN ESPECIE-SERVICIOS, IN-KIND,SERVICIOS, EXIST PAYMENTE PROFILE MEMBER.
+			MSF_FormDataEntry_CTRL.saveProcess(false, true, false, false, tc1, null, tp1, 'member', 15.00, '', '', '', '', 'In-Kind Gift', 'Servicios', 
+                                               date.Today(), '', null, 'EN ESPECIE-SERVICIOS', 'LA CAIXA CCC OPERATIVA', 'Cupón', camp1, 'Teléfonos At. Socio',null);
+        
+        //EXIST CONTACT, TALÓN BANCARIO ESTÁNDAR, Matching Gift, EXIST PAYMENTE PROFILE OTHER.
+        	MSF_FormDataEntry_CTRL.saveProcess(false, true, false, false, c1, null, p1, 'member', 15.00, '1111111', '1111', '', '', 'Matching Gift', '', 
+                                               date.Today(), '', null, 'TALÓN BANCARIO ESTÁNDAR', 'LA CAIXA CCC OPERATIVA', 'Cupón', camp1, 'Teléfonos At. Socio',null);
         
         test.stopTest();
     }
@@ -345,8 +379,7 @@ private class MSF_FormDataEntry_TEST {
         //EXIST ORGANIZATION, WITH ORGANIZATION CONTACT, HERENCIAS Y LEGADOS , Herencia, EXIST PAYMENT PROFILE OTHER
         	MSF_FormDataEntry_CTRL.saveProcess(false, false, true, true, c0, c0contact, p1, 'member', 15.00, '', '', '', '', 'Herencia', '', date.Today().addMonths(1), '', null, 'HERENCIAS Y LEGADOS', 'LA CAIXA CCC OPERATIVA', 'SMS', camp1, 'Teléfonos At. Socio',null);
         
-        //RECURRING NUEVA ORG.
-        	MSF_FormDataEntry_CTRL.saveProcess(false, false, true, true, c0, c0contact, p1, 'member', 15.00, '', '', '', '', 'Recurrent Donation', '', date.Today().addMonths(1), 'Semestral', null, 'Direct Debit', 'LA CAIXA CCC OPERATIVA', 'SMS', camp1 ,'Teléfonos At. Socio',null);//ORG new 
+        
         
         //************* ASSERTS ************************
         	List<Opportunity> assOpp = new List<Opportunity>();
@@ -358,6 +391,21 @@ private class MSF_FormDataEntry_TEST {
         test.stopTest();
         
     }
+
+    @isTest static void testWithRecordIdOrganizationContact2_v2(){
+        Contact c0 = [SELECT Id, msf_LanguagePreferer__c FROM Contact WHERE msf_NIF__c = '22723449R' LIMIT 1];
+        Contact c0contact = [SELECT Id, msf_LanguagePreferer__c FROM Contact WHERE msf_NIF__c = '54884017Z' LIMIT 1];
+        Campaign camp1 = [SELECT Id FROM Campaign WHERE Name = 'MSFFormF2FTESTName1' LIMIT 1];
+		cpm__Payment_Profile__c p1 = [SELECT Id FROM cpm__Payment_Profile__c WHERE msf_NIF__c = '22723449R' LIMIT 1];
+
+        test.startTest();
+        //RECURRING NUEVA ORG.
+        MSF_FormDataEntry_CTRL.saveProcess(false, false, true, true, c0, c0contact, p1, 'member', 15.00, '', '', '', '', 'Recurrent Donation', '', date.Today().addMonths(1), 'Semestral', null, 'Direct Debit', 'LA CAIXA CCC OPERATIVA', 'SMS', camp1 ,'Teléfonos At. Socio',null);//ORG new 
+
+        test.stopTest();
+        
+    }
+    
     
     //KPG
     @isTest static void testWithRecordIdOrganizationContact3(){
@@ -397,8 +445,59 @@ private class MSF_FormDataEntry_TEST {
         //KPG - NEW ORGANIZATION, WITH ORGANIZATION CONTACT, sin payment method, Grant, NEW PAYMENT PROFILE OTHER
         	MSF_FormDataEntry_CTRL.saveProcess(true, false, true, true, tc0, tc2, tp1, 'member', 15.00, '', '', '', '', 'Grant', '', date.Today().addMonths(1), '', null, null, 'LA CAIXA CCC OPERATIVA', 'SMS', camp1, 'Teléfonos At. Socio',null);
 
+        
+         //************* ASSERTS ************************
+            List<Contact> assOrg = new List<Contact>();
+        	List<Contact> assContOrg = new List<Contact>();
+        	List<Opportunity> assOpp = new List<Opportunity>();
+        
+            assOrg = [SELECT id FROM Contact WHERE msf_NIF__c =: tc0.msf_NIF__c];
+            system.assertEquals(1, assOrg.size(),'No contact inserted');
+        
+        	assContOrg = [SELECT id FROM Contact WHERE msf_Organization__c=: assOrg[0].Id AND msf_fiscalNif__c =: tc2.msf_fiscalNif__c];
+            system.assertEquals(1, assContOrg.size(),'No organization contact inserted');
+        
+        	assOpp = [SELECT id FROM Opportunity WHERE npsp__Primary_Contact__c =:assOrg[0].Id];
+        	system.assertEquals(1, assOpp.size(),'No opportunity inserted');
+        //*********************************************
+        
+        test.stopTest();
+        
+    }
+
+    //KPG
+    @isTest static void testWithRecordIdOrganizationContact3_v2(){
+        RecordType rtOrg = [SELECT id FROM RecordType Where developername= 'Organization' AND SobjectType = 'Contact' LIMIT 1];
+        RecordType rtContactRep = [SELECT id FROM RecordType Where developername= 'Organization_Contact' AND SobjectType = 'Contact' LIMIT 1];
+        
+        Campaign camp1 = [SELECT Id FROM Campaign WHERE Name = 'MSFFormF2FTESTName1' LIMIT 1];
+        
+        //org test
+        Contact tc0 = new Contact();
+        tc0.LastName = 'Data';
+        tc0.RecordTypeId = rtOrg.Id;
+        tc0.msf_MainEmail__c = 'a@a.com';
+        tc0.HomePhone = '931456767';
+        tc0.msf_NIF__c = 'A85773216';
+        tc0.msf_IsAssosiative__c = true;
+        
+        //org contact test
+        Contact tc2 = new Contact();
+        tc2.LastName = 'person 1';
+        tc2.RecordTypeId = rtContactRep.Id;
+        tc2.msf_MainEmail__c = 'a@a.com';
+        tc2.msf_fiscalNif__c='01698172J';
+        tc2.HomePhone = '999555666';
+        
+        //payment profile
+        cpm__Payment_Profile__c tp1 = new cpm__Payment_Profile__c(
+            cpm__IBAN__c ='ES8920631786117012691524',
+            msf_NIF__c = '87726451N'
+        );
+        
+        test.startTest();
         //KPG - NEW ORGANIZATION, WITH ORGANIZATION CONTACT, sin payment method, Grant, NEW PAYMENT PROFILE OTHER (falla)
-        	MSF_FormDataEntry_CTRL.saveProcess(true, false, true, true, tc0, tc2, null, 'member', 15.00, '', '', '', '', 'Grant', '', date.Today().addMonths(1), '', null, 'GRANT', 'LA CAIXA CCC OPERATIVA', 'SMS', camp1, 'Teléfonos At. Socio',null);
+            MSF_FormDataEntry_CTRL.saveProcess(true, false, true, true, tc0, tc2, null, 'member', 15.00, '', '', '', '', 'Grant', '', date.Today().addMonths(1), '', null, 'GRANT', 'LA CAIXA CCC OPERATIVA', 'SMS', camp1, 'Teléfonos At. Socio',null);
  		
         //KPG - NEW ORGANIZATION, WITH ORGANIZATION CONTACT, sin payment profile, Grant, NEW PAYMENT PROFILE OTHER (falla)
         	MSF_FormDataEntry_CTRL.saveProcess(true, false, true, true, tc0, tc2, null, 'member', 15.00, '', '', '', '', 'Grant', '', date.Today().addMonths(1), '', null, 'Direct Debit', 'LA CAIXA CCC OPERATIVA', 'SMS', camp1, 'Teléfonos At. Socio',null);
@@ -415,7 +514,7 @@ private class MSF_FormDataEntry_TEST {
             system.assertEquals(1, assContOrg.size(),'No organization contact inserted');
         
         	assOpp = [SELECT id FROM Opportunity WHERE npsp__Primary_Contact__c =:assOrg[0].Id];
-        	system.assertEquals(2, assOpp.size(),'No opportunity inserted');
+        	system.assertEquals(1, assOpp.size(),'No opportunity inserted');
         //*********************************************
         
         test.stopTest();

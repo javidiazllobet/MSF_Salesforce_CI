@@ -23,33 +23,65 @@ private class MSF_UserLogic_TEST {
      }
     
     @isTest
-    private static void test() {
-        User u = new User(); 
-        u.Email = 'mail@mail.com';
-        u.Username = 'Userlogic@mail.com';
-        u.FirstName = 'Test';
-        u.LastName = 'Last';
-        u.ProfileId = [SELECT Id FROM Profile WHERE Name = 'Canvasser' LIMIT 1].Id;
-        u.Alias = 'TEST';
-    	u.TimeZoneSidKey = 'Australia/Sydney';
-        u.LocaleSidKey ='en_US';
-        u.EmailEncodingKey ='UTF-8';
-        u.LanguageLocaleKey ='en_US';
+    static void testInvalidUser() {
+     
+        String canvasID = [SELECT Id FROM Profile WHERE Name = 'Canvasser' LIMIT 1].Id;
+        String f2fID = [SELECT Id FROM Profile WHERE Name = 'F2F Assistant' LIMIT 1].Id;
+
+        User u = DataFactory.getUser('mail@mail.com', 'Userlogic@mail.com', 'Test', 'Last', 'TEST', canvasID);
+        User u2 = DataFactory.getUser('mail@mail.com', 'Userlogic2@mail.com', 'Test', 'Last', 'TEST', f2fID);
         insert u;
-        
-        User u2 = new User(); 
-        u2.Email = 'mail@mail.com';
-        u2.Username = 'Userlogic2@mail.com';
-        u2.FirstName = 'Test';
-        u2.LastName = 'Last';
-        u2.ProfileId = [SELECT Id FROM Profile WHERE Name = 'F2F Assistant' LIMIT 1].Id;
-        u2.Alias = 'TEST';
-    	u2.TimeZoneSidKey = 'Australia/Sydney';
-        u2.LocaleSidKey ='en_US';
-        u2.EmailEncodingKey ='UTF-8';
-        u2.LanguageLocaleKey ='en_US';
-        insert u2;
-        
-        
+
+        System.runAs(u){
+            try{
+                insert u2;
+                System.assert(false, 'Debe de saltar un error por perfil incorrecto');
+            }catch(Exception e){
+                System.debug('Ha saltado un error porque el perfil es incorrecto, como debe ser');
+            }
+        }        
     }
+
+    
+    @isTest static void testValidUser() {
+        String integrationID = [SELECT Id FROM Profile WHERE Name = 'Integration profile' LIMIT 1].Id;
+        String canvasID = [SELECT Id FROM Profile WHERE Name = 'Canvasser' LIMIT 1].Id;
+
+        User u = [SELECT Id FROM USER WHERE ProfileId =: integrationID AND isActive = true LIMIT 1];
+
+        System.runAs(u){            
+            try{
+                User u1 = DataFactory.getUser('mail@mail.com', 'Userlogic2@mail.com', 'Test', 'Last', 'TEST', canvasID);
+                insert u1;
+            }catch(Exception e){                
+                System.assert(false, 'Error: ' + e);
+            }
+        }
+    }
+
+    @isTest static void testCannotChangeProfile() {
+        String integrationID = [SELECT Id FROM Profile WHERE Name = 'Integration profile' LIMIT 1].Id;
+        String canvasID = [SELECT Id FROM Profile WHERE Name = 'Canvasser' LIMIT 1].Id;
+
+        User u = [SELECT Id FROM USER WHERE ProfileId =: integrationID AND isActive = true LIMIT 1];
+        User u1 = DataFactory.getUser('mail@mail.com', 'Userlogic2@mail.com', 'Test', 'Last', 'TEST', canvasID);
+
+        insert u1;
+        u1.ProfileId = integrationID;
+
+        System.runAs(u){
+            try{
+                System.debug('NewUser profile ' + u1.ProfileId);
+                update u1;
+                System.assert(false, 'Debe saltar error porque no soy admin y estoy modificando un canvas user');
+            }catch(Exception e){      
+                if (e.getMessage().contains('No puedes modificar el perfil de un usuario.')){
+                    System.debug('Error: ' + e);
+                }else{
+                    System.assert(false, 'Error: ' + e);
+                }
+            }
+        }
+    }
+
 }

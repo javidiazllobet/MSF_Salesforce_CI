@@ -90,7 +90,7 @@ public  class MSF_CheckUtimosMeses_BATCH_TEST {
  	}
     
     @isTest static void Test_CheckUltimosMeses_SCHED(){
-        String CRON_EXP = '0 0 0 15 3 ? 2022';
+        String CRON_EXP = '0 0 0 15 3 ? *';
         Test.startTest();
         String jobId = System.schedule('ScheduledApexTest',
             CRON_EXP,

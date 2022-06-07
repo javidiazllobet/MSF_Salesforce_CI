@@ -31,17 +31,22 @@ global without sharing class MSF_DonationVehicleManagement_TDTM extends npsp.TDT
         Set<ID> sConIds = new Set<ID>();      
         Set<String> sOCRToDelete = new Set<String>();
 
+        Map<String,OpportunityContactRole> oldOCRMap = new Map<String,OpportunityContactRole>();
+        List<Id> opportunityIds = new List<Id>();
+        for (Opportunity o : lNewOpp){
+            opportunityIds.add(o.Id);
+        }
+        for(OpportunityContactRole oCR : [SELECT id, OpportunityId, ContactId FROM OpportunityContactRole WHERE OpportunityId IN :opportunityIds]){
+            oldOCRMap.put((String)oCR.OpportunityId+(String)oCR.ContactId, oCR);
+        }
+
         //Actions
         /*** BEFORE INSERT & BEFORE UPDATE ***/
         if(triggerAction == npsp.TDTM_Runnable.Action.BeforeInsert || triggerAction == npsp.TDTM_Runnable.Action.BeforeUpdate) {	            
             for(Opportunity o : lNewOpp){
                 if(o.msf_DonationVehicleContact__c == null && o.npsp__Primary_Contact__c != null){
                     o.msf_DonationVehicleContact__c = o.npsp__Primary_Contact__c;
-                } 
-                // If the primary contact is updated, the donation vehicle gets updated
-                if(triggerAction == npsp.TDTM_Runnable.Action.BeforeUpdate && mOldOpp.get(o.Id).npsp__Primary_Contact__c != o.npsp__Primary_Contact__c){
-                    o.msf_DonationVehicleContact__c = o.npsp__Primary_Contact__c;
-                } 
+                }                
             }
         } 
         
@@ -49,7 +54,10 @@ global without sharing class MSF_DonationVehicleManagement_TDTM extends npsp.TDT
         if(triggerAction == npsp.TDTM_Runnable.Action.AfterInsert) {	
             for(Opportunity o : lNewOpp){
                 if(o.msf_DonationVehicleContact__c != null && o.msf_DonationVehicleContact__c != o.npsp__Primary_Contact__c){
-                    lOCRToInsert.add(createOCR(o.Id,o.msf_DonationVehicleContact__c));
+                    OpportunityContactRole oCR = createOCR(o.Id,o.msf_DonationVehicleContact__c);
+                    if(!oldOCRMap.containsKey((String)oCR.OpportunityId+(String)oCR.ContactId)){
+                        lOCRToInsert.add(oCR);
+                    }                    
                 } 
             }
         }  
@@ -59,7 +67,10 @@ global without sharing class MSF_DonationVehicleManagement_TDTM extends npsp.TDT
             for(Opportunity o : lNewOpp){
                 if(o.msf_DonationVehicleContact__c != mOldOpp.get(o.Id).msf_DonationVehicleContact__c){
                     if(o.msf_DonationVehicleContact__c != o.npsp__Primary_Contact__c && o.msf_DonationVehicleContact__c != null){
-                        lOCRToInsert.add(createOCR(o.Id,o.msf_DonationVehicleContact__c));
+                        OpportunityContactRole oCR = createOCR(o.Id,o.msf_DonationVehicleContact__c);
+                        if(!oldOCRMap.containsKey((String)oCR.OpportunityId+(String)oCR.ContactId)){
+                            lOCRToInsert.add(oCR);
+                        }
                     } 
                 
                 	if(mOldOpp.get(o.Id).msf_DonationVehicleContact__c != null && mOldOpp.get(o.Id).msf_DonationVehicleContact__c != o.msf_DonationVehicleContact__c){
@@ -72,7 +83,7 @@ global without sharing class MSF_DonationVehicleManagement_TDTM extends npsp.TDT
             
             if(!sOCRToDelete.isEmpty()) lOCRToDelete.addAll(deleteOCR(sOppIdsCon,sConIds,sOCRToDelete));       
         }  
-        
+        System.debug('lOCRToInsert '+lOCRToInsert);
         /*** DML OPERATIONS ***/
         npsp.TDTM_Runnable.dmlWrapper dmlWrapper = new npsp.TDTM_Runnable.DmlWrapper();
         dmlWrapper.objectsToInsert.addAll((List<OpportunityContactRole>) lOCRToInsert);

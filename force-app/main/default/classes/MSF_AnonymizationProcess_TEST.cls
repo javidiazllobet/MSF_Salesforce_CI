@@ -129,34 +129,14 @@ private class MSF_AnonymizationProcess_TEST {
     
     @isTest 
     static void anonymizationProcess(){
+        Test.startTest();
     	Contact c = [SELECT Id FROM Contact WHERE msf_NIF__c = '00000000T' LIMIT 1];
         MSF_AnonymizationProcess_CTRL.anonymizationRecord(c.Id);
         
         Contact c2 = [SELECT ID FROM Contact WHERE msf_NIF__c = '15573648A' LIMIT 1];
         MSF_AnonymizationProcess_CTRL.anonymizationRecord(c2.Id);
+        Test.stopTest();
         
-        /*Contact con = [SELECT Id, LastName, msf_MainEmail__c, msf_NoRecibirNada__c, msf_DateReturnedMail3Backup__c, AccountId FROM Contact WHERE Id =: c.Id LIMIT 1];
-        //Contact orgCon = [SELECT Id, FirstName, LastName, msf_MainEmail__c, msf_NoRecibirNada__c, msf_DateReturnedMail3Backup__c FROM Contact WHERE msf_Organization__c =: con.Id LIMIT 1];
-        Account ac = [SELECT Name, BillingCountry FROM Account WHERE Id =: con.AccountId ];
-        cpm__Payment_Profile__c pp = [SELECT cpm__IBAN__c, cpm__Holder_Name__c, cpm__Active__c FROM cpm__Payment_Profile__c WHERE cpm__Contact__c =: con.Id LIMIT 1];
-        */
-        /*System.assertEquals('Miembro eliminado ' + date.today().day() + '-' + date.today().month() + '-' + date.today().year() + ' .', con.LastName);        
-        System.assertEquals(null, con.msf_MainEmail__c);
-        System.assertEquals(true, con.msf_NoRecibirNada__c);
-        System.assertEquals(null, con.msf_DateReturnedMail3Backup__c);  
-        
-        System.assertEquals('Miembro eliminado ' + date.today().day() + '-' + date.today().month() + '-' + date.today().year(), orgCon.FirstName); 
-        System.assertEquals('.' , orgCon.LastName);   
-        System.assertEquals(null, orgCon.msf_MainEmail__c);
-        System.assertEquals(true, orgCon.msf_NoRecibirNada__c);
-        System.assertEquals(null, orgCon.msf_DateReturnedMail3Backup__c); 
-        
-        System.assertEquals('ES8200000000000000000000', pp.cpm__IBAN__c);
-        System.assertEquals(null, pp.cpm__Holder_Name__c);
-        System.assertEquals(false, pp.cpm__Active__c);
-        
-        System.assertEquals('Miembro eliminado ' + date.today().day() + '-' + date.today().month() + '-' + date.today().year(), ac.Name);
-        System.assertEquals(null, ac.BillingCountry);*/
     }
     
 }

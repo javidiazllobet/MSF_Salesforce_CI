@@ -1,15 +1,35 @@
+/**
+ * @description       : 
+ * @author            : arubio@omegacrmconsulting.com
+ * @group             : 
+ * @last modified on  : 11-04-2022
+ * @last modified by  : arubio@omegacrmconsulting.com
+**/
 @isTest
 public class MSF_UncheckUtimosMeses_BATCH_TEST {
 
     @testSetup static void setup(){
         Date dateSixYearsAgo = Date.today() - 365*6;
+        Date dateFourYearsAgo = Date.today() - 365*4;
+        Date dateOneYearsAgo = Date.today() - 365*1;
         List<Opportunity> listOppToInsert = new List<Opportunity>();
         Opportunity oppD = new Opportunity(Name='ChkUltimosMeses D');
         oppD.RecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Donation').getRecordTypeId();
         oppD.StageName = 'Legacy';
         oppD.CloseDate = dateSixYearsAgo;
         oppD.msf_IsFromLastMonthsBool__c = true;
+        oppD.Type = 'SMS Donor';
+        oppD.msf_UncheckUtimosMeses__c = 'true';
         listOppToInsert.add(oppD);
+
+        Opportunity oppD2 = new Opportunity(Name='ChkUltimosMeses RD');
+        oppD2.RecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Donation').getRecordTypeId();
+        oppD2.StageName = 'Legacy';
+        oppD2.CloseDate = dateFourYearsAgo;
+        oppD2.msf_IsFromLastMonthsBool__c = true;
+        oppD2.Type = 'Recurrent Donation';
+        oppD2.msf_UncheckUtimosMeses__c = 'true';
+        listOppToInsert.add(oppD2);
         
         Opportunity opp = new Opportunity(Name='ChkUltimosMeses');
         opp.RecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Legacy').getRecordTypeId();
@@ -78,7 +98,7 @@ public class MSF_UncheckUtimosMeses_BATCH_TEST {
         
  	}
     
-    @isTest static void Test_UncheckUltimosMeses_QUEUEABLE(){
+    /*@isTest static void Test_UncheckUltimosMeses_QUEUEABLE(){
         
         String CRON_EXP = '0 0 0 15 3 ? 2022';
         Test.startTest();
@@ -86,6 +106,18 @@ public class MSF_UncheckUtimosMeses_BATCH_TEST {
             CRON_EXP,
             new MSF_UncheckUtimosMeses_SCHED(50, 10));
     	Test.stopTest();    
+    }*/
+
+    @isTest
+    static void Test_UncheckUltimosMeses(){
+        
+        Test.startTest();
+        MSF_UncheckUtimosMeses_BATCH myBatchObject = new MSF_UncheckUtimosMeses_BATCH();
+        Database.executeBatch(myBatchObject);
+    	Test.stopTest();    
+
+        Opportunity opp = [SELECT id, msf_IsFromLastMonthsBool__c FROM Opportunity WHERE Name = 'ChkUltimosMeses D'];
+        system.assertEquals(false, opp.msf_IsFromLastMonthsBool__c);
     }
     
 }

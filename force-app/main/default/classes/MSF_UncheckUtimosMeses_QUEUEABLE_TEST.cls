@@ -15,7 +15,9 @@ public class MSF_UncheckUtimosMeses_QUEUEABLE_TEST {
         oppD.StageName = 'Legacy';
         oppD.CloseDate = dateSixYearsAgo;
         oppD.msf_IsFromLastMonthsBool__c = true;
-        listOppToInsert.add(oppD);
+        for (Integer i = 0; i < 10; i++){
+            listOppToInsert.add(oppD.clone());
+        }
         
         Opportunity opp = new Opportunity(Name='ChkUltimosMeses');
         opp.RecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Legacy').getRecordTypeId();
