@@ -7,7 +7,7 @@ global class MSF_UncheckUtimosMeses_SCHED implements Schedulable{
     }
 
     global void execute(SchedulableContext context){ 
-        MSF_UncheckUtimosMeses_BATCH myBatchObject = new MSF_UncheckUtimosMeses_BATCH(lim);
+        MSF_UncheckUtimosMeses_BATCH myBatchObject = new MSF_UncheckUtimosMeses_BATCH();
         Id batchId = Database.executeBatch(myBatchObject,items);
      }
 }

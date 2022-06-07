@@ -25,6 +25,8 @@
 		<members>MSF_UncheckUtimosMeses_BATCH_TEST</members>
 		<members>MSF_SharedMethods_UTIL</members>
 		<members>MSF_UncheckUtimosMeses_BATCH</members>
+		<members>MSF_UncheckUtimosMeses_02_BATCH</members>
+		<members>MSF_UncheckUtimosMeses_SCHED</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
