@@ -6,7 +6,7 @@
  * @last modified by  : arubio@omegacrmconsulting.com
 **/
 @isTest
-private class TestMSF_SharedMethods_UTIL{
+private class TestMSF_SharedMethods_Util{
 
 	@testSetup static void setup(){
 
