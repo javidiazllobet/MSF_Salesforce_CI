@@ -18,11 +18,13 @@
 		<members>MSF_UncheckUtimosMeses_QUEUEABLE_TEST</members>
 		<members>MSF_CheckUtimosMeses_BATCH_TEST</members>
 		<members>MSF_UserLogic_TEST</members>
-		<members>TestMSF_SharedMethods_Util</members>
+		<members>TestMSF_SharedMethods_UTIL</members>
 		<members>MSF_CheckUtimosMeses_QUEUEABLE</members>
 		<members>MSF_UncheckUtimosMesesTask_TEST</members>
 		<members>RecordTypes</members>
-		<name>CustomField</name>
+		<members>MSF_UncheckUtimosMeses_BATCH_TEST</members>
+		<members>MSF_SharedMethods_UTIL</members>
+		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>Contact.Marca_estrategica__c</members>
